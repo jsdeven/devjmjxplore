@@ -1,0 +1,91 @@
+@media screen and (max-width:767px) {
+  .seller-hub-account-left h1{
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0;
+  }
+  .seller-hub-account-left h1 br{
+    display: none;
+  }
+  .seller-hub-account-left p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .seller-hub-account-left h4{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .sellerhub-form-title{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .sellerhub-forms .form-group label{
+    font-size: 13px;
+  }
+  .sellerhub-forms .form-group .form-control{
+    padding: 10px;
+    font-size: 13px;
+  }
+  .sellerhub-forms .form-group{
+    margin-bottom: 15px;
+  }
+  .form-select{
+    padding: 10px;
+  }
+  .shiping-group{
+    margin: 30px -15px ;
+    padding:30px;
+  }
+  .sellerhub-forms .form-group .input-group-btn .choose-file{
+    font-size: 13px;
+  }
+  .sellerhub-forms .form-group label.input-group-btn{
+    padding: 0 10px;
+  }
+  .fileallow{
+    font-size: 12px;
+    padding-left: 10px;
+    line-height: 20px;
+  }
+  .sellerhub-forms .form-group.checkbox-group label{
+    font-size: 13px;
+  }
+  .sellerhub-forms-thanks h2{
+    font-size: 24px;
+  }
+  .modla-tc{
+    padding: 10px;
+  }
+  .modla-tc .modal-title{
+    margin-bottom: 15px;
+  }
+  .modla-tc .modal-title span{
+    font-size: 14px;
+  }
+  .modla-tc ul li{
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .input-group-prepend .input-group-text{
+	  font-size:13px;
+	  padding:10px;
+  }
+  
+  .request-otp-send{
+	  font-size:13px !important;
+  }
+.form-select{
+	font-size:13px;
+	padding: 10px 40px 10px 10px;
+}
+
+.seller-hub-account-main .sellerhub-forms .form-group label, .form-group.radio-group .labelish{
+	line-height:20px;
+}
+  
+  
+}

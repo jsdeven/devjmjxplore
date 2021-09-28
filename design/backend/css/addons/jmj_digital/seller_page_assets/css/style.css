@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    box-shadow: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-jain{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.seller-hub-account-main{
+    padding:50px 0;
+}
+.seller-hub-account-left h1{
+  font-size: 56px;
+  letter-spacing: -3px;
+  line-height: 72px;
+  color: #343434;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 60px;
+}
+.seller-hub-account-left h1:after{
+    content:'';
+    position: absolute;
+    bottom: -25px;
+    width:60px;
+    height:3px;
+    background:#ff0064;
+    left:0;
+
+}
+.seller-hub-account-left p{
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Montserrat";
+}
+.seller-hub-account-left h4{
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #023b5b;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.sellerhub-div{
+  margin-bottom: 30px;
+}
+.seller-hub-account-left ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  margin-left:0;
+}
+.seller-hub-account-left ul li{
+  width: 50%;
+  padding-right: 30px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 33px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Montserrat";
+  position: relative;
+}
+.seller-hub-account-left ul.full-width li{
+  width: 100%;
+}
+.seller-hub-account-left ul li::before{
+  content: '-';
+  padding-right: 5px;
+}
+
+/*mithlesh css*/
+
+.seller-hub-account-right{
+  border-radius: 20px;
+  filter: drop-shadow(0 0 9.5px rgba(0,0,0,0.04));
+  background-color: #ffffff;
+  padding: 50px;
+}
+.sellerhub-form-title{
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 36px;
+  color: #343434;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+.sellerhub-form-title small{
+  text-transform: none;
+}
+.sellerhub-forms .form-group{
+  margin-bottom: 30px;
+}
+.seller-hub-account-main .sellerhub-forms .form-group label, .form-group.radio-group .labelish{
+  font-size: 15px !important;
+  line-height: 30px;
+  color: #343434;
+  font-weight: 500 !important;
+  font-family: "Montserrat";
+}
+.sellerhub-forms .form-group label.pink-label{
+  color: #ff0063;
+}
+.sellerhub-forms .form-group label span{
+  color: #ff0063;
+}
+.sellerhub-forms .form-group .form-control{
+  background-color: #ffffff !important;
+  border: 1px solid #c6c5c0 !important;
+  border-radius: 0;
+  padding: 20px;
+  height: auto;
+  background: #fafafa;
+  font-size:16px;
+}
+.sellerhub-forms .form-group .form-control:focus,.sellerhub-forms .form-group .form-control:visited{
+  box-shadow: none;
+}
+.sellerhub-forms .form-group .sellerbtn, .backtohome, #verify-otp-send-new, .mycustom-btn{
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-align: center;
+  background: #ff0064;
+  border: 0px;
+  border-radius: 0;
+  color: #ffffff;
+  padding: 15px 46px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition:all 0.7s;
+}
+
+.sellerhub-forms .form-group .sellerbtn:hover, .backtohome:hover, #verify-otp-send-new:hover, .mycustom-btn:hover{
+	 background: #023b5b;
+	 transition:all 0.7s;
+	 color:#fff;
+}
+
+
+
+.form-septator{
+  border: 1px solid #a5a5a5;
+  width: 50px;
+  margin: 50px 0;
+}
+.input-group-prepend{
+  padding-right: 10px;
+}
+.input-group-text{
+  padding: 20px;
+  border-radius: 0;
+  background: #fafafa;
+  border: 1px solid #c6c5c0;
+}
+
+.input-group-file{
+  padding: 20px;
+  border-radius: 0;
+  background: #fafafa;
+  border: 1px solid #c6c5c0;
+}
+
+.sellerhub-forms .form-group.otp-group{
+  margin-bottom: 30px;
+}
+.countdowun-timer{
+  font-size: 16px;
+  line-height: 30px;
+  color: #ff0064;
+  font-weight: 600;
+  font-family: "Montserrat";
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.shiping-group{
+  padding: 32px;
+  margin: 0 -32px;
+  background: #f4f7f8;
+  margin-bottom: 50px;
+}
+.sellerhub-forms-thanks{
+  text-align: center;
+}
+.sellerhub-forms-thanks h2{
+  font-size: 35px;
+  line-height: 60px;
+  color: #343434;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.sellerhub-forms-thanks h2::after{
+  content: '';
+  background: #ff005d;
+  height: 5px;
+  width: 105px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: auto;
+}
+.sellerhub-forms-thanks p{
+  font-size: 15px;
+  line-height: 22px;
+  color: #343434;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+  margin-bottom: 30px;
+}
+.forget-password{
+  margin-left: 30px;
+}
+.forget-password a{
+  font-size: 20px;
+  line-height: 54px;
+  text-decoration: underline;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.resetpassord-term{
+  padding-left: 20px;
+}
+.resetpassord-term ul{
+  margin-bottom: 0;
+}
+.resetpassord-term ul li{
+  font-size: 14px;
+  line-height: 26px;
+  color: #585858;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.input-group-btn{
+  padding: 6px 20px;
+  margin-bottom: 0;
+  background-color: #023b5b;
+  font-size: 22px;
+  line-height: 54px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.sellerhub-forms .form-group .input-group-btn .choose-file{
+  font-size: 18px;
+  line-height: 54px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+.fileallow{
+  font-size: 16px;
+  line-height: 54px;
+  color: #023b5b;
+  font-weight: 500;
+  font-family: "Montserrat";
+  padding-left: 20px;
+}
+.form-select{
+  padding: 20px 40px 20px 20px;
+  border: 1px solid #c6c5c0;
+  width: 100%;
+  appearance: none;
+  background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/down-arrow.png) no-repeat 94%;
+  height:auto !important;
+  -webkit-appearance:none !important;
+  -moz-appearance:none !important;
+}
+.sellerhub-forms .form-group .radiobtn{
+  position: relative;
+}
+.sellerhub-forms .form-group .radiobtn+.radiobtn{
+  margin-left: 15px;
+}
+
+.shipping-flag .radiobtn .radio{
+	padding-left:0 !important;
+}
+
+
+.sellerhub-forms .form-group textarea{
+  resize: none;
+  width: 100%;
+  padding: 20px;
+  background: #fafafa;
+  border: 1px solid #c6c5c0
+}
+.sellerhub-forms .form-group.checkbox-group label{
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 24px;
+  color: #585858;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+.sellerhub-forms .form-group.checkbox-group label input{
+  margin-right: 5px;
+}
+.termcondition label{
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 65px;
+  color: #6e6e6e;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.termcondition label a{
+  color: #023b5b;
+  text-decoration: underline;
+}
+.modla-tc{
+  padding: 30px;
+}
+.modla-tc ul{
+  margin-bottom: 0;
+  list-style: none;
+}
+.modla-tc ul li{
+  padding-right: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Montserrat";
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.modla-tc  ul li::before{
+  content: '-';
+  padding-right: 5px;
+}
+.modla-tc .modal-title{
+  margin-bottom: 30px;
+}
+.modla-tc .modal-title span{
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  color: #343434;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  border-bottom: 2px solid #003959;
+  padding-bottom: 5px;
+}
+.closebtn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.checkbox-group.form-group .cust-checkbox input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.checkbox-group.form-group .cust-checkbox label {
+  position: relative;
+  cursor: pointer;
+}
+.checkbox-group.form-group .cust-checkbox label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #838383;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); */
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.checkbox-group.form-group .cust-checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #ff0063;
+}
+
+.sellerhub-forms .form-group .radiobtn input{
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  /* display: none; */
+  cursor: pointer;
+  width: 100%;
+  height: 23px;
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+}
+.sellerhub-forms .form-group .radiobtn label {
+  position: relative;
+  cursor: pointer;
+  z-index: 8;
+}
+.sellerhub-forms .form-group .radiobtn label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #838383;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05); */
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.sellerhub-forms .form-group .radiobtn input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: #ff0063;
+  border-radius: 50%;
+}
+
+
+.seller-hub-account-right #account_register .content{
+  background:none !important;
+}
+
+
+tr#box_add_qty_discount {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.my-custom-table-form .table.table-middle td{
+  display:block !important;
+  width:48% !important; 
+  border:none;
+}
+
+.shipping-flag .radiobtn input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 26px;
+    width: 10px;
+    height: 10px;
+    background: #ff0063;
+    border-radius: 50%;
+}
+
+.my-custom-table-form  .table tbody tr:hover td{
+	background:none !important;
+}
+
+.new-cs-radio .radio{
+	padding-left:0 !important;
+}
+.sellerhub-forms .form-group .new-cs-radio .radiobtn input:checked + label:after{
+	top:16px;
+}
+
+.my-custom-table-form  table.table tr{
+	background: #f4f7f8;
+	padding:32px 54px 32px 22px !important;
+	margin-bottom:20px;
+	position:relative;
+}
+.my-custom-table-form .form-select {
+    padding: 20px 40px 20px 20px !important;
+}
+.my-custom-table-form tr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.my-custom-table-form tr .btn-group{
+	position:absolute;
+	top:30%;
+	right:10px;
+	display:block;
+}
+.my-custom-table-form tr td.right{
+	position:absolute;
+	top:30%;
+	right:10px;
+	display:block;	
+}
+
+.my-custom-table-form tr .btn-group .btn{
+	display:block !important;
+}
+.my-custom-table-form tr .btn-group .btn.btn-add{
+	background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/add.png) no-repeat top right;
+	width:20px;
+	height:20px;
+	background-size:20px;
+	font-size:0;
+}
+.my-custom-table-form tr .btn-group .btn.btn-clone{
+	background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/clon.png) no-repeat top right;
+	 width: 23px;
+    height: 23px;
+    background-size: 23px;
+	font-size:0;
+	margin-top:-10px;
+}
+.my-custom-table-form tr .btn-group .btn.cm-delete-row{
+	background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/del.png) no-repeat top right;
+	width:20px;
+	height:20px;
+	background-size:20px;
+	font-size:0;
+}
+.my-custom-table-form tr .btn-group .btn.cm-opacity{
+	background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/del.png) no-repeat top right;
+	width:20px;
+	height:20px;
+	background-size:20px;
+	margin-top:-10px;
+	margin-bottom:10px;
+	font-size:0;
+} 
+.my-custom-table-form tr  .icon-trash{display:none;}
+
+
+.my-custom-table-form tr td .delete-item{
+	background:url(https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/del.png) no-repeat top right;
+	width:20px;
+	height:20px;
+	background-size:20px;
+	margin-top:-10px;
+	margin-bottom:10px;
+	font-size:0;
+	position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.sellerhub-forms .my-custom-table-form .form-group .form-control{
+	background-color:transparent !important;
+}
+.backtohome{
+	text-decoration:none !important;
+}
+
+.shiping-group .form-group .form-control{
+	background:transparent !important;
+}
+
+
+   
+
+
+
+@media screen and (max-width:1070px){
+  .sellerhub-forms .form-group .sellerbtn, .backtohome, #verify-otp-send-new, .mycustom-btn{
+		margin-left:0 !important;
+		margin-right:0 !important;
+	}
+	.header .branding .container-fluid {
+	  padding-left:15px !important;
+  }
+
+}
+
+@media screen and (max-width:1012px){
+	.seller-hub-account-left ul li{
+		width:100%;
+	}
+	 .sellerhub-forms .form-group .radiobtn+.radiobtn{
+		margin-left:0;
+	}
+	.sellerhub-forms .form-group .radiobtn {
+		position: relative;
+		width: 48%;
+	}
+	 .sellerhub-forms .form-group .sellerbtn, .backtohome, #verify-otp-send-new, .mycustom-btn{
+		margin-left:0 !important;
+		margin-right:0 !important;
+		padding: 10px 20px;
+	}
+	.my-custom-table-form .table.table-middle td{
+		width:100% !important;
+	}
+}
+
+@media screen and (max-width:800px){
+	.seller-hub-account-left h1{
+		font-size: 48px;
+		line-height: 58px;
+	}
+	
+	.seller-hub-account-main .row{
+		 margin-left: -15px !important;
+	}
+
+}
+@media screen and (max-width:767px){
+	.form-septator{
+		margin:40px 0;
+	}
+	.sellerhub-form-title.margin-topnill{
+		margin-top:0 !important;
+	}
+	.sellerhub-form-title{
+		margin-top:40px !important;
+	}
+	.seller-hub-account-left ul li{
+		font-size:14px;
+	}
+	.sellerhub-div{
+		display:none !important;
+	}
+	#paymentContainer, .paymentOptions{
+		margin-bottom:20px !important;
+	}
+	.form-select{
+		display:block;
+		max-width:100%;
+	}
+	.my-custom-table-form .table.table-middle td{
+		margin:0;
+		padding:0;
+	}
+	.my-custom-table-form .form-select {
+		padding: 10px 40px 10px 10px !important;
+	}
+	.sellerhub-forms .form-group .new-cs-radio .radiobtn input:checked + label:after{
+		top:11px;
+	}
+	.sellerhub-forms .form-group .radiobtn input:checked + label:after{
+		top:6px;
+	}
+	.checkbox-group.form-group .cust-checkbox input:checked + label:after{
+		top:6px;
+	}
+}
+
+
+@media screen and (max-width:620px){
+	  .seller-hub-account-right{
+		padding: 20px;
+	  }
+	  .sellerhub-forms .form-group .sellerbtn, .backtohome, #verify-otp-send-new, .mycustom-btn{
+		margin-left:0 !important;
+		margin-right:0 !important;
+		padding: 10px 15px;
+	}
+	
+}
+
+@media screen and (max-width:430px){
+	.sellerhub-forms .form-group .radiobtn {
+		width: 98%;
+	}
+	.sellerhub-forms .form-group .sellerbtn, .backtohome, #verify-otp-send-new, .mycustom-btn{
+		padding: 10px 15px;
+		/*display:block;
+		width:100%;
+		margin-bottom:20px;
+		margin-left: 0 !important;
+		width:100% !important;*/
+	}
+}
+
+
+
+
+ 

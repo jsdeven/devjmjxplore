@@ -1,0 +1,1 @@
+{style src="addons/jmj_digital/styles.less"}

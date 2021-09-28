@@ -1,0 +1,125 @@
+
+.header-area {
+  background-color: #fff !important;
+}
+.main-banner {
+  background-image: url(design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/top-banner.jpg);
+  background-size: cover;
+}
+.main-top-button {
+  padding: 20px 50px;
+  color: #000;
+  border-radius: 0 !important;
+  text-transform: none !important;
+}
+
+.main-button {
+  background-color: #ff005d;
+  padding: 20px 50px;
+  color: #fff;
+  border-radius: 0 !important;
+}
+.header-text h2 {
+  text-transform: uppercase;
+}
+.header-text h2 em {
+  color: #ff005d !important;
+}
+.section {
+  margin: 50px 0;
+}
+.section-heading h2 {
+  color: #023b5b;
+  text-transform: uppercase;
+}
+.section-heading h2 em {
+  color: #ff005d !important;
+}
+.section-heading p {
+  text-align: center;
+}
+.reasons .card {
+  margin-bottom: 50px;
+}
+.reasons .card .card-title {
+  padding-left: 80px;
+  margin-top: -45px;
+  font-weight: bold;
+}
+.reasons .card .card-text {
+  padding-left: 80px;
+}
+.howto {
+  background-color: #ebf4f9;
+}
+.howto {
+  background-color: #ebf4f9;
+}
+.howto .section-heading {
+  padding-top: 50px;
+}
+.howto .card {
+  background-color: rgba(0, 0, 0, 0);
+}
+.howto .card .card-title {
+  color: #ff005d;
+  text-align: center;
+}
+.howto .card .card-body {
+  text-align: center;
+}
+.faq {
+  background-color: #f6f6f6;
+}
+.faq .section-heading {
+  padding-top: 50px;
+}
+.faq .accordion {
+  background-color: #f6f6f6;
+}
+.contactx-button {
+  background-color: #023b5b;
+  padding: 20px 50px;
+  color: #fff;
+  border-radius: 0 !important;
+}
+.owl-carousel .slide-no {
+  font-size: 14px;
+  padding: 20px 20px;
+}
+.owl-carousel .tes-text {
+  font-size: 24px;
+  padding: 20px 20px;
+}
+.owl-carousel .tes-name {
+  font-size: 14px;
+  padding: 0px 20px;
+}
+.owl-carousel .tes-desg {
+  font-size: 14px;
+  padding: 0px 20px;
+}
+.grey-bg {
+  background-color: #f2f2f2;
+}
+.owl-prev {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  margin-left: -20px;
+  display: block !important;
+  border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}

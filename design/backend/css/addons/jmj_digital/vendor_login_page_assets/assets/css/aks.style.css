@@ -1,0 +1,286 @@
+    html, body, #main_column {
+      height: auto !important;
+    }
+    body, p {
+      font-family: Montserrat, Roboto, san-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: Poppins, Roboto, san-serif;
+    }
+    .header-area {
+      background-color: #fff !important;
+      z-index: 1000;
+    }
+    .logo {
+      display: block;
+      max-width: 160px;
+    }
+    .main-banner {
+      background-image: url(/design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/top-banner.jpg);
+      background-size: cover;
+      padding: 109px 0px 0px 0px;
+      z-index: 100;
+    }
+    .main-banner .left-content h2 {
+      font-size: 36px !important;
+      line-height: 55px !important;
+      font-weight: 800;
+    }
+    .main-top-button {
+      padding: 10px 30px;
+      color: #000;
+      border-radius: 0 !important;
+      text-transform: none !important;
+      border: none !important;
+      border: 1px solid #666666 !important;
+    }
+    .main-button {
+      background-color: #ff005d;
+      padding: 20px 50px;
+      color: #fff;
+      font-size: 18px !important;
+      border-radius: 0 !important;
+    }
+    .header-text h2 {
+      text-transform: uppercase;
+    }
+    .header-text h2 em {
+      color: #ff005d !important;
+    }
+    .section {
+      margin: 50px 0;
+    }
+    .section-heading h2 {
+      color: #023b5b;
+      text-transform: uppercase;
+      line-height: 32px;
+    }
+    .section-heading h2 em {
+      color: #ff005d !important;
+    }
+    .section-heading p {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .reasons .card {
+      margin-bottom: -20px;
+    }
+    .reasons .card .card-body {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .reasons .card .card-title {
+      font-size: 1.1rem;
+      padding-left: 70px;
+      font-weight: 800;
+      margin-top: 0px;
+    }
+    .reasons .card .card-text {
+      padding-left: 70px;
+    }
+    
+    @media (min-width: 768px) {
+      .main-banner {
+        padding: 166px 0px 120px 0px;
+      }
+      .main-banner .left-content h2 {
+        font-size: 42px !important;
+        line-height: 72px !important;
+        font-weight: 800;
+      }
+      .reasons .card {
+        margin-bottom: 50px;
+      }
+      .reasons .card .card-body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .reasons .card .card-title {
+        font-size: 1.25rem;
+        padding-left: 80px;
+        margin-top: -45px;
+        font-weight: 800;
+      }
+      .reasons .card .card-text {
+        padding-left: 80px;
+      }
+      .section-heading p {
+        text-align: center;
+        padding-left: 140px;
+        padding-right: 140px;
+      }
+    }
+    
+    .howto {
+      background-color: #ebf4f9;
+    }
+    .howto .section-heading {
+      padding-top: 50px;
+    }
+    .howto .card {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .howto .card .card-title {
+      color: #ff005d;
+      text-align: center;
+    }
+    .howto .card .card-body {
+      text-align: center;
+    }
+    .faq {
+      background-color: #f6f6f6;
+    }
+    .faq .section-heading {
+      padding-top: 50px;
+    }
+    .faq .accordion {
+      background-color: #f6f6f6;
+    }
+    .contactx-button {
+      background-color: #023b5b;
+      padding: 20px 50px;
+      color: #fff;
+      border-radius: 0 !important;
+    }
+    .owl-carousel .slide-no {
+      font-size: 14px;
+      padding: 20px 20px;
+    }
+    .owl-carousel .tes-text {
+      font-size: 24px;
+      padding: 20px 20px;
+    }
+    .owl-carousel .tes-name {
+      font-size: 14px;
+      padding: 0px 20px;
+    }
+    .owl-carousel .tes-desg {
+      font-size: 14px;
+      padding: 0px 20px;
+    }
+    .grey-bg {
+      background-color: #f2f2f2;
+    }
+    .owl-prev {
+      width: 15px;
+      height: 100px;
+      position: absolute;
+      top: 40%;
+      margin-left: -20px;
+      display: block !important;
+      border:0px solid black;
+    }
+
+    .owl-next {
+      width: 15px;
+      height: 100px;
+      position: absolute;
+      top: 40%;
+      right: -25px;
+      display: block !important;
+      border:0px solid black;
+    }
+    .owl-prev i, .owl-next i {
+      transform : scale(1,6); 
+      color: #ccc;
+    }
+    .owl-theme .owl-controls .owl-page {
+        display: inline-block;
+    }
+    .owl-theme .owl-controls .owl-page span {
+        background: none repeat scroll 0 0 #869791;
+        border-radius: 20px;
+        display: block;
+        height: 12px;
+        margin: 5px 7px;
+        opacity: 0.5;
+        width: 12px;
+        color: #000;
+    }
+    .main-banner:after {
+      background-image: none !important;
+    }
+    .main-banner:before {
+      background-image: none !important;
+    }
+    #btnUserLogin {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border: #999999 1px solid;
+    }
+    .ui-widget-overlay {
+      opacity: .9;
+      margin-left: 0 !important;
+      background-color: #00000021 !important;
+      background-image: none !important;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+    }
+    .modal-dialog {
+      margin: 10px auto;
+      max-width: 400px;
+      position: relative !important;
+    }
+    .modal-dialog .vendor-login-form {
+      border-radius: 0px !important;
+      border: 1px solid #666666 !important;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      margin:0;
+    }
+    .modal-dialog .vendor-login-form form span {
+      margin: 5px 15px 10px 15px;
+    }
+    .modal-dialog .vendor-login-form span:hover {
+      border: 2px solid transparent !important;
+    }
+    .modal-dialog .vendor-login-form .forgot-link {
+        float: right;
+        margin-right: 15px !important;
+        color: #ed2553 !important;
+    }
+    .modal-dialog .vendor-login-form a.active {
+        background: none;
+        color: #ed2553 !important;
+    }
+    .modal-dialog .vendor-login-form .register-link, .modal-dialog .vendor-login-form .forgot-link {
+      display: inline !important;
+      color: #ed2553 !important;
+      padding: 0 !important;
+    }
+
+    .modal-dialog .vendor-login-form .register-link:hover, .modal-dialog .vendor-login-form .forgot-link:hover {
+      color: #ed2553 !important;
+    }
+
+    .header-area .main-nav .nav li a {
+      padding: 0px 10px;
+    }
+
+    .header-area.background-header .main-nav .btn-mob-login {
+      top: 15px !important;
+    }
+
+    .header-area .main-nav .btn-mob-login {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 28px;
+      width: 32px;
+      height: 40px;
+      z-index: 99;
+      right: 10px;
+      color: #666;
+      font-size: 1.8rem;
+  }
+
+    .menu-trigger {
+      margin-right: 20px !important;
+    }
+
+    .collapse {
+      height: auto !important;
+    }
+    
