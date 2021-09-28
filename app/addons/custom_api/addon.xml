@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>custom_api</id>
+    <version>1.0</version>
+    <name>Custom Api</name>
+    <description>To create custom api</description>
+    <priority>10010</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>en</default_language>
+    <supplier>Onjection Team</supplier>
+</addon>

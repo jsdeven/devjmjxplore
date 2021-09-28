@@ -1,0 +1,2577 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Ukrainian\n"
+"Language: uk_UA\n"
+
+msgctxt "Addons::name::abt__unitheme2"
+msgid "AB: UniTheme2"
+msgstr "AB: UniTheme2"
+
+msgctxt "Addons::description::abt__unitheme2"
+msgid "Add-on adds functional and template files of AB: UniTheme2"
+msgstr "Модуль додає функціонал і файли шаблону АВ: UniTheme2"
+
+msgctxt "Languages::abt__unitheme2"
+msgid "AB: UniTheme2"
+msgstr "AB: UniTheme2"
+
+msgctxt "Languages::abt__unitheme2.settings"
+msgid "Settings only for AB: UniTheme2"
+msgstr "Налаштування лише для АВ: UniTheme2"
+
+msgctxt "Languages::abt__ut2.discussion.star"
+msgid "[n] Star|[n] Stars"
+msgstr "[n] Зiрка|[n] Зiрки|[n] Зiрок"
+
+msgctxt "Languages::abt__ut2.discussion.avr_part1"
+msgid "Average rating"
+msgstr "Середня оцiнка"
+
+msgctxt "Languages::abt__ut2.discussion.avr_part2"
+msgid "out of 5"
+msgstr "iз 5"
+
+msgctxt "Languages::abt__ut2.discussion.asr_title"
+msgid "Average star rating"
+msgstr "Середня оцiнка"
+
+msgctxt "Languages::abt__ut2.discussion.verified_buyer"
+msgid "Verified buyer"
+msgstr "Перевiренний покупець"
+
+msgctxt "Languages::abt__ut2.discussion.verified_buyer_bp"
+msgid "Bought this product"
+msgstr "Купив цей товар"
+
+msgctxt "Languages::abt__ut2.discussion.see_less"
+msgid "Less"
+msgstr "Менше"
+
+msgctxt "Languages::abt__ut2.discussion.see_more"
+msgid "More"
+msgstr "Бiльше"
+
+msgctxt "Languages::abt__ut2.discussion.new_post_title"
+msgid "Have you used the product?"
+msgstr "Ви користувались продуктом?"
+
+msgctxt "Languages::abt__ut2.discussion.new_post_descr"
+msgid "Tell us something about it and help others to make the right decision"
+msgstr "Розкажіть нам щось про це та допоможіть іншим прийняти правильне рішення"
+
+msgctxt "Languages::abt__ut2.sort_by_product_review_timestamp_desc"
+msgid "Newest Items First"
+msgstr "Нові вище"
+
+msgctxt "Languages::abt__ut2.sort_by_product_review_timestamp_asc"
+msgid "Oldest Items First"
+msgstr "Старі вище"
+
+msgctxt "Languages::abt__ut2.sort_by_helpfulness_asc"
+msgid "Helpful Last"
+msgstr "Корисні нижче"
+
+msgctxt "Languages::abt__ut2.sort_by_helpfulness_desc"
+msgid "Helpful First"
+msgstr "Корисні вище"
+
+msgctxt "Languages::abt__ut2.sort_by_rating_value_asc"
+msgid "Low rated"
+msgstr "З низьким рейтингом"
+
+msgctxt "Languages::abt__ut2.sort_by_rating_value_desc"
+msgid "Highly rated"
+msgstr "З високим рейтингом"
+
+msgctxt "Languages::abt__ut2.block.availability.show_on"
+msgid "!!! Only for AB: UniTheme2 when using the setting <b>[show_on]</b> block content will be cut from HTML-code for the corresponding device and is not simply hidden by styles"
+msgstr "!!! Лише для AB: UniTheme2 при використанні налаштування <b>[show_on]</b> контент блоку буде вирізано з HTML-коду для відповідного пристрою, а не просто приховано стилями"
+
+msgctxt "Languages::abt__ut2.grid_settings"
+msgid "AB: UniTheme2: Additional settings"
+msgstr "AB: UniTheme2: Додаткові налаштування"
+
+msgctxt "Languages::abt__ut2.grid.tab_description"
+msgid "The settings below apply only to the theme AB: UniTheme2 layouts sections"
+msgstr "Наведені нижче налаштування застосовуються лише для секцій макетів теми AB: UniTheme2"
+
+msgctxt "Languages::abt__ut2.extended.o"
+msgid "Original"
+msgstr "Звичайний"
+
+msgctxt "Languages::abt__ut2.extended.e"
+msgid "Extended"
+msgstr "Розширений"
+
+msgctxt "Languages::abt__ut2.extended.f"
+msgid "On the full width"
+msgstr "На всю ширину"
+
+msgctxt "Languages::abt__ut2.grid_tabs.abt__ut2_show_in_tabs"
+msgid "Show all section blocks in tabs"
+msgstr "Відобразити всі блоки секції у вкладках"
+
+msgctxt "Languages::abt__ut2.grid_tabs.abt__ut2_use_ajax"
+msgid "Use Ajax for loading the second and next tabs content"
+msgstr "Використовувати Ajax для завантаження контенту другої і наступних вкладок"
+
+msgctxt "Languages::abt__ut2.grid.padding"
+msgid "Padding"
+msgstr "Додаткові відступи"
+
+msgctxt "Languages::abt__ut2.grid.padding.variants.bottom"
+msgid "Only bottom"
+msgstr "Тільки знизу"
+
+msgctxt "Languages::abt__ut2.grid.padding.variants.top"
+msgid "Only top"
+msgstr "Тільки зверху"
+
+msgctxt "Languages::abt__ut2.grid.padding.variants.top_bottom"
+msgid "Top and bottom"
+msgstr "Зверху і знизу"
+
+msgctxt "Languages::abt__ut2.grid.padding.variants.none"
+msgid "None"
+msgstr "Ні"
+
+msgctxt "Languages::abt__ut2_thumbnail_height"
+msgid "Scroller thumbnail height"
+msgstr "Висота іконки в скролері"
+
+msgctxt "Languages::abt__ut2_show_parents"
+msgid "Show parent categories"
+msgstr "Показати батьківські категорії"
+
+msgctxt "Languages::abt__ut2_show_children"
+msgid "Show child categories"
+msgstr "Показати дочірні категорії"
+
+msgctxt "Languages::abt__ut2_show_siblings"
+msgid "Show sibling categories"
+msgstr "Показати суміжні категорії"
+
+msgctxt "Languages::tmpl_abt__ut2_dropdown_horizontal_mwi"
+msgid "AB: Horizontal dropdown list with icons"
+msgstr "AB: Горизонтальний випадаючий список з іконками"
+
+msgctxt "Languages::tmpl_abt__ut2_dropdown_vertical_mwi"
+msgid "AB: Vertical dropdown list with icons"
+msgstr "AB: Вертикальний випадаючий список з іконками"
+
+msgctxt "Languages::abt_menu_long_names"
+msgid "AB: Show long names of the first level menu items in two lines"
+msgstr "AB: Назви пунктів меню першого рівня в два рядки"
+
+msgctxt "Languages::abt_menu_long_names.tooltip"
+msgid "The active status of this setting allows displaying menu names in two lines (with line break), if more space is required to place the name, than the setting <b>AB: The maximum width of the menu item for the first level</b> specifies"
+msgstr "Активний статус цього налаштування дозволяє відобразити назви пунктів у два рядки (з переносом) у випадку, якщо для розміщення назви необхідно більше місця, чим зумовлено налаштуванням <b>AB: Максимальна ширина пункту меню для першого рівня</b>"
+
+msgctxt "Languages::abt_menu_long_names_max_width"
+msgid "AB: The maximum width of the menu item for the first level"
+msgstr "AB: Максимальна ширина пункту меню для першого рівня"
+
+msgctxt "Languages::abt_menu_long_names_max_width.tooltip"
+msgid "Specifies the width of the cell in pixels to place the name of the menu item. If the name of the menu item exceeds this value, then with the active setting <b>AB: Show long names of the first level menu items in two lines</b>, then it will be displayed in two lines (with line break)."
+msgstr "Визначає розмір клітинки по ширині в пікселях для розміщення назви пункту меню. Якщо назва пункту меню перевищує це значення, то при активному налаштуванні <b>AB: Назви пунктів меню першого рівня в два рядки</b> — буде виведено в два рядки з переносом."
+
+msgctxt "Languages::abt__menu_add_horizontal_scroll_sections"
+msgid "AB: Divide menu into sections"
+msgstr "AB: Розбивати меню на секції"
+
+msgctxt "Languages::abt__menu_add_horizontal_scroll_sections.tooltip"
+msgid "Setting specifies whether the menu will be divided into sub-sections with switches. When the setting is disabled, menu items, that exceed the limits of the first row, will be displayed on the second row and so on."
+msgstr "Налаштування визначає чи буде меню розподілятись на підсекції з перемикачами. Коли налаштування неактивне, пункти меню, що не поміщаються в перший ряд, будуть відображатися у другому и так далі."
+
+msgctxt "Languages::abt_menu_icon_items"
+msgid "AB: Show icons for menu items of the second level"
+msgstr "AB: Показувати іконки для пунктів меню другого рівня"
+
+msgctxt "Languages::abt_menu_icon_items.tooltip"
+msgid "The active status of this setting allows the display of an icon that is assigned to a menu item of the second level menu."
+msgstr "Активний статус цього налаштування дозволяє відображення іконки, яка назначена пункту меню другого рівня меню"
+
+msgctxt "Languages::no_hidden_elements_second_level_view"
+msgid "AB: Number of visible elements of the 2-level menu"
+msgstr "AB: Кіл-ть відображених елементів 2-х рівневого меню"
+
+msgctxt "Languages::no_hidden_elements_second_level_view.tooltip"
+msgid "This setting limits the number of third-level menu items, displayed in the menu structure. The remaining elements of the third level will be displayed when clicking on the <b>More</b> link"
+msgstr "Це налаштування обмежує кількість відображених пунктів меню третього рівня в структурі меню. Елементи третього рівня, що залишилися, будуть відображені при натисканні на посилання <b>Ще</b>"
+
+msgctxt "Languages::elements_per_column_third_level_view"
+msgid "AB: Elements number per column for the mode <b>3-level menu (dropdown list)</b>"
+msgstr "AB: Кількість елементів в кожній колонці останнього рівня при застосуванні <b>Режиму 3-х рівневого меню (випадаючим списком)</b>"
+
+msgctxt "Languages::elements_per_column_third_level_view.tooltip"
+msgid "This setting limits the number of displayed third-level menu items in each of the two columns of the last level when the <b>3-level menu mode (drop-down list)</b> is turned on. The remaining menu items (exceeding the limit settings) will not be displayed in the menu. It is rational to use the setting, if there is a very large number of menu items on the third level"
+msgstr "Це налаштування обмежує кількість пунктів меню третього рівня, що відображаються, в кожній із двох колонок останнього рівня при увімкненому режимі <b>Режим 3-х рівневого меню (списком, що випадає)</b>. Пункти меню (що перевищують встановлену кількість), що залишилися, не будуть показані в меню. Налаштування раціонально застосовувати у випадку, якщо на третьому рівні дуже велика кількість підпунктів меню"
+
+msgctxt "Languages::abt_menu_ajax_load"
+msgid "AB: Use Ajax-loading for menu items (second level and behind it)"
+msgstr "AB: Використовувати Ajax-завантаження"
+
+msgctxt "Languages::abt_menu_ajax_load.tooltip"
+msgid "Use Ajax to get the content of the second and third menu levels after page loading. The content of the first level will be loaded along with the page main content"
+msgstr "Використовувати Ajax для отримання контенту другого і третього рівнів меню після завантаження сторінки. Контент першого рівня буде завантажено з основним контентом сторінки"
+
+msgctxt "Languages::abt__ut2_selected_filters"
+msgid "AB: Selected filter variants"
+msgstr "AB: Обрані варіанти фільтрів"
+
+msgctxt "Languages::abt__ut2_banner_carousel_combined"
+msgid "AB: Advanced banner (Carousel)"
+msgstr "AB: Розширений банер (Карусель)"
+
+msgctxt "Languages::abt__ut2_banner_combined"
+msgid "AB: Advanced banner"
+msgstr "AB: Розширений банер"
+
+msgctxt "Languages::abt__ut2_advanced_subcategories_menu"
+msgid "AB: Advanced subcategories menu"
+msgstr "AB: Розширене меню підкатегорій"
+
+msgctxt "Languages::block_abt__ut2_advanced_subcategories_menu"
+msgid "AB: Advanced subcategories menu"
+msgstr "AB: Розширене меню підкатегорій"
+
+msgctxt "Languages::abt__ut2__mainbox_general"
+msgid "AB: Main block (SEO)"
+msgstr "AB: Основний блок (SEO)"
+
+msgctxt "Languages::abt__ut2__mainbox_simple"
+msgid "AB: Simplified block"
+msgstr "AB: Спрощений блок"
+
+msgctxt "Languages::abt__ut2__sidebox_general"
+msgid "AB: Secondary block"
+msgstr "AB: Другорядний блок"
+
+msgctxt "Languages::abt__ut2__sidebox_important"
+msgid "AB: Secondary framed block"
+msgstr "AB: Другорядний блок з обрамуванням"
+
+msgctxt "Languages::abt__ut2__swipe"
+msgid "AB: Swipe block"
+msgstr "AB: Свайп блок"
+
+msgctxt "Languages::abt__ut2__scroller_advanced"
+msgid "AB: Scroller advanced"
+msgstr "AB: Розширений скролер товарів"
+
+msgctxt "Languages::tmpl_abt__ut2__my_account_links_advanced"
+msgid "AB: My account (advanced)"
+msgstr "AB: Мій профіль (додатково)"
+
+msgctxt "Languages::tmpl_abt__ut2__subscribe_advanced"
+msgid "AB: Subscription form"
+msgstr "AB: Форма підписки"
+
+msgctxt "Languages::tmpl_abt__ut2__top_buttons"
+msgid "AB: Top buttons"
+msgstr "AB: Верхні кнопки"
+
+msgctxt "Languages::tmpl_abt__ut2__top_buttons.compare_list.tooltip"
+msgid "View Comparison list"
+msgstr "Переглянути Список порівняння"
+
+msgctxt "Languages::tmpl_abt__ut2__recent_posts_advanced"
+msgid "AB: Blog: Recent posts"
+msgstr "AB: Блог: Останні пости"
+
+msgctxt "Languages::tmpl_abt__ut2__top_buttons"
+msgid "AB: Buttons Compare and Wishlist"
+msgstr "AB: Кнопки Порівняння і Обрані"
+
+msgctxt "Languages::tmpl_abt__ut2__title_block"
+msgid "AB: Block: Title"
+msgstr "АВ: Блок: Заголовок"
+
+msgctxt "Languages::tmpl_abt__ut2__categories_title_block"
+msgid "AB: Block: Category title"
+msgstr "AB: Блок: Заголовок категорії"
+
+msgctxt "Languages::tmpl_abt__ut2__features_title_block"
+msgid "AB: Block: Feature title"
+msgstr "AB: Блок: Заголовок характеристики"
+
+msgctxt "Languages::tmpl_abt__ut2__subscription"
+msgid "AB: Newsletters: Subscription form"
+msgstr "AB: Поштові розсилки: Форма підписки"
+
+msgctxt "Languages::abt__ut2_view_more_btn_behavior"
+msgid "AB: Behaviour for the \"More\" button"
+msgstr "AB: Поведінка для кнопки \"Ще\""
+
+msgctxt "Languages::abt__ut2_view_more_btn_behavior_view_items"
+msgid "Show hidden items"
+msgstr "Відобразити приховані елементи"
+
+msgctxt "Languages::abt__ut2_view_more_btn_behavior_trigger_parent_link"
+msgid "Go to the parent menu item link"
+msgstr "Перейти за посиланням батьківського елементу меню"
+
+msgctxt "Languages::abt__ut2_view_more_btn_behavior.tooltip"
+msgid "The setting determines the behavior variants of the button and will display the hidden menu elements when hover the mouse cursor or it will transfer to the parent menu item"
+msgstr "Налаштування визначає варіанти поведінки кнопки або відобразить приховані елементи меню при наведені або буде перехід на батьківський пункт меню"
+
+msgctxt "Languages::abt__ut2_three_columns_template"
+msgid "AB: Three-columned"
+msgstr "AB: В три колонки"
+
+msgctxt "Languages::abt__ut2_btn_filters_collapse"
+msgid "Collapse"
+msgstr "Згорнути"
+
+msgctxt "Languages::abt__ut2_filling_type"
+msgid "AB: Filling type"
+msgstr "AB: Спосіб заповнення"
+
+msgctxt "Languages::abt__ut2.menu.filling_variants.column_filling"
+msgid "Column filling"
+msgstr "Заповнення колонками"
+
+msgctxt "Languages::abt__ut2.menu.filling_variants.row_filling"
+msgid "Row filling"
+msgstr "Заповнення рядками"
+
+msgctxt "Languages::abt__ut2_columns_count"
+msgid "AB: Maximum columns count in the row"
+msgstr "AB: Максимальна кількість колонок у рядку"
+
+msgctxt "Languages::abt__ut2_columns_count.2"
+msgid "2"
+msgstr "2"
+
+msgctxt "Languages::abt__ut2_columns_count.3"
+msgid "3"
+msgstr "3"
+
+msgctxt "Languages::abt__ut2_columns_count.4"
+msgid "4"
+msgstr "4"
+
+msgctxt "Languages::abt__ut2_columns_count.5"
+msgid "5"
+msgstr "5"
+
+msgctxt "Languages::abt__ut2_columns_count.6"
+msgid "6"
+msgstr "6"
+
+msgctxt "Languages::banner_type.abt__ut2"
+msgid "AB: UniTheme2: Advanced banner"
+msgstr "AB: UniTheme2: Розширений банер"
+
+msgctxt "Languages::abt__ut2.banners"
+msgid "Banners"
+msgstr "Банери"
+
+msgctxt "Languages::abt__ut2.banner_tab.general"
+msgid "General (AB: UniTheme2: Desktop)"
+msgstr "Загальні (AB: UniTheme2: ПК)"
+
+msgctxt "Languages::abt__ut2.banner_tab.tablet"
+msgid "AB: UniTheme2: Tablet"
+msgstr "AB: UniTheme2: Планшет"
+
+msgctxt "Languages::abt__ut2.banner_tab.mobile"
+msgid "AB: UniTheme2: Phone"
+msgstr "AB: UniTheme2: Смартфон"
+
+msgctxt "Languages::abt__ut2.banner.use_own_info"
+msgid "Use own value"
+msgstr "Використати власне значення"
+
+msgctxt "Languages::abt__ut2.banner.warning"
+msgid "Expert banner settings"
+msgstr "Експертні налаштування банера"
+
+msgctxt "Languages::abt__ut2.banners.manage"
+msgid "AB: UniTheme2: Advanced banners"
+msgstr "AB: UniTheme2: Розширені банери"
+
+msgctxt "Languages::abt__ut2.option.margin"
+msgid "Margin, px"
+msgstr "Зовнішній відступ, рх"
+
+msgctxt "Languages::abt__ut2.option.height"
+msgid "Height, px"
+msgstr "Висота, рх"
+
+msgctxt "Languages::abt__ut2.option.disable_first_banner_lazy_load"
+msgid "Disable Lazy Load for the first banner"
+msgstr "Вимкнути Lazy Load для першого банера"
+
+msgctxt "Languages::abt__ut2.banner.params.tablet_use"
+msgid "Use own settings for Tablets"
+msgstr "Застосувати власні налаштування для Планшетів"
+
+msgctxt "Languages::abt__ut2.banner.params.tablet_use.tooltip"
+msgid "Use this option to allow own banner settings for the mobile device Tablet"
+msgstr "Застосовуйте це налаштування, щоб дозволити редагування налаштувань банера для мобільного пристрою Планшет"
+
+msgctxt "Languages::abt__ut2.banner.params.mobile_use"
+msgid "Use own settings for Phones"
+msgstr "Застосувати власні налаштування для Смартфонів"
+
+msgctxt "Languages::abt__ut2.banner.params.mobile_use.tooltip"
+msgid "Use this option to allow own banner settings for the mobile device Phone"
+msgstr "Застосовуйте це налаштування, щоб дозволити редагування налаштувань банера для мобільного пристрою Смартфон"
+
+msgctxt "Languages::abt__ut2.banner.params_of_block"
+msgid "Banner block settings"
+msgstr "Налаштування блоку банера"
+
+msgctxt "Languages::abt__ut2.banner.params.color_scheme"
+msgid "Color scheme "
+msgstr "Схема кольорів"
+
+msgctxt "Languages::abt__ut2.banner.params.color_scheme.tooltip"
+msgid "Specifies what color will be <b>Title</b> and <b>Description</b> on the banner. For <b>Dark</b> banner texts will be white, for <b>Light</b> — black."
+msgstr "Визначає якого кольору буде <b>Заголовок</b> і <b>Опис</b> банера. Для <b>Темного фону</b> колір текстів у банері буде білим, для b>Світлого фону</b> банера — чорним"
+
+msgctxt "Languages::abt__ut2.banner.params.color_scheme.variants.dark"
+msgid "Dark"
+msgstr "Темний фон"
+
+msgctxt "Languages::abt__ut2.banner.params.color_scheme.variants.light"
+msgid "Light"
+msgstr "Світлий фон"
+
+msgctxt "Languages::abt__ut2.banner.params.content_valign"
+msgid "Vertical alignment"
+msgstr "Вертикальне вирівнювання"
+
+msgctxt "Languages::abt__ut2.banner.params.content_valign.tooltip"
+msgid "Location of the content inside the banner by the vertical"
+msgstr "Розташування контенту всередині банера по вертикалі"
+
+msgctxt "Languages::abt__ut2.banner.params.content_valign.variants.top"
+msgid "On the top"
+msgstr "По верхньому краю"
+
+msgctxt "Languages::abt__ut2.banner.params.content_valign.variants.center"
+msgid "On the center"
+msgstr "По центру"
+
+msgctxt "Languages::abt__ut2.banner.params.content_valign.variants.bottom"
+msgid "At the bottom"
+msgstr "По нижньому краю"
+
+msgctxt "Languages::abt__ut2.banner.params.content_align"
+msgid "Horizontal alignment"
+msgstr "Горизонтальне вирівнювання"
+
+msgctxt "Languages::abt__ut2.banner.params.content_align.tooltip"
+msgid "Location of the content inside the banner by the horizontal"
+msgstr "Розташування контенту всередині банера по горизонталі"
+
+msgctxt "Languages::abt__ut2.banner.params.content_align.variants.left"
+msgid "On the left"
+msgstr "По лівому краю"
+
+msgctxt "Languages::abt__ut2.banner.params.content_align.variants.center"
+msgid "On the center"
+msgstr "По центру"
+
+msgctxt "Languages::abt__ut2.banner.params.content_align.variants.right"
+msgid "On the right"
+msgstr "По правому краю"
+
+msgctxt "Languages::abt__ut2.banner.params.padding"
+msgid "Internal paddings, px"
+msgstr "Внутрішній відступ, рх"
+
+msgctxt "Languages::abt__ut2.banner.params.padding.tooltip"
+msgid "CSS <code>padding</code>. Spacing in pixels inside the banner. It is useful, to standardize the paddings of banner borders to the content"
+msgstr "CSS <code>padding</code>. Відступи в пікселях всередині банера. Корисно, щоб стандартувати відступи від границь банера до контенту"
+
+msgctxt "Languages::abt__ut2.banner.params.content_full_width"
+msgid "Content on full width"
+msgstr "Контент на всю ширину"
+
+msgctxt "Languages::abt__ut2.banner.params.content_full_width.tooltip"
+msgid "The width of the content block has a default width of 50%. Set this parameter and the width of the block content will be 100%"
+msgstr "Ширина блоку з контентом має за замовчуванням ширину 50% банера. Активуючи налаштування, ширина блоку з контентом буде 100%"
+
+msgctxt "Languages::abt__ut2.banner.color_use"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params_of_title"
+msgid "Banner title settings"
+msgstr "Налаштування заголовка банера"
+
+msgctxt "Languages::abt__ut2.banner.params.title"
+msgid "Title"
+msgstr "Заголовок"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_size"
+msgid "Font size"
+msgstr "Розмір шрифту"
+
+msgctxt "Languages::abt__ut2.banner.params.title_color"
+msgid "Title color"
+msgstr "Колір заголовку"
+
+msgctxt "Languages::abt__ut2.banner.params.title_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_weight"
+msgid "Weight of the font"
+msgstr "Насиченість шрифту"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_weight.variants.300"
+msgid "Thin"
+msgstr "Тонкий"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_weight.variants.400"
+msgid "Normal"
+msgstr "Нормальний"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_weight.variants.700"
+msgid "Bold"
+msgstr "Повний"
+
+msgctxt "Languages::abt__ut2.banner.params.title_font_weight.variants.900"
+msgid "Heavy"
+msgstr "Жирний"
+
+msgctxt "Languages::abt__ut2.banner.params.title_tag"
+msgid "Title tag"
+msgstr "Тег (html) для заголовка"
+
+msgctxt "Languages::abt__ut2.banner.params.title_tag.variants.div"
+msgid "div"
+msgstr "div"
+
+msgctxt "Languages::abt__ut2.banner.params.title_tag.variants.h1"
+msgid "h1"
+msgstr "h1"
+
+msgctxt "Languages::abt__ut2.banner.params.title_tag.variants.h2"
+msgid "h2"
+msgstr "h2"
+
+msgctxt "Languages::abt__ut2.banner.params.title_tag.variants.h3"
+msgid "h3"
+msgstr "h3"
+
+msgctxt "Languages::abt__ut2.banner.params.title_shadow"
+msgid "Add a shadow for the title"
+msgstr "Додати тінь від заголовку"
+
+msgctxt "Languages::abt__ut2.banner.params_of_description"
+msgid "Banner description settings"
+msgstr "Налаштування опису банера"
+
+msgctxt "Languages::abt__ut2.banner.params.description"
+msgid "Short description"
+msgstr "Короткий опис"
+
+msgctxt "Languages::abt__ut2.banner.params.description_color"
+msgid "Description color"
+msgstr "Колір опису"
+
+msgctxt "Languages::abt__ut2.banner.params.description_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params.description_font_size"
+msgid "Font size"
+msgstr "Розмір шрифту"
+
+msgctxt "Languages::abt__ut2.banner.params.description_bg_color"
+msgid "Background color"
+msgstr "Фоновий колір"
+
+msgctxt "Languages::abt__ut2.banner.params.description_bg_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params_of_object"
+msgid "Banner settings for the object/image"
+msgstr "Налаштування об'єкту/зображення банера"
+
+msgctxt "Languages::abt__ut2.banner.params.object"
+msgid "The displayed object"
+msgstr "Відображуваний об'єкт"
+
+msgctxt "Languages::abt__ut2.banner.params.object.variants.image"
+msgid "Image"
+msgstr "Зображення"
+
+msgctxt "Languages::abt__ut2.banner.params.object.variants.video"
+msgid "YouTube video"
+msgstr "YouTube відео"
+
+msgctxt "Languages::abt__ut2.banner.params.main_image"
+msgid "Main image"
+msgstr "Основне зображення"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_use"
+msgid "Add YouTube video"
+msgstr "Додати YouTube відео"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_id"
+msgid "YouTube video ID"
+msgstr "ID YouTube відео"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_id.tooltip"
+msgid "ID video — https://www.youtube.com/watch?v=<b>abcd1234567</b>, specify only <b>abcd1234567</b>"
+msgstr "Ідентифікатор відео: — https://www.youtube.com/watch?v=<b>abcd1234567</b>, вкажіть тільки <b>abcd1234567</b>"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_autoplay"
+msgid "Autoplay"
+msgstr "Автоматичне відтворення"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_autoplay.tooltip"
+msgid "Due to changes in <b>Google's</b> policy, autoplay will only be available without sound. For more information, see <a href='https://developers.google.com/web/updates/2017/09/autoplay-policy-changes' target='_blank'>documentation</a>. <b>Google</b> strongly recommends that the player's control panel should be displayed on autoplay."
+msgstr "У зв'язку зі змінами політики <b>Google</b>, автоматичне відтворення буде доступно лише без звуку. Докладніше дивіться <a href='https://developers.google.com/web/updates/2017/09/autoplay-policy-changes' target='_blank'>документацію</a>. <b>Google</b> настійно рекомендує при автоматичному відтворенні відображати панель керування плеєра"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_hide_controls"
+msgid "Hide player control elements"
+msgstr "Приховати елементи керування плеєра"
+
+msgctxt "Languages::abt__ut2.banner.params.youtube_hide_controls.tooltip"
+msgid "Don't ever assume a video will play, and don't show a pause button when the video is not actually playing"
+msgstr "Google настійно рекомендує при автоматичному відтворенні відображати панель керування плеєра"
+
+msgctxt "Languages::abt__ut2.banner.params.background_image"
+msgid "Background image"
+msgstr "Фонове зображення"
+
+msgctxt "Languages::abt__ut2.banner.params.background_image_size"
+msgid "Specify the size of a background image"
+msgstr "Масштабування фонового зображення"
+
+msgctxt "Languages::abt__ut2.banner.params.background_image_size.tooltip"
+msgid ""
+msgstr ""
+
+msgctxt "Languages::abt__ut2.banner.params.background_image_size.variants.cover"
+msgid "Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges"
+msgstr "Із збереженням пропорцій, щоб його ширина або висота дорівнювали ширині або висоті блока"
+
+msgctxt "Languages::abt__ut2.banner.params.background_image_size.variants.contain"
+msgid "Resize the background image to make sure the image is fully visible"
+msgstr "Із збереженням пропорцій, щоб картинки повністю вміщувались всередині блока"
+
+msgctxt "Languages::abt__ut2.banner.params.background_color"
+msgid "Background color"
+msgstr "Фоновий колір"
+
+msgctxt "Languages::abt__ut2.banner.params.background_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params_of_content"
+msgid "Settings for the content, shown in the banner"
+msgstr "Налаштування контенту банера, що відображається"
+
+msgctxt "Languages::abt__ut2.banner.params.data_type"
+msgid "Content type"
+msgstr "Тип контенту"
+
+msgctxt "Languages::abt__ut2.banner.params.data_type.variants.url"
+msgid "Link"
+msgstr "Посилання"
+
+msgctxt "Languages::abt__ut2.banner.params.url"
+msgid "Specify link"
+msgstr "Вкажіть URL"
+
+msgctxt "Languages::abt__ut2.banner.params_of_button"
+msgid "Banner button settings"
+msgstr "Налаштування кнопки банера"
+
+msgctxt "Languages::abt__ut2.banner.params.button_use"
+msgid "Add button"
+msgstr "Додати кнопку"
+
+msgctxt "Languages::abt__ut2.banner.params.button_use.tooltip"
+msgid "Select a checkbox for adding of the button. <b>Important!</b>The button will appear only in the presence of the link in the field \"Specify link\""
+msgstr "Активуйте налаштування для додання кнопки. <b>Важно!</b> Кнопка з'явиться лише при наявності посилання в полі \"Вкажіть URL\""
+
+msgctxt "Languages::abt__ut2.banner.params.button_text"
+msgid "Text (an appeal to action)"
+msgstr "Текст (заклик до дії)"
+
+msgctxt "Languages::abt__ut2.banner.params.button_text_color"
+msgid "Text color"
+msgstr "Колір тексту"
+
+msgctxt "Languages::abt__ut2.banner.params.button_text_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params.button_color"
+msgid "Button color"
+msgstr "Колір кнопки"
+
+msgctxt "Languages::abt__ut2.banner.params.button_color.tooltip"
+msgid "Please select the checkbox to use a new color"
+msgstr "Активуйте налаштування, щоб застосувати новий колір"
+
+msgctxt "Languages::abt__ut2.banner.params_additional"
+msgid "Additional settings"
+msgstr "Додаткові налаштування банера"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg"
+msgid "Add mask"
+msgstr "Додати маску"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg.tooltip"
+msgid "Under the description will appear semitransparent background (the color depends on the color scheme), it will provide a better readability of text on motley background"
+msgstr "Під описом з'явиться напівпрозорий фон (колір залежить від схеми), який забезпечить кращу читабельність тексту на пістрявому фоні."
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg.variants.none"
+msgid "None"
+msgstr "Не застосовувати"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg.variants.transparent"
+msgid "Semitransparent"
+msgstr "Напівпрозорий"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg.variants.colored"
+msgid "Color"
+msgstr "Кольорову"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_position"
+msgid "Mask position"
+msgstr "Позиція маски"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_position.tooltip"
+msgid "Defines the coverage area of the mask, entire banner, or just the content area (title, description, button)"
+msgstr "Визначає область покриття маски, всього банеру або лише боласті вмісту (заголовок, опис, кнопка)"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_position.variants.whole_banner"
+msgid "Entire banner"
+msgstr "На увесь банер"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_position.variants.only_under_content"
+msgid "Under content only"
+msgstr "Тільки під контентом"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_color"
+msgid "Color of a mask"
+msgstr "Колір маски"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_color.tooltip"
+msgid "A colored background will appear under the description. It will provide better readability of the text against a motley background. When used, turns off the use of a semitransparent mask"
+msgstr "Під описом з'явиться кольоровий фон, який забезпечить краще читання тексту на пістрявому фоні. Під час використання вилучає застосування напівпрозорої маски"
+
+msgctxt "Languages::abt__ut2.banner.params.content_bg_opacity"
+msgid "Transparency level of a mask"
+msgstr "Рівень прозорості маски"
+
+msgctxt "Languages::abt__ut2.banner.params.how_to_open"
+msgid "How to open"
+msgstr "Спосіб відкриття"
+
+msgctxt "Languages::abt__ut2.banner.params.how_to_open.variants.in_new_window"
+msgid "In a new window"
+msgstr "У новому вікні"
+
+msgctxt "Languages::abt__ut2.banner.params.how_to_open.variants.in_popup"
+msgid "In a popup"
+msgstr "У спливаючому вікні"
+
+msgctxt "Languages::abt__ut2.banner.params.how_to_open.variants.in_this_window"
+msgid "In this window"
+msgstr "В поточному вікні"
+
+msgctxt "Languages::abt__ut2.banner.params.use_avail_period"
+msgid "Use available period"
+msgstr "Задати період дії"
+
+msgctxt "Languages::abt__ut2.banner.params.avail_from"
+msgid "Available from"
+msgstr "Період дії з"
+
+msgctxt "Languages::abt__ut2.banner.params.avail_till"
+msgid "Available till"
+msgstr "Період дії до"
+
+msgctxt "Languages::abt__ut2.banner.params.class"
+msgid "User CSS-class"
+msgstr "CSS-клас користувача"
+
+msgctxt "Languages::abt__ut2.sort_by_null_asc"
+msgid "Without sorting"
+msgstr "Без сортування"
+
+msgctxt "Languages::abt__ut2.sort_by_timestamp_asc"
+msgid "Oldest Items First"
+msgstr "Новинки нижче"
+
+msgctxt "Languages::abt__ut2.sort_by_timestamp_desc"
+msgid "Newest Items First"
+msgstr "Новинки вище"
+
+msgctxt "Languages::abt__ut2.sort_by_position_asc"
+msgid "Position: Low to High"
+msgstr "Низькі позиції вище"
+
+msgctxt "Languages::abt__ut2.sort_by_position_desc"
+msgid "Position: High to Low"
+msgstr "Низькі позиції вище"
+
+msgctxt "Languages::abt__ut2.sort_by_product_asc"
+msgid "from A to Z"
+msgstr "Від А до Я"
+
+msgctxt "Languages::abt__ut2.sort_by_product_desc"
+msgid "from Z to A"
+msgstr "Від Я до А"
+
+msgctxt "Languages::abt__ut2.sort_by_price_asc"
+msgid "Price: Low to High"
+msgstr "Дешеві вище"
+
+msgctxt "Languages::abt__ut2.sort_by_price_desc"
+msgid "Price: High to Low"
+msgstr "Дорогі вище"
+
+msgctxt "Languages::abt__ut2.sort_by_popularity_asc"
+msgid "Popularity: Low to High"
+msgstr "Менш популярні вище"
+
+msgctxt "Languages::abt__ut2.sort_by_popularity_desc"
+msgid "Popular First"
+msgstr "Популярні вище"
+
+msgctxt "Languages::abt__ut2.sort_by_bestsellers_asc"
+msgid "Bestselling: Low to High"
+msgstr "На початку, що купуються найменше"
+
+msgctxt "Languages::abt__ut2.sort_by_bestsellers_desc"
+msgid "Bestselling First"
+msgstr "Хіти продажу"
+
+msgctxt "Languages::abt__ut2.sort_by_on_sale_asc"
+msgid "Discount: Low to High"
+msgstr "Високі знижки в кінці"
+
+msgctxt "Languages::abt__ut2.sort_by_on_sale_desc"
+msgid "Discount: High to Low"
+msgstr "Високі знижки на початку"
+
+msgctxt "Languages::abt__ut2.load_more_products.already_showing_all_products"
+msgid "Showing [n] product|Showing all [n] products"
+msgstr "Показано [n] товар|Показані всі [n] товари|Показані всі [n] товарів"
+
+msgctxt "Languages::abt__ut2.load_more_products.show_more"
+msgid "Show another [n] product|Show another [n] products"
+msgstr "Показати ще [n] товар|Показати ще [n] товари|Показати ще [n] товарів"
+
+msgctxt "Languages::abt__ut2.add_to_cart"
+msgid "Buy now"
+msgstr "Купити"
+
+msgctxt "Languages::abt__ut2.menu.tab_description"
+msgid "The following settings should be used only for menu items, that use extra templates in the menu block layout: <b>AB: Horizontal dropdown list with icons</b> or <b>AB: Vertical dropdown list with icons</b> of the UniTheme2 theme"
+msgstr "Наведені нижче налаштування варто застосовувати тільки для пунктів меню, які в макеті для блоку меню використовують екстра шаблони <b>AB: Горизонтальний випадаючий список з іконками</b> або <b>AB: Вертикальний випадаючий список з іконками </b> теми AB: UniTheme2"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.status"
+msgid "Activate settings"
+msgstr "Активувати налаштування"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.icon"
+msgid "Icon"
+msgstr "Іконка"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.icon"
+msgid "Icon for menu item (max size for icons:<br> — for the first level items 32x32px / for HiDPI 64x64px). If you don't use <b>Short description</b> for the first level menu items, then max size will be 24x24px / for HiDPI 48x48px<br> — for the second level items max icons width 100px / for HiDPI 200px)"
+msgstr "Іконка пункту меню (максимальний розмір іконок:<br> — для пунктів першого рівня 32x32px / для HiDPI 64x64px). Якщо Ви не використовуєте <b>Короткий опис</b> для пунктів меню першого рівня, то слід використовувати максимальний розмір 24x24px / для HiDPI 48x48px<br> — для пунктів другого рівня максимальна ширина іконок 100px / для HiDPI 200px)"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.desc"
+msgid "Short description"
+msgstr "Короткий опис"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.desc"
+msgid "Short description for menu item (it is shown this field only for first-level items after menu item name)"
+msgstr "Короткий опис пункту меню (показується лише для пунктів першого рівня нижче назви пункту меню)"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.dropdown"
+msgid "Activate 3-level menu (dropdown list)"
+msgstr "Режим 3-х рівневого меню (списком, що випадає)"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.dropdown"
+msgid "Show children menu items with dropdown list (only for <b>AB: Vertical dropdown list with icons</b> for the first-level items). It is rational to use this mode for those first level menu items, that have a large number of elements (subitems) on the third nesting level"
+msgstr "Активувати режим 3-х рівневого меню (списком, що випадає) (використовується лише для шаблону <b>AB: Вертикальний список, що випадає з іконками </b>для пунктів першого рівня). Раціонально задіяти цей режим для тих пунктів меню першого рівня, які мають на третьому рівні вкладеності велику кількість елементів (підпунктів)"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.text"
+msgid "HTML-content"
+msgstr "HTML-контент"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.text"
+msgid "HTML-content shown in this menu item (only for the first-level items). Used to show banner in mega menu (or any another content)"
+msgstr "HTML-контент, що відображається в цьому пункті меню (лише для пунктів першого рівня). Застосовується для відображення банера в мега меню (або будь-якого іншого контенту)"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.text_position"
+msgid "HTML-content position"
+msgstr "Положення HTML-контенту"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.text_position"
+msgid "Position of HTML-content, that will be shown in this menu item (only for the first-level items)"
+msgstr "Положення HTML-контенту, що відображається в цьому пункті меню (лише для пунктів першого рівня)"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.text_position.bottom"
+msgid "Bottom"
+msgstr "Знизу"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.text_position.right_bottom"
+msgid "Right bottom"
+msgstr "Справа знизу"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.text_position.right_top"
+msgid "Right top"
+msgstr "Справа зверху"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.label"
+msgid "Label"
+msgstr "Маркер"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.label"
+msgid "Label for menu item (ability to mark with labels, important menu items (promotion, new, total sales, etc. optional))"
+msgstr "Маркер пункту меню (можливість позначати лейблами важливі пункти меню (акція, новинка, тотальний розпродаж тощо, по бажанню))"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.label_color"
+msgid "Label color"
+msgstr "Колір маркеру"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.label_color"
+msgid "Label color for menu item"
+msgstr "Колір маркеру пункту меню"
+
+msgctxt "Languages::abt__ut2.menu_with_icons.label_background"
+msgid "Label background"
+msgstr "Фон маркера"
+
+msgctxt "Languages::ttc_abt__ut2.menu_with_icons.label_background"
+msgid "Label background for menu item"
+msgstr "Фон маркера пункту меню"
+
+msgctxt "Languages::abt__ut2.settings"
+msgid "Theme settings"
+msgstr "Налаштування теми"
+
+msgctxt "Languages::abt__ut2.settings.name"
+msgid "Name"
+msgstr "Назва"
+
+msgctxt "Languages::abt__ut2.settings.value"
+msgid "Value for all devices"
+msgstr "Значення для всіх пристроїв"
+
+msgctxt "Languages::abt__ut2.settings.value.desktop"
+msgid "Value for Desktop"
+msgstr "Значення для ПК"
+
+msgctxt "Languages::abt__ut2.settings.value.tablet"
+msgid "Value for Tablet"
+msgstr "Значення для Планшет"
+
+msgctxt "Languages::abt__ut2.settings.value.mobile"
+msgid "Value for Phone"
+msgstr "Значення для Смартфон"
+
+msgctxt "Languages::abt__ut2.settings.deprecated"
+msgid "This setting is outdated and will be removed in a short time"
+msgstr "Це налаштування устаріло і найближчим часом буде вирізане"
+
+msgctxt "Languages::abt__ut2.settings.general"
+msgid "General"
+msgstr "Загальні"
+
+msgctxt "Languages::abt__ut2.settings.general_description"
+msgid "Here are the general theme settings, they affect the appearance and store functionality"
+msgstr "Тут наведені загальні налаштування теми, що впливають на зовнішній вигляд і функціонал магазину"
+
+msgctxt "Languages::abt__ut2.settings.general.brand_feature_id"
+msgid "Brand feature ID"
+msgstr "ID характеристики бренду"
+
+msgctxt "Languages::abt__ut2.settings.general.brand_feature_id.tooltip"
+msgid "Specify brand Feature ID (Purpose: Brand, author, etc.). Feature ID is located next to the feature name in the features list (Products → Features in the store administrative panel).The parameter \"Show in product list\" must be checked/ticked for specified feature"
+msgstr "Зазначте Feature ID характеристики типу \"Бренд, автор тощо\". ID характеристики зазначається поряд з назвою характеристики у списку характеристик (Товари → Характеристики в адміністративній панелі магазину). Обов'язково для зазначеної характеристики має бути встановлено параметр \"Показувати у списку товарів\""
+
+msgctxt "Languages::abt__ut2.settings.general.blog_page_id"
+msgid "Blog main page ID"
+msgstr "ID головної сторінки блогу"
+
+msgctxt "Languages::abt__ut2.settings.general.blog_page_id.tooltip"
+msgid "Specify this setting to display the link \"All pages\" in the block \"Actual news\" (see Website → Blog)"
+msgstr "Зазначте це налаштування, щоб вивести посилання \"Усі сторінки\" в блоці \"Актуальні новини\" (див. Веб-сайт → Блог)"
+
+msgctxt "Languages::abt__ut2.settings.general.blog_page_id.button"
+msgid "All blog articles"
+msgstr "Усі статті блогу"
+
+msgctxt "Languages::abt__ut2.settings.general.menu_min_height"
+msgid "AB: Minimum height for the menu, px"
+msgstr "AB: Мінімальна висота для меню, px"
+
+msgctxt "Languages::abt__ut2.settings.general.menu_min_height.tooltip"
+msgid "The minimum height for the menu block with items of the second level. It is used to make the match of the height for left and right parts of menu (well described in the theme documentation)"
+msgstr "Мінімальна висота для блоку меню з пунктами другого рівня. Використовується для припасування відповідності висоти лівої и правої частин меню (детально описано в документації теми)"
+
+msgctxt "Languages::abt__ut2.settings.general.enable_fixed_header_panel"
+msgid "Enable sticky menu"
+msgstr "Увімкнути липке меню"
+
+msgctxt "Languages::abt__ut2.settings.general.enable_fixed_header_panel.tooltip"
+msgid "Allows you to display a fixed panel with elements of the header. The main elements of the store header will be visible even, when scrolling"
+msgstr "Дозволяє відображати зверху фіксовану панель з елементами шапки магазину. Основні елементи шапки будуть видимі навіть при скролінгу"
+
+msgctxt "Languages::abt__ut2.settings.general.lazy_load"
+msgid "Use images lazy load"
+msgstr "Застосувати відкладене завантаження зображень"
+
+msgctxt "Languages::abt__ut2.settings.general.lazy_load.tooltip"
+msgid "Speeds up the category page loading due to the fact, that images are loaded after the page is already loaded, images will be loaded only by users screen demand. Not compatible with activated option of setting \"Show product mini icons gallery in the product list\""
+msgstr "Прискорює завантаження сторінки категорії за рахунок того, що зображення завантажуються після завантаження сторінки, а також по мірі їх відображення на екрані користувача. Не сумісний з активованою опцією налаштувань \"Показувати галерею міні-іконок у списку товарів\""
+
+msgctxt "Languages::abt__ut2.settings.general.check_clone_theme"
+msgid "Check the usage of cloned themes"
+msgstr "Перевіряти використання скопійованих тем"
+
+msgctxt "Languages::abt__ut2.settings.general.check_clone_theme.tooltip"
+msgid "All cloned themes from original theme AB: UniTheme2 couldn't be updated through \"Upgrade center\"! For more information see <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-3141\">the documentation</a>."
+msgstr "Усі скопійовані теми від оригінальної теми AB: UniTheme2 не можуть оновлюватись через \"Центр оновлень\"! Докладніше дивіться <a target='_blank' href='https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc#p-3141'>документацію</a>."
+
+msgctxt "Languages::abt__ut2.settings.general.price_format"
+msgid "Price format"
+msgstr "Формат ціни"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.tooltip"
+msgid "Set appearance for product price on the storefront"
+msgstr "Задає зовнішній вигляд ціни товару на вітрині"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.default"
+msgid "Default"
+msgstr "За замовчуванням"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.default.tooltip"
+msgid "No additional formating of the price shall be done"
+msgstr "Додаткове форматування ціни відбуватись не буде"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.superscript_decimals"
+msgid "Decimal value at the top index"
+msgstr "Дробове значення в верхньому індексі"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.superscript_decimals.tooltip"
+msgid "Decimal value of the price will be displayed at the top index. Currency setting 'Decimal delimiter' will be ignored"
+msgstr "Дробове значення ціни буде відображатись в верхньому індексі. Налаштування валюти 'Дробовий роздільник' буде проігнороване"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.subscript_decimals"
+msgid "Decimal value at the lower index"
+msgstr "Дробове значення в нижньому індексі"
+
+msgctxt "Languages::abt__ut2.settings.general.price_format.variants.subscript_decimals.tooltip"
+msgid "Decimal value of the price will be displayed at the lower index. Currency setting 'Decimal delimiter' will be ignored"
+msgstr "Дробове значення ціни буде відображатись в нижньому індексі. Налаштування валюти 'Дробовий роздільник' буде проігнороване"
+
+msgctxt "Languages::abt__ut2.settings.general.push_history_on_popups"
+msgid "Close pop-up window with the browser button \"Back\""
+msgstr "Закривати спливаюче вікно кнопкою \"Назад\" браузера"
+
+msgctxt "Languages::abt__ut2.settings.general.push_history_on_popups.tooltip"
+msgid "When a pop-up window is opened, clicking \"Back\" button in the browser will close the window instead of transfering back"
+msgstr "При відкритому спливаючому вікні, натискання кнопки \"Назад\" браузера буде лише закривати вікно, не здійснюючи переходу назад"
+
+msgctxt "Languages::abt__ut2.settings.category"
+msgid "Category"
+msgstr "Категорія"
+
+msgctxt "Languages::abt__ut2.settings.category_description"
+msgid "Here are the theme settings for Categories pages"
+msgstr "Тут наведені налаштування для сторінок Категорій"
+
+msgctxt "Languages::abt__ut2.settings.category.show_subcategories"
+msgid "Show subcategories on category pages"
+msgstr "Відображати підкатегорії в категоріях"
+
+msgctxt "Languages::abt__ut2.settings.category.show_subcategories.tooltip"
+msgid "Allows subcategories to be displayed in categories"
+msgstr "Дозволяє відображення підкатегорій в категоріях"
+
+msgctxt "Languages::abt__ut2.settings.category.preload_images"
+msgid "Preload first images"
+msgstr "Попередньо завантажувати перші зображення"
+
+msgctxt "Languages::abt__ut2.settings.category.preload_images.tooltip"
+msgid "Disables Lazy Load for several first images and adds tags <code>&#60;link rel=\"preload\"></code> for them. Use to increase performance of PageSpeed Insights"
+msgstr "Вимикає Lazy load для декількох перших зображень і додає для них теги <code>&#60;link rel=\"preload\"></code>. Використовуйте для підвищення показника PageSpeed Insights"
+
+msgctxt "Languages::abt__ut2.settings.category.description_position"
+msgid "Display category description"
+msgstr "Відображати опис категорії"
+
+msgctxt "Languages::abt__ut2.settings.category.description_position.tooltip"
+msgid "Determines how the category description is displayed (nevertheless, regardless of the place of display, the Description field will be displayed in the code always above the product block, this is one of the recommendations of SEO audits)"
+msgstr "Визначає спосіб відображення опису категорії (при цьому незалежно від місця відображення поля Опис буде відображатись в коді завжди вище товарного блоку, це одна із рекомендацій SEO аудитів)"
+
+msgctxt "Languages::abt__ut2.settings.category.description_position.variants.bottom"
+msgid "After products"
+msgstr "Нижче товарного блоку"
+
+msgctxt "Languages::abt__ut2.settings.category.description_position.variants.top"
+msgid "Before products"
+msgstr "Вище товарного блоку"
+
+msgctxt "Languages::abt__ut2.settings.category.description_position.variants.none"
+msgid "Don't display"
+msgstr "Не відображати"
+
+msgctxt "Languages::abt__ut2.settings.category.use_swipe_to_close_filters"
+msgid "Close filters and categories with \"swipe\""
+msgstr "Закривати фільтри і категорії \"свайпом\""
+
+msgctxt "Languages::abt__ut2.settings.category.use_swipe_to_close_filters.tooltip"
+msgid "Close filters and categories with \"swipe\""
+msgstr "Закривати фільтри і категорії \"свайпом\""
+
+msgctxt "Languages::abt__ut2.settings.features"
+msgid "Features"
+msgstr "Характеристики"
+
+msgctxt "Languages::abt__ut2.settings.features_description"
+msgid "Here are the settings for the Features pages (Purpose: Brand, author, etc.)"
+msgstr "Тут наведені налаштування для сторінок Характеристики типу \"Бренд, автор тощо\""
+
+msgctxt "Languages::abt__ut2.settings.features.description_position"
+msgid "Display description of feature variant"
+msgstr "Відображати опис варіанту характеристики"
+
+msgctxt "Languages::abt__ut2.settings.features.description_position.tooltip"
+msgid "Determines how the feature description is displayed (nevertheless, regardless of the place of display, the Description field will be displayed in the code always above the product block, this is one of the recommendations of SEO audits)"
+msgstr "Визначає спосіб відображення опису характеристики (при цьому незалежно від місця відображення поля Опис буде відображатись в коді завжди вище товарного блоку, це одна із рекомендацій SEO аудитів)"
+
+msgctxt "Languages::abt__ut2.settings.features.description_position.variants.bottom"
+msgid "After products"
+msgstr "Нижче товарного блоку"
+
+msgctxt "Languages::abt__ut2.settings.features.description_position.variants.top"
+msgid "Before products"
+msgstr "Вище товарного блоку"
+
+msgctxt "Languages::abt__ut2.settings.features.description_position.variants.none"
+msgid "Don't display"
+msgstr "Не відображати"
+
+msgctxt "Languages::abt__ut2.settings.product_list"
+msgid "Product lists"
+msgstr "Списки товарів"
+
+msgctxt "Languages::abt__ut2.settings.product_list_description"
+msgid "Here are the product lists settings of the theme, that affect the output for all product blocks and product lists on categories, search, features pages. Note: blocks can have their own settings and not use selected parameters. The presence of the <i class=\"icon-is-addon\"></i> icon for the setting means, that it is dependent on the presence of an addon, that needs to be turned on"
+msgstr "Тут наведені налаштування теми, які впливають на відображення товарних списків — блоки з товарами, списки товарів в категорії, пошуку, на сторінці характеристик. Зверніть увагу: блоки можуть мати свої власні налаштування та не застосувати обрані нижче параметри. Наявність іконки <i class=\"icon-is-addon\"></i> поряд з назвою налаштування означає, що воно модулезалежне (активується тільки при наявності увімкненого модулю, який відповідає за відповідний функціонал)"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_gallery"
+msgid "Show product mini icons gallery in the product list"
+msgstr "Показувати галерею міні-іконок у списку товарів"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_gallery.tooltip"
+msgid "Activates the option of scrolling the product photos mini gallery in the lists. Applies only to the product list with the \"Grid\" output template"
+msgstr "Активує опцію скролінгу міні галереї фотографій товару у списках. Застосовується лише для товарного списку з шаблоном відображення \"Сітка\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.decolorate_out_of_stock_products"
+msgid "Decolorize out of stock products"
+msgstr "Знебарвлювати товари, яких немає в наявності"
+
+msgctxt "Languages::abt__ut2.settings.product_list.decolorate_out_of_stock_products.tooltip"
+msgid "Applies the effect of decolorize for product items, that are out of stock. Only for lists in categories is used"
+msgstr "Застосовує ефект знебарвлювання для плиток товарів, яких немає у наявності. Застосовується лише для списків в категоріях"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_fixed_filters_button"
+msgid "Enable fixed filter call button"
+msgstr "Увімкнути фіксовану кнопку виклику фільтрів"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_fixed_filters_button.tooltip"
+msgid "When the setting is turned on when the page is scrolled, a button for calling filters will appear"
+msgstr "Коли налаштування увімкнене при скролінгу сторінки буде з'являтись кнопка для виклику фільтрів"
+
+msgctxt "Languages::abt__ut2.settings.product_list.max_features"
+msgid "Max number of displayed features in lists"
+msgstr "Максимальна кількість відображених характеристик в списках"
+
+msgctxt "Languages::abt__ut2.settings.product_list.max_features.tooltip"
+msgid "Specify the number of features displayed in all available lists for different devices"
+msgstr "Зазначте число характеристик, що будуть відображатись у всіх видах списків для різних пристроїв"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_display_format"
+msgid "Price display format"
+msgstr "Формат відображення цін"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_display_format.tooltip"
+msgid "Formats options (of the elements positions) of price display"
+msgstr "Варіанти форматів (положень елементів) відображення цін"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_display_format.variants.col"
+msgid "Option 1"
+msgstr "Варіант 1"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_display_format.variants.row"
+msgid "Option 2"
+msgstr "Варіант 2"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_display_format.variants.mix"
+msgid "Option 3"
+msgstr "Варіант 3"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_rating"
+msgid "Display product rating"
+msgstr "Відображати рейтинг товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.show_rating.tooltip"
+msgid "Allows to display product rating stars"
+msgstr "Дозволяє відображати зірочки рейтингу товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns_group"
+msgid "Settings for \"Grid\" product list view"
+msgstr "Налаштування для виду списку товарів \"Сітка\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns_group_description"
+msgid "Settings for \"Grid\" product list view. Please note, that some settings allow you to control the output of functional elements for different devices separately"
+msgstr "Налаштування для виду списку товарів \"Сітка\". Зверніть увагу, деякі налаштування дозволяють керувати відображенням елементів функціоналу для різних пристроїв окремо"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_height"
+msgid "Minimum height for product cell, px"
+msgstr "Мінімальна висота для клітинки товару, рх"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_height.tooltip"
+msgid "Defines the product cell height according to your needs"
+msgstr "Визначає висоту для клітинки товару згідно з Вашими потребами"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.image_width"
+msgid "Product icon width"
+msgstr "Ширина іконки товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.image_width.tooltip"
+msgid "Icon width in product lists with the \"Grid\" template, individually for each device type"
+msgstr "Ширина іконки у списках товарів з шаблоном “Сітка”, індивідуально для кожного типу пристрою"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.image_height"
+msgid "Product icon height"
+msgstr "Висота іконки товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.image_height.tooltip"
+msgid "Icon height in product lists with the \"Grid\" template, individually for each device type"
+msgstr "Висота іконки у списках товарів з шаблоном “Сітка”, індивідуально для кожного типу пристрою"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_amount"
+msgid "Display availability status"
+msgstr "Відображати статус наявності"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_amount.tooltip"
+msgid "Allow to display the availability status of a product (In stock, Out of stock, Pre-order)"
+msgstr "Дозволити відображення статусу наявності товару на складі (У наявності, Немає у наявності, Передзамовлення)"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_sku"
+msgid "Show product code (Sku)"
+msgstr "Відображати код товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_sku.tooltip"
+msgid "Allow product code (Sku) showing"
+msgstr "Дозволити відображення коду товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_qty"
+msgid "Show quantity changer"
+msgstr "Відображати модифікатор кількості"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_qty.tooltip"
+msgid "Allow the display of the quantity selection field"
+msgstr "Дозволити відображення поля вибору кількості товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_buttons"
+msgid "Show \"Add to cart\" buttons"
+msgstr "Відображати кнопки \"Купити\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_buttons.tooltip"
+msgid "Allow the display of the \"Add to cart\" and \"Buy now with 1-click\" buttons"
+msgstr "Дозволити відображення кнопок \"Купити\" і \"Купити в 1-клік\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_buttons_on_hover"
+msgid "Show buttons only while hovering"
+msgstr "Відображати кнопки лише при наведені"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_buttons_on_hover.tooltip"
+msgid "Buttons \"Add to cart\" and \"Buy now with 1-click\" will be shown only while hovering on the product cell"
+msgstr "Кнопки \"Купити\" і \"Купити в 1-клік\" будуть відображатись лише при наведені на клітинку товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content"
+msgid "Content of bottom part of the product grid item"
+msgstr "Вміст нижньої частини товарної плитки"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.tooltip"
+msgid "Select, what fields will be used as a additional information of the product item"
+msgstr "Оберіть, що буде застосовуватись у якості інформації про товар"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.variants.none"
+msgid "Don't display"
+msgstr "Не відображати"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.variants.description"
+msgid "Short description"
+msgstr "Короткий опис"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.variants.features"
+msgid "Features list"
+msgstr "Список характеристик"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.variants.variations"
+msgid "Variations list"
+msgstr "Список варіацій"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.grid_item_bottom_content.variants.features_and_variations"
+msgid "Features and variations list"
+msgstr "Список характеристик і варіацій"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_brand_logo"
+msgid "Show brand logo"
+msgstr "Відображати логотип бренда"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_brand_logo.tooltip"
+msgid "Allow to display brand logo. There following steps are required:<br>* assign option \"Brand feature ID\" in the \"General\" section of theme settings;<br>* at feature set the checkbox \"Show in product list\";<br>* load an image for feature variant Brand."
+msgstr "Дозволити відображення логотипу бренду. Необхідно виконати наступне:<br>* налаштувати опцію \"ID характеристики бренду\" в секції \"Загальні\" налаштувань теми;<br>* у хар-ки поставити чекбокс \"Показувати у списку товарів\";<br>* завантажити зображення для варіантів характеристики Бренд."
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_you_save"
+msgid "Show \"You save\""
+msgstr "Відображати \"Ви економите\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_multicolumns.show_you_save.tooltip"
+msgid "Shows information about savings (amount of your savings)"
+msgstr "Відображає інформацію про економію (сума заощаджених коштів)"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options_group"
+msgid "Settings for \"List without options\" product list view"
+msgstr "Налаштування для виду списку товарів \"Список без опцій\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options_group_description"
+msgid "Settings for \"List without options\" product list view. Please note, that some settings allow you to control the output of functional elements for different devices separately"
+msgstr "Налаштування для виду списку товарів \"Список без опцій\". Зверніть увагу, деякі налаштування дозволяють керувати відображенням елементів функціоналу для різних пристроїв окремо"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_sku"
+msgid "Show product code (Sku)"
+msgstr "Відображати код товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_sku.tooltip"
+msgid "Allow product code (Sku) showing"
+msgstr "Дозволити відображення коду товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_amount"
+msgid "Show product availability status"
+msgstr "Відображати статус наявності"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_amount.tooltip"
+msgid "Allow the display of the status of stock availability (In stock, Out of stock)"
+msgstr "Дозволити відображення статусу наявності товару на складі (У наявності, Немає у наявності)"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_qty"
+msgid "Show quantity changer"
+msgstr "Відображати модифікатор кількості"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_qty.tooltip"
+msgid "Allow the display of the quantity selection field"
+msgstr "Дозволити відображення поля вибору кількості товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_features"
+msgid "Show product features"
+msgstr "Відображати характеристики товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_features.tooltip"
+msgid "Allow display of selected product features (for displaying in the product list the feature must have an active setting \"Show in product list\")"
+msgstr "Дозволити відображення обраних характеристик товару (для відображення у списку товарів характеристика повинна мати активне налаштування \"Показувати у списку товарів\")"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_options"
+msgid "Show product options"
+msgstr "Відображати опції товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_options.tooltip"
+msgid "Allow display of product options"
+msgstr "Дозволити відображення опцій товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_brand_logo"
+msgid "Show brand logo"
+msgstr "Відображати логотип бренда"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.show_brand_logo.tooltip"
+msgid "Allow to display brand logo. There following steps are required:<br>* assign option \"Brand feature ID\" in the \"General\" section of theme settings;<br>* at feature set the checkbox \"Show in product list\";<br>* load an image for feature variant Brand."
+msgstr "Дозволити відображення логотипу бренду. Необхідно виконати наступне:<br>* налаштувати опцію \"ID характеристики бренду\" в секції \"Загальні\" налаштувань теми;<br>* у хар-ки поставити чекбокс \"Показувати у списку товарів\";<br>* завантажити зображення для варіантів характеристики Бренд."
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content"
+msgid "Content under description"
+msgstr "Вміст під описом"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content.tooltip"
+msgid "Select, what fields will be used as the additional information of the product item"
+msgstr "Оберіть, що буде застосовуватись у якості додаткової інформації про товар"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content.variants.none"
+msgid "Don't display"
+msgstr "Не відображати"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content.variants.features"
+msgid "Features list"
+msgstr "Список характеристик"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content.variants.variations"
+msgid "Variations list"
+msgstr "Список варіацій"
+
+msgctxt "Languages::abt__ut2.settings.product_list.products_without_options.grid_item_bottom_content.variants.features_and_variations"
+msgid "Features and variations list"
+msgstr "Список характеристик і варіацій"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list_group"
+msgid "Settings for \"Compact list\" product list view"
+msgstr "Налаштування для виду списку товарів \"Компактний список\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list_group_description"
+msgid "Settings for \"Compact list\" product list view. Pay attention to the presence of addon-dependent settings. Some settings allow managing functionality elements output for different devices separately"
+msgstr "Налаштування для виду списку товарів \"Компактний список\". Зверніть увагу на наявність модулезалежних налаштувань. Деякі налаштування дозволяють керувати відображенням елементів функціоналу для різних пристроїв окремо"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_sku"
+msgid "Show product code (Sku)"
+msgstr "Відображати код товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_sku.tooltip"
+msgid "Allow product code (Sku) showing"
+msgstr "Дозволити відображення коду товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_amount"
+msgid "Display availability status"
+msgstr "Відображати статус наявності"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_amount.tooltip"
+msgid "Allow to display the availability status of a product (In stock, Out of stock, Pre-order)"
+msgstr "Дозволити відображення статусу наявності товару на складі (У наявності, Немає у наявності, Передзамовлення)"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_qty"
+msgid "Show quantity changer"
+msgstr "Відображати модифікатор кількості"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_qty.tooltip"
+msgid "Allow the display of the quantity selection field"
+msgstr "Дозволити відображення поля вибору кількості товару"
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button"
+msgid "Show \"Add to cart\" button"
+msgstr "Відображати кнопку \"Купити\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button.tooltip"
+msgid "Allow the display of the \"Add to cart\" buttons"
+msgstr "Дозволити відображення кнопок \"Купити\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_quick_view"
+msgid "Show \"Quick view\" button"
+msgstr "Відображати кнопку \"Швидкий перегляд\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_quick_view.tooltip"
+msgid "Allow the display of the \"Quick view\" button"
+msgstr "Дозволити відображення кнопки \"Швидкий перегляд\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_wishlist"
+msgid "Show \"Add to wish list\" button"
+msgstr "Відображати кнопку \"Додати до переліку побажань\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_wishlist.tooltip"
+msgid "Allow the display of the \"Add to wish list\" button"
+msgstr "Дозволити відображення кнопки \"Додати до переліку побажань\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_compare"
+msgid "Show \"Add to comparison list\" button"
+msgstr "Відображати кнопку \"Додати до списку порівняння\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.short_list.show_button_compare.tooltip"
+msgid "Allow the display of the \"Add to comparison list\" button"
+msgstr "Дозволити відображення кнопки \"Додати до списку порівняння\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.default_products_view"
+msgid "Product list default view"
+msgstr "Відображення списку товарів за замовчуванням"
+
+msgctxt "Languages::abt__ut2.settings.product_list.default_products_view.tooltip"
+msgid "Specify template of product list by default for specific mobile devices"
+msgstr "Визначає шаблон списку товарів за замовчуванням для певних типів пристроїв"
+
+msgctxt "Languages::abt__ut2.settings.product_list.default_products_view.variants.products_multicolumns"
+msgid "Grid"
+msgstr "Сітка"
+
+msgctxt "Languages::abt__ut2.settings.product_list.default_products_view.variants.products_without_options"
+msgid "List without options"
+msgstr "Список без опцій"
+
+msgctxt "Languages::abt__ut2.settings.product_list.default_products_view.variants.short_list"
+msgid "Compact list"
+msgstr "Компактний список"
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations_group"
+msgid "\"Product variations\" add-on"
+msgstr "Модуль \"Варіації товарів\""
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations_group_description"
+msgid "Settings of functionality of the add-on in products lists"
+msgstr "Налаштування функціоналу модуля в списках товарів"
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations.limit"
+msgid "The maximum quantity of the displayed products variations"
+msgstr "Максимальна кількість варіацій товарів, що відображаються"
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations.limit.tooltip"
+msgid "Specify the number of available variations, that will be shown for the product in the list, if more variations are available, than specified in the setting, the remaining amount will be indicated in brackets (+ N more). Value <code>0</code> in setting will block the display of variations."
+msgstr "Зазначте кількість доступних варіацій, які будуть показані для товару в списку. Якщо доступно більше варіацій ніж зазначено в налаштуваннях, то залишок варіацій буде вказано в дужках (ще +N). Значення <code>0</code> заблокує відображення варіацій."
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations.display_as_links"
+msgid "Display as links"
+msgstr "Відображати як посилання"
+
+msgctxt "Languages::abt__ut2.settings.product_list.product_variations.display_as_links.tooltip"
+msgid "Display variations as links that transfer to a product page of the chosen variation"
+msgstr "Відображати варіації як посилання, що ведуть на сторінку товару обранної варіації"
+
+msgctxt "Languages::abt__ut2.settings.products"
+msgid "Product"
+msgstr "Товар"
+
+msgctxt "Languages::abt__ut2.settings.products_description"
+msgid "Here theme settings which affect the product detailed page appearance"
+msgstr "Нижче наведені налаштування теми, що впливають на зовнішній вигляд сторінки товару"
+
+msgctxt "Languages::abt__ut2.settings.products.custom_block_id"
+msgid "Custom block ID / Output the block in the right column"
+msgstr "ID блоку користувача / Відображати блок в правій колонці"
+
+msgctxt "Languages::abt__ut2.settings.products.custom_block_id.tooltip"
+msgid "Specify the custom block ID, which you want to display on the right side of the product detail page (the block must be added to the Products layout and can be turned off, a special function will add it to the intended place to bypass the CS-Cart layout system) (well described in the theme documentation)"
+msgstr "Вкажіть ID блоку користувача, який Ви бажаєте вивести в правій частині сторінки товару (блок має бути додано до макету Товари і може бути вимкненим; спеціальна функція додасть його в передбачене місце в обхід системи макетів CS-Cart) (детально описано в документації теми)"
+
+msgctxt "Languages::abt__ut2.settings.products.preload_main_image"
+msgid "Preload main product image"
+msgstr "Попередньо завантажувати головне зображення товару"
+
+msgctxt "Languages::abt__ut2.settings.products.preload_main_image.tooltip"
+msgid "Disables Lazy Load for the main image. Also adds <code>&#60;link rel=\"preload\"></code> for this image. Increases preformance of PageSpeed Insights."
+msgstr "Вимикає Lazy load для головного зображення. Також додає <code>&#60;link rel=\"preload\"></code> для цього зображення. Підвищує показник PageSpeed Insights."
+
+msgctxt "Languages::abt__ut2.settings.products.view_group"
+msgid "Additional displaying settings"
+msgstr "Додаткові налаштування відображення"
+
+msgctxt "Languages::abt__ut2.settings.products.view_group_description"
+msgid "Additional appearance settings for the product page"
+msgstr "Додаткові налаштування зовнішнього вигляду сторінки товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_sticky_add_to_cart"
+msgid "Show sticky block Add to cart (only for mobile devices)"
+msgstr "Відображати липкий блок Купити (лише для мобільних пристроїв)"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_sticky_add_to_cart.tooltip"
+msgid "Allow output of a fixed block with the Add to cart button at the bottom of the mobile device screen. Also depending on the state of the option \"Show quantity changer\" in the block, the changer of products quantity for the order can be shown"
+msgstr "Дозволити відображення фіксованого блоку з кнопкою Купити в нижній частині екрана мобільного пристрою для сторінки товару. Також в залежності від стану налаштування \"Відображати модифікатор кількості\" в блоці можу бути указаний модифікатор кількості товарів для замовлення"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_qty"
+msgid "Show quantity changer"
+msgstr "Відображати модифікатор кількості"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_qty.tooltip"
+msgid "Allow the display of the quantity selection field"
+msgstr "Дозволити відображення поля вибору кількості товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_features"
+msgid "Show product features"
+msgstr "Відображати характеристики товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_features.tooltip"
+msgid "Allow displaying of selected product features (for displaying on the product page (but not in Features tab), the feature must have an active setting \"Show in header on the product details page\")"
+msgstr "Дозволити відображення обраних характеристик товару (для відображення на сторінці товару (не плутати з відображенням у вкладці Особливості) характеристика має бути з активним налаштуванням \"Показувати в заголовку картки товару\")"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_short_description"
+msgid "Show short description"
+msgstr "Відображати короткий опис"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_short_description.tooltip"
+msgid "Allow the display of the \"Short description\""
+msgstr "Дозволити відображення \"Короткого опису\" товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_sku"
+msgid "Show product code (Sku)"
+msgstr "Відображати код товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_sku.tooltip"
+msgid "Allow product code (Sku) showing"
+msgstr "Дозволити відображення коду товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_brand_logo"
+msgid "Show product brand logo"
+msgstr "Відображати логотип бренда товару"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_brand_logo.tooltip"
+msgid "Allow the display of product brand logo. For the setting to work, you must correctly specify Brand feature ID setting value in General tab"
+msgstr "Дозволити відображення логотипу бренда товару. Для роботи налаштування Ви повинні правильно вказати значення налаштування ID характеристики бренду у вкладці Загальні"
+
+msgctxt "Languages::abt__ut2.settings.products.view.brand_link_behavior"
+msgid "Brand logo link behavior"
+msgstr "Поведінка посилання логотипу бренда"
+
+msgctxt "Languages::abt__ut2.settings.products.view.brand_link_behavior.tooltip"
+msgid "Determines the brand logo link"
+msgstr "Визначає посилання логотипу бренда"
+
+msgctxt "Languages::abt__ut2.settings.products.view.brand_link_behavior.variants.to_brand_page"
+msgid "The link leads to brand page"
+msgstr "Посилання на сторінку бренда"
+
+msgctxt "Languages::abt__ut2.settings.products.view.brand_link_behavior.variants.to_category_with_filter"
+msgid "The link leads to the main product category with the selected filter by product brand"
+msgstr "Посилання на основну категорію товару з обраним фільтром бренда"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together_group"
+msgid "\"Buy together\" addon"
+msgstr "Модуль \"Комбінації товарів\""
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together_group_description"
+msgid "Native CS-Cart add-on, which allows to display profitable offers in combination with the current product, on the page of which the user is located"
+msgstr "Нативний модуль CS-Cart, що дозволяє відображати вигідні пропозиції в комбінації з поточним товаром, на сторінці якого знаходиться користувач"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together.view"
+msgid "Way of display"
+msgstr "Спосіб відображення"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together.view.tooltip"
+msgid "Choose way of display (added by AB: UniTheme2 theme or standard output by the tab)"
+msgstr "Оберіть спосіб відображення (доданий темою AB: UniTheme2 або стандартне відображення вкладок)"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together.view.variants.as_block_above_tabs"
+msgid "As block before product tabs"
+msgstr "Як блок перед вкладками товару"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_buy_together.view.variants.as_tab_in_tabs"
+msgid "As product tab"
+msgstr "Як вкладка товару"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products_group"
+msgid "\"Required products\" addon"
+msgstr "Модуль \"Обов'язкові товари\""
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products_group_description"
+msgid "Native CS-Cart addon \"Required products\" creates a group of products, that will be added to the cart with the product, on which page the user is located"
+msgstr "Нативний модуль CS-Cart \"Обов'язкові товари\" створює групи товарів, які будуть додані до кошику з товаром, на сторінці якого знаходиться користувач"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.list_type"
+msgid "Template"
+msgstr "Шаблон"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.list_type.tooltip"
+msgid "Choose template for displaying product list"
+msgstr "Оберіть шаблон відображення списку товарів"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.list_type.variants.grid_list"
+msgid "Grid"
+msgstr "Сітка"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.list_type.variants.compact_list"
+msgid "Compact list"
+msgstr "Компактний список"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.list_type.variants.product_list"
+msgid "List without options"
+msgstr "Список без опцій"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.item_quantity"
+msgid "Show products in row"
+msgstr "Показувати товари в ряд"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_required_products.item_quantity.tooltip"
+msgid "Specify the quantity products to display in a row (only for \"Grid\")"
+msgstr "Зазначте кількість для відображення товарів в ряд (тільки для \"Сітки\")"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_social_buttons_group"
+msgid "Addon \"Social buttons\""
+msgstr "Модуль \"Соціальні кнопки\""
+
+msgctxt "Languages::abt__ut2.settings.products.addon_social_buttons_group_description"
+msgid "Native CS-Cart addon \"Social Buttons\" displays Share buttons widgets for social networks"
+msgstr "Нативний модуль CS-Cart \"Соціальні кнопки\" відображає віджети кнопок Поділитись для соціальних мереж"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_social_buttons.view"
+msgid "Show Share buttons for social networks"
+msgstr "Відображати кнопки соціальних мереж"
+
+msgctxt "Languages::abt__ut2.settings.products.addon_social_buttons.view.tooltip"
+msgid "Please note, that using this option slows down the loading of the product page. Not recommended for displaying on mobile devices."
+msgstr "Зверніть увагу, увімкнення цієї опції сильно уповільнює завантаження сторінки товару. Не рекомендується до відображення на мобільних пристроях."
+
+msgctxt "Languages::abt__ut2.addon_social_buttons.share"
+msgid "Share"
+msgstr "Поділитись"
+
+msgctxt "Languages::abt__ut2.settings.load_more"
+msgid "Show more"
+msgstr "Показати ще"
+
+msgctxt "Languages::abt__ut2.settings.load_more_description"
+msgid "Below are the settings for the \"Show more\" functional for various objects in lists (lazy pagination)"
+msgstr "Нижче наведені налаштування механізму \"Показати ще\" для різноманітних об'єктів у списках (лінива пагінація)"
+
+msgctxt "Languages::abt__ut2.settings.load_more.product_list"
+msgid "Allow for product lists"
+msgstr "Дозволити для товарних списків"
+
+msgctxt "Languages::abt__ut2.settings.load_more.product_list.tooltip"
+msgid "Allow display of \"Show more\" button for categories, brands, newest pages etc."
+msgstr "Дозволити відображення кнопки \"Показати ще\" для сторінок категорій, брендів, новинок тощо"
+
+msgctxt "Languages::abt__ut2.settings.load_more.blog"
+msgid "Allow for the Blog"
+msgstr "Дозволити для Блога"
+
+msgctxt "Languages::abt__ut2.settings.load_more.blog.tooltip"
+msgid "Allow displaying \"Show more\" button for Blog posts"
+msgstr "Дозволити відображення кнопки \"Показати ще\" для постів блогу"
+
+msgctxt "Languages::abt__ut2.settings.load_more.mode"
+msgid "Paginator operation mode"
+msgstr "Режим роботи пагінатора"
+
+msgctxt "Languages::abt__ut2.settings.load_more.mode.variants.auto"
+msgid "Automatically"
+msgstr "Автоматично"
+
+msgctxt "Languages::abt__ut2.settings.load_more.mode.variants.on_button_click"
+msgid "By button click"
+msgstr "При натисканні на кнопку"
+
+msgctxt "Languages::abt__ut2.settings.load_more.mode.tooltip"
+msgid "Choose working mode for button Show more.<br /> <b>Automatically</b> — in this mode next page will be loaded over N px before the end of page while scrolling down.<br /> <b>By button click</b> — next products page will be loaded only clicking the button by the user"
+msgstr "Оберіть режим роботи кнопки Показати ще.<br />"
+"<b>Автоматично</b> — в цьому режимі, наступна сторінка товарів буде завантажуватись за N px до кінця сторінки при прокрутці вниз. <br />"
+"<b>При натисканні на кнопку</b> — завантаження наступної сторінки товарів буде відбуватись тільки при натисканні кнопки користувачем"
+
+msgctxt "Languages::abt__ut2.settings.load_more.before_end"
+msgid "Start for N px to the end of the page"
+msgstr "Запустити за N px до кінця сторінки"
+
+msgctxt "Languages::abt__ut2.settings.load_more.before_end.tooltip"
+msgid "Used only for working mode Automatically"
+msgstr "Застосовується лише тоді, коли обрано варіант Автоматично"
+
+msgctxt "Languages::abt__ut2.load_more.show_more.pages"
+msgid "Show another [n] page|Show another [n] pages"
+msgstr "Показати ще [n] сторінку|Показати ще [n] сторінки|Показати ще [n] сторінок"
+
+msgctxt "Languages::abt__ut2.load_more.show_more.products"
+msgid "Show another [n] product|Show another [n] products"
+msgstr "Показати ще [n] товар|Показати ще [n] товари|Показати ще [n] товарів"
+
+msgctxt "Languages::abt__ut2.settings.addons"
+msgid "Addons"
+msgstr "Модулі"
+
+msgctxt "Languages::abt__ut2.settings.addons_description"
+msgid "Here are setting, that affect on appearance of different addons pages in theme"
+msgstr "Тут наведені налаштування, які впливають на відображення сторонніх модулів"
+
+msgctxt "Languages::abt__ut2.settings.addons.wishlist_products_group"
+msgid "\"Wish List\" addon"
+msgstr "Модуль \"Список побажань\""
+
+msgctxt "Languages::abt__ut2.settings.addons.wishlist_products_group_description"
+msgid "Allows to add products to user wishlists"
+msgstr "Дозволяє додавати товари до списків побажань користувача"
+
+msgctxt "Languages::abt__ut2.settings.addons.wishlist_products.item_quantity"
+msgid "Show products in a row"
+msgstr "Показувати товари в ряд"
+
+msgctxt "Languages::abt__ut2.settings.addons.wishlist_products.item_quantity.tooltip"
+msgid "Specify the quantity to display products in a row (only for \"Grid\")"
+msgstr "Зазначте кількість для відображення товарів в ряд (тільки для \"Сітки\")"
+
+msgctxt "Languages::abt__ut2.settings.addons.call_requests_group"
+msgid "\"Call request\" add-on"
+msgstr "Модуль \"Зворотній дзвінок\""
+
+msgctxt "Languages::abt__ut2.settings.addons.call_requests_group_description"
+msgid "Buy with one click and request call"
+msgstr "Покупка в один клік і зворотній дзвінок\""
+
+msgctxt "Languages::abt__ut2.settings.addons.call_requests.item_button"
+msgid "Display \"Buy now with 1-click\" button in blocks and product lists"
+msgstr "Відображати кнопку \"Купити в один клік\" в блоках і списках товарів"
+
+msgctxt "Languages::abt__ut2.settings.addons.call_requests.item_button.tooltip"
+msgid "Allows to display \"Buy now with 1-click\" button in blocks and product lists"
+msgstr "Дозволяє відображати кнопку \"Купити в один клік\" в блоках і списках товарів"
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion_group"
+msgid "\"Comments and reviews\" add-on"
+msgstr "Модуль \"Коментарі та відгуки\""
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion_group_description"
+msgid "Lets customers to leave reviews and comments to products, categories, orders, etc."
+msgstr "Дає змогу клієнтам залишати відгуки і коментарі до товарів, категорій, замовлень тощо."
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion.highlight_administrator"
+msgid "Highlight admin reviews"
+msgstr "Виділяти відгуки адміністратора"
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion.highlight_administrator.tooltip"
+msgid "Adds special styling for reviews or comments written by administrators."
+msgstr "Додає особливий стиль для відгуків або коментарів, написаних адміністраторами."
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion.verified_buyer"
+msgid "Highlight reviews from verified buyers"
+msgstr "Виділяти відгуки перевірених покупців"
+
+msgctxt "Languages::abt__ut2.settings.addons.discussion.verified_buyer.tooltip"
+msgid "Adds a special style for comments written by users that bought this product."
+msgstr "Додає спеціальний стиль для коментарів, написаних користувачами, що придбали цей товар."
+
+msgctxt "Languages::abt__ut2.less_settings"
+msgid "Color scheme settings"
+msgstr "Налаштування схеми кольорів"
+
+msgctxt "Languages::abt__ut2.less_settings_description"
+msgid "<b>Attention!</b> These settings apply only to the selected color scheme (in order to see the changes: make sure, that the selected in the \"Style\" settings field value corresponds to the color scheme, selected in your store (you can check the selected color scheme by Design → Themes → in the table opposite the chosen as default layout))"
+msgstr "<b>Увага!</b> Вказані налаштування застосовуються лише до обраної схеми кольорів (для того, щоб побачити зміни: переконайтесь, що обраний в полі налаштувань \"Style\" відповідає обраній в Вашому магазині схемі кольорів (обраний варіант схеми кольорів Ви можете перевірити на сторінці Дизайн → Теми → в таблиці навпроти обраного за замовчуванням макету))"
+
+msgctxt "Languages::abt__ut2.less_settings.style.tooltip"
+msgid "Select Style (less-file, to which the following settings will be applied)"
+msgstr "Оберіть Стиль (less-файл, до якого будуть застосовані наступні налаштування)"
+
+msgctxt "Languages::abt__ut2.less_settings.general"
+msgid "General"
+msgstr "Загальні"
+
+msgctxt "Languages::abt__ut2.less_settings.general_description"
+msgid "Below are the general settings."
+msgstr "Нижче наведені загальні налаштування"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_rounding"
+msgid "Round corners for interface elements"
+msgstr "Закруглити кути для елементів інтерфейсу"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_rounding.tooltip"
+msgid "Use rounding corners of elements (windows, buttons, icons, form fields, etc.)"
+msgstr "Застосувати закруглення кутів елементів (вікна, кнопки, іконки, поля форм тощо)"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_rounding.variants.do_not_use"
+msgid "Don't use"
+msgstr "Не застосовувати"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_rounding.variants.little"
+msgid "Make a little roundness"
+msgstr "Надати невелику округлість"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_rounding.variants.full"
+msgid "Fully rounded"
+msgstr "Повністю закруглити"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_titles_uppercase"
+msgid "Display headers in capital letters"
+msgstr "Відображати заголовки великими літерами"
+
+msgctxt "Languages::abt__ut2.less_settings.general.use_titles_uppercase.tooltip"
+msgid "Allows you to show headers in capital letters (used for all page headers, blocks, banners headers, etc.)"
+msgstr "Дозволяє перевести написання заголовка у великі літери (застосовується для усіх заголовків сторінок, блоків, банерів тощо)"
+
+msgctxt "Languages::abt__ut2.less_settings.general.stars_rating_color"
+msgid "Color of starlets for product rating"
+msgstr "Колір зірочок рейтингу товару"
+
+msgctxt "Languages::abt__ut2.less_settings.general.stars_rating_color.tooltip"
+msgid "Specify your own star color for product rating"
+msgstr "Вкажіть власний колір зірочок рейтингу товару"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons_group"
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons_group_description"
+msgid "Allows you to set button styles"
+msgstr "Дозволяє задавати стилі оформлення кнопок"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.style"
+msgid "Style"
+msgstr "Стиль"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.style.tooltip"
+msgid "Set button style"
+msgstr "Оберіть стиль оформлення для кнопок"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.style.variants.use_background"
+msgid "Use filled background"
+msgstr "Застосувати фонове залиття"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.style.variants.use_border"
+msgid "Use border only"
+msgstr "Застосувати тільки контур"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_text_uppercase"
+msgid "Display text in capital letters"
+msgstr "Відображати текст великими літерами"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_text_uppercase.tooltip"
+msgid "Allows you to define the display format of letters in buttons, lowercase or uppercase letters"
+msgstr "Дозволяє визначити формат відображення літер у кнопках малими або великими літерами"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_shadow"
+msgid "Add shadow"
+msgstr "Відображати тінь"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_shadow.tooltip"
+msgid "Use shadow in the buttons design"
+msgstr "В оформленні кнопок буде використовуватись тінь"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_gradient"
+msgid "Add bulk"
+msgstr "Додати об'єм"
+
+msgctxt "Languages::abt__ut2.less_settings.general.buttons.use_gradient.tooltip"
+msgid "The buttons will use a background color with a gradient fill from light to dark based on the color of the button"
+msgstr "В оформленні кнопок буде використовуватись колір фону з градієнтним залиттям від світлого до темного на основі кольору кнопки"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels_group"
+msgid "Labels (stickers)"
+msgstr "Стікери (Лейбли)"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels_group_description"
+msgid "Allows you to set styles for standard product stickers, for example, Free Shipping, Discount, etc. <br/>These settings are not applicable if you use \"AB: Stickers\" add-on or any third party add-on of stickers."
+msgstr "Застосовується для оформлення стандартних стікерів товару, наприклад, \"Безкоштовна доставка\", \"Знижка\" тощо. <br/>Ці налаштування не застосовуються, якщо використовується модуль \"АВ: Стікери\" або будь-який інший сторонній модуль стікерів."
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.style"
+msgid "Form"
+msgstr "Форма"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.style.tooltip"
+msgid "Specify the displaying form of discount labels"
+msgstr "Оберіть одну із форм відображення"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.style.variants.as_drop"
+msgid "Drop"
+msgstr "Краплею"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.style.variants.as_circle"
+msgid "Round"
+msgstr "Круглий"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.style.variants.as_rectangle"
+msgid "Rectangular"
+msgstr "Прямокутний"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_outline"
+msgid "Use border style"
+msgstr "Контурний стиль"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_outline.tooltip"
+msgid "Adds border style"
+msgstr "Додає контурне обведення"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_shadow"
+msgid "Add shadow"
+msgstr "Відображати тінь"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_shadow.tooltip"
+msgid "Adds shadow"
+msgstr "Додає тінь"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_text_shadow"
+msgid "Add shadow for text"
+msgstr "Відображати тінь для тексту"
+
+msgctxt "Languages::abt__ut2.less_settings.general.labels.use_text_shadow.tooltip"
+msgid "Adds shadow for text"
+msgstr "Додає тінь для тексту"
+
+msgctxt "Languages::abt__ut2.less_settings.containers"
+msgid "Containers"
+msgstr "Контейнери"
+
+msgctxt "Languages::abt__ut2.less_settings.containers_description"
+msgid "Below are the settings that affect the blocks and sections of the corresponding container in the layouts."
+msgstr "Нижче наведені налаштування, які впливають на блоки і секції відповідного контейнера в макетах"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header_group"
+msgid "Header"
+msgstr "Заголовок"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header_group_description"
+msgid "Settings for blocks and sections of the \"Header\" container"
+msgstr "Налаштування для блоків і секцій контейнера \"Заголовок\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.add_delimiters"
+msgid "Add dividing strips"
+msgstr "Додати розділові смуги"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.add_delimiters.tooltip"
+msgid "Adds dividing strips at the Top part of the site, visually separates the blocks \"Categories\", \"Search\", \"Account\" and \"Cart\""
+msgstr "Додає розділові смуги у верхівці сайту, візуально розділяє блоки \"Каталог товарів\", \"Пошук\", \"Акаунт\" і \"Кошик\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_menu_on_hover"
+msgid "Color for hovering over a first level menu item"
+msgstr "Колір при наведені на пункт меню першого рівня"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_menu_on_hover.tooltip"
+msgid "Background color used for hovering over menu items of the first level. It is used only in the \"Default\" layout with a horizontal menu type. Also determines the color of the active first level menu item"
+msgstr "Фоновий колір при наведені на елементи меню першого рівня. Застосовується лише в макеті \"Default\" з горизонтальним типом меню. Також визначає колір активного елементу меню першого рівня"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_elements_on_hover"
+msgid "Color for hovering over the elements \"Categories\", \"Account\" and \"Cart\""
+msgstr "Колір при наведені на елементи \"Каталог товарів\", \"Акаунт\" і \"Кошик\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_elements_on_hover.tooltip"
+msgid "The color for hovering over the drop-down elements \"Categories\", \"Account\" and \"Cart\" is used only in the \"Advanced\" and \"Fixed\" layouts"
+msgstr "Колір при наведені на випадаючі елементи \"Каталог товарів\", \"Акаунт\" і \"Кошик\", застосовується лише в макетах \"Advanced\" і \"Fixed\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_icons"
+msgid "The color of the icons for elements \"Categories\", \"Account\" and \"Cart\""
+msgstr "Колір іконок для елементів \"Каталог товарів\", \"Акаунт\" і \"Кошик\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_color_icons.tooltip"
+msgid "Is used only in layouts \"Advanced\" and \"Fixed\""
+msgstr "Застосовується лише в макетах \"Advanced\" и \"Fixed\""
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_animation_for_not_empty_cart"
+msgid "Use animation effect for non empty cart"
+msgstr "Застосувати ефект анімації для непорожнього кошика"
+
+msgctxt "Languages::abt__ut2.less_settings.containers.header.use_animation_for_not_empty_cart.tooltip"
+msgid "Adds animation effect, to pay attention to the non empty user cart"
+msgstr "Додає ефект, що привертає увагу до непорожнього кошика"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list"
+msgid "Product lists"
+msgstr "Списки товарів"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list_description"
+msgid "Below are the settings that affect the styles for elements in the product lists"
+msgstr "Нижче представлені налаштування, що впливають на елементи списків товарів"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.show_grid_border"
+msgid "Frame type of the product in the grid"
+msgstr "Тип обрамлення товару в сітці"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.show_grid_border.tooltip"
+msgid "You can change the frame type for cells in the lists of products"
+msgstr "Ви можете змінити тип обрамування для клітин у списках товарів"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.show_grid_border.variants.none"
+msgid "Not framed"
+msgstr "Без рамки"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.show_grid_border.variants.solid_without_margins"
+msgid "Frame without external indents"
+msgstr "Рамка без зовнішніх відступів"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.show_grid_border.variants.solid_with_margins"
+msgid "Frame with outer indents"
+msgstr "Рамка із зовнішніми відступами"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.use_elements_alignment"
+msgid "Use elements alignment"
+msgstr "Застосувати вирівнювання елементів в товарній сітці"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.use_elements_alignment.tooltip"
+msgid "Allows you to align some elements of the list of symmetrically neighboring cells of products"
+msgstr "Дозволяє вирівняти деякі елементи списку симетрично сусідніх клітин товарів"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.use_elements_alignment.variants.use"
+msgid "Use"
+msgstr "Застосувати"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.use_elements_alignment.variants.do_not_use"
+msgid "Don't use"
+msgstr "Не застосовувати"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.extend_grid_item_on_hover"
+msgid "Expand grid item on hover"
+msgstr "Ефект збільшення клітинки при наведені"
+
+msgctxt "Languages::abt__ut2.less_settings.product_list.extend_grid_item_on_hover.tooltip"
+msgid "Adds the extending effect for item grid, when hovering on it in the list. Applies only to the Grid view of listings."
+msgstr "Додає ефект збільшення (ознаки вибору) при наведені на клітинку товару у списку. Застосовується лише для виду списку товарів \"Сітка\"."
+
+msgctxt "Languages::abt__ut2.less_settings.products"
+msgid "Product"
+msgstr "Товар"
+
+msgctxt "Languages::abt__ut2.less_settings.products_description"
+msgid "Below are the settings that affect the styles for product detail page"
+msgstr "Нижче представлені налаштування, що впливають на елементи детальної сторінки товару"
+
+msgctxt "Languages::abt__ut2.less_settings.products.use_color_buttons_add_to_cart"
+msgid "Set individual color for <br> \"Add to cart\" button"
+msgstr "Призначити індивідуальний колір кнопки<br>\"У кошик\""
+
+msgctxt "Languages::abt__ut2.less_settings.products.use_color_buttons_add_to_cart.tooltip"
+msgid "Allows you to assign an individual color to the \"Add to cart\" button on the product detail page and in the \"Quick view\" window"
+msgstr "Дозволяє призначити індивідуальний колір для кнопки \"У кошик\" на детальній сторінці товару і у вікні \"Швидкого перегляду\""
+
+msgctxt "Languages::abt__ut2.demodata"
+msgid "Demo data"
+msgstr "Демо-дані"
+
+msgctxt "Languages::abt__ut2.demodata.description"
+msgid "On this page you can quickly create theme demo data"
+msgstr "На цій сторінці Ви можете швидко створити демо-дані теми"
+
+msgctxt "Languages::abt__ut2.demodata.table.description"
+msgid "Demo data type"
+msgstr "Вигляд демо-даних"
+
+msgctxt "Languages::abt__ut2.demodata.table.add_banners"
+msgid "Add demo banners"
+msgstr "Додати демо-банери"
+
+msgctxt "Languages::abt__ut2.demodata.table.add_menu"
+msgid "Add demo menu with icons and banners"
+msgstr "Додати демо-меню з іконками і банерами"
+
+msgctxt "Languages::abt__ut2.demodata.table.add_blog"
+msgid "Add demo blog"
+msgstr "Додати демо-блог"
+
+msgctxt "Languages::abt__ut2.demodata.table.add_products"
+msgid "Add demo products"
+msgstr "Додати демо-товари"
+
+msgctxt "Languages::abt__ut2.export"
+msgid "Export"
+msgstr "Експорт"
+
+msgctxt "Languages::abt__ut2.export.description"
+msgid "On this page you can quickly export the data you need in json format"
+msgstr "На цій сторінці Ви можете швидко експортувати"
+" потрібні Вам дані в формат json"
+
+msgctxt "Languages::abt__ut2.export.table.description"
+msgid "Data type"
+msgstr "Тип даних"
+
+msgctxt "Languages::abt__ut2.export.table.data"
+msgid "Export data"
+msgstr "Дані для експорту"
+
+msgctxt "Languages::abt__ut2.export.actions.banners"
+msgid "Banners"
+msgstr "Банери"
+
+msgctxt "Languages::abt__ut2.export.actions.banners.placeholder"
+msgid "Banners IDs"
+msgstr "ID банерів"
+
+msgctxt "Languages::abt__ut2.export.actions.menu"
+msgid "Menu"
+msgstr "Меню"
+
+msgctxt "Languages::abt__ut2.export.actions.menu.placeholder"
+msgid "Menu IDs"
+msgstr "ID меню"
+
+msgctxt "Languages::abt__ut2.export.actions.blog"
+msgid "Blog"
+msgstr "Блог"
+
+msgctxt "Languages::abt__ut2.export.actions.blog.placeholder"
+msgid "Parent pages IDs"
+msgstr "ID батьківських сторінок"
+
+msgctxt "Languages::abt__ut2.export.actions.products"
+msgid "Products"
+msgstr "Товари"
+
+msgctxt "Languages::abt__ut2.export.actions.products.placeholder"
+msgid "Products IDs"
+msgstr "ID товарів"
+
+msgctxt "Languages::abt__ut2.export.errors.no_such_type"
+msgid "No such type of export for the theme"
+msgstr "Такий тип експорту для теми відсутній"
+
+msgctxt "Languages::abt__ut2.export.success"
+msgid "were exported successfully"
+msgstr "експортовані"
+
+msgctxt "Languages::abt__ut2.demodata.success"
+msgid "were created successfully"
+msgstr "створено успішно"
+
+msgctxt "Languages::abt__ut2.export.success.banners"
+msgid "Banners [ids] were exported successfully"
+msgstr "Банери [ids] експортовані"
+
+msgctxt "Languages::abt__ut2.demodata.success.banners"
+msgid "Banners [ids] were created successfully"
+msgstr "Банери [ids] створено успішно"
+
+msgctxt "Languages::abt__ut2.export.success.blog"
+msgid "Blog were exported successfully"
+msgstr "Блог експортовано успешно"
+
+msgctxt "Languages::abt__ut2.demodata.success.blog"
+msgid "Blog pages [ids] were created successfully"
+msgstr "Сторінки блогу [ids] створено успішно"
+
+msgctxt "Languages::abt__ut2.demodata.errors.no_blog_page"
+msgid "You should create the blog`s parent page"
+msgstr "Вам необхідно створити батьківську сторінку блогу"
+
+msgctxt "Languages::abt__ut2.demodata.errors.no_data"
+msgid "No data.json file"
+msgstr "Відсутній файл data.json"
+
+msgctxt "Languages::abt__ut2.export.success.menu"
+msgid "Menu [ids] were exported successfully"
+msgstr "Меню [ids] експортовані"
+
+msgctxt "Languages::abt__ut2.demodata.errors.menu_wasnt_created"
+msgid "Menu [name] failed to create"
+msgstr "Меню [name] не вдалось створити"
+
+msgctxt "Languages::abt__ut2.demodata.success.menu"
+msgid "Menu [menus] were created successfully"
+msgstr "Меню [menus] створено успішно"
+
+msgctxt "Languages::abt__ut2.demo.place_into_blocks"
+msgid "Place into blocks"
+msgstr "Розставити по блоках"
+
+msgctxt "Languages::abt__ut2.microdata"
+msgid "Organization microdata"
+msgstr "Мікророзмітка організації"
+
+msgctxt "Languages::abt__ut2.city_short"
+msgid "c."
+msgstr "м."
+
+msgctxt "Languages::abt__ut2.microdata.schema_type"
+msgid "Schema type"
+msgstr "Тип розмітки"
+
+msgctxt "Languages::abt__ut2.microdata.schema_type.none"
+msgid "Do not use"
+msgstr "Не застосовувати"
+
+msgctxt "Languages::abt__ut2.microdata.schema_type.article"
+msgid "Article"
+msgstr "Стаття"
+
+msgctxt "Languages::abt__ut2.microdata.schema_type.newsarticle"
+msgid "News"
+msgstr "Новина"
+
+msgctxt "Languages::abt__ut2.microdata.schema_type.blogposting"
+msgid "Blog"
+msgstr "Пост блогу"
+
+msgctxt "Languages::abt__ut2.help"
+msgid "Help"
+msgstr "Довідка"
+
+msgctxt "Languages::abt__ut2.help.doc"
+msgid "Read <a target='_blank' href='https://cs-cart.alexbranding.com/en/abt__unitheme2.doc'>the documentation</a>."
+msgstr "Ознайомитись з <a target='_blank' href='https://cs-cart.alexbranding.com/ru/abt__unitheme2.doc'>документацією</a>."
+
+msgctxt "Languages::privilege_groups.abt__unitheme2"
+msgid "AB: UniTheme2"
+msgstr "AB: UniTheme2"
+
+msgctxt "Languages::privileges.abt__ut2.settings.manage"
+msgid "Manage theme settings"
+msgstr "Керування налаштуваннями теми"
+
+msgctxt "Languages::privileges.abt__ut2.settings.view"
+msgid "View theme settings"
+msgstr "Перегляд налаштувань теми"
+
+msgctxt "Languages::abt__ut2.developer"
+msgid "Powered by <a href=\"https://www.cs-cart.com/\" rel=\"nofollow\">CS-Cart</a> and premium theme — <a href=\"https://unitheme.net/?sl=en\" rel=\"nofollow\">© AB: UniTheme2</a>"
+msgstr "На базі <a href=\"https://www.cs-cart.ru/\" rel=\"nofollow\">CS-Cart</a> i преміум теми — <a href=\"https://unitheme.net/?sl=ru\" rel=\"nofollow\">© AB: UniTheme2</a>"
+
+msgctxt "Languages::abt__ut2.contacts"
+msgid "Contact us"
+msgstr "Контакти"
+
+msgctxt "Languages::abt__ut2.blog.there_is_video"
+msgid "Video"
+msgstr "Відео"
+
+msgctxt "Languages::abt__ut2.blog.there_are_offers"
+msgid "Recommendations"
+msgstr "Рекомендації"
+
+msgctxt "Languages::abt__ut2.mainbox_general_seo"
+msgid "AB: General title (SEO)"
+msgstr "AB: Основний заголовок (SEO)"
+
+msgctxt "Languages::abt__ut2.hover_to_enlarge"
+msgid "Hover on image to enlarge"
+msgstr "Наведіть на зображення для збільшення"
+
+msgctxt "Languages::abt__ut2.brands"
+msgid "Brands"
+msgstr "Бренди"
+
+msgctxt "Languages::abt__ut2.add_to_wishlist.tooltip"
+msgid "Add to wishlist"
+msgstr "Додати до переліку побажань"
+
+msgctxt "Languages::abt__ut2.less_settings.is_absent"
+msgid "The following color values are not set for your [style] style"
+msgstr "Для Вашого стилю [style] не задано наступні кольорові значення:"
+
+msgctxt "Languages::abt__ut2.less_settings.is_absent.core"
+msgid "System values"
+msgstr "Системні значення"
+
+msgctxt "Languages::abt__ut2.less_settings.is_absent.theme"
+msgid "Theme values"
+msgstr "Значення теми"
+
+msgctxt "Languages::abt__ut2.less_settings.is_absent.recomend_to_add"
+msgid "We recommend that you assign their values, as this may lead to errors in the future."
+msgstr "Рекомендуємо Вам назначити їхні значення, так як це може призвести до помилок у подальшому"
+
+msgctxt "Languages::abt__ut2.filter.vendor_location_variant"
+msgid "Selected location + [range] [suffix]"
+msgstr "Вибране місцерозташування + [range] [suffix]"
+
+msgctxt "Languages::abt__ut2.disabled_because_of_core_error"
+msgid "Setting is disabled because of incompatible errors in CS-Cart version [core_version]"
+msgstr "Налаштування вимкнено по причині наявності несумісних помилок в CS-Cart версії [core_version]"
+
+msgctxt "Languages::block_abt__ut2_light_menu"
+msgid "AB: Fly menu"
+msgstr "AB: Fly меню"
+
+msgctxt "Languages::abt__ut2_light_menu"
+msgid "AB: Fly menu"
+msgstr "AB: Fly меню"
+
+msgctxt "Languages::abt__ut2.light_menu.back_to_main"
+msgid "Back to main"
+msgstr "Назад до головного"
+
+msgctxt "Languages::abt__ut2_show_title"
+msgid "Show title"
+msgstr "Показати заголовок"
+
+msgctxt "Languages::abt__ut2.menus.pickers.add_menus"
+msgid "Add menu"
+msgstr "Додати меню"
+
+msgctxt "Languages::abt__ut2.menus.pickers.add_menus_and_close"
+msgid "Add menu and close"
+msgstr "Додати меню і закрити"
+
+msgctxt "Languages::abt__ut2.menus.pickers.states"
+msgid "Initial menu state"
+msgstr "Початковий стан меню"
+
+msgctxt "Languages::abt__ut2.menus.pickers.states.tooltip"
+msgid "Select how the menu will be displayed when loading the page"
+msgstr "Оберіть, як буде виглядати меню при завантаженні сторінки"
+
+msgctxt "Languages::abt__ut2.menus.pickers.states.hide_items"
+msgid "Hide elements and show the menu name"
+msgstr "Приховати елементи і відобразити назву меню"
+
+msgctxt "Languages::abt__ut2.menus.pickers.states.show_items"
+msgid "Show elements"
+msgstr "Відобразити елементи"
+
+msgctxt "Languages::abt__ut2.icons"
+msgid "Available icons"
+msgstr "Доступні іконки"
+
+msgctxt "Languages::abt__ut2.icons.info"
+msgid "On this page you can see the list of icons, available to you in the theme"
+msgstr "На цій сторінці Ви можете ознайомитись зі списком іконок, що доступні Вам в темі"
+
+msgctxt "Languages::abt__ut2.icons.ut2_icons"
+msgid "Theme icons list"
+msgstr "Список іконок теми"
+
+msgctxt "Languages::abt__ut2.icons.class"
+msgid "Icon class"
+msgstr "Клас іконки"
+
+msgctxt "Languages::abt__ut2.class_was_copied"
+msgid "Icon class was copied to clipboard"
+msgstr "Клас іконки скопійовано в буфер"
+
+msgctxt "Languages::abt__ut2.migaritions_from_unitheme1.update_po"
+msgid "Language variables recovery"
+msgstr "Відновлення мовних змінних"
+
+msgctxt "Languages::abt__ut2.migaritions_from_unitheme1.update_po.not_exist.description"
+msgid "On this page, you can recover language variables which were deleted during removing of the first generation UniTheme addon"
+msgstr "На цій сторінці Ви можете відновити мовні змінні, які були видалені при вилученні модуля UniTheme першого покоління"
+
+msgctxt "Languages::abt__ut2.migaritions_from_unitheme1.update_po.success"
+msgid "Selected language variables were successfully recovered!"
+msgstr "Обрані мовні змінні було успішно відновлено!"
+
+msgctxt "Languages::abt__ut2.migaritions_from_unitheme1.update_po.exist.description"
+msgid "For your installation, no additional actions for language variables recovery are required!"
+msgstr "Для Вашої установки жодних додатковий дій по відновленню мовних змінних вживати не потрібно!"
+
+msgctxt "Languages::abt__ut2.clone_theme"
+msgid "<p><b>Attention. All cloned themes made from original theme AB: UniTheme2 couldn't be updated through \"Upgrade center\"!</b></p><p>\"Upgrade center\" updates basic Theme only in the directory <code>design/themes/abt__unitheme2</code>.</p><p>Do not use cloned theme for permanent usage.</p><p>Use cloned theme for familiarization or temporary developing only.</p>"
+msgstr "<p><b>Увага! Усі скопійовані теми від оригінальної теми AB: UniTheme2 не можуть оновлюватись через \"Центр оновлень\"!</b></p>"
+"<p>\"Центр оновлень\" оновлює лише оригінальну установку Теми в директорії <code>design/themes/abt__unitheme2</code>.</p>"
+"<p>Не обирайте скопійовану тему для постійного використання.</p>"
+"<p>Застосовуйте скопійовану тему тільки для ознайомлення або тимчасових розробок.</p>"
+
+msgctxt "Languages::abt__ut2.clone_themes.notification"
+msgid "<b>AB: UniTheme2.</b> The following storefronts ([storefront_list]) are used at cloned themes from AB: UniTheme2, that's the reason why the themes on such storefronts couldn't be updated through \"Upgrade center\". For more information see <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-3141\">the documentation</a>.<br>To switch off the message, change the setting <a target=\"_blank\" href=\"[link]\">Check the usage of cloned themes</a>."
+msgstr "<b>AB: UniTheme2.</b> Наступні вітрини ([storefront_list]) використовують скопійовані теми від AB: UniTheme2, через що, теми на таких вітринах не можуть оновлюватись через \"Центр оновлень\". Докладніше дивіться <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc#p-3141\">документацію</a>.<br>Для вимкнення цього повідомлення змініть налаштування <a target=\"_blank\" href=\"[link]\">Перевіряти використання скопійованих тем</a>."
+
+msgctxt "Languages::abt__ut2.clone_theme.notification"
+msgid "<b>AB: UniTheme2.</b> There is a cloned theme used from AB: UniTheme2, therefore, the theme couldn't be updated through \"Upgrade center\". For more information see <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-3141\">the documentation</a>.<br>To switch off the message change the setting <a target=\"_blank\" href=\"[link]\">Check the usage of cloned themes</a>."
+msgstr "<b>AB: UniTheme2.</b> Використовується скопійована тема від AB: UniTheme2, через що, тема не може оновлюватись через \"Центр оновлень\". Докладніше дивіться <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc#p-3141\">документацію</a>.<br>Для вимкнення цього повідомлення змініть налаштування <a target=\"_blank\" href=\"[link]\">Перевіряти використання скопійованих тем</a>."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.title"
+msgid "AB: UniTheme2 was successfully updated to v[ver]!"
+msgstr "{Abt__unitheme2} успішно оновлена до v[ver]!"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.text"
+msgid "The detailed list of changes for <b>v[ver]</b> version look in documentation for the theme in the section <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-118\">List of releases</a>."
+msgstr "Докладний список змін, що увійшов у версію <b>v[ver]</b> дивіться в документації по темі в розділі <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc#p-118\">Список релізів</a>."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.recommend_to_update_layouts.title"
+msgid "We recommend to update the used layout!"
+msgstr "Необхідно оновити макет, що використовується!"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.recommend_to_update_layouts.text"
+msgid "Use the following <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-142\">instruction</a> to update the used layout."
+msgstr "Застосовуйте наступну <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc/v4.10.2.d#p-142\">інструкцію</a> для оновлення макету, що застосовується."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.2.d.new_layouts.title"
+msgid "New layout \"Checkout\" is available!"
+msgstr "Необхідно оновити макет, що використовується!"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.2.d.new_layouts.text"
+msgid "Use the following <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-142\">instruction</a> to update used layout."
+msgstr "Застосовуйте наступну <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc/v4.10.2.d#p-142\">інструкцію</a> для оновлення макету, що застосовується."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.3.a.new_layouts.title"
+msgid "We recommend to update the used layout!"
+msgstr "Необхідно оновити макет, що використовується!"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.3.a.new_layouts.text"
+msgid "Use the following <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/abt__unitheme2.doc#p-142\">instruction</a> to update the used layout."
+msgstr "Застосовуйте наступну <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc/v4.10.3.a#p-142\">інструкцію</a> для оновлення макету, що застосовується."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.3.b.added_compatibility_with_ab__ia.title"
+msgid "Fixed compatibility with \"AB: Intellectual selection of products\" addon"
+msgstr "Виправлено сумісність з модулем \"AB: Інтелектуальний добір товарів\""
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.3.b.added_compatibility_with_ab__ia.text"
+msgid "For users of <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/en/addon-intellectual-analogues-accessories-by-features.html\">AB: Intellectual selection of products</a> addon starting from version 2.6.0: special places for displaying a block of selected products were added in theme (optionally above or below the product tabs, taking into account the display settings for various devices)."
+msgstr "Для користувачів модуля <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/ru/intllectual-products-selection-by-features.html\">AB: Інтелектуальний добір товарів на основі технічних характеристик</a>, починаючи з версії 2.6.0: в темі передбачені спеціальні місця для відображення блоку підібраних товарів опціонально вище або нижче товарних вкладок з урахуванням налаштувань відображення для різноманітних пристроїв."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.4.b.added_new_less_settings.title"
+msgid "We recommend to update the used color scheme (Style) settings!"
+msgstr "Необхідно оновити налаштування схем кольорів!"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.10.4.b.added_new_less_settings.text"
+msgid "<p>In this version, we have significantly expanded the settings for \"color schemes\" and grouped them into tabs corresponding to their place of application and functional purpose.</p> <p><b>IMPORTANT!!!</b></p> <p>After the upgrade, your current color scheme will work as before. To use the new settings you need to perform one of the variants: <ol> <li>or adjust the current used color scheme. To do this, go to the page AB: Add-ons → AB: UniTheme2 → Color scheme settings, select the active color scheme and set the necessary values for all settings;</li> <li>or create a new color scheme using the \"Theme Editor\" based on the color schemes available in this version.</li> </ol> </p> <p>List of new color scheme settings (AB: Addons → AB: UniTheme2 → Color scheme settings): <ul> <li>General → Display headers in capital letters;</li> <li>General → Buttons → Display text in capital letters;</li> <li>General → Buttons → Add shadow;</li> <li>General → Buttons → Add bulk;</li> <li>General → Labels (stickers) → Use border style;</li> <li>General → Labels (stickers) → Add shadow;</li> <li>General → Labels (stickers) → Add shadow for text;</li> <li>Containers → Header → Add dividing strips;</li> <li>Containers → Header → Color for hovering over a first level menu item;</li> <li>Containers → Header → Color for hovering over the elements \"Categories\", \"Account\" and \"Cart\";</li> <li>Containers → Header → The color of the icons for elements \"Categories\", \"Account\" and \"Cart\";</li> <li>Product → Set individual color for \"Add to cart\" button.</li> </ul> <p>"
+msgstr "<p>В цій версії ми значно розширили налаштування \"схем кольорів\" і розгрупували їх по вкладкам, що відповідають їх місцю застосування і функціональному призначенню.</p>"
+"<p><b>ВАЖЛИВО!!!</b></p>"
+"<p>Після оновлення Ваша діюча \"схема кольорів\" буде працювати як і раніше. Для застосування нових налаштувань Вам необхідно виконати один із варіантів:"
+"<ol> "
+"<li>або скоригувати діючу схему кольорів. Для цього, перейдіть на сторінку АВ: Модулі → AB: UniTheme2 → Налаштування схеми кольорів, оберіть активну схему кольорів та встановіть необхідні значення для всіх налаштувань;</li>"
+"<li>або створити нову схему кольорів із застосуванням \"Редактора тем\" на основі доступних в цій версії схем кольорів.</li>"
+"</ol>"
+"</p>"
+"<p>Список нових налаштувань схем кольорів (AB: Модулі → AB: UniTheme2 → Налаштування схеми кольорів):"
+"<ul>"
+"<li>Загальні → Відображати заголовки великими літерами;</li>"
+"<li>Загальні → Кнопки → Відображати текст великими літерами;</li>"
+"<li>Загальні → Кнопки → Відображати тінь;</li>"
+"<li>Загальні → Кнопки → Додати об'єм;</li>"
+"<li>Загальні → Стікери (Лейбли) → Контурний стиль;</li>"
+"<li>Загальні → Стікери (Лейбли) → Відображати тінь;</li>"
+"<li>Загальні → Стікери (Лейбли) → Відображати тінь для тексту;</li>"
+"<li>Контейнери → Заголовок → Додати розділові смуги;</li>"
+"<li>Контейнери → Заголовок → Колір при наведені на пункт меню першого рівня;</li>"
+"<li>Контейнери → Заголовок → Колір при наведені на елементи \"Каталог товарів\", \"Акаунт\" і \"Кошик\";</li>"
+"<li>Контейнери → Заголовок → Колір іконок для елементів \"Каталог товарів\", \"Акаунт\" і \"Кошик\";</li>"
+"<li>Товар → Назначити індивідуальний колір кнопки \"У кошик\".</li>"
+"</ul>"
+"</p>"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.b.brands_page_will_be_removed.title"
+msgid "Attention! The removing of Brands page functionality is planned"
+msgstr "Увага! Планується перенесення функціоналу Бренди"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.b.brands_page_will_be_removed.text"
+msgid "The functionality of the Brands page will be moved and expanded into the separate add-on <a href=\"https://cs-cart.alexbranding.com/en/seo-for-brands.html\" target=\"_blank\">AB: SEO for Brands</a> from the next version of the theme. It is available in the package <a href=\"https://cs-cart.alexbranding.com/en/seo-package.html\" target=\"_blank\">SEO</a>."
+msgstr "З наступної версії теми функціонал сторінки Бренди буде винесено і значно розширено в окремому модулі <a href=\"https://cs-cart.alexbranding.com/ru/seo-dlya-brendov.html\" target=\"_blank\">AB: SEO для брендів</a>, який доступний в пакеті <a href=\"https://cs-cart.alexbranding.com/ru/paket-moduley-seo.html\" target=\"_blank\">SEO</a>."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.b.ab__deal_of_the_day.title"
+msgid "Attention! The update of the \"AB: Product of the day and extended promotions\" add-on is needed"
+msgstr "Увага! Необхідно оновити модуль \"AB: Товар дня і розширені промоакції\""
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.b.ab__deal_of_the_day.text"
+msgid "For theme version v4.11.3.b is needed the add-on \"AB: Product of the day and extended promotions\" version v3.2.0 to provide the correct display of the add-on elements in the theme."
+msgstr "Для версії теми v4.11.3.b необхідно модуль \"AB: Товар дня і розширені промоакції\" версії v3.2.0 для забезпечення правильного відображення елементів модуля в темі."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.brands_page_was_removed.title"
+msgid "Attention! The Brands page functionality was moved out to the separate add-on."
+msgstr "Увага! Функціонал сторінки Бренди було винесено в окремий модуль."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.brands_page_was_removed.text"
+msgid "Functionality of the Brands page was moved out and expanded to the separate add-on <a href=\"https://cs-cart.alexbranding.com/ru/seo-dlya-brendov.html\" target=\"_blank\">AB: SEO for Brands</a> that is available in the package <a href=\"https://cs-cart.alexbranding.com/ru/paket-moduley-seo.html\" target=\"_blank\">SEO</a>. In the absence of the specified add-on, theme will still use outdated functionality, which will be permanently removed in the next releases."
+msgstr "Функціонал сторінки Бренди було винесено і значно розширено в окремому модулі <a href=\"https://cs-cart.alexbranding.com/ru/seo-dlya-brendov.html\" target=\"_blank\">AB: SEO для брендів</a>, який доступний в пакеті <a href=\"https://cs-cart.alexbranding.com/ru/paket-moduley-seo.html\" target=\"_blank\">SEO</a>. При відсутності зазначеного модулю, в темі ще буде використовуватись застарілий функціонал, який буде остаточно видалено в найближчих релізах."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.ab__category_banners.title"
+msgid "Attention! The update of the \"AB: Banners for categories\" add-on is needed"
+msgstr "Увага! Необхідно оновити модуль \"AB: Банери для категорій\""
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.ab__category_banners.text"
+msgid "For theme version v4.11.3.b is needed the add-on \"AB: Banners for categories\" version v2.1.0 to ensure the correct operation of the setting \"AB: UniTheme2: Theme Settings → Product Lists → Use Deferred Image Upload\"."
+msgstr "Для версії теми v4.11.3.c необхідно використовувати модуль \"AB: Банери для категорій\" версії v2.1.0 для забезпечення правильної роботи налаштування \"AB: UniTheme2: Налаштування теми > Списки товарів → Застосувати відкладене завантаження зображень\""
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.ab__video_gallery.title"
+msgid "Attention! The update of the \"AB: Video gallery of the product\" add-on is needed"
+msgstr "Увага! Необхідно оновити модуль \"AB: Відео галерея товару\""
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.3.c.ab__video_gallery.text"
+msgid "For theme version v4.11.3.b is needed the add-on \"AB: Video gallery of the product\" version v2.2.0 to ensure the correct operation of the setting \"AB: UniTheme2: Theme Settings → Product Lists → Use Deferred Image Upload\"."
+msgstr "Для версії теми v4.11.3.c необхідно використовувати модуль \"AB: Відео галерея товару\" версії v2.2.0 для забезпечення правильної роботи налаштування \"AB: UniTheme2: Налаштування теми > Списки товарів → Застосувати відкладене завантаження зображень\"."
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.4.a.ab__antibot.title"
+msgid "Attention! If you use the SEOhide add-on - check!!!"
+msgstr "Увага! Якщо ви використовуєте додаток SEOhide"
+
+msgctxt "Languages::abt__ut2.upgrade_notifications.4.11.4.a.ab__antibot.text"
+msgid "Due to the closure of support for the SEOhide add-on, starting from the theme version v4.11.4.a, the integration of the new <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/en/antibot-seo.html\">AB: Antibot</a> add-on included in the <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/en/seo-package.html\">SEO</a> and <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/en/set-speedup.html\">Speed-Up</a> packages is used to hide content from bots. Uninstall the SEOhide add-on, install the <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/en/antibot-seo.html\">AB: Antibot</a> add-on and configure it according to the <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/en/ab__antibot.doc\">documentation</a>."
+msgstr "У зв'язку з закриттям підтримки додатка SEOhide, починаючи з версії теми v4.11.4.a для приховування контенту від ботів використовується інтеграція нового додатку <a target=\"_ blank\" href=\"https://cs-cart.alexbranding.com/ru/antibot.html\">AB: Aнтибот</a>, що входить в пакети <a target=\"_ blank\" href=\"https://cs-cart.alexbranding.com/ru/paket-moduley-seo.html\">SEO</a> і <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/ru/paket-speedup.html\">Speed-Up</a>."
+"Видаліть додаток SEOhide, встановіть додаток <a target=\"_blank\" href=\"https://cs-cart.alexbranding.com/ru/antibot.html\">AB: Aнтибот</a> і налаштуйте його відповідно до <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/ab__antibot.doc\">документації</a>."
+
+msgctxt "Languages::ab__ut2.autoinstall.theme"
+msgid "Installed theme AB: UniTheme2"
+msgstr "Встановлено тему AB: UniTheme2"
+
+msgctxt "Languages::ab__ut2.autoinstall.demodata"
+msgid "Added demo data (new banners, menus and blog pages)"
+msgstr "Додано демо-дані (нові банери, меню і сторінки блогу)"
+
+msgctxt "Languages::abt__ut2.errors.is_correctly_installed.mv.uninstalled"
+msgid "For correct working of UniTheme2 on the CS-Cart Multi-Vendor (used by you), install and enable addon UniTheme2 for Multi-Vendor edition of CS-Cart (comes with the theme for this edition) and try again"
+msgstr "Для правильної роботи UniTheme2 на CS-Cart Multi-Vendor (використовується у Вас) встановіть та увімкніть модуль UniTheme2 для Multi-Vendor редакції CS-Cart (входить до поставки теми для цієї редакції) і повторіть спробу"
+
+msgctxt "Languages::abt__ut2.errors.is_correctly_installed.mv.disabled"
+msgid "For correct working of UniTheme2 on the CS-Cart Multi-Vendor (used by you) enable addon UniTheme2 for Multi-Vendor edition of CS-Cart (comes with the theme for this edition) and try again"
+msgstr "Для правильної роботи UniTheme2 на CS-Cart Multi-Vendor (використовується у Вас) увімкніть модуль UniTheme2 для Multi-Vendor редакції CS-Cart (входить до поставки теми для цієї редакції) і повторіть спробу"
+
+#. Alexbranding. Do not modify this file manually!

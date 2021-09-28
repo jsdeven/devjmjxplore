@@ -1,0 +1,174 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+
+msgctxt "Addons::name::abt__unitheme2_mv"
+msgid "abt__unitheme2_mv"
+msgstr "AB: UniTheme2 (Multi-Vendor)"
+
+msgctxt "Addons::description::abt__unitheme2_mv"
+msgid "abt__unitheme2_mv_description"
+msgstr "Модуль добавляет файлы шаблона AB: UniTheme2 для редакции Multi-Vendor"
+
+msgctxt "Languages::abt__unitheme2_mv"
+msgid "abt__unitheme2_mv"
+msgstr "AB: UniTheme2 (Multi-Vendor)"
+
+msgctxt "Languages::abt__ut2.settings.vendor"
+msgid "abt__ut2.settings.vendor"
+msgstr "Продавец"
+
+msgctxt "Languages::abt__ut2.settings.vendor_description"
+msgid "abt__ut2.settings.vendor_description"
+msgstr "Блок с информацией о продавце на странице продавца"
+
+msgctxt "Languages::abt__ut2.settings.vendor.truncate_short_description"
+msgid "abt__ut2.settings.vendor.truncate_short_description"
+msgstr "Количество символов для отображения описания продавца"
+
+msgctxt "Languages::abt__ut2.settings.vendor.truncate_short_description.tooltip"
+msgid "abt__ut2.settings.vendor.truncate_short_description.tooltip"
+msgstr "Позволяет ограничить отображение информации о продавце, укажите количество отображаемых символов. Чтобы отключить отображение используйте значение \"0\""
+
+msgctxt "Languages::abt__ut2.settings.vendor.show_ask_question_link"
+msgid "abt__ut2.settings.vendor.show_ask_question_link"
+msgstr "Отображать ссылку \"Задать вопрос\""
+
+msgctxt "Languages::abt__ut2.settings.vendor.show_ask_question_link.tooltip"
+msgid "abt__ut2.settings.vendor.show_ask_question_link.tooltip"
+msgstr "Позволяет отобразить ссылку для коммуникации с продавцом с помощю чата. Зависит от модуля \"Чат с продавцом\""
+
+msgctxt "Languages::abt__ut2.settings.products.vendor_group"
+msgid "abt__ut2.settings.products.vendor_group"
+msgstr "Блок с информацией о продавце"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor_group_description"
+msgid "abt__ut2.settings.products.vendor_group_description"
+msgstr "Настройки блока с информацией о продавце на странице товара"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_name_as_link"
+msgid "abt__ut2.settings.products.vendor.show_name_as_link"
+msgstr "Имя продавца, как ссылка на страницу продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_name_as_link.tooltip"
+msgid "abt__ut2.settings.products.vendor.show_name_as_link.tooltip"
+msgstr "Позволяет по ссылке переходить на страницу продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_logo"
+msgid "abt__ut2.settings.products.vendor.show_logo"
+msgstr "Отображать логотип продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_logo.tooltip"
+msgid "abt__ut2.settings.products.vendor.show_logo.tooltip"
+msgstr "Позволяет отобразить логотип продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.truncate_short_description"
+msgid "abt__ut2.settings.products.vendor.truncate_short_description"
+msgstr "Количество символов для отображения описания продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.truncate_short_description.tooltip"
+msgid "abt__ut2.settings.products.vendor.truncate_short_description.tooltip"
+msgstr "Позволяет ограничить отображение описания продавца, укажите количество отображаемых символов. Чтобы отключить отображение используйте значение \"0\""
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_phone"
+msgid "abt__ut2.settings.products.vendor.show_phone"
+msgstr "Отображать телефон продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_phone.tooltip"
+msgid "abt__ut2.settings.products.vendor.show_phone.tooltip"
+msgstr "Позволяет отобразить номер телефона продавца"
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_ask_question_link"
+msgid "abt__ut2.settings.products.vendor.show_ask_question_link"
+msgstr "Отображать ссылку \"Задать вопрос\""
+
+msgctxt "Languages::abt__ut2.settings.products.vendor.show_ask_question_link.tooltip"
+msgid "abt__ut2.settings.products.vendor.show_ask_question_link.tooltip"
+msgstr "Позволяет отобразить ссылку для коммуникации с продавцом с помощю чата. Зависит от модуля \"Чат с продавцом\""
+
+msgctxt "Languages::abt__ut2.sort_by_company_asc"
+msgid "abt__ut2.sort_by_company_asc"
+msgstr "Сортировать по алфавиту: от А до Я"
+
+msgctxt "Languages::abt__ut2.sort_by_company_desc"
+msgid "abt__ut2.sort_by_company_desc"
+msgstr "Сортировать по алфавиту: от Я до А"
+
+msgctxt "Languages::abt__ut2.sort_by_rating_asc"
+msgid "abt__ut2.sort_by_rating_asc"
+msgstr "Сортировать по рейтингу: по возрастанию"
+
+msgctxt "Languages::abt__ut2.sort_by_rating_desc"
+msgid "abt__ut2.sort_by_rating_desc"
+msgstr "Сортировать по рейтингу"
+
+msgctxt "Languages::abt__ut2_mv.vendor_settings_tab"
+msgid "abt__ut2_mv.vendor_settings_tab"
+msgstr "Настройки Продавца на странице продавца"
+
+msgctxt "Languages::abt__ut2_mv.product_page_vendor_settings"
+msgid "abt__ut2_mv.product_page_vendor_settings"
+msgstr "Настройки Продавца на странице товара"
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.title"
+msgid "abt__ut2_mv.upgrade_notifications.title"
+msgstr "AB: UniTheme2 (Multi-Vendor) успешно обновлена до v[ver]!"
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.text"
+msgid "abt__ut2_mv.upgrade_notifications.text"
+msgstr "Подробный список изменений, вошедший в версию <b>v[ver]</b> смотрите в документации по теме в разделе <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2_mv.doc#p-1276\">Список релизов</a>."
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.4.10.2.b.new_layouts.title"
+msgid "abt__ut2_mv.upgrade_notifications.4.10.2.b.new_layouts.title"
+msgstr "Требуется обновление используемого макета!"
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.4.10.2.b.new_layouts.text"
+msgid "abt__ut2_mv.upgrade_notifications.4.10.2.b.new_layouts.text"
+msgstr "Используйте следующую <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc#p-142\">инструкцию</a> для обновления используемого макета."
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.recommend_to_update_layouts.title"
+msgid "abt__ut2_mv.upgrade_notifications.recommend_to_update_layouts.title"
+msgstr "Требуется обновление используемого макета!"
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.recommend_to_update_layouts.text"
+msgid "abt__ut2_mv.upgrade_notifications.recommend_to_update_layouts.text"
+msgstr "Используйте следующую <a target=\"_blank\" href=\"https://docs.cs-cart.abt.team/ru/abt__unitheme2.doc/v4.10.2.d#p-142\">инструкцию</a> для обновления используемого макета."
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.4.11.2.a.new_settings.title"
+msgid "abt__ut2_mv.upgrade_notifications.4.11.2.a.new_settings.title"
+msgstr "Добавлены новые настройки"
+
+msgctxt "Languages::abt__ut2_mv.upgrade_notifications.4.11.2.a.new_settings.text"
+msgid "abt__ut2_mv.upgrade_notifications.4.11.2.a.new_settings.text"
+msgstr "<h3>Блок с информацией о продавце, на странице товара</h3>"
+"<p>Для редактирования этих настроек перейдите: Панель администратора → AB: Модули → AB: UniTheme2 → Настройки темы, перейдите на вкладку \"Товар\" и найдите раздел \"Блок с информацией о продавце\":</p>"
+"<ul>"
+"<li>Имя продавца, как ссылка на страницу продавца;</li>"
+"<li>Отображать логотип продавца;</li>"
+"<li>Количество символов для отображения описания продавца;</li>"
+"<li>Отображать телефон продавца;</li>"
+"<li>Отображать ссылку \"Задать вопрос\".</li>"
+"</ul>"
+""
+"<h3>Блок с информацией о продавце, на странице продавца</h3>"
+"<p>Для редактирования этих настроек перейдите: Панель администратора → AB: Модули → AB: UniTheme2 → Настройки темы, перейдите на вкладку \"Продавец\":</p>"
+"<ul>"
+"<li>Количество символов для отображения описания продавца;</li>"
+"<li>Отображать ссылку \"Задать вопрос\".</li>"
+"</ul>"
+
+msgctxt "Languages::abt__ut2_mv.autoinstall.add_layouts"
+msgid "abt__ut2_mv.autoinstall.add_layouts"
+msgstr "Добавлены макеты для Multi-Vendor"
+
+msgctxt "Languages::abt__ut2_mv.help"
+msgid "abt__ut2_mv.help"
+msgstr "Справка"
+
+msgctxt "Languages::abt__ut2_mv.help.doc"
+msgid "abt__ut2_mv.help.doc"
+msgstr "Ознакомиться с <a target='_blank' href='https://cs-cart.alexbranding.com/ru/abt__unitheme2_mv.doc'>документацией</a>."
+
+#. Alexbranding. Do not modify this file manually!

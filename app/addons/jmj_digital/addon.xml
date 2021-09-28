@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>jmj_digital</id>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>en</default_language>
+	<supplier>Onjection Team</supplier>
+    <queries>
+        <item for="install">
+            ALTER TABLE `?:categories` 
+                ADD COLUMN `product_image_count` mediumint(8) unsigned, 
+                ADD COLUMN `product_image_type` VARCHAR(255);
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:categories` 
+                DROP COLUMN `product_image_count`, 
+                DROP COLUMN `product_image_type`;
+        </item>
+        <item for="install">
+            ALTER TABLE `?:product_features` 
+                ADD `feature_variant_design` TINYINT(8) NOT NULL,
+                ADD `multi_colors_filter` BIT(1) NOT NULL default '0';
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:product_features` 
+                DROP COLUMN `feature_variant_design`;
+        </item>
+        <item for="install">
+            ALTER TABLE `?:product_feature_variant_descriptions` 
+                ADD COLUMN `company_id` mediumint(8) unsigned, 
+                ADD COLUMN `vendor_brand_id` mediumint(8) unsigned;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:product_feature_variant_descriptions` 
+                DROP COLUMN `company_id`, 
+                DROP COLUMN `vendor_brand_id`;
+        </item>
+        <item for="install">
+            ALTER TABLE `?:users` 
+                ADD COLUMN `otp` mediumint(8) unsigned, 
+                ADD COLUMN `verified` tinyint(1), 
+                ADD COLUMN `otp_insert_time` varchar(32), 
+                ADD COLUMN `location_marketing_users_data` text, 
+                ADD COLUMN `gstin_number` VARCHAR(128),
+                ADD COLUMN `location` VARCHAR(100);
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:users` 
+                DROP COLUMN `otp`, 
+                DROP COLUMN `location`,
+                DROP COLUMN `verified`,
+                DROP COLUMN `otp_insert_time`, 
+                DROP COLUMN `gstin_number`,
+                DROP COLUMN `location_marketing_users_data`;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:cities` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `city` VARCHAR(50) NOT NULL,
+                `status` VARCHAR(50) NOT NULL,
+                `created_at` int(11) unsigned NOT NULL,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:brands` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `brand` varchar(50) NOT NULL,
+                `company_id` mediumint(8) unsigned,
+                `logo` varchar(100) NOT NULL,
+                `link` varchar(255) NOT NULL,
+                `owner` int(11) NOT NULL,
+                `doc` varchar(255) NOT NULL,
+                `status` varchar(50) NOT NULL,
+                `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+       <item for="install">
+            ALTER TABLE `?:companies` 
+                ADD COLUMN `admin_firstname` VARCHAR(128),
+                ADD COLUMN `admin_lastname` VARCHAR(128),
+                ADD COLUMN `location` mediumint(8);
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:companies` 
+                DROP COLUMN `location`,
+                DROP COLUMN `admin_firstname`,
+                DROP COLUMN `admin_lastname`;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:customer_additional_data` (
+                `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `user_id` int(11) NOT NULL,
+                `company` varchar(128) NOT NULL,
+                `email` varchar(128) NOT NULL,
+                `firstname` varchar(128) NOT NULL,
+                `lastname` varchar(128) NOT NULL,
+                `phone` varchar(15) NOT NULL,
+                `otp` varchar(10) NOT NULL,
+                `otp_insert_time` varchar(32) NOT NULL,
+                `phone_2` varchar(15) NOT NULL,
+                `url` varchar(128) NOT NULL,
+                `company_type` varchar(50) NOT NULL,
+                `nature_of_business` varchar(100) NOT NULL,
+                `company_year` varchar(50) NOT NULL,
+                `gstin_number` varchar(128) NOT NULL,
+                `b_name` varchar(128) NOT NULL,
+                `b_address` varchar(255) NOT NULL,
+                `b_address_2` varchar(255) NOT NULL,
+                `pan_number` varchar(128) NOT NULL,
+                `b_city` varchar(128) NOT NULL,
+                `b_state` varchar(128) NOT NULL,
+                `b_country` varchar(32) NOT NULL,
+                `b_zipcode` varchar(32) NOT NULL,
+                `gst_type` varchar(128) NOT NULL,
+                `india_zone` varchar(128) NOT NULL,
+                `s_name` varchar(128) NOT NULL,
+                `s_address` varchar(255) NOT NULL,
+                `s_address_2` varchar(255) NOT NULL,
+                `s_city` varchar(128) NOT NULL,
+                `s_state` varchar(128) NOT NULL,
+                `s_country` varchar(32) NOT NULL,
+                `s_zipcode` varchar(32) NOT NULL,
+                `payment_option` varchar(132) NOT NULL,
+                `committed_with_jmjain` varchar(132) NOT NULL,
+                `expected_limit` varchar(132) NOT NULL,
+                `reference_bank_garuntee` varchar(100) NOT NULL,
+                `monthly_turnover` varchar(100) NOT NULL,
+                `name_reference` varchar(100) NOT NULL,
+                `company_advantage` text NOT NULL,
+                `location` varchar(255) NOT NULL,
+                `background_info` varchar(255) NOT NULL,
+                `bank_name` varchar(132) NOT NULL,
+                `account_number` varchar(132) NOT NULL,
+                `ifsc_code` varchar(132) NOT NULL,
+                `cancel_cheque_copy_image` varchar(255) NOT NULL,
+                `company_profile_image` varchar(255) NOT NULL,
+                `product_catalogue_image` varchar(255) NOT NULL,
+                `office_front_image` varchar(255) NOT NULL,
+                `office_inside_image` varchar(255) NOT NULL,
+                `owners_pancard_image` varchar(255) NOT NULL,
+                `gstin_certificate_image` varchar(255) NOT NULL,
+                `bank_document` varchar(255) NOT NULL,
+                `reference_phone` varchar(20) NOT NULL,
+                `ship_to_another` bit(1) NOT NULL default '1',
+                `register_last_step` mediumint(8) NOT NULL,
+                `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE `?:customer_additional_data`;</item>
+        <item for="install">
+           CREATE TABLE IF NOT EXISTS `?:company_additional_data` (
+                `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                `company_id` int(11) NOT NULL,
+                `company` varchar(128) NOT NULL,
+                `email` varchar(128) NOT NULL,
+                `firstname` varchar(128) NOT NULL,
+                `lastname` varchar(128) NOT NULL,
+                `phone` varchar(15) NOT NULL,
+                `otp` varchar(10) NOT NULL,
+                `otp_insert_time` varchar(32) NOT NULL,
+                `phone_2` varchar(15) NOT NULL,
+                `url` varchar(128) NOT NULL,
+                `company_type` varchar(50) NOT NULL,
+                `nature_of_business` varchar(100) NOT NULL,
+                `company_year` varchar(50) NOT NULL,
+                `gstin_number` varchar(128) NOT NULL,
+                `b_name` varchar(128) NOT NULL,
+                `b_address` varchar(255) NOT NULL,
+                `b_address_2` varchar(255) NOT NULL,
+                `pan_number` varchar(128) NOT NULL,
+                `b_city` varchar(128) NOT NULL,
+                `b_state` varchar(128) NOT NULL,
+                `b_country` varchar(32) NOT NULL,
+                `b_pincode` varchar(32) NOT NULL,
+                `gst_type` varchar(128) NOT NULL,
+                `india_zone` varchar(128) NOT NULL,
+                `s_name` varchar(128) NOT NULL,
+                `s_address` varchar(255) NOT NULL,
+                `s_address_2` varchar(255) NOT NULL,
+                `s_city` varchar(128) NOT NULL,
+                `s_state` varchar(128) NOT NULL,
+                `s_country` varchar(32) NOT NULL,
+                `s_pincode` varchar(32) NOT NULL,
+                `brand_1` varchar(132) NOT NULL,
+                `brand_2` varchar(132) NOT NULL,
+                `brand_3` varchar(132) NOT NULL,
+                `total_emp` varchar(100) NOT NULL,
+                `annual_turnover` varchar(100) NOT NULL,
+                `private_label` char(1) NOT NULL,
+                `average_monthly_production` varchar(50) NOT NULL,
+                `company_advantage` text NOT NULL,
+                `main_market_coverage` varchar(255) NOT NULL,
+                `categories` text NOT NULL,
+                `bank_name` varchar(132) NOT NULL,
+                `account_number` varchar(132) NOT NULL,
+                `ifsc_code` varchar(132) NOT NULL,
+                `cancel_cheque_copy_image` varchar(255) NOT NULL,
+                `company_profile_image` varchar(255) NOT NULL,
+                `product_catalogue_image` varchar(255) NOT NULL,
+                `office_front_image` varchar(255) NOT NULL,
+                `office_inside_image` varchar(255) NOT NULL,
+                `owners_pancard_image` varchar(255) NOT NULL,
+                `gstin_certificate_image` varchar(255) NOT NULL,
+                `register_last_step` mediumint(8) NOT NULL,
+                `ship_to_another` bit(1) default '1',
+                `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </item>
+        <item for="uninstall">DROP TABLE `?:company_additional_data`;</item>
+        <item for="install">
+            ALTER TABLE `?:products` 
+                ADD COLUMN `net_price` DECIMAL(12,2) NOT NULL,
+                ADD COLUMN `integer_in_full_description` char(1) default 'N',
+                ADD COLUMN `brand_variant` mediumint(8),
+                ADD COLUMN `hsn_number` VARCHAR(100) NOT NULL;
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:products` 
+                DROP COLUMN `net_price`,
+                DROP COLUMN `integer_in_full_description`,
+                DROP COLUMN `brand_variant`,
+                DROP COLUMN `hsn_number`;
+        </item>
+        <item for="install">
+            ALTER TABLE `?:orders` 
+                ADD COLUMN `sap_id` mediumint(8),
+                ADD COLUMN `marketing_user_id` mediumint(8),
+                ADD COLUMN `check_order` char(1) DEFAULT 'N',
+                ADD COLUMN `last_complete_vendor_status` int(8);
+        </item>
+        <item for="uninstall">
+            ALTER TABLE `?:orders` 
+                DROP COLUMN `sap_id`,
+                DROP COLUMN `marketing_user_id`,
+                DROP COLUMN `check_order`,
+                DROP COLUMN `last_complete_vendor_status`;
+        </item>
+        <item for="install">
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_cities', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_carts', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_shipments', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('approve_order', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('process_approved_order', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_brands', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('quotes_manage', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('step_manage', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_tags', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_act_as_user', 'Y', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id) VALUES('manage_check_order', 'N', 'custom_setting');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_data_feeds', 'Y', 'custom_setting', 'data_feeds', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_data_feeds', 'Y', 'custom_setting', 'data_feeds', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_categories', 'Y', 'custom_setting', 'categories', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_categories', 'Y', 'custom_setting', 'categories', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_product_features', 'Y', 'custom_setting', 'product_features', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_product_features', 'Y', 'custom_setting', 'product_features', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_product_options', 'Y', 'custom_setting', 'product_options', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_product_options', 'Y', 'custom_setting', 'product_options', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_product_filters', 'Y', 'custom_setting', 'product_filters', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_product_filters', 'Y', 'custom_setting', 'product_filters', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('view_products_custom', 'Y', 'custom_setting', 'products_custom', 'Y');
+           REPLACE INTO `?:privileges` (privilege, is_default, section_id, group_id, is_view) VALUES ('manage_products_custom', 'Y', 'custom_setting', 'products_custom', 'Y');
+           
+        </item>
+        
+        <item for="install"> REPLACE INTO `?:statuses` (`status_id`,`status`, `type`, `is_default`, `position`) VALUES ('65','A', 'O', 'N', '0'); </item>
+        <item for="install"> REPLACE INTO `?:status_descriptions` (`status_id`,`description`, `email_subj`, `email_header`, `lang_code`) VALUES ('65','Approve', '', NULL, 'en'); </item>
+        <item for="install"> REPLACE INTO `?:statuses` (`status_id`,`status`, `type`, `is_default`, `position`) VALUES ('66','E', 'O', 'N', '0'); </item>
+        <item for="install"> REPLACE INTO `?:status_descriptions` (`status_id`,`description`, `email_subj`, `email_header`, `lang_code`) VALUES ('66','Disapprove', '', NULL, 'en'); </item>
+        <item for="install"> REPLACE INTO `?:statuses` (`status_id`,`status`, `type`, `is_default`, `position`) VALUES ('67','G', 'O', 'N', '0'); </item>
+        <item for="install"> REPLACE INTO `?:status_descriptions` (`status_id`,`description`, `email_subj`, `email_header`, `lang_code`) VALUES ('67','Process', '', NULL, 'en'); </item>
+        
+        <item for="uninstall">
+            DELETE FROM ?:privileges WHERE privilege = 'manage_act_as_user';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_carts';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_shipments';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_check_order';
+            DELETE FROM ?:privileges WHERE privilege = 'approve_order';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_cities';
+            DELETE FROM ?:privileges WHERE privilege = 'process_approved_order';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_brands';
+            DELETE FROM ?:privileges WHERE privilege = 'quotes_manage';
+            DELETE FROM ?:privileges WHERE privilege = 'step_manage';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_tags';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_categories';
+            DELETE FROM ?:privileges WHERE privilege = 'view_categories';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_product_features';
+            DELETE FROM ?:privileges WHERE privilege = 'view_product_features';
+            DELETE FROM ?:privileges WHERE privilege = 'view_product_options';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_product_options';
+            DELETE FROM ?:privileges WHERE privilege = 'view_product_filters';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_product_filters';
+            DELETE FROM ?:privileges WHERE privilege = 'view_data_feeds';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_data_feeds';
+            DELETE FROM ?:privileges WHERE privilege = 'view_products_custom';
+            DELETE FROM ?:privileges WHERE privilege = 'manage_products_custom';
+        </item>
+     
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:order_disapproved_reason` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `order_id` mediumint(8) unsigned NOT NULL,
+                `reason` text NOT NULL,
+                `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`),
+                UNIQUE (`order_id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:vendor_order_statuses` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `serial_number` mediumint(8) unsigned NOT NULL,
+                `status` varchar(50) NOT NULL,
+                `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="install">
+            INSERT INTO `?:vendor_order_statuses` (serial_number, status) VALUES('1', 'Cutting'),('2', 'Stitching'),('3', 'Washing'),('4', 'finishing'),('5', 'Pressing'),('6', 'Packing'),('7', 'Ready To Ship'),('8', 'Shipping');
+        </item>
+        <item for="uninstall">TRUNCATE TABLE ?:vendor_order_statuses;</item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:product_create_steps` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `step_number` mediumint(8) unsigned NOT NULL,
+                `step_name` varchar(100) NULL,
+                `status` char(1) DEFAULT 'Y',
+                `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="install">
+            INSERT INTO `?:product_create_steps` (step_number, step_name) VALUES('1', 'Step 1'),('2', 'Step 2'),('3', 'Step 3'),('4', 'Step 4'),('5', 'Step 5'),('6', 'Step 6'),('7', 'Step 7'),('8', 'Step 8'),('9', 'Step 9'),('10', 'Step 10');
+        </item>
+        <item for="install">
+            CREATE TABLE `jmj_product_enquiry_form_details` (
+                `id` int(12) unsigned NOT NULL AUTO_INCREMENT,
+                `phone_num` varchar(51) NOT NULL,
+                `email_bulk` varchar(255) NOT NULL,
+                `pincode` int(12) NOT NULL,
+                `product_name` varchar(255) NOT NULL,
+                `enq_qty` int(12) NOT NULL,
+                `message_bulk` varchar(255) NOT NULL,
+                `user_name` varchar(255) NOT NULL,
+                `user_id` int(12) NOT NULL,
+                `timestamp` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        <item for="install">
+            CREATE TABLE `jmj_hsn_numbers` (
+                `hsn_number` varchar(100) NOT NULL,
+                UNIQUE(`hsn_number`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+    </queries>
+
+</addon>

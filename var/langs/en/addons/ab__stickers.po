@@ -1,0 +1,793 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+
+msgctxt "Addons::name::ab__stickers"
+msgid "AB: Stickers"
+msgstr "AB: Stickers"
+
+msgctxt "Addons::description::ab__stickers"
+msgid "Add-on allows to add product stickers"
+msgstr "Add-on allows to add product stickers"
+
+msgctxt "Languages::ab__stickers"
+msgid "AB: Stickers"
+msgstr "AB: Stickers"
+
+msgctxt "Languages::ab__stickers.settings"
+msgid "General settings"
+msgstr "General settings"
+
+msgctxt "SettingsSections::ab__stickers::settings"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsSections::ab__stickers::text_stickers"
+msgid "Text stickers"
+msgstr "Text stickers"
+
+msgctxt "SettingsSections::ab__stickers::vendors"
+msgid "Vendors"
+msgstr "Vendors"
+
+msgctxt "SettingsSections::ab__stickers::graphic_stickers"
+msgid "Graphic stickers"
+msgstr "Graphic stickers"
+
+msgctxt "SettingsOptions::ab__stickers::ts_appearance"
+msgid "Appearance"
+msgstr "Appearance"
+
+msgctxt "SettingsTooltips::ab__stickers::ts_appearance"
+msgid "Defines the appearence of text stickers"
+msgstr "Defines the appearence of text stickers"
+
+msgctxt "SettingsOptions::ab__stickers::gs_image_size_in_lists"
+msgid "Icon size in product lists, px"
+msgstr "Icon size in product lists, px"
+
+msgctxt "SettingsTooltips::ab__stickers::gs_image_size_in_lists"
+msgid "Defines icon size in product lists"
+msgstr "Defines icon size in product lists"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_in_lists::24"
+msgid "24x24"
+msgstr "24x24"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_in_lists::36"
+msgid "36x36"
+msgstr "36x36"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_in_lists::50"
+msgid "50x50"
+msgstr "50x50"
+
+msgctxt "SettingsOptions::ab__stickers::gs_image_size_on_product_pages"
+msgid "Icon size on product pages, px"
+msgstr "Icon size on product pages, px"
+
+msgctxt "SettingsTooltips::ab__stickers::gs_image_size_on_product_pages"
+msgid "Defines icon size on product pages"
+msgstr "Defines icon size on product pages"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_on_product_pages::24"
+msgid "24x24"
+msgstr "24x24"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_on_product_pages::36"
+msgid "36x36"
+msgstr "36x36"
+
+msgctxt "SettingsVariants::ab__stickers::gs_image_size_on_product_pages::50"
+msgid "50x50"
+msgstr "50x50"
+
+msgctxt "SettingsOptions::ab__stickers::output_position"
+msgid "Output position"
+msgstr "Output position"
+
+msgctxt "SettingsTooltips::ab__stickers::output_position"
+msgid "Please note, for RTL languages ​​- the meaning will be opposite"
+msgstr "Please note, for RTL languages ​​- the meaning will be opposite"
+
+msgctxt "SettingsVariants::ab__stickers::output_position::L"
+msgid "Left"
+msgstr "Left"
+
+msgctxt "SettingsVariants::ab__stickers::output_position::R"
+msgid "Right"
+msgstr "Right"
+
+msgctxt "SettingsOptions::ab__stickers::enable_for_vendors"
+msgid "Allow vendors to manage stickers"
+msgstr "Allow vendors to manage stickers"
+
+msgctxt "Languages::ab__stickers.help"
+msgid "Help"
+msgstr "Help"
+
+msgctxt "Languages::ab__stickers.help.docs"
+msgid "Read <a target='_blank' href='https://cs-cart.alexbranding.com/en/ab__stickers.doc'>the documentation</a>."
+msgstr "Read <a target='_blank' href='https://cs-cart.alexbranding.com/en/ab__stickers.doc'>the documentation</a>."
+
+msgctxt "Languages::privilege_groups.ab__stickers"
+msgid "AB: Stickers"
+msgstr "AB: Stickers"
+
+msgctxt "Languages::ab__stickers.output_type"
+msgid "Stickers output type"
+msgstr "Stickers output type"
+
+msgctxt "Languages::ab__stickers.output_type.tooltip"
+msgid "The setting allows to specify how the sticker list will be presented in each corner (upper left, upper right, lower left and lower right) of the product grid template \"Grid\" and in the product image block on the product page"
+msgstr "The setting allows to specify how the sticker list will be presented in "
+"each corner (upper left, upper right, lower left and lower right) of the product "
+"grid template \"Grid\" and in the product image block on the product page"
+
+msgctxt "Languages::ab__stickers.output_type.column"
+msgid "Column"
+msgstr "Column"
+
+msgctxt "Languages::ab__stickers.output_type.row"
+msgid "Row"
+msgstr "Row"
+
+msgctxt "Languages::ab__stickers.output_positions"
+msgid "Positions"
+msgstr "Positions"
+
+msgctxt "Languages::ab__stickers.output_position.list"
+msgid "Positions in product lists"
+msgstr "Positions in product lists"
+
+msgctxt "Languages::ab__stickers.output_position.detailed_page"
+msgid "Positions on product page"
+msgstr "Positions on product page"
+
+msgctxt "Languages::ab__stickers.output_position.AP"
+msgid "All positions"
+msgstr "All positions"
+
+msgctxt "Languages::ab__stickers.output_position.TL"
+msgid "Upper left corner"
+msgstr "Upper left corner"
+
+msgctxt "Languages::ab__stickers.output_position.TR"
+msgid "Upper right corner"
+msgstr "Upper right corner"
+
+msgctxt "Languages::ab__stickers.output_position.BL"
+msgid "Lower left corner"
+msgstr "Lower left corner"
+
+msgctxt "Languages::ab__stickers.output_position.BR"
+msgid "Lower right corner"
+msgstr "Lower right corner"
+
+msgctxt "Languages::ab__stickers.output_position.T"
+msgid "Upper corner"
+msgstr "Upper corner"
+
+msgctxt "Languages::ab__stickers.output_position.B"
+msgid "Lower corner"
+msgstr "Lower corner"
+
+msgctxt "Languages::ab__stickers.manage"
+msgid "Sticker list"
+msgstr "Sticker list"
+
+msgctxt "Languages::ab__stickers.update"
+msgid "Sticker managing"
+msgstr "Sticker managing"
+
+msgctxt "Languages::ab__stickers.manage.add.dynamic"
+msgid "Add dynamic sticker"
+msgstr "Add dynamic sticker"
+
+msgctxt "Languages::ab__stickers.manage.add.constant"
+msgid "Add static sticker"
+msgstr "Add static sticker"
+
+msgctxt "Languages::ab__stickers.manage.edit"
+msgid "Edit sticker"
+msgstr "Edit sticker"
+
+msgctxt "Languages::ab__stickers.manage.remove_links"
+msgid "Remove all links with the objects"
+msgstr "Remove all links with the objects"
+
+msgctxt "Languages::ab__stickers.params.name"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "Languages::ab__stickers.params.status"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "Languages::ab__stickers.params.type"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "Languages::ab__stickers.params.type.A"
+msgid "All types"
+msgstr "All types"
+
+msgctxt "Languages::ab__stickers.params.type.C"
+msgid "Static sticker"
+msgstr "Static sticker"
+
+msgctxt "Languages::ab__stickers.params.type.D"
+msgid "Dynamic sticker"
+msgstr "Dynamic sticker"
+
+msgctxt "Languages::ab__stickers.params.type.category"
+msgid "Category sticker"
+msgstr "Category sticker"
+
+msgctxt "Languages::ab__stickers.params.type.product"
+msgid "Product sticker"
+msgstr "Product sticker"
+
+msgctxt "Languages::ab__stickers.params.position"
+msgid "Position"
+msgstr "Position"
+
+msgctxt "Languages::ab__stickers.params.class"
+msgid "User-defined CSS-class"
+msgstr "User-defined CSS-class"
+
+msgctxt "Languages::ab__stickers.params.available_use"
+msgid "Validity period"
+msgstr "Validity period"
+
+msgctxt "Languages::ab__stickers.params.available_from"
+msgid "Available from"
+msgstr "Available from"
+
+msgctxt "Languages::ab__stickers.params.available_to"
+msgid "Available till"
+msgstr "Available till"
+
+msgctxt "Languages::ab__stickers.params.color"
+msgid "Text color"
+msgstr "Text color"
+
+msgctxt "Languages::ab__stickers.params.color.tooltip"
+msgid "Please, select the checkbox to use your own color"
+msgstr "Please, select the checkbox to use your own color"
+
+msgctxt "Languages::ab__stickers.params.background"
+msgid "Background color"
+msgstr "Background color"
+
+msgctxt "Languages::ab__stickers.params.background.tooltip"
+msgid "Please, select the checkbox to use your own color"
+msgstr "Please, select the checkbox to use your own color"
+
+msgctxt "Languages::ab__stickers.params.link_count"
+msgid "Links"
+msgstr "Links"
+
+msgctxt "Languages::ab__stickers.params.link_count.tooltip"
+msgid "Number of linked objects to the sticker"
+msgstr "Number of linked objects to the sticker"
+
+msgctxt "Languages::ab__stickers.new_sticker"
+msgid "New sticker"
+msgstr "New sticker"
+
+msgctxt "Languages::ab__stickers.name.tooltip"
+msgid "This field value will be displayed on"
+msgstr "This field value will be displayed on"
+
+msgctxt "Languages::ab__stickers.name_for_desktop"
+msgid "Text for full view"
+msgstr "Text for full view"
+
+msgctxt "Languages::ab__stickers.name_for_desktop.tooltip"
+msgid "This field value will be displayed on Desktop and Tablet devices (recommended for templates with big product images)"
+msgstr "This field value will be displayed on Desktop and Tablet devices (recommended for templates with big product images)"
+
+msgctxt "Languages::ab__stickers.name_for_mobile"
+msgid "Text for short view"
+msgstr "Text for short view"
+
+msgctxt "Languages::ab__stickers.name_for_mobile.tooltip"
+msgid "This field value will be displayed on Phone devices (recommended for templates with small product images)"
+msgstr "This field value will be displayed on Phone devices (recommended for templates with small product images)"
+
+msgctxt "Languages::ab__stickers.attached_products"
+msgid "Attached products"
+msgstr "Attached products"
+
+msgctxt "Languages::ab__stickers.style"
+msgid "Style"
+msgstr "Style"
+
+msgctxt "Languages::ab__stickers.style.T"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "Languages::ab__stickers.style.G"
+msgid "Graphic"
+msgstr "Graphic"
+
+msgctxt "Languages::ab__stickers.text_color"
+msgid "Text color"
+msgstr "Text color"
+
+msgctxt "Languages::ab__stickers.sticker_bg"
+msgid "Background color"
+msgstr "Background color"
+
+msgctxt "Languages::ab__stickers.editing_sticker"
+msgid "Sticker managing"
+msgstr "Sticker managing"
+
+msgctxt "Languages::ab__stickers.deleted_stickers"
+msgid "[n] sticker is deleted|[n] stickers are deleted"
+msgstr "[n] sticker is deleted|[n] stickers are deleted"
+
+msgctxt "Languages::ab__stickers.cloned_stickers"
+msgid "[n] sticker was cloned|[n] stickers were cloned"
+msgstr "[n] sticker was cloned|[n] stickers were cloned"
+
+msgctxt "Languages::ab__stickers.cloned"
+msgid "[Cloned]"
+msgstr "[Cloned]"
+
+msgctxt "Languages::ab__stickers.description"
+msgid "Description"
+msgstr "Description"
+
+msgctxt "Languages::ab__stickers.description.tooltip"
+msgid "This field value will be displayed when hover mouse pointer"
+msgstr "This field value will be displayed when hover mouse pointer"
+
+msgctxt "Languages::ab__stickers.group_conditions"
+msgid "If [set] of these conditions [set_value]"
+msgstr "If [set] of these conditions [set_value]"
+
+msgctxt "Languages::ab__stickers.conditions.all"
+msgid "every"
+msgstr "every"
+
+msgctxt "Languages::ab__stickers.conditions.any"
+msgid "any"
+msgstr "any"
+
+msgctxt "Languages::ab__stickers.conditions.true"
+msgid "are true"
+msgstr "are true"
+
+msgctxt "Languages::ab__stickers.conditions.false"
+msgid "are false"
+msgstr "are false"
+
+msgctxt "Languages::ab__stickers.conditions.names.price"
+msgid "Product price"
+msgstr "Product price"
+
+msgctxt "Languages::ab__stickers.conditions.names.feature"
+msgid "Product feature"
+msgstr "Product feature"
+
+msgctxt "Languages::ab__stickers.conditions.names.categories"
+msgid "Categories"
+msgstr "Categories"
+
+msgctxt "Languages::ab__stickers.conditions.names.tags"
+msgid "Product tag"
+msgstr "Product tag"
+
+msgctxt "Languages::ab__stickers.conditions.names.discount"
+msgid "Discount, %"
+msgstr "Discount, %"
+
+msgctxt "Languages::ab__stickers.conditions.names.vendor_plans"
+msgid "Vendor plan"
+msgstr "Vendor plan"
+
+msgctxt "Languages::ab__stickers.avail_from"
+msgid "Available from"
+msgstr "Available from"
+
+msgctxt "Languages::ab__stickers.avail_till"
+msgid "Available to"
+msgstr "Available to"
+
+msgctxt "Languages::ab__stickers.storefronts.sticker_page.description"
+msgid "Select the storefronts for which this sticker will be applied"
+msgstr "Select the storefronts for which this sticker will be applied"
+
+msgctxt "Languages::ab__stickers.search_by"
+msgid "Search by AB: Stickers"
+msgstr "Search by AB: Stickers"
+
+msgctxt "Languages::ab__stickers.available_placeholders"
+msgid "The following placeholders are available for fields \"Text for full view\", \"Text for short view\", \"Description\""
+msgstr "The following placeholders are available for fields \"Text for full view\", \"Text for short view\", \"Description\""
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.discount"
+msgid "The discount value in percents"
+msgstr "The discount value in percents"
+
+msgctxt "Languages::ab__stickers.conditions.names.free_shipping"
+msgid "Free shipping"
+msgstr "Free shipping"
+
+msgctxt "Languages::ab__stickers.will_used_default"
+msgid "Default stickers of active theme will be used"
+msgstr "Default stickers of active theme will be used"
+
+msgctxt "Languages::ab__stickers.you_have_no_standart_stickers"
+msgid "You need to create Discount and Free Shipping stickers or add Demo data in the \"AB: Stickers\" add-on, because when the add-on is activated, it intercepts the display of basic CS-Cart labels"
+msgstr "You need to create Discount and Free Shipping stickers or add Demo data in the \"AB: Stickers\" add-on, because when the add-on is activated, it intercepts the display of basic CS-Cart labels"
+
+msgctxt "Languages::ab__stickers.conditions.names.qty_discounts"
+msgid "Quantity discounts"
+msgstr "Quantity discounts"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.min_qty_discount_count"
+msgid "Minimal products quantity for quantity discount"
+msgstr "Minimal products quantity for quantity discount"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.min_qty_discount_price"
+msgid "Minimal products price with quantity discount"
+msgstr "Minimal products price with quantity discount"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.min_qty_discount_percentage"
+msgid "Discount percentage with minimal quantity discount"
+msgstr "Discount percentage with minimal quantity discount"
+
+msgctxt "Languages::ab__stickers.conditions.names.amount"
+msgid "In stock"
+msgstr "In stock"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.amount"
+msgid "Product quantity in stock"
+msgstr "Product quantity in stock"
+
+msgctxt "Languages::ab__stickers.conditions.names.sales_amount"
+msgid "Number of sales"
+msgstr "Number of sales"
+
+msgctxt "Languages::ab__stickers.conditions.names.popularity"
+msgid "Product popularity"
+msgstr "Product popularity"
+
+msgctxt "Languages::ab__stickers.conditions.names.rating"
+msgid "Product rating"
+msgstr "Product rating"
+
+msgctxt "Languages::ab__stickers.conditions.names.rating.tooltip"
+msgid "The value must be decimal"
+msgstr "The value must be decimal"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.rating"
+msgid "Product rating value, for example: 4.5 or 5.0"
+msgstr "Product rating value, for example: 4.5 or 5.0"
+
+msgctxt "Languages::ab__stickers.conditions.names.comments"
+msgid "Number of reviews"
+msgstr "Number of reviews"
+
+msgctxt "Languages::ab__stickers.conditions.names.comments.tooltip"
+msgid "Only accepted reviews will be counted"
+msgstr "Only accepted reviews will be counted"
+
+msgctxt "Languages::ab__stickers.conditions.names.pre_order"
+msgid "Buy in advance"
+msgstr "Buy in advance"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.avail_since"
+msgid "The date when buy in advance for product is available"
+msgstr "The date when buy in advance for product is available"
+
+msgctxt "Languages::ab__stickers.conditions.names.weight"
+msgid "Product weight"
+msgstr "Product weight"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.weight"
+msgid "Product weight"
+msgstr "Product weight"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.ceil_integer_weight"
+msgid "Product weight (rounded up to bigger integer number)"
+msgstr "Product weight (rounded up to bigger integer number)"
+
+msgctxt "Languages::ab__stickers.conditions.names.creating_date"
+msgid "Creating date"
+msgstr "Creating date"
+
+msgctxt "Languages::ab__stickers.conditions.names.creating_date.tooltip"
+msgid "Number of the days from creation date of the product to current date"
+msgstr "Number of the days from creation date of the product to current date"
+
+msgctxt "Languages::ab__stickers.conditions.names.age_verification"
+msgid "Age limit"
+msgstr "Age limit"
+
+msgctxt "Languages::ab__stickers.show"
+msgid "Display"
+msgstr "Display"
+
+msgctxt "Languages::ab__stickers.show.small"
+msgid "Display in the lists with small items"
+msgstr "Display in the lists with small items"
+
+msgctxt "Languages::ab__stickers.show.small.tooltip"
+msgid "Catalog lists:<br/>Small items;<br/>Text links;<br/>"
+msgstr "Catalog lists:<br/>Small items;<br/>Text links;<br/>"
+
+msgctxt "Languages::ab__stickers.max_count"
+msgid "Maximal number"
+msgstr "Maximal number"
+
+msgctxt "Languages::ab__stickers.available_placeholders.header"
+msgid "Available placeholders"
+msgstr "Available placeholders"
+
+msgctxt "Languages::ab__stickers.default_placeholders"
+msgid "<p><code>[end_line]</code> - break line</p>"
+msgstr "<p><code>[end_line]</code> - break line</p>"
+
+msgctxt "Languages::ab__stickers.conditions.names.promotion"
+msgid "Promotion"
+msgstr "Promotion"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.price"
+msgid "Product price"
+msgstr "Product price"
+
+msgctxt "Languages::ab__stickers.border_width"
+msgid "Outline width"
+msgstr "Outline width"
+
+msgctxt "Languages::ab__stickers.border_color"
+msgid "Outline color"
+msgstr "Outline color"
+
+msgctxt "Languages::ab__stickers.uppercase_text"
+msgid "Text in capitals"
+msgstr "Text in capitals"
+
+msgctxt "Languages::ab__stickers.available_tags.header"
+msgid "Available html tags and other entities"
+msgstr "Available html tags and other entities"
+
+msgctxt "Languages::ab__stickers.available_tags"
+msgid "For fields Text for full view and Text for short view there are available some html tags and <a target=\"_blank\" href=\"https://www.w3schools.com/charsets/ref_emoji.asp\">Emoji Unicode</a>"
+msgstr "For fields Text for full view and Text for short view there are available some html tags and <a target=\"_blank\" href=\"https://www.w3schools.com/charsets/ref_emoji.asp\">Emoji Unicode</a>"
+
+msgctxt "Languages::ab__stickers.available_tags.content"
+msgid "Available tags:[available_tags] You can see examples after install of <a href=\"[href_demo]\" target=\"_blank\">demo data</a> or in <a href=\"https://docs.cs-cart.abt.team/en/ab__stickers.doc/#p-2891\" target=\"_blank\">documentation</a>"
+msgstr "Available tags:[available_tags]"
+"You can see examples after install of <a href=\"[href_demo]\" target=\"_blank\">demo data</a> or in <a href=\"https://docs.cs-cart.abt.team/en/ab__stickers.doc/#p-2891\" target=\"_blank\">documentation</a>"
+
+msgctxt "Languages::ab__stickers.demodata"
+msgid "Demo data"
+msgstr "Demo data"
+
+msgctxt "Languages::ab__stickers.field_with_available_placeholders"
+msgid "For the field there are available placeholders, html tags and <a target=\"_blank\" href=\"https://www.w3schools.com/charsets/ref_emoji.asp\">Emoji Unicode</a>"
+msgstr "For the field there are available placeholders, html tags and <a target=\"_blank\" href=\"https://www.w3schools.com/charsets/ref_emoji.asp\">Emoji Unicode</a>"
+
+msgctxt "Languages::ab__stickers.field_with_available_placeholders.wysiwyg"
+msgid "For the field there are available placeholders and html tags"
+msgstr "For the field there are available placeholders and html tags"
+
+msgctxt "Languages::ab__stickers.full_size.image_size"
+msgid "Image size (full view)"
+msgstr "Image size (full view)"
+
+msgctxt "Languages::ab__stickers.small_size.image_size"
+msgid "Image size (short view)"
+msgstr "Image size (short view)"
+
+msgctxt "Languages::ab__stickers.output_settings.tooltip"
+msgid "You can set sticker display on the product page and in different lists types (to display stickers properly in the lists with small product images)"
+msgstr "You can set sticker display on the product page and in different lists types (to display stickers properly in the lists with small product images)"
+
+msgctxt "Languages::ab__stickers.output_settings.not_display"
+msgid "Do not display"
+msgstr "Do not display"
+
+msgctxt "Languages::ab__stickers.output_settings.small_size"
+msgid "Short view"
+msgstr "Short view"
+
+msgctxt "Languages::ab__stickers.output_settings.full_size"
+msgid "Full view"
+msgstr "Full view"
+
+msgctxt "Languages::ab__stickers.delete_all"
+msgid "Delete all stickers"
+msgstr "Delete all stickers"
+
+msgctxt "Languages::ab__stickers.appearance_style"
+msgid "Appearance"
+msgstr "Appearance"
+
+msgctxt "Languages::ab__stickers.appearance_style.default.tooltip"
+msgid "Setting value 'Appearance' will be used from the tab 'Text stickers' of the add-on setting"
+msgstr "Setting value 'Appearance' will be used from the tab 'Text stickers' of the add-on setting"
+
+msgctxt "Languages::ab__stickers.appearance_style.rounded"
+msgid "Rounded"
+msgstr "Rounded"
+
+msgctxt "Languages::ab__stickers.appearance_style.rectangular"
+msgid "Rectangular"
+msgstr "Rectangular"
+
+msgctxt "Languages::ab__stickers.appearance_style.teardrop"
+msgid "Teardrop"
+msgstr "Teardrop"
+
+msgctxt "Languages::ab__stickers.appearance_style.beveled_angle"
+msgid "Beveled angle"
+msgstr "Beveled angle"
+
+msgctxt "Languages::ab__stickers.appearance_style.circle"
+msgid "Circle"
+msgstr "Circle"
+
+msgctxt "Languages::ab__stickers.use_theme_presets"
+msgid "Use color values from the current theme"
+msgstr "Use color values from the current theme"
+
+msgctxt "Languages::ab__stickers.use_theme_presets.tooltip"
+msgid "Setting value \"Discount label\" will be used from settings <a href=\"[href]\" target=\"_blank\">of theme colors</a>"
+msgstr "Setting value \"Discount label\" will be used from settings <a href=\"[href]\" target=\"_blank\">of theme colors</a>"
+
+msgctxt "Languages::ab__stickers.condition_groups.default"
+msgid "Default conditions"
+msgstr "Default conditions"
+
+msgctxt "Languages::ab__stickers.list_has_prohibited_positions"
+msgid "This list type consists of forbidden positions of display"
+msgstr "This list type consists of forbidden positions of display"
+
+msgctxt "Languages::ab__stickers.list_has_prohibited_positions.docs"
+msgid "See the details in <a href=\"https://docs.cs-cart.abt.team/en/ab__stickers.doc/v1.2.0#p-3171\" target=\"_blank\">documentation</a>"
+msgstr "See the details in <a href=\"https://docs.cs-cart.abt.team/en/ab__stickers.doc/v1.2.0#p-3171\" target=\"_blank\">documentation</a>"
+
+msgctxt "Languages::ab__stickers.vendor_edit"
+msgid "Allow vendor to manage"
+msgstr "Allow vendor to manage"
+
+msgctxt "Languages::ab__stickers.added_by_addon"
+msgid "Functionality is added by the add-on AB: Stickers"
+msgstr "Functionality is added by the add-on AB: Stickers"
+
+msgctxt "Languages::ab__stickers.conditions.names.buy_together"
+msgid "Buy together"
+msgstr "Buy together"
+
+msgctxt "Languages::ab__stickers.conditions.names.buy_together.tooltip"
+msgid "Product consists of product combination"
+msgstr "Product consists of product combination"
+
+msgctxt "Languages::ab__stickers.conditions.names.discount_sum"
+msgid "Discount amount"
+msgstr "Discount amount"
+
+msgctxt "Languages::ab__stickers.conditions.placeholders.discount_sum"
+msgid "Discount amount in the selected currency"
+msgstr "Discount amount in the selected currency"
+
+msgctxt "Languages::ab__stickers.object.select"
+msgid "Select sticker(-s)"
+msgstr "Select sticker(-s)"
+
+msgctxt "Languages::ab__stickers.object.you_need_to_select_company"
+msgid "Please, select a Store to choose stickers"
+msgstr "Please, select a Store to choose stickers"
+
+msgctxt "Languages::ab__stickers.stickers_list.below"
+msgid "There is a sticker list that you can attach to the product"
+msgstr "There is a sticker list that you can attach to the product"
+
+msgctxt "Languages::ab__stickers.attached_stickers"
+msgid "Attached stickers"
+msgstr "Attached stickers"
+
+msgctxt "Languages::ab__stickers.attached_stickers.product_page.tooltip"
+msgid "Selected stickers will always be displayed on this product"
+msgstr "Selected stickers will always be displayed on this product"
+
+msgctxt "Languages::ab__stickers.attached_stickers.sticker_page.tooltip"
+msgid "The selected sticker will always be displayed on the pages of the following products"
+msgstr "The selected sticker will always be displayed on the pages of the following products"
+
+msgctxt "Languages::ab__stickers.find_available_stickers"
+msgid "Find available stickers"
+msgstr "Find available stickers"
+
+msgctxt "Languages::ab__stickers.errors.missed_fields"
+msgid "These fields are required and cannot be deleted"
+msgstr "These fields are required and cannot be deleted"
+
+msgctxt "Languages::ab__stickers.link_generation"
+msgid "Links generation"
+msgstr "Links generation"
+
+msgctxt "Languages::ab__stickers.generate"
+msgid "Links generation"
+msgstr "Links generation"
+
+msgctxt "Languages::ab__stickers.generation.description"
+msgid "To update deprecated information on Cron, use this command:"
+msgstr "To update deprecated information on Cron, use this command:"
+
+msgctxt "Languages::ab__stickers.generate.generated_ids.description"
+msgid "Generate sticker links to products|Generate stickers links to products"
+msgstr "Generate sticker links to products|Generate stickers links to products"
+
+msgctxt "Languages::ab__stickers.generate.in_progress"
+msgid "Links generation"
+msgstr "Links generation"
+
+msgctxt "Languages::ab__stickers.generate.checking_generated"
+msgid "Check of generated links"
+msgstr "Check of generated links"
+
+msgctxt "Languages::ab__stickers.generate.prev_query_in_process"
+msgid "Updating of the links is in progress. The last change was made [last_time] seconds ago. Please, wait."
+msgstr "Updating of the links is in progress. The last change was made [last_time] seconds ago. Please, wait."
+
+msgctxt "Languages::ab__stickers.generated_stickers"
+msgid "Generated stickers"
+msgstr "Generated stickers"
+
+msgctxt "Languages::ab__stickers.generated_stickers.product_page.tooltip"
+msgid "These static stickers are attached to the product through the conditions"
+msgstr "These static stickers are attached to the product through the conditions"
+
+msgctxt "Languages::ab__stickers.successes.generated"
+msgid "Links for sticker [sticker] were generated successfully|Links for stickers <br/>[sticker]<br/> were generated successfully"
+msgstr "Links for sticker [sticker] were generated successfully|Links for stickers <br/>[sticker]<br/> were generated successfully"
+
+msgctxt "Languages::ab__stickers.errors.no_stickers_for_generation"
+msgid "There are no stickers to generate links<br/> Probable causes:<br/> You probably updated your links recently<br/> You have not static stickers with conditions"
+msgstr "There are no stickers to generate links<br/>"
+"Probable causes:<br/>"
+"You probably updated your links recently<br/>"
+"You have not static stickers with conditions"
+
+msgctxt "Languages::ab__stickers.generated_for_sticker"
+msgid "<a href=\"[sticker_href]\" target=\"_blank\">[sticker]</a> <a href=\"[links_href]\" target=\"_blank\">number of links: [links]</a>"
+msgstr "<a href=\"[sticker_href]\" target=\"_blank\">[sticker]</a> <a href=\"[links_href]\" target=\"_blank\">number of links: [links]</a>"
+
+msgctxt "Languages::ab__stickers.demodata.description"
+msgid "On this page you can quickly add demo stickers"
+msgstr "On this page you can quickly add demo stickers"
+
+msgctxt "Languages::ab__stickers.demodata.table.description"
+msgid "Demo data view"
+msgstr "Demo data view"
+
+msgctxt "Languages::ab__stickers.demodata.table.add_stickers"
+msgid "Add demo stickers"
+msgstr "Add demo stickers"
+
+msgctxt "Languages::ab__stickers.demodata.install.success"
+msgid "Demo stickers were created successfully"
+msgstr "Demo stickers were created successfully"
+
+msgctxt "Languages::ab__stickers.demodata.download_graphic_stickers_source"
+msgid "If you wish to change demo stickers (e.g., background color of the sticker), you may download correspond source images by <a href=\"https://drive.google.com/drive/folders/1VnZIlP0X6ES2UYUZXNiQWvc9G_tDr6KA\" target=\"_blank\">reference</a>"
+msgstr "If you wish to change demo stickers (e.g., background color of the sticker), you may download correspond source images by <a href=\"https://drive.google.com/drive/folders/1VnZIlP0X6ES2UYUZXNiQWvc9G_tDr6KA\" target=\"_blank\">reference</a>"
+
+msgctxt "Languages::ab__stickers_import"
+msgid "AB: Stickers: Import"
+msgstr "AB: Stickers: Import"
+
+msgctxt "Languages::ab__stickers_export"
+msgid "AB: Stickers: Export"
+msgstr "AB: Stickers: Export"
+
+#. Alexbranding. Do not modify this file manually!

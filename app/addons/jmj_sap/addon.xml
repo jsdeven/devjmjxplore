@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>jmj_sap</id>
+    <version>1.0</version>
+    <priority>1</priority>
+    <position>0</position>
+    <status>active</status>
+    <default_language>en</default_language>    
+    <supplier>Onjection Team</supplier>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:sap_delivered` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `city` VARCHAR(50) NOT NULL,
+                `status` VARCHAR(50) NOT NULL,
+                `created_at` datetime NOT NULL,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+
+        </item>
+        
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:sap_branches` (
+                `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+                `cardcode` varchar(50) NOT NULL,
+                `checked` varchar(5) NOT NULL,
+                `location` varchar(101) NOT NULL,
+                `slipcode` varchar(10) NOT NULL,
+                `slpname` varchar(101) NOT NULL,
+                `contactno` varchar(12) NOT NULL,
+                `created_at` datetime NOT NULL,
+                PRIMARY KEY  (`id`)
+            ) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+        
+    </queries>
+</addon>

@@ -1,0 +1,1669 @@
+[
+  {
+    "position": "0",
+    "name_for_admin": "In stock",
+    "type": "D",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": "hidden-phone"
+      },
+      "detailed_page": {
+        "user_class": "hidden-phone"
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "2": {
+          "condition": "amount",
+          "operator": "gte",
+          "value": "1"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-17.png",
+      "ru": "sticker-image-ru-17.png"
+    }
+  },
+  {
+    "position": "0",
+    "name_for_admin": "New Year Sale",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-18.png",
+      "ru": "sticker-image-ru-18.png"
+    }
+  },
+  {
+    "position": "0",
+    "name_for_admin": "Bestseller",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "sales_amount",
+          "operator": "gt",
+          "value": "2"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-19.png",
+      "ru": "sticker-image-ru-19.png"
+    }
+  },
+  {
+    "position": "0",
+    "name_for_admin": "Coming soon",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": "78,79,241"
+    },
+    "images": {
+      "en": "sticker-image-en-20.png",
+      "ru": "sticker-image-ru-20.png"
+    }
+  },
+  {
+    "position": "0",
+    "name_for_admin": "New",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "creating_date",
+          "operator": "lt",
+          "value": "30"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-21.png",
+      "ru": "sticker-image-ru-21.png"
+    }
+  },
+  {
+    "position": "10",
+    "name_for_admin": "Black Friday",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "price",
+          "operator": "gt",
+          "value": "1000"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "<h4>Black Friday<\/h4>\r\n<p>Black Friday is the Friday after Thanksgiving in the United States. The traditional Christmas sales season begins with it. The custom of organizing sales on this day dates back to the 19th century, and the term \"Black Friday\" appeared in 1966 and was initially used mainly on the East Coast of the United States.<\/p>\r\n<p><a href=\"\/\">More details<\/a><\/p>",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "<h4>\u0427\u0451\u0440\u043d\u0430\u044f \u043f\u044f\u0442\u043d\u0438\u0446\u0430<\/h4>\r\n<p>\u0427\u0451\u0440\u043d\u0430\u044f \u043f\u044f\u0442\u043d\u0438\u0446\u0430 &mdash; \u043f\u044f\u0442\u043d\u0438\u0446\u0430 \u043f\u043e\u0441\u043b\u0435 \u0414\u043d\u044f \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u0435\u043d\u0438\u044f \u0432 \u0421\u0428\u0410. \u0421 \u043d\u0435\u0451 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442\u0441\u044f \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0440\u043e\u0436\u0434\u0435\u0441\u0442\u0432\u0435\u043d\u0441\u043a\u0438\u0439 \u0441\u0435\u0437\u043e\u043d \u0440\u0430\u0441\u043f\u0440\u043e\u0434\u0430\u0436. \u041e\u0431\u044b\u0447\u0430\u0439 \u0443\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0442\u044c \u0440\u0430\u0441\u043f\u0440\u043e\u0434\u0430\u0436\u0438 \u0432 \u044d\u0442\u043e\u0442 \u0434\u0435\u043d\u044c \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0441\u044f \u0435\u0449\u0451 \u0432 XIX \u0432\u0435\u043a\u0435, \u0430 \u0442\u0435\u0440\u043c\u0438\u043d \u00ab\u0427\u0451\u0440\u043d\u0430\u044f \u043f\u044f\u0442\u043d\u0438\u0446\u0430\u00bb \u043f\u043e\u044f\u0432\u0438\u043b\u0441\u044f \u0432 1966 \u0433\u043e\u0434\u0443 \u0438 \u043f\u043e\u043d\u0430\u0447\u0430\u043b\u0443 \u0443\u043f\u043e\u0442\u0440\u0435\u0431\u043b\u044f\u043b\u0441\u044f \u0432 \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u043c \u043d\u0430 \u0412\u043e\u0441\u0442\u043e\u0447\u043d\u043e\u043c \u043f\u043e\u0431\u0435\u0440\u0435\u0436\u044c\u0435 \u0421\u0428\u0410.<\/p>\r\n<p><a href=\"\/\">\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435<\/a><\/p>",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-11.png",
+      "ru": "sticker-image-ru-11.png"
+    }
+  },
+  {
+    "position": "20",
+    "name_for_admin": "Free Delivery",
+    "type": "D",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "free_shipping",
+          "operator": "eq",
+          "value": "Y"
+        }
+      },
+      "free_shipping": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "<p>Free shipping on all purchases over $100.<\/p>",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "<p>\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0432\u0441\u0435 \u043f\u043e\u043a\u0443\u043f\u043a\u0438 \u043e\u0442 10000 \u0440\u0443\u0431.<\/p>",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-14.png",
+      "ru": "sticker-image-ru-14.png"
+    }
+  },
+  {
+    "position": "30",
+    "name_for_admin": "Most Popular",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "popularity",
+          "operator": "gt",
+          "value": "1"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-15.png",
+      "ru": "sticker-image-ru-15.png"
+    }
+  },
+  {
+    "position": "40",
+    "name_for_admin": "Top rated",
+    "type": "C",
+    "style": "G",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#000000",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "48",
+      "small_size_image_size": "32",
+      "list": {
+        "user_class": "hidden-phone"
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "comments",
+          "operator": "gt",
+          "value": "1"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "",
+      "name_for_mobile": "",
+      "description": "",
+      "product_ids": null
+    },
+    "images": {
+      "en": "sticker-image-en-13.png",
+      "ru": "sticker-image-ru-13.png"
+    }
+  },
+  {
+    "position": "100",
+    "name_for_admin": "Top rated",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#ffb300",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "rating",
+          "operator": "eq",
+          "value": "5.00"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Top rated",
+    "name_for_mobile": "Top rated",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u0412\u044b\u0441\u043e\u043a\u0438\u0439 \u0440\u0435\u0439\u0442\u0438\u043d\u0433",
+      "name_for_mobile": "\u0412\u044b\u0441\u043e\u043a\u0438\u0439 \u0440\u0435\u0439\u0442\u0438\u043d\u0433",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "100",
+    "name_for_admin": "Promotion",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#d60021",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "promotion",
+          "operator": "in",
+          "value": "14"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Promotion",
+    "name_for_mobile": "Promotion",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u0410\u043a\u0446\u0438\u044f",
+      "name_for_mobile": "\u0410\u043a\u0446\u0438\u044f",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "105",
+    "name_for_admin": "Sale > 30%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#d60021",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "gte",
+          "value": "30"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Sale -[discount]%",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u0421\u043a\u0438\u0434\u043a\u0430 -[discount]%",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "105",
+    "name_for_admin": "Sale > 30%",
+    "type": "D",
+    "style": "T",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#d60021",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "gte",
+          "value": "30"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]Sale<\/small><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]\u0421\u043a\u0438\u0434\u043a\u0430<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "110",
+    "name_for_admin": "Sale > 10% < 30%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#ffb300",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lte",
+          "value": "30"
+        },
+        "2": {
+          "condition": "discount",
+          "operator": "gt",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Sale -[discount]%",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u0421\u043a\u0438\u0434\u043a\u0430 -[discount]%",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "110",
+    "name_for_admin": "Sale > 10% < 30%",
+    "type": "D",
+    "style": "T",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#ffb300",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lt",
+          "value": "30"
+        },
+        "2": {
+          "condition": "discount",
+          "operator": "gt",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]Sale<\/small><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]\u0421\u043a\u0438\u0434\u043a\u0430<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "115",
+    "name_for_admin": "Sale < 10%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#00aa52",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lte",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Sale -[discount]%",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u0421\u043a\u0438\u0434\u043a\u0430 -[discount]%",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "115",
+    "name_for_admin": "Sale < 10%",
+    "type": "D",
+    "style": "T",
+    "status": "D",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#00aa52",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lte",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]Sale<\/small><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]<\/big><small>%[end_line]\u0421\u043a\u0438\u0434\u043a\u0430<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "120",
+    "name_for_admin": "Popular product",
+    "type": "C",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#9a3ab3",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "N",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "popularity",
+          "operator": "gt",
+          "value": "1000"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Most popular",
+    "name_for_mobile": "Popular",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "\u041f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0439",
+      "name_for_mobile": "\u041f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0439",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "200",
+    "name_for_admin": "Free Delivery",
+    "type": "C",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "B",
+    "output_position_detailed_page": "B",
+    "appearance": {
+      "text_color": "#0b5394",
+      "sticker_bg": "#ffffff",
+      "border_width": "2px",
+      "border_color": "#0b5394",
+      "uppercase_text": "Y",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "free_shipping",
+          "operator": "eq",
+          "value": "Y"
+        }
+      },
+      "free_shipping": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big><i class=\"ty-icon-shipping\"><\/i><\/big>[end_line]<small>FREE<\/small><\/b>",
+    "name_for_mobile": "<small>FREE <\/small><i class=\"ty-icon-shipping\"><\/i>",
+    "description": "<p>Free shipping on all purchases over $100.<\/p>",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big><i class=\"ty-icon-shipping\"><\/i><\/big>[end_line]<small>\u0411\u0435\u0441\u043f.<\/small><\/b>",
+      "name_for_mobile": "<small>\u0411\u0415\u0421\u041f\u041b. <\/small><i class=\"ty-icon-shipping\"><\/i>",
+      "description": "<p>\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0432\u0441\u0435 \u043f\u043e\u043a\u0443\u043f\u043a\u0438 \u043e\u0442 10000 \u0440\u0443\u0431.<\/p>",
+      "product_ids": null
+    }
+  },
+  {
+    "position": "200",
+    "name_for_admin": "Weight",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "B",
+    "output_position_detailed_page": "B",
+    "appearance": {
+      "text_color": "#999999",
+      "sticker_bg": "#ffffff",
+      "border_width": "2px",
+      "border_color": "#999999",
+      "uppercase_text": "Y",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": "hidden-phone"
+      },
+      "detailed_page": {
+        "user_class": "hidden-phone"
+      }
+    },
+    "conditions": {
+      "conditions": {
+        "1": {
+          "condition": "weight",
+          "operator": "gt",
+          "value": "1.000"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[ceil_integer_weight]<\/big><small> kg[end_line]Weight<\/small><\/b>",
+    "name_for_mobile": "<b>[ceil_integer_weight]<\/b> kg",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[ceil_integer_weight]<\/big><small> \u043a\u0433[end_line]\u0412\u0435\u0441<\/small><\/b>",
+      "name_for_mobile": "\u0412\u0435\u0441: <b>[ceil_integer_weight]<\/b> \u043a\u0433",
+      "description": "",
+      "product_ids": null
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale < 10%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#00aa52",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lte",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]OFF<\/span>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]<small>\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/span>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale > 10% < 30%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#ffb300",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lt",
+          "value": "30"
+        },
+        "2": {
+          "condition": "discount",
+          "operator": "gt",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]OFF<\/span>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]<small>\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/span>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale > 30%",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#d60021",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "gte",
+          "value": "30"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]OFF<\/span>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<span><big>-[discount]%<\/big>[end_line]<small>\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/span>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale < 10% (bolder)",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#00aa52",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lte",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<span style=\"opacity:0.8\">OFF<\/span><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<small style=\"opacity:0.8\">\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale > 10% < 30% (bolder)",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#ffb300",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "lt",
+          "value": "30"
+        },
+        "2": {
+          "condition": "discount",
+          "operator": "gt",
+          "value": "10"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<span style=\"opacity:0.8\">OFF<\/span><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<small style=\"opacity:0.8\">\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Sale > 30% (bolder)",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "small_size",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#d60021",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "discount",
+          "operator": "gte",
+          "value": "30"
+        }
+      },
+      "discount": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<span style=\"opacity:0.8\">OFF<\/span><\/b>",
+    "name_for_mobile": "-[discount]%",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>[discount]%<\/big>[end_line]<small style=\"opacity:0.8\">\u0421\u041a\u0418\u0414\u041a\u0410<\/small><\/b>",
+      "name_for_mobile": "-[discount]%",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "0",
+    "status": "D",
+    "name_for_admin": "Bestseller",
+    "type": "C",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "T",
+    "output_position_detailed_page": "T",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#FFFFFF",
+      "sticker_bg": "#674ea7",
+      "border_width": "0",
+      "border_color": "#000000",
+      "uppercase_text": "Y",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "sales_amount",
+          "operator": "gt",
+          "value": "1"
+        },
+        "2": {
+          "condition": "amount",
+          "operator": "gte",
+          "value": "1"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "Best[end_line]seller",
+    "name_for_mobile": "",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<b><big>\u0425\u0418\u0422<\/big><\/b>[end_line]<small>\u041f\u0420\u041e\u0414\u0410\u0416<\/small>",
+      "name_for_mobile": "",
+      "description": ""
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "200",
+    "status": "D",
+    "name_for_admin": "Free Delivery",
+    "type": "C",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "B",
+    "output_position_detailed_page": "B",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#999999",
+      "sticker_bg": "#ffffff",
+      "border_width": "2px",
+      "border_color": "#999999",
+      "uppercase_text": "N",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": ""
+      },
+      "detailed_page": {
+        "user_class": ""
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "set_value": "1",
+      "conditions": {
+        "1": {
+          "condition": "free_shipping",
+          "operator": "eq",
+          "value": "Y"
+        }
+      },
+      "free_shipping": "Y"
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<span><big><i class=\"ty-icon-shipping\"><\/i><\/big>[end_line]<small>FREE<\/small><\/span>",
+    "name_for_mobile": "<small>FREE <\/small><i class=\"ty-icon-shipping\"><\/i>",
+    "description": "<p>Free shipping on all purchases over $100.<\/p>",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<span><big><i class=\"ty-icon-shipping\"><\/i><\/big>[end_line]<small>\u0411\u0415\u0421\u041f.<\/small><\/span>",
+      "name_for_mobile": "<small>\u0411\u0415\u0421\u041f\u041b. <\/small><i class=\"ty-icon-shipping\"><\/i>",
+      "description": "<p>\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0432\u0441\u0435 \u043f\u043e\u043a\u0443\u043f\u043a\u0438 \u043e\u0442 10000 \u0440\u0443\u0431.<\/p>"
+    }
+  },
+  {
+    "storefront_ids": "1",
+    "position": "200",
+    "status": "D",
+    "name_for_admin": "Weight",
+    "type": "D",
+    "style": "T",
+    "display_on_lists": {
+      "blocks\/products\/products.tpl": "full_size",
+      "blocks\/products\/products_links_thumb.tpl": "small_size",
+      "blocks\/products\/products_multicolumns.tpl": "full_size",
+      "blocks\/products\/products_scroller.tpl": "small_size",
+      "blocks\/products\/products_small_items.tpl": "small_size",
+      "blocks\/products\/short_list.tpl": "not_display",
+      "blocks\/products\/products_scroller_advanced.tpl": "full_size"
+    },
+    "display_on_detailed_pages": "full_size",
+    "output_position_list": "B",
+    "output_position_detailed_page": "B",
+    "appearance": {
+      "use_theme_presets": "N",
+      "text_color": "#999999",
+      "sticker_bg": "#ffffff",
+      "border_width": "2px",
+      "border_color": "#999999",
+      "uppercase_text": "N",
+      "appearance_style": "circle",
+      "full_size_image_size": "16",
+      "small_size_image_size": "16",
+      "list": {
+        "user_class": "hidden-phone"
+      },
+      "detailed_page": {
+        "user_class": "hidden-phone"
+      }
+    },
+    "conditions": {
+      "set": "all",
+      "conditions": {
+        "1": {
+          "condition": "weight",
+          "operator": "gt",
+          "value": "1.000"
+        }
+      }
+    },
+    "lang_code": "en",
+    "name_for_desktop": "<span><b>[ceil_integer_weight] kg<\/b>[end_line]<small>Weight<\/small><\/span>",
+    "name_for_mobile": "<b>[ceil_integer_weight]<\/b> kg",
+    "description": "",
+    "ru": {
+      "lang_code": "ru",
+      "name_for_desktop": "<span><b>[ceil_integer_weight] kg<\/b>[end_line]<small>\u0412\u0435\u0441<\/small><\/span>",
+      "name_for_mobile": "<b>[ceil_integer_weight]<\/b> \u043a\u0433",
+      "description": ""
+    }
+  }
+]

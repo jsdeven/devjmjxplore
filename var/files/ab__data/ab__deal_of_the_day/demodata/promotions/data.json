@@ -1,0 +1,227 @@
+{
+   "1":{
+     "conditions":{
+        "set":"all",
+        "set_value":"1",
+        "conditions":{
+          "2":{
+             "operator":"in",
+             "condition":"products",
+             "value":""
+          }
+        }
+     },
+     "bonuses":{
+        "1":{
+          "bonus":"product_discount",
+          "discount_bonus":"by_percentage",
+          "discount_value":"20"
+        }
+     },
+     "to_date":"",
+     "from_date":"",
+     "priority":"0",
+     "stop":"N",
+     "zone":"catalog",
+     "status":"A",
+     "name":"AB: Stock! Buy a promotional hair dryer VALERA - get a 40% discount on the curling iron!",
+     "detailed_description":"<p>Every buyer of a promotional hair dryer VALERA can get a 40% discount on a cooler *! To receive a gift, you need to add a VALERA promotional hairdryer and an action souplink to the cart.<\/p><p>The promotion is valid only, when placing an order on the site.<\/p><p>Hurry, the number of gifts is limited!<\/p><p>* 40% of the discount is given on the promotional product - promotional coupon.<br><\/p>",
+     "short_description":"<p>To receive a gift, you need to add a VALERA promotional hairdryer and an action souplink to the basket.<\/p><p>The promotion is valid only when placing an order on the site.<br><\/p>",
+     "h1":"AB: Stock! Buy a promotional hair dryer VALERA - get a 40% discount on the curling iron!",
+     "page_title":"Stock! Buy a promotional hair dryer VALERA - get a 40% discount on the curling iron!",
+     "meta_description":"Stock! Buy a promotional hair dryer VALERA - get a 40% discount on the curling iron!",
+     "meta_keywords":"VALERA",
+     "filter":"N",
+     "ab__dotd_active":true,
+     "image":"promotion_main_image-1.jpg",
+     "ru": {
+        "name": "AB: \u0410\u043a\u0446\u0438\u044f! \u041a\u0443\u043f\u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA - \u043f\u043e\u043b\u0443\u0447\u0438 \u0441\u043a\u0438\u0434\u043a\u0443 40% \u043d\u0430 \u043f\u043b\u043e\u0439\u043a\u0443!",
+        "detailed_description": "<p>\u041a\u0430\u0436\u0434\u044b\u0439 \u043f\u043e\u043a\u0443\u043f\u0430\u0442\u0435\u043b\u044c \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u043e\u0433\u043e \u0444\u0435\u043d\u0430 VALERA \u043c\u043e\u0436\u0435\u0442 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u0441\u043a\u0438\u0434\u043a\u0443 40% \u043d\u0430 \u043f\u043b\u043e\u0439\u043a\u0443*! \u0414\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u043f\u043e\u0434\u0430\u0440\u043a\u0430 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA \u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u0443\u044e \u043f\u043b\u043e\u0439\u043a\u0443.\r\n<\/p><p>\u0410\u043a\u0446\u0438\u044f \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438 \u043e\u0444\u043e\u0440\u043c\u043b\u0435\u043d\u0438\u0438 \u0437\u0430\u043a\u0430\u0437\u0430 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435.\r\n<\/p><p>\u0421\u043f\u0435\u0448\u0438\u0442\u0435, \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043f\u043e\u0434\u0430\u0440\u043a\u043e\u0432 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043e!\r\n<\/p><p>*40% \u0441\u043a\u0438\u0434\u043a\u0438 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043d\u0430 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u043e\u0432\u0430\u0440 - \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u043f\u043b\u043e\u0439\u043a\u0430.\r\n<\/p>",
+        "short_description": "<p>\u0414\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u043f\u043e\u0434\u0430\u0440\u043a\u0430 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0432 \u043a\u043e\u0440\u0437\u0438\u043d\u0443 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA \u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u0443\u044e \u043f\u043b\u043e\u0439\u043a\u0443.\r\n<\/p>\u0410\u043a\u0446\u0438\u044f \u0434\u0435\u0439\u0441\u0442\u0432\u0443\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438 \u043e\u0444\u043e\u0440\u043c\u043b\u0435\u043d\u0438\u0438 \u0437\u0430\u043a\u0430\u0437\u0430 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435.",
+        "h1": "AB: \u0410\u043a\u0446\u0438\u044f! \u041a\u0443\u043f\u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA - \u043f\u043e\u043b\u0443\u0447\u0438 \u0441\u043a\u0438\u0434\u043a\u0443 40% \u043d\u0430 \u043f\u043b\u043e\u0439\u043a\u0443!",
+        "page_title": "\u0410\u043a\u0446\u0438\u044f! \u041a\u0443\u043f\u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA - \u043f\u043e\u043b\u0443\u0447\u0438 \u0441\u043a\u0438\u0434\u043a\u0443 40% \u043d\u0430 \u043f\u043b\u043e\u0439\u043a\u0443!",
+        "meta_description": "\u0410\u043a\u0446\u0438\u044f! \u041a\u0443\u043f\u0438 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0444\u0435\u043d VALERA - \u043f\u043e\u043b\u0443\u0447\u0438 \u0441\u043a\u0438\u0434\u043a\u0443 40% \u043d\u0430 \u043f\u043b\u043e\u0439\u043a\u0443!",
+        "meta_keywords": "\u0410\u043a\u0446\u0438\u044f"
+     }
+   },
+   "2":{
+     "conditions":{
+        "set":"all",
+        "set_value":"1",
+        "conditions":{
+          "2":{
+             "operator":"in",
+             "condition":"products",
+             "value":""
+          }
+        }
+     },
+     "bonuses":{
+        "1":{
+          "bonus":"product_discount",
+          "discount_bonus":"by_percentage",
+          "discount_value":"50"
+        }
+     },
+     "to_date":"",
+     "from_date":"",
+     "priority":"0",
+     "stop":"N",
+     "zone":"catalog",
+     "status":"A",
+     "name":"AB: RACING CARD + 2-YEAR LICENSE FOR RACES K1",
+     "detailed_description":"<p><span class=\"legal-disclosures-line1\">Promotional value expires 60 days after purchase. Amount paid never expires.<\/span> <span class=\"fine-print-description\">Limit 2 per person, may buy 20 additional as gifts. Must activate licenses by the expiration date. Licenses expire 1 year from activation date. All junior racers must be at least 48'' and adult racers must be at least 4'10'' tall to race. All racers should be under 7' tall and 300 lbs. Subject to availability. Not valid for group events. May split between 2 people.<\/span> <span class=\"legal-disclosures-line2\">Merchant is solely responsible to purchasers for the care and quality of the advertised goods and services.<\/span><\/p>",
+     "short_description":"<p><span class=\"legal-disclosures-line2\"><span class=\"legal-disclosures-line1\">Promotional value expires 60 days after purchase. Amount paid never expires.<\/span> <span class=\"fine-print-description\">Limit 2 per person, may buy 20 additional as gifts.<\/span><\/span><\/p>",
+     "h1":"AB: RACING CARD + 2-YEAR LICENSE FOR RACES K1",
+     "page_title":"RACING CARD + 2-YEAR LICENSE FOR RACES K1",
+     "meta_description":"RACING CARD + 2-YEAR LICENSE FOR RACES K1",
+     "meta_keywords":"RACING",
+     "filter":"N",
+     "ab__dotd_active":true,
+     "image":"promotion_main_image-2.jpg",
+     "ru": {
+        "name": "AB: \u0413\u043e\u043d\u043e\u0447\u043d\u044b\u0439 \u043a\u0430\u0440\u0442\u0438\u043d\u0433 + \u0434\u0432\u0443\u0445\u043b\u0435\u0442\u043d\u044f\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0430 \u0433\u043e\u043d\u043a\u0438 K1",
+        "detailed_description": "<p>\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0430\u043a\u0442\u0438\u0432\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u0438 \u043f\u043e \u0438\u0441\u0442\u0435\u0447\u0435\u043d\u0438\u0438 \u0441\u0440\u043e\u043a\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f. \u0421\u0440\u043e\u043a \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u0439 \u0438\u0441\u0442\u0435\u043a\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u0433\u043e\u0434 \u043f\u043e\u0441\u043b\u0435 \u0434\u0430\u0442\u044b \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438. \u041e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u043e\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435\u0441\u044c \u044d\u0442\u043e\u0439 \u0430\u043a\u0446\u0438\u0435\u0439, \u044d\u0442\u043e \u043e\u0447\u0435\u043d\u044c \u0432\u044b\u0433\u043e\u0434\u043d\u044b\u0435 \u0446\u0435\u043d\u044b.<\/p><p><span class=\"legal-disclosures-line2\"><\/span>\r\n<\/p>",
+        "short_description": "<p>\u041d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0430\u043a\u0442\u0438\u0432\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u0438 \u043f\u043e \u0438\u0441\u0442\u0435\u0447\u0435\u043d\u0438\u0438 \u0441\u0440\u043e\u043a\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f. \u0421\u0440\u043e\u043a \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u0439 \u0438\u0441\u0442\u0435\u043a\u0430\u0435\u0442 \u0447\u0435\u0440\u0435\u0437 \u0433\u043e\u0434 \u043f\u043e\u0441\u043b\u0435 \u0434\u0430\u0442\u044b \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438.\r\n<\/p><p><span class=\"fine-print-description\"><\/span><span class=\"legal-disclosures-line2\"><\/span>\r\n<\/p>",
+        "h1": "AB: \u0413\u043e\u043d\u043e\u0447\u043d\u044b\u0439 \u043a\u0430\u0440\u0442\u0438\u043d\u0433 + \u0434\u0432\u0443\u0445\u043b\u0435\u0442\u043d\u044f\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0430 \u0433\u043e\u043d\u043a\u0438 K1",
+        "page_title": "\u0413\u043e\u043d\u043e\u0447\u043d\u044b\u0439 \u043a\u0430\u0440\u0442\u0438\u043d\u0433 + \u0434\u0432\u0443\u0445\u043b\u0435\u0442\u043d\u044f\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0430 \u0433\u043e\u043d\u043a\u0438 K1",
+        "meta_description": "\u0413\u043e\u043d\u043e\u0447\u043d\u044b\u0439 \u043a\u0430\u0440\u0442\u0438\u043d\u0433 + \u0434\u0432\u0443\u0445\u043b\u0435\u0442\u043d\u044f\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043d\u0430 \u0433\u043e\u043d\u043a\u0438 K1",
+        "meta_keywords": "\u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f"
+     }
+   },
+   "3":{
+     "conditions":{
+        "set":"all",
+        "set_value":"1",
+        "conditions":{
+          "1":{
+             "operator":"in",
+             "condition":"products",
+             "value":""
+          }
+        }
+     },
+     "bonuses":{
+        "1":{
+          "bonus":"product_discount",
+          "discount_bonus":"by_percentage",
+          "discount_value":"10"
+        }
+     },
+     "to_date":"",
+     "from_date":"",
+     "priority":"0",
+     "stop":"N",
+     "zone":"catalog",
+     "status":"A",
+     "name":"AB: Only today you can buy a camera with - 10% discount ",
+     "detailed_description":"<p>Buy a camera of a well-known brand with 10% discount during this period. <\/p><p>Buying promotional models of cameras or Canon lenses, you get a free one-year subscription to a plan for photographers from Adobe Creative Cloud and one of the online courses.<br><\/p>",
+     "short_description":"<p>Buy a camera of a well-known brand with 10% discount during this period. .<br>\r\n<\/p>",
+     "h1":"AB: Best photo cameras with discount -10$",
+     "page_title":"Best photo cameras with discount -10$",
+     "meta_description":"Best photo cameras with discount -10$",
+     "meta_keywords":"photo cameras, discount",
+     "filter":"N",
+     "ab__dotd_active":true,
+     "image":"promotion_main_image-3.jpg",
+     "ru": {
+        "name": "AB: \u041a\u0443\u043f\u0438\u0442\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 - 10%",
+        "detailed_description": "<p>\u041a\u0443\u043f\u0438\u0442\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 10% \u0432 \u0443\u043a\u0430\u0437\u0430\u043d\u043d\u044b\u0439 \u043f\u0435\u0440\u0438\u043e\u0434.\r\n<\/p><p>\u041f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u043c\u043e\u0434\u0435\u043b\u0435\u0439 \u043a\u0430\u043c\u0435\u0440 \u0438\u043b\u0438 \u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u043e\u0432 Canon, \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0432 \u043f\u043e\u0434\u0430\u0440\u043e\u043a \u0433\u043e\u0434\u0438\u0447\u043d\u0443\u044e \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0443 \u043d\u0430 \u043f\u043b\u0430\u043d \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u043e\u0432 \u043e\u0442 Adobe Creative Cloud.\r\n<\/p>",
+        "short_description": "<p>\u041f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u0430\u043a\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u043c\u043e\u0434\u0435\u043b\u0435\u0439 \u043a\u0430\u043c\u0435\u0440 \u0438\u043b\u0438 \u043e\u0431\u044a\u0435\u043a\u0442\u0438\u0432\u043e\u0432 Canon, \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0432 \u043f\u043e\u0434\u0430\u0440\u043e\u043a \u0433\u043e\u0434\u0438\u0447\u043d\u0443\u044e \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0443 \u043d\u0430 \u043f\u043b\u0430\u043d \u0434\u043b\u044f \u0444\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u043e\u0432 \u043e\u0442 Adobe Creative Cloud.<br>\r\n<\/p>",
+        "h1": "AB: \u041a\u0443\u043f\u0438\u0442\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 10%",
+        "page_title": "\u041a\u0443\u043f\u0438\u0442\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 10%",
+        "meta_description": "\u041a\u0443\u043f\u0438\u0442\u0435 \u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e\u0433\u043e \u0431\u0440\u0435\u043d\u0434\u0430 \u0441\u043e \u0441\u043a\u0438\u0434\u043a\u043e\u0439 10%",
+        "meta_keywords": "\u0444\u043e\u0442\u043e\u0430\u043f\u043f\u0430\u0440\u0430\u0442, \u0441\u043a\u0438\u0434\u043a\u0430"
+     }
+   },
+   "4":{
+     "conditions":{
+        "set":"all",
+        "set_value":"1",
+        "conditions":{
+          "1":{
+             "operator":"gte",
+             "condition":"subtotal",
+             "value":3000
+          }
+        }
+     },
+     "bonuses":{
+        "1":{
+          "bonus":"free_shipping",
+          "value":"1"
+        }
+     },
+     "to_date":"",
+     "from_date":"",
+     "priority":"0",
+     "stop":"N",
+     "zone":"cart",
+     "status":"A",
+     "name":"AB: Free shipping for orders over $ 50.",
+     "detailed_description":"<p>Our online store offers the best delivery terms for orders over $ 50. Take advantage of this offer right now and save on delivery, we will bring products at our own expense.<\/p>",
+     "short_description":"<p>Get exclusive shipping terms for orders over $ 50.<\/p>",
+     "h1":"AB: Free shipping for orders over $ 50.",
+     "page_title":"Free shipping for orders over $ 50.",
+     "meta_description":"Free shipping for orders over $ 50.",
+     "meta_keywords":"",
+     "filter":"N",
+     "ab__dotd_active":true,
+     "image":"promotion_main_image-4.jpg",
+     "ru": {
+        "name": "AB: \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0437\u0430\u043a\u0430\u0437 \u043e\u0442 3000 \u0440\u0443\u0431.",
+        "detailed_description": "<p>\u041d\u0430\u0448 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442 - \u043c\u0430\u0433\u0430\u0437\u0438\u043d \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u0442 \u043b\u0443\u0447\u0448\u0438\u0435 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u0434\u043b\u044f \u0437\u0430\u043a\u0430\u0437\u043e\u0432 \u0431\u043e\u043b\u0435\u0435 3000 \u0440\u0443\u0431. \u0412\u043e\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435\u0441\u044c \u044d\u0442\u0438\u043c \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435\u043c \u043f\u0440\u044f\u043c\u043e \u0441\u0435\u0439\u0447\u0430\u0441 \u0438 \u0441\u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0435, \u043c\u044b \u043f\u0440\u0438\u0432\u0435\u0437\u0435\u043c \u0442\u043e\u0432\u0430\u0440 \u0437\u0430 \u0441\u0432\u043e\u0439 \u0441\u0447\u0435\u0442.<\/p>",
+        "short_description": "<p>\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u044b\u0435 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u043f\u0440\u0438 \u0437\u0430\u043a\u0430\u0437\u0435 \u0441\u0432\u044b\u0448\u0435 3000 \u0440\u0443\u0431.<\/p>",
+        "h1": "AB: \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0437\u0430\u043a\u0430\u0437 \u043e\u0442 3000 \u0440\u0443\u0431.",
+        "page_title": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0437\u0430\u043a\u0430\u0437 \u043e\u0442 3000 \u0440\u0443\u0431.",
+        "meta_description": "\u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u0430\u044f \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430 \u043d\u0430 \u0437\u0430\u043a\u0430\u0437 \u043e\u0442 3000 \u0440\u0443\u0431.",
+        "meta_keywords": ""
+     }
+   },
+   "5":{
+     "conditions":{
+        "set":"all",
+        "set_value":"1",
+        "conditions":{
+          "6":{
+             "operator":"in",
+             "condition":"categories",
+             "value":""
+          }
+        }
+     },
+     "bonuses":{
+        "2":{
+          "bonus":"discount_on_products",
+          "value":"",
+          "discount_bonus":"by_percentage",
+          "discount_value":5
+        }
+     },
+     "to_date":"",
+     "from_date":"",
+     "priority":"4",
+     "stop":"N",
+     "zone":"cart",
+     "status":"A",
+     "name":"AB: 5% discount for X-Box One & Sabertooth bundle",
+     "detailed_description":"<p>Buying X-Box One & Sabertooth in a bundle, you will get a 5% discount for all order. Harry up, our offer is limited (only the first 500 purchases will receive such exclusive conditions)\r\n<\/p>",
+     "short_description":"<p>Buying X-Box One & Sabertooth in a bundle, you will get a 5% discount for all order.\r\n<\/p>",
+     "h1":"AB: 5% discount for X-Box One & Sabertooth bundle",
+     "page_title":"5% discount for X-Box One & Sabertooth bundle",
+     "meta_description":"5% discount for X-Box One & Sabertooth bundle",
+     "meta_keywords":"X-Box, Sabertooth",
+     "filter":"N",
+     "ab__dotd_active":true,
+     "image":"promotion_main_image-5.jpg",
+     "ru": {
+        "name": "AB: \u0421\u043a\u0438\u0434\u043a\u0430 5% \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 X-Box One \u0438 Sabertooth",
+        "detailed_description": "<p>\u041f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0430 X-Box One \u0438 Sabertooth \u0432\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0441\u043a\u0438\u0434\u043a\u0443 5%. \u041f\u043e\u0442\u043e\u0440\u043e\u043f\u0438\u0442\u0435\u0441\u044c, \u043f\u0440\u0435\u0434\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u043e (\u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0435\u0440\u0432\u044b\u0435 500 \u043f\u043e\u043a\u0443\u043f\u0430\u0442\u0435\u043b\u0435\u0439 \u043f\u043e\u043b\u0443\u0447\u0430\u0442 \u044d\u0442\u0438 \u044d\u043a\u0441\u043a\u043b\u044e\u0437\u0438\u0432\u043d\u044b\u0435 \u0443\u0441\u043b\u043e\u0432\u0438\u044f \u043f\u043e\u043a\u0443\u043f\u043a\u0438)\r\n<\/p>",
+        "short_description": "<p>\u041f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u0430 X-Box One \u0438 Sabertooth \u0432\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 \u0441\u043a\u0438\u0434\u043a\u0443 5%.\r\n<\/p>",
+        "h1": "AB: \u0421\u043a\u0438\u0434\u043a\u0430 5% \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 X-Box One \u0438 Sabertooth",
+        "page_title": "\u0421\u043a\u0438\u0434\u043a\u0430 5% \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 X-Box One \u0438 Sabertooth",
+        "meta_description": "\u0421\u043a\u0438\u0434\u043a\u0430 5% \u043f\u0440\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0435 X-Box One \u0438 Sabertooth",
+        "meta_keywords": "X-Box, Sabertooth"
+     }
+   }
+}
