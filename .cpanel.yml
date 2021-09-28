@@ -1,4 +1,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dstestmohitrai/public_html/
+<<<<<<< HEAD
     - /bin/cp -R images $DEPLOYPATH
+=======
+    - /bin/cp -R images $DEPLOYPATH
+>>>>>>> 73ffa9be1d2e96447bcc2e9c522b146b72d56c7d
