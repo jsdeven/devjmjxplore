@@ -397,7 +397,7 @@
               <li class="scroll-to-section"><a href="#reasons">WHY XPLORE</a></li>
               <li class="scroll-to-section"><a href="#howto">HOW TO SELL</a></li>
               <li class="scroll-to-section"><a href="#success">SUCCESS STORIES</a></li>
-              <li class="scroll-to-section"><a href="#faq">FAQs DEV</a></li>
+              <li class="scroll-to-section"><a href="#faq">FAQs</a></li>
               <li><button id="btnUserLogin" class="btn btn-default main-top-button d-none d-md-block" data-bs-toggle="modal" data-bs-target="#modelWindow"><i class="fa fa-user"></i> Login for existing sellers</button></li> 
             </ul>
             
