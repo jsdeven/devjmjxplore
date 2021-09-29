@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dstestmohitrai/public_html/
-    - /bin/cp -R /home/dstestmohitrai/repositories/devjmjxplore $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
