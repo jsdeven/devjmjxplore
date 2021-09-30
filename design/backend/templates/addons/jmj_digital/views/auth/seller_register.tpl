@@ -56,7 +56,7 @@ body {
         <div class="seller-hub-account-left">
          {if $_REQUEST.step == '1' || !$_REQUEST.step}
              <div id="phone_verification" {if $phone_verified} style="display:none;"{/if}>
-              <h1>Start your <br /> seller account D</h1>
+              <h1>Start your <br /> seller account</h1>
               <div class="sellerhub-div">
                 <p>Reach out to over thousands of new customers, near or far and grow your business.</p>
               </div>
