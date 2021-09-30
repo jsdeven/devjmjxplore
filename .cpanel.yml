@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dstestmohitrai/public_html/
-    - /bin/cp seller_register.tpl $DEPLOYPATH
+    - /bin/cp design/backend/templates/addons/jmj_digital/views/auth/seller_register.tpl $DEPLOYPATH
