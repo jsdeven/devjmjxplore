@@ -3,7 +3,7 @@
 {script src="js/tygh/cart_content.js"}
 
 {if !$cart|fn_cart_is_empty}
-    {include file="views/checkout/components/cart_content.tpl"}
+    {include file="addons/jmj_digital/overrides/views/checkout/components/cart_content.tpl"}
 {else}
     <p class="ty-no-items">{__("text_cart_empty")}</p>
 

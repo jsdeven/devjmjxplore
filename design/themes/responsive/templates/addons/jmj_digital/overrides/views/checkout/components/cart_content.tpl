@@ -27,12 +27,12 @@
     </div>
 </div>
 
-{include file="views/checkout/components/cart_items.tpl" disable_ids="button_cart"}
+{include file="addons/jmj_digital/overrides/views/checkout/components/cart_items.tpl" disable_ids="button_cart"}
 
 </form>
 <!--checkout_form_wrapper--></div>
 
-{include file="views/checkout/components/checkout_totals.tpl" location="cart"}
+{include file="addons/jmj_digital/overrides/views/checkout/components/checkout_totals.tpl" location="cart"}
 
 <div class="buttons-container ty-cart-content__bottom-buttons clearfix">
     <div class="ty-float-left ty-cart-content__left-buttons">

@@ -129,7 +129,7 @@
         {if $field.template}
             {include file=$field.template}
         {else}
-            {include file="views/checkout/components/profile_fields/field.tpl"}
+            {include file="addons/jmj_digital/overrides/views/checkout/components/profile_fields/field.tpl"}
         {/if}
     {/foreach}
 {/if}

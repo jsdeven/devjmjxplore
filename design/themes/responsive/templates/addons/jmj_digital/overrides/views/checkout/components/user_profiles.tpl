@@ -22,15 +22,18 @@
                    class="ty-tiles__wrapper"
                    for="user_profile_{$profile.profile_id}"
             >
+                <span class="ty-tiles__title" style="color: #ff0064;">{$profile.s_firstname}</span>
                 <p class="ty-tiles__title">{$profile.s_address} {$profile.s_address_2}</p>
 
                 {if $profile.s_city || $profile.s_state_descr || $profile.s_zipcode}
-                    <p class="ty-tiles__text">{if
-	                    $profile.s_city}{$profile.s_city}, {/if}{if
-	                    $profile.s_state_descr}{$profile.s_state_descr}, {/if}{if
-	                    $profile.s_zipcode}{$profile.s_zipcode}{/if}</p>
+                    <p class="ty-tiles__text">
+                        
+                        {if $profile.s_city}{$profile.s_city}, {/if}
+                        {if $profile.s_state_descr}{$profile.s_state_descr}, {/if}
+                        {if $profile.s_zipcode}{$profile.s_zipcode}{/if}</p>
                 {/if}
                 {if $profile.s_country_descr}
+                    
                     <p class="ty-tiles__text">{$profile.s_country_descr}</p>
                 {/if}
                 <div class="ty-tiles__actions">

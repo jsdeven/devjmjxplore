@@ -32,25 +32,25 @@
               class="litecheckout__group litecheckout__payment-methods"
         >
 
-            {include file="views/checkout/components/steps/customer.tpl"
+            {include file="vaddons/jmj_digital/overrides/views/checkout/components/steps/customer.tpl"
                 show_title=$show_customer_fields_first
                 show_information=$show_customer_fields_first
                 show_address=false
                 show_notes=false
             }
 
-            {include file="views/checkout/components/steps/shipping.tpl"}
+            {include file="addons/jmj_digital/overrides/views/checkout/components/steps/shipping.tpl"}
 
-            {include file="views/checkout/components/steps/customer.tpl"
+            {include file="addons/jmj_digital/overrides/views/checkout/components/steps/customer.tpl"
                 show_title=!$show_customer_fields_first
                 show_information=!$show_customer_fields_first
                 show_address=true
                 show_notes=true
             }
 
-            {include file="views/checkout/components/steps/payment.tpl"}
+            {include file="addons/jmj_digital/overrides/views/checkout/components/steps/payment.tpl"}
             <div class="litecheckout__group litecheckout__submit-order" id="litecheckout_final_section">
-                {include file="views/checkout/components/final_section.tpl"
+                {include file="addons/jmj_digital/overrides/views/checkout/components/final_section.tpl"
                 is_payment_step=true
                 suffix=$payment.payment_id
                 }

@@ -59,7 +59,7 @@
                                     {if $product.product_options}
                                         <div class="cm-reload-{$obj_id} ty-cart-content__options" id="options_update_{$obj_id}">
                                             <input type="hidden" name="no_cache" value="no_cache" />
-                                            {include file="views/products/components/product_options.tpl" product_options=$product.product_options product=$product name="cart_products" id=$key location="cart" disable_ids=$disable_ids form_name="checkout_form"}
+                                            {include file="addons/jmj_digital/overrides/views/checkout/components/product_options.tpl" product_options=$product.product_options product=$product name="cart_products" id=$key location="cart" disable_ids=$disable_ids form_name="checkout_form"}
                                         <!--options_update_{$obj_id}--></div>
                                     {/if}
                                 {/hook}
@@ -103,7 +103,9 @@
                                             </table>
                                         </div>
                                     {/if}
-                                    {include file="views/companies/components/product_company_data.tpl" company_name=$product.company_name company_id=$product.company_id}
+                                   
+                                    <!--{include file="views/companies/components/product_company_data.tpl" company_name=$product.company_name company_id=$product.company_id}-->
+
                                 {/hook}
                             {/capture}
                             {if $smarty.capture.product_info_update|trim}
