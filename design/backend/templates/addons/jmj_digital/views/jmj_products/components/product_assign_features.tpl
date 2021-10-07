@@ -20,6 +20,35 @@
             -ms-interpolation-mode: bicubic;
             width: 900px;
         }
+        .ty-product-filters__color-filter-item{
+            display: inline-flex;
+            padding-left: 0;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .ty-product-filters__color-filter-swatch {
+            width: 26px;
+            height: 26px;
+            border-radius: 13px;
+            box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
+        }
+        
+        .ty-product-filters__color-filter-checkbox {
+            position: absolute;
+            opacity: 0;
+        }
+        
+        .cm-product-filters-checkbox:checked, input[type="checkbox"]:indeterminate {
+            background: #0388cc;
+            outline-color: #0388cc;
+            position:fixed!important;
+        }
+        .active-colors{
+            border: 2px solid #607d8b;
+            border-radius: 20px;
+        }
         
     </style>
 {/literal}
@@ -77,7 +106,7 @@
                 </span>
             {elseif $feature.multi_colors_filter == 1}
                 
-               <input type="hidden" name="product_data[add_new_variant][{$feature_id}][variant]" id="product_feature_{$feature_id}_add_new_variant" value="" />
+                <!--<input type="hidden" name="product_data[add_new_variant][{$feature_id}][variant]" id="product_feature_{$feature_id}_add_new_variant" value="" />-->
                 <span onclick="showPopup_color({$feature_id});" id="feature_select_button_{$feature_id}" class="feature-select-button">{__('choose_feature')}</span>
                 <span id="selected_color_variant_type_{$feature_id}" class="selected-feature">
                     {foreach from=$feature.variants item="variant"}
@@ -232,7 +261,7 @@
     <div>
         
         <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%" id="close-popup{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
+    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%;z-index: 999;" id="close-popup{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
     
         <div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})</div>
     </div>
@@ -276,39 +305,25 @@
     <div>
         
         <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:7%" id="close-popup-color{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
+    margin-bottom: 65px!important;width:auto;height:auto;bottom:7%;z-index: 999;" id="close-popup-color{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
     
         <div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})
         </div>
     {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
     
         {if $feature.product_variation_group.id eq ''}
-            <div style="font-size: 15px;font-weight: bold;">
-                <ul class="">
-                    {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
-                        {if $feature.multi_colors_filter == 1}
-                            <div class="table-responsive-wrapper" id="profile_fields">
-                            <table width="100%" class="table table-middle table--relative table-responsive profile-fields__section">
-                                <tbody id="section_fields_{$section}" {if $is_deprecated}class="hidden"{/if}>
-                                    {foreach from=$feature.variants item="variant"}
-                                        <tr>
-                                            <td data-th="{__("checkbox")}" width="10%">
-                                                <input onclick="GetSelectedColors('{$variant.variant}',{$feature_id})" class="dialog-colors multi_color_checkbox" type="checkbox" id="{$variant.variant_id}" name="product_data[product_features_new][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if} style="float: left;margin-left: 15px; margin-right: 5px; margin-top: 10px;">
-                                                <input type="checkbox" name="product_old_data[product_features_new][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if} style="display: none;">
-                                            </td>
-                                            <td style="background-color:{$variant.variant};border-radius: 57px;width: 90px;"><td>
-                                            <td data-th="{__("variant_name")}">
-                                                <b id="multi_colors_title_{$variant.variant_id}"> {$variant.variant}</b>
-                                            </td>
-                                        </tr>
-                                    {/foreach}
-                                </tbody>
-                            </table>
-                        </div>
-                        {/if}
-                    {/if}
-                </ul>
-            </div>
+            {if $feature.multi_colors_filter == 1}
+                <div style="font-size: 15px;font-weight: bold;margin: 35px;">
+                    {foreach from=$feature.variants item="variant"}
+                       <label class="ty-product-filters__color-filter-item {if $variant.selected} active-colors{/if}" data-cm-product-color-filter="true" title="{$variant.variant}">
+                            <input onclick="GetSelectedColors('{$variant.variant}',{$feature_id})" class="cm-product-filters-checkbox ty-product-filters__color-filter-checkbox dialog-colors multi_color_checkbox" id="{$variant.variant_id}" type="checkbox" data-ca-filter-id="{$variant.variant_id}" name="product_data[product_features_new][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if}>
+                            <div class="ty-product-filters__color-filter-swatch " style="background-color:{$variant.variant}">
+                            </div>
+                            <b style="display:none"id="multi_colors_title_{$variant.variant_id}"> {$variant.variant}</b>
+                        </label>
+                    {/foreach}    
+                </div>
+            {/if}    
         {/if}
     {/if}            
     </div>
@@ -318,7 +333,7 @@
 <div id="myModal-variant-febric{$feature_id}" class="jmj-modal modal-feature-popup">
     <span id="close-modal-febric{$feature_id}" class="jmj-close">&times;</span>
          <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%" class="close-popup ty-btn__secondary ty-btn" id="close-popup-febric{$feature_id}">Save</div>
+    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%;z-index: 999;" class="close-popup ty-btn__secondary ty-btn" id="close-popup-febric{$feature_id}">Save</div>
         <div><div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})</div></div>
        
         {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
@@ -355,6 +370,7 @@
         {/if}
 </div>
 {/foreach}
+
 <script type="text/javascript">
     $(document).ready(function(){
         $('.select2-results__option').off().on('click', function(){
@@ -585,15 +601,15 @@
     
     function GetSelectedColors(name, feature_id) {
         var selected_checkbox_new = new Array();
-         console.log(selected_checkbox_new);
-       
+         
         $('.multi_color_checkbox').each(function() {
             if($(this).is(':checked')){
-                console.log($("#multi_colors_title_"+this.id).text());
+                $(this).parent('label').addClass('active-colors');
                 selected_checkbox_new.push($("#multi_colors_title_"+this.id).text());
+            }else{
+                $(this).parent('label').removeClass('active-colors');
             }
         });
-        console.log(selected_checkbox_new);
         
         str = selected_checkbox_new.toString();
         document.getElementById("selected_color_variant_type_"+feature_id).innerHTML = str;

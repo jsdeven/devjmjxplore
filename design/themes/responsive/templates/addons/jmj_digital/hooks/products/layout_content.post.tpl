@@ -8,25 +8,34 @@
       <span style="font-size: 24px;">{$product.product nofilter}</span>
     </div>
     <div class="modal-body">
-      <p>{__("contact_slogan")}</p>
+        
         <form method="POST" action="index.php?dispatch=products.product_enquiry_bulk" class="form-padding-arrange-block">
             <input type="hidden" name="product_id" value="{$product.product_id}">
             <input type="hidden" name="product_name" value="{$product.product}">
-            <input type="hidden" name="product_main_category" value="{$product.main_category}">
+            <input type="hidden" name="product_code" value="{$product.product_code}">
+            <input type="hidden" name="product_price" value="{$product.price}">
             <input type="hidden" name="company_id" value="{$company_id}" />
-            {if empty($smarty.session.auth.user_id)}
-                <input type="hidden" name="user_id" value="0">
-            {else}
-                <input type="hidden" name="user_id" value="{$smarty.session.auth.user_id}">
-            {/if}
+           
+            <input type="hidden" name="user_id" value="{$smarty.session.auth.user_id}">
+         
             <input type="hidden" name="cus_dispatch" value="products.product_enquiry_bulk">
-
+            
             <div class="ty-control-group">
-                <label for="pincode" class="ty-control-group__title cm-integer cm-required">{__("qty")}</label>
-                <input id="pincode" class="ty-input-text cm-focus " size="50" type="text" name="quantity" value={$product.min_qty}>
+                <label for="quote_qunatity" class="ty-control-group__title cm-integer cm-required">{__("quote_qunatity")}</label>
+                <input id="quote_qunatity" class="ty-input-text cm-focus " size="50" type="number" name="quote_qunatity" value={$product.min_qty}>
+            </div>
+            
+            <div class="ty-control-group">
+                <label for="quote_price" class="ty-control-group__title cm-value-decimal cm-required">{__("quote_price")}</label>
+                <input id="quote_price" class="ty-input-text cm-focus" size="50" type="number" name="quote_price" value={$product.price|round:2}>
+            </div>
+            
+            <div class="ty-control-group">
+                <label for="dispatch_date" class="ty-control-group__title cm-required">{__("dispatch_date")}</label>
+                <input id="dispatch_date" class="ty-input-text cm-focus" size="50" type="date" name="dispatch_date" />
             </div>
 
-            <div class="ty-control-group">
+            <!--<div class="ty-control-group">
                 <label for="first_name" class="ty-control-group__title cm-required">{__("first_name")}</label>
                 <input id="first_name" class="ty-input-text cm-focus " size="50" type="text" name="first_name" value={$user_info.first_name}>
             </div>
@@ -54,10 +63,11 @@
             <div class="ty-control-group">
                 <label for="comment" class="ty-control-group__title cm-required ">{__('comment')}</label>
                 <textarea id="comment" class="ty-form-builder__textarea" name="message_bulk" cols="67" rows="10"></textarea>
-            </div>
+            </div>-->
 
             <div class="ty-form-builder__buttons buttons-container">
-                <button style="width:15%" class="ty-btn__secondary ty-btn" type="submit" name="dispatch[products.product_enquiry_bulk]"><span><span>Submit</span></span></button>
+                <button style="width:15%" class="ty-btn__primary ty-btn" type="submit" name="dispatch[products.product_enquiry_bulk]"><span><span>Submit</span></span></button>
+                <a style="width:15%" class="ty-btn__secondary ty-btn reset-quote-field">Reset</a>
             </div>
 
         </form>
@@ -126,7 +136,7 @@ window.onclick = function(event) {
         -webkit-animation-duration: 0.4s;
         animation-name: animatetop;
         animation-duration: 0.4s;
-        height: 90%;
+        height: auto;
         overflow: scroll;
     }
 

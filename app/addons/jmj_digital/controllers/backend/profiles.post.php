@@ -31,6 +31,12 @@ if ($mode == 'update' || $mode == 'add' ) {
     
     if(isset($_REQUEST['user_id'])){
         $customer_additional_data = db_get_row("SELECT * FROM ?:customer_additional_data WHERE user_id = ?i", $_REQUEST['user_id']);
+        if(!empty($customer_additional_data['location'])){
+            $location = explode(',', $customer_additional_data['location']);
+            $locations = db_get_fields("SELECT city FROM ?:cities WHERE id IN(?a)", $location);
+            $customer_additional_data['location'] = implode(',', $locations);
+        }
+        //echo "<pre>";print_r($customer_additional_data);die;
         Tygh::$app['view']->assign('customer_additional_data', $customer_additional_data);
     }
     

@@ -19,7 +19,7 @@
                     {foreach from=$feature.variants item="var"}
                         {assign var="fabric_value" value=$product.product_id|fn_get_fabricvalue:$feature.feature_id:$var.variant_id}
                         {$hide_variant_affix = !$hide_affix}
-                        {if $var.selected}<li class="ty-product-feature__multiple-item"><span class="ty-compare-checkbox"><i class="ty-compare-checkbox__icon ty-icon-ok"></i></span>{if !$hide_variant_affix}<span class="ty-product-feature__prefix">{$feature.prefix}</span>{/if}{$var.variant}{if $fabric_value}(<span style="font-weight: bold;">{$fabric_value}%</span>){/if}{if !$hide_variant_affix}<span class="ty-product-feature__suffix">{$feature.suffix}</span>{/if}</li>{/if}
+                        {if $var.selected}<li class="ty-product-feature__multiple-item"><span class="ty-compare-checkbox"><i class="ty-compare-checkbox__icon ty-icon-ok"></i></span>{if !$hide_variant_affix}<span class="ty-product-feature__prefix">{$feature.prefix}</span>{/if}<span>{$fabric_value}%-{$var.variant}</span>{if $fabric_value}{/if}{if !$hide_variant_affix}<span class="ty-product-feature__suffix">{$feature.suffix}</span>{/if}</li>{/if}
                     {/foreach}
                 {else}
                     {foreach from=$feature.variants item="var"}
@@ -29,9 +29,21 @@
                 {/if}
                 </ul>
             {elseif in_array($feature.feature_type, ["ProductFeatures::TEXT_SELECTBOX"|enum, "ProductFeatures::EXTENDED"|enum, "ProductFeatures::NUMBER_SELECTBOX"|enum])}
-                {foreach from=$feature.variants item="var"}
-                    {if $var.selected}{$var.variant}{/if}
-                {/foreach}
+                {if $feature.multi_colors_filter}
+                    {foreach from=$feature.variants item="var_1"}
+                        {if $var_1.selected}
+                            <label class="ty-product-filters__color-filter-item" data-cm-product-color-filter="true" title="{$var_1.variant}" style="display: inline-flex;">
+                                <div class="ty-product-filters__color-filter-swatch " style="background-color:{$var_1.variant}">
+                                </div>
+                            </label>
+                        {/if}
+                     {/foreach}
+                {else}
+                
+                    {foreach from=$feature.variants item="var"}
+                        {if $var.selected}{$var.variant}{/if}
+                    {/foreach}
+                {/if}    
             {elseif $feature.feature_type == "ProductFeatures::NUMBER_FIELD"|enum}
                 {$feature.value_int|floatval|default:"-"}
             {else}

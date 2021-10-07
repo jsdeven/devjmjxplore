@@ -61,7 +61,6 @@ if ($mode == 'get_sap_hsncode') {
     echo 'HSNCode inserted/updated';
     exit;
 }
-
 if ($mode == 'get_sap_delivered_cityname') {    
     $response = fn_get_sap_data('Get_DeliverdTo');
     $response = json_decode($response);

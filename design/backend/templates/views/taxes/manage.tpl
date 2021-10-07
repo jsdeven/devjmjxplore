@@ -55,8 +55,7 @@
                     <input type="text" name="tax_data[{$tax.tax_id}][regnumber]" size="10" value="{$tax.regnumber}" class="input-mini input-hidden" /></td>
                 <td width="8%" class="center" data-th="{__("priority")}">
                     <input type="text" name="tax_data[{$tax.tax_id}][priority]" size="3" value="{$tax.priority}" class="input-micro input-hidden" /></td>
-                <td width="15%" data-th="{__("rates_depend_on")}">
-                    <select name="tax_data[{$tax.tax_id}][address_type]">
+                <td width="15%" data-th="{__("rates_depend_on")}"><select name="tax_data[{$tax.tax_id}][address_type]">
                         <option value="S" {if $tax.address_type == "S"}selected="selected"{/if}>{__("shipping_address")}</option>
                         <option value="B" {if $tax.address_type == "B"}selected="selected"{/if}>{__("billing_address")}</option>
                     </select>

@@ -56,8 +56,9 @@
 							
 							
 							<div class="form-group">
-								<label>{__('bank_name')}</label>
-								<select id="bank_name" name="company_data[bank_name]" class="gst_type form-select">
+								<label class="cm-required">{__('bank_name')}</label>
+								<select id="bank_name" name="company_data[bank_name]" class="gst_type form-select" required>
+									<option value="">Select Bank Name</option>
 									{foreach from=$bank_name_list item=bank_name}
 										<option value="{$bank_name.value}" {if $company_data.bank_name == $bank_name.value}selected{/if}>{$bank_name.name}</option>
 									{/foreach}    
@@ -206,6 +207,23 @@
 							  </div>
 
 							
+							  <div class="form-group">
+								<label for="owners_logo_image" class="ty-control-group__title" style="width:40%;">{__("owners_logo_image")}</label>
+								<div class="input-group">
+    								  <input type="text" class="form-control" placeholder="Company Logo*" readonly>
+    								  <label class="input-group-btn">
+    									  <span class="choose-file">
+    										  choose file <input type="file" style="display: none;" name="owners_logo_image" id="owners_logo_image">
+    									  </span>
+    								  </label>
+							    </div>
+    							  <p class="fileallow"><small>Only <strong>JPG</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+    								{if $company_data.owners_logo_image}
+    								<a class="fileallow" target="_blank" href="images/sellers-additional-data/{$smarty.session.vendor_register_form_id}/{$company_data.owners_logo_image}">{__('check_uploaded')}</a>
+    								{/if}
+    							    </p>
+							  </div>
+
 							<!--<div class="file-upload file-upload-office-front">
 								<div class="file-select">
 									<label for="office_front_image" class="ty-control-group__title" style="width:40%;">{__("office_front_image")}</label>
@@ -289,7 +307,7 @@
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/sellers-additional-data/{$smarty.session.vendor_register_form_id}/{$company_data.owners_pancard_image}">{__('check_uploaded')}</a>
 								{/if}
 							</div>-->
-
+                        
 							<!--<h4 class="request-otp-header" style="margin-top:10px;">Terms & Conditions </h4>
 							<ul>
 								<li>

@@ -592,7 +592,7 @@ class SraCartContent extends ASraEntity
      */
     private function updateUserData(array $user_data)
     {
-        unset($user_data['profile_id'], $user_data['user_id']);
+        //unset($user_data['profile_id'], $user_data['user_id']);
 
         list(,$profile_id) = fn_update_user($this->auth['user_id'], $user_data, $this->auth, false, false);
 

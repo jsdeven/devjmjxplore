@@ -66,7 +66,7 @@
 								<div id="b_address_fields">
 									<div class="form-group">
 										<label for="gstin_number" class="ty-control-group__title cm-required cm-name cm-trim">{__("gstin_number")}</label> 
-										<input type="text" id="gstin_number" name="company_data[gstin_number]" value="{$company_data.gstin_number}" size="32" maxlength="128"  class="form-control  cm-required" placeholder="GSTIN Number" required>
+										<input type="text" id="gstin_number" name="company_data[gstin_number]" value="{$company_data.gstin_number}" size="32" maxlength="128"  class="form-control  cm-required" placeholder="GSTIN Number" required disabled>
 									</div>
 									<div class="form-group">
 										<label for="pan_number" class="ty-control-group__title cm-required">{__("pan_number")}</label>
@@ -98,7 +98,7 @@
         								<label for="b_state" class="cm-required">{__('b_state')}</label>
         								<select id="b_state" name="company_data[b_state]" class="gst_type form-select">
         									{foreach from=$states item=state}
-        										<option value="{$state.code}" {if $company_data.b_state == $state.code}selected{/if}>{$state.state}</option>
+        										<option indiazone="{$state.indiazone}" value="{$state.code}" {if $company_data.b_state == $state.code}selected{/if}>{$state.state}</option>
         									{/foreach}    
         								</select>
         						    </div>	
@@ -127,37 +127,36 @@
 								</div>
 								</div>
 
-
-
-
 								<div class="row">
 									<div class="col-md-6">
-									<div class="form-group">
-        								<label for="gst_type" s class="cm-required">{__('gst_type')}</label>
-        								<select id="gst_type" name="company_data[gst_type]" class="gst_type form-select">
-        									{foreach from=$gst_types item=gst_type}
-        										<option value="{$gst_type.value}" {if $company_data.gst_type == $gst_type.value}selected{/if}>{$gst_type.name}</option>
-        									{/foreach}    
-        								</select>
-        						    </div>	
+    									<div class="form-group">
+            								<label for="gst_type" s class="cm-required">{__('gst_type')}</label>
+            								<select id="gst_type" name="company_data[gst_type]" class="gst_type form-select">
+            									{foreach from=$gst_types item=gst_type}
+            										<option value="{$gst_type.value}" {if $company_data.gst_type == $gst_type.value}selected{/if}>{$gst_type.name}</option>
+            									{/foreach}    
+            								</select>
+            						    </div>	
 									</div>
-									<div class="col-md-6">
-        						    <div class="form-group">
-        								<label for="india_zone"  class="cm-required">{__('india_zone')}</label>
-        								<select id="india_zone" name="company_data[india_zone]" class="gst_type form-select" required>
-											<option value="">Select Zone</option>
-        									{foreach from=$india_zones item=india_zone}
-        										<option value="{$india_zone.value}" {if $company_data.india_zone == $india_zone.value}selected{/if}>{$india_zone.name}</option>
-        									{/foreach}    
-        								</select>
-        						    </div>	
+									<!--<div class="col-md-6">
+            						    <div class="form-group">
+            								<label for="india_zone"  class="cm-required">{__('india_zone')}</label>
+            								<select id="india_zone" name="company_data[india_zone]" class="gst_type form-select">
+            									{foreach from=$india_zones item=india_zone}
+            										<option value="{$india_zone.value}" {if $company_data.india_zone == $india_zone.value}selected{/if}>{$india_zone.name}</option>
+            									{/foreach}    
+            								</select>
+            						    </div>	
+								    </div>-->
+								    <div class="col-md-6">
+            						    <div class="form-group">
+            								<label for="india_zone"  class="cm-required">{__('india_zone')}</label>
+            								<select id="india_zone" name="company_data[india_zone]" class="gst_type form-select">
+            							<option value="{$company_data.india_zone}" selected>{$company_data.india_zone}</option>
+            								</select>
+            						    </div>	
+								    </div>
 								</div>
-								</div>
-
-
-
-
-
 								</div>
 
 								<div class="shiping-group">
@@ -217,7 +216,7 @@
         								<label for="s_state" class="cm-required mobile-block">{__('s_state')}</label>
         								<select id="s_state" name="company_data[s_state]" class="s_state form-select mobile-block">
         									{foreach from=$states item=state}
-        										<option value="{$state.code}" {if $company_data.s_state == $state.code}selected{/if}>{$state.state}</option>
+        										<option indiazone="{$state.indiazone}" value="{$state.code}" {if $company_data.s_state == $state.code}selected{/if}>{$state.state}</option>
         									{/foreach}    
         								</select>
         						    </div>	
@@ -269,6 +268,16 @@
 </div>
 {literal}
 	<script>
+	
+	    $("#b_state").change(function(){ 
+            var element = $(this).find('option:selected'); 
+            var indiazone = element.attr("indiazone"); 
+            
+            var option = '<option value='+indiazone+' selected>'+indiazone+'</option>';
+            $('#india_zone').html(option);
+            
+        }); 
+        
 		$('.request-verify-gstin').on('click',function(){
 		
 			var gstin = $('#gstn').val();
@@ -315,7 +324,14 @@
                     	$('#b_city').val(city);
                     	var state_name = restext.data.stcd;
                     	$("#b_state option:contains('"+state_name+"')").attr('selected', 'selected');
-                    	
+        
+                        var element = $('#b_state').find('option:selected'); 
+                        var indiazone = element.attr("indiazone"); 
+                        
+                        var option = '<option value='+indiazone+' selected>'+indiazone+'</option>';
+                        $('#india_zone').html(option);
+                        
+        
 					}else{
 					    $('#gstin_found_error').show();
 						

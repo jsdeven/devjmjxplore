@@ -1513,6 +1513,7 @@ function fn_update_product($product_data, $product_id = 0, $lang_code = CART_LAN
      * @param string $lang_code    Two-letter language code (e.g. 'en', 'ru', etc.)
      * @param bool   $create       Flag determines if product was created (true) or just updated (false).
      */
+    
     fn_set_hook('update_product_post', $product_data, $product_id, $lang_code, $create);
 
     return (int) $product_id;

@@ -27,13 +27,16 @@ if (Registry::get('runtime.controller') == 'profiles' && $_SERVER['REQUEST_METHO
     $dispatch = $requestData['dispatch'];
     $dispatch = explode('.', $dispatch);
     $mode = $dispatch[1];
-    $suffix .= "dispatch=jmj_profiles.$mode";
-    unset($requestData['dispatch']);
-    foreach($requestData as $key => $value){
-        $suffix .="&$key=$value";
+    if($mode != 'update'){
+        $suffix .= "dispatch=jmj_profiles.$mode";
+        unset($requestData['dispatch']);
+        foreach($requestData as $key => $value){
+            $suffix .="&$key=$value";
+        }
+        
+        return array(CONTROLLER_STATUS_REDIRECT, $suffix);
     }
     
-    return array(CONTROLLER_STATUS_REDIRECT, $suffix);
 } 
 
 if (Registry::get('runtime.controller') == 'products' && $_SERVER['REQUEST_METHOD'] == 'GET') {

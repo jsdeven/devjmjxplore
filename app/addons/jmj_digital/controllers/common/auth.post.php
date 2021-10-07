@@ -210,6 +210,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $company_data['owners_pancard_image'] = $owners_pancard_image_name;
                 }
                 
+                if(!empty($_FILES["owners_logo_image"]['name'])){
+                    $owners_logo_image_name = $_FILES["owners_logo_image"]['name'];
+                    $owners_logo = explode('.' , $owners_logo_image_name);
+                    $owners_logo_image_name = base64_encode($owners_logo[0]).'.'.$owners_logo[1];
+                    $owners_logo_image_temp_name = $_FILES["owners_logo_image"]['tmp_name'];
+                    move_uploaded_file($owners_logo_image_temp_name,'images/sellers-additional-data/'.$vendor_register_form_id.'/'.$owners_logo_image_name);
+                    
+                    $company_data['owners_logo_image'] = $owners_logo_image_name;
+                }
+                
                 db_query("UPDATE ?:company_additional_data SET ?u WHERE id = ?i", $company_data, $vendor_register_form_id);
                 fn_set_notification('N',__('successful'),__('bank_information_saved'));
                 return array(CONTROLLER_STATUS_OK, 'auth.seller_register&step=5');
@@ -350,7 +360,7 @@ if ($mode == 'request_otp') {
 } 
 
 if($mode == 'seller_register'){
-  
+    
     $company_data = array();
     $vendor_register_form_id = isset($_SESSION['vendor_register_form_id']) ? $_SESSION['vendor_register_form_id'] : 0;
     
@@ -360,6 +370,16 @@ if($mode == 'seller_register'){
             $current_step = $company_data['register_last_step'] + 1;
             if($_REQUEST['step'] != $current_step && $current_step == 1){
                 return array(CONTROLLER_STATUS_OK, 'auth.seller_register&step='.$current_step);
+            }
+        }else{
+            if(isset($_SESSION['vendor_register_form_id'])){
+                unset($_SESSION['vendor_register_form_id']);
+            }
+            if(isset($_SESSION['phone_verified'])){
+                unset($_SESSION['phone_verified']);
+            }
+            if(isset($_SESSION['vendor_register_form_id'])){
+                unset($_SESSION['vendor_register_form_id']);
             }
         }
     }elseif(isset($_REQUEST['step']) && $_REQUEST['step'] != 1){
@@ -371,9 +391,11 @@ if($mode == 'seller_register'){
 
     if(isset($_REQUEST['step']) && $_REQUEST['step'] == 2)
     {
-        $gstn_verified = isset($_SESSION['gstn_verified']) ? $_SESSION['gstn_verified'] : false;
+       
+        $gstn_verified = !empty($company_data['gstin_number']) ? true : false;
         list($countries, )=fn_get_countries(array('only_avail'=>'A'));
         list($states, ) = fn_get_states(array('country_code' => 'IN'));
+        
         Tygh::$app['view']->assign('gst_types', GST_TYPES);
         Tygh::$app['view']->assign('india_zones', INDIA_ZONES);
         Tygh::$app['view']->assign('states', $states);
@@ -387,7 +409,7 @@ if($mode == 'seller_register'){
         list($main_categories, ) = fn_get_categories($params);
 
         if($vendor_register_form_id){
-
+            
             if(isset($company_data['categories']) && !empty($company_data['categories'])){
                 $selected_categories = unserialize($company_data['categories']);
             }
@@ -441,6 +463,33 @@ if($mode == 'seller_register'){
         $company_data_create['zipcode'] = $company_data['b_pincode'];
         $company_data_create['gstin_number'] = $company_data['gstin_number'];
      
+        $_REQUEST['logotypes_image_data'] = array(
+            'theme' => array(
+                'type'      => 'M',
+                'object_id' => '',
+                'image_alt' => ''
+            ),
+            'mail' => array(
+                'type'      => 'M',
+                'object_id' => '',
+                'image_alt' => ''
+            ),
+        );
+        
+        $image_url = Registry::get('config.https_host').'/images/sellers-additional-data/'.$vendor_register_form_id.'/'.$company_data['owners_logo_image'];
+        $_REQUEST['file_logotypes_image_icon'] = array(
+            'theme' => $image_url,
+            'mail'  => $image_url
+        );
+        $_REQUEST['type_logotypes_image_icon'] = array(
+            'theme' => 'url',
+            'mail'  => 'url'
+        );
+        $_REQUEST['is_high_res_logotypes_image_icon'] = array(
+            'theme' => 'N',
+            'mail'  => 'N'
+        );
+        //echo "<pre>";print_r($company_data_create);die;
         $company_id = fn_update_company($company_data_create);
 
         //brand request
@@ -457,6 +506,7 @@ if($mode == 'seller_register'){
 
         unset($_SESSION['vendor_register_form_id']);
         unset($_SESSION['phone_verified']);
+        $_SESSION['gstn_verified'] = false;
     }
 
     Tygh::$app['view']->assign('company_data', $company_data);
@@ -585,8 +635,9 @@ if ($mode == 'verify_gstin') {
     if (defined('AJAX_REQUEST')) {
         $status = true;
         $gstin = isset($_REQUEST['gstin']) ? trim($_REQUEST['gstin']) : null;
-       
-        if (empty($gstin)) {
+        $vendor_register_form_id = isset($_SESSION['vendor_register_form_id']) ? $_SESSION['vendor_register_form_id'] : 0;
+        
+        if (empty($gstin) || empty($vendor_register_form_id)) {
             $status = false;
             fn_set_notification('E', __('error'), __('gstin_required'));
         }
@@ -598,6 +649,14 @@ if ($mode == 'verify_gstin') {
                 $status = false;
                 fn_set_notification('E', __('error'), __('gst_detail_not_found'));
             } else{
+                
+                $update_data = array(
+                    'gstin_number' => $gstin,
+                    'pan_number'   => substr($gstin, 2, -3)
+                );
+                    
+                db_query("UPDATE ?:company_additional_data SET ?u WHERE id = ?i", $update_data, $vendor_register_form_id);
+            
                 $res = (array)$data->data->pradr->addr;
                 $res['b_name'] = $data->data->lgnm;
                 fn_set_notification('N', __('success'), __('verified_success'));

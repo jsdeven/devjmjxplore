@@ -147,8 +147,7 @@
                                         </li>
                                         <li class="divider"></li>
                                         
-                                        <li>
-                                            {btn
+                                        <li>{btn
                                             type="list"
                                             text=__("Preview")
                                             target="_blank"

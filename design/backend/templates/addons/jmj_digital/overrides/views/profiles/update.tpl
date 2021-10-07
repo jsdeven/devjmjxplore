@@ -30,7 +30,8 @@
     
     <div id="content_general">
         {hook name="profiles:general_content"}
-            {include file="views/profiles/components/profiles_account.tpl"}
+        
+            {include file="addons/jmj_digital/overrides/views/profiles/components/profiles_account.tpl"}
 
             {if ("ULTIMATE"|fn_allowed_for || $user_type == "V") && $id != $auth.user_id}
 
@@ -52,8 +53,10 @@
             {/if}
         {/hook}
         
-        {include file="views/profiles/components/profile_fields.tpl" section="C" title=__("contact_information")}
+        {include file="addons/jmj_digital/overrides/views/profiles/components/profile_fields.tpl" section="C" title=__("contact_information")}
+        
         {if $_REQUEST.user_type != 'A'}
+        {if $_REQUEST.user_type == "C" || $_REQUEST.user_type == "V" }
             {if $settings.General.user_multiple_profiles == "Y" && $id}
                 {include file="common/subheader.tpl" title=__("user_profile_info")}
                 <p class="form-note">{__("text_multiprofile_notice")}</p>
@@ -61,10 +64,11 @@
             {/if}
 
             {if $profile_fields.B}
-                {include file="views/profiles/components/profile_fields.tpl" section="B" title=__("billing_address")}
-                {include file="views/profiles/components/profile_fields.tpl" section="S" title=__("shipping_address") body_id="sa" shipping_flag=$profile_fields|fn_compare_shipping_billing}
+                {include file="addons/jmj_digital/overrides/views/profiles/components/profile_fields.tpl" section="B" title=__("billing_address")}
+                {include file="addons/jmj_digital/overrides/views/profiles/components/profile_fields.tpl" section="S" title=__("shipping_address") body_id="sa" shipping_flag=$profile_fields|fn_compare_shipping_billing}
             {else}
-                {include file="views/profiles/components/profile_fields.tpl" section="S" title=__("shipping_address") shipping_flag=false}
+                {include file="addons/jmj_digital/overrides/views/profiles/components/profile_fields.tpl" section="S" title=__("shipping_address") shipping_flag=false}
+            {/if}
             {/if}
         {/if}    
     </div>
@@ -109,6 +113,7 @@
         {hook name="profiles:detailed_content"}
         {/hook}
     </div>
+
     {if $show_api_tab}
         <div id="content_api">
             {if !$hide_api_checkbox}
@@ -236,3 +241,4 @@
         });
     </script>
 {/if}    
+

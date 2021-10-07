@@ -2,6 +2,7 @@
 
 {capture name="login"}
     <form name="{$id}_form" action="{""|fn_url}" method="post" {if $style == "popup"}class="cm-ajax cm-ajax-full-render"{/if}>
+      
         {if $style == "popup"}
             <input type="hidden" name="result_ids" value="{$id}_login_popup_form_container" />
             <input type="hidden" name="login_block_id" value="{$id}" />

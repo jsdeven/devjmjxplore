@@ -1,9 +1,10 @@
-<div class="span16" style="padding:10px 0 10px 10px;margin-left:0;min-height:350px;"  >	
-<div class="ty-mainbox-container clearfix"> 
-    <div class="ty-mainbox-body">
-		<div class="ty-account">
-			<div id="account_register">
-				<div class="outer_event buyer_reg">
+
+<div>	
+	<div class="ty-mainbox-container clearfix">
+		<div class="ty-mainbox-body"><!-- Inline script moved to the bottom of the page -->
+		   <div class="ty-account">		
+			   <div id="account_register" style="margin:0;">
+				<!--<div class="outer_event buyer_reg">
 					<div class="all_cat onjtopancd"> 
 						<div class="ty-column4 wizard links__active">
 							<a><span class="tab_number_selected">1</span>{__("create_buyer_account")}</a>
@@ -18,26 +19,56 @@
 							<a><span class="{if $_REQUEST.step >= 4}tab_number_selected{else}tab_number{/if}">4</span>{__("bank_information")}</a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 				<div class="open apply-reg" id="apply">
-					<div class="content">
+					<div style="margin-left:0;">
+						<h4 class="sellerhub-form-title margin-topnill">bank details</h4>
 						<form  method="POST" class="cm-processed-form" enctype="multipart/form-data">	
 							<input type="hidden" name="step" value="4" />
 							<input type="hidden" name="customer_register_form_id" value="{$smarty.session.customer_register_form_id}" />
+							<div class="form-group">
+								<label class="cm-required">{__('bank_name')}</label>
+								<select id="bank_name" name="customer_data[bank_name]" class="gst_type form-select" required>
+									<option value="">Select Bank Name</option>
+									{foreach from=$bank_name_list item=bank_name}
+										<option value="{$bank_name.value}" {if $customer_data.bank_name == $bank_name.value}selected{/if}>{$bank_name.name}</option>
+									{/foreach}    
+								</select>
+							</div>		
 
-							<div class="ty-control-group">
+							<!--<div class="form-group">
 								<label for="bank_name" class="cm-required ty-control-group__title cm-trim">{__("bank_name")}</label> 
-								<input type="text" id="bank_name" name="customer_data[bank_name]" value="{$customer_data.bank_name}" size="32" maxlength="128" class="ty-input-text" required>
-							</div>
-							<div class="ty-control-group">
+								<input type="text" id="bank_name" name="customer_data[bank_name]" value="{$customer_data.bank_name}" size="32" maxlength="128" class="form-control" required>
+							</div>-->
+							
+							<div class="form-group">
 								<label for="account_number" class="cm-required ty-control-group__title cm-trim">{__("account_number")}</label>
-								<input type="text" id="account_number" name="customer_data[account_number]" value="{$customer_data.account_number}" size="32" maxlength="32" class="ty-input-text" required>
+								<input type="text" id="account_number" name="customer_data[account_number]" value="{$customer_data.account_number}" size="32" maxlength="32" class="form-control" required>
 							</div>
-							<div class="ty-control-group">
+							<div class="form-group">
 								<label for="ifsc_code" class="cm-required ty-control-group__title cm-trim">{__("ifsc_code")}</label> 
-								<input type="text" id="ifsc_code" name="customer_data[ifsc_code]" value="{$customer_data.ifsc_code}" size="32" maxlength="128" class="ty-input-text" required>
+								<input type="text" id="ifsc_code" name="customer_data[ifsc_code]" value="{$customer_data.ifsc_code}" size="32" maxlength="128" class="form-control" required>
 							</div>
-							<div class="file-upload file-upload-cancel-cheque">
+
+							<div class="form-group">
+								<label for="cancel_cheque_copy_image" class="ty-control-group__title cm-required" style="width:40%;">{__("cancel_cheque_copy_image")}</label>
+									<div class="input-group">
+										<input type="text" class="form-control"  placeholder="Attach cancelled cheque copy*" readonly>
+										<label class="input-group-btn">
+											<span class="choose-file">
+												choose file <input type="file" style="display: none;" name="cancel_cheque_copy_image" id="cancel_cheque_copy_image" required />
+											</span>
+										</label>
+								</div>
+								<p class="fileallow"><small>Only <strong>JPG</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+									{if $customer_data.cancel_cheque_copy_image}
+								<a class="fileallow" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.cancel_cheque_copy_image}">{__('check_uploaded')}</a>
+								{/if}
+								</p>
+							  </div>
+							  
+
+							<!--<div class="file-upload file-upload-cancel-cheque">
 								<div class="file-select">
 									<label for="cancel_cheque_copy_image" class="ty-control-group__title" style="width:40%;">{__("cancel_cheque_copy_image")}</label>
 									<div class="file-select-button" id="fileName">Choose File</div>
@@ -47,9 +78,10 @@
 								{if $customer_data.cancel_cheque_copy_image}
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.cancel_cheque_copy_image}">{__('check_uploaded')}</a>
 								{/if}
-							</div>
-							<h4 class="request-otp-header" style="margin-top:10px;">Company Profile & Aadhar Card</h4>
-							<div class="file-upload file-upload-company-profile">
+							</div>-->
+							<!--<div class="mb-4"><h3 class="sellerhub-form-title" style="margin-top:10px;">Company Profile & Aadhar Card</h3></div>-->
+							<h4 class="sellerhub-form-title margin-topnill">Company Profile & Aadhar Card</h4>
+							<!--<div class="file-upload file-upload-company-profile">
 								<div class="file-select">
 									<label for="company_profile_image" class="ty-control-group__title" style="width:40%;">{__("company_profile_image")}</label>
 									<div class="file-select-button" id="fileName" style="margin-top: 1px;">Choose File</div>
@@ -59,8 +91,28 @@
 								{if $customer_data.company_profile_image}
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.company_profile_image}">{__('check_uploaded')}</a>
 								{/if}
-							</div>
-							<div class="file-upload file-upload-product-catalogue" >
+							</div>-->
+
+							<div class="form-group">
+								<label for="company_profile_image" class="ty-control-group__title" style="width:40%;">{__("company_profile_image")}</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="Company Profile" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="company_profile_image" id="company_profile_image" multiple>
+									  </span>
+								  </label>
+							  </div>
+							  	<p class="fileallow"><small>Only <strong>PDF</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+									{if $customer_data.company_profile_image}
+								<a class="fileallow" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.company_profile_image}">{__('check_uploaded')}</a>
+								{/if}
+								</p>
+							  </div>
+
+
+							
+							<!--<div class="file-upload file-upload-product-catalogue" >
 								<div class="file-select">
 									<label for="product_catalogue_image" class="ty-control-group__title" style="width:40%;">Aadhar Card</label>
 									<div class="file-select-button" id="fileName" style="margin-top: 1px;">Choose File</div>
@@ -70,8 +122,28 @@
 								{if $customer_data.product_catalogue_image}
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.product_catalogue_image}">{__('check_uploaded')}</a>
 								{/if}
-							</div>
-							<h4 class="request-otp-header" style="margin-top:10px;">Office / Factory Images</h4>
+							</div>-->
+
+							<div class="form-group">
+								<label for="product_catalogue_image" class="cm-required ty-control-group__title" style="width:40%;">Aadhar Card</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="Aadhar Card" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="product_catalogue_image" id="product_catalogue_image" multiple>
+									  </span>
+								  </label>
+							  </div>
+							  <p class="fileallow"><small>Only <strong>JPG</strong> is allowed. File size not to exceed <strong>10 MB</strong></small>
+								{if $customer_data.product_catalogue_image}
+								<a class="fileallow" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.product_catalogue_image}">{__('check_uploaded')}</a>
+								{/if}
+							</p>
+								
+							  </div>
+
+
+							<!--<h4 class="request-otp-header" style="margin-top:10px;">Office / Factory Images</h4>
 							<div class="file-upload file-upload-office-front">
 								<div class="file-select">
 									<label for="office_front_image" class="ty-control-group__title" style="width:40%;">{__("office_front_image")}</label>
@@ -93,9 +165,47 @@
 								{if $customer_data.office_inside_image}
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.office_inside_image}">{__('check_uploaded')}</a>
 								{/if}
+							</div>-->
+							<!--<div class="mb-4"><h3 class="sellerhub-form-title" style="margin-top:10px;">Office / Factory Images</h3></div>-->
+							<h4 class="sellerhub-form-title margin-topnill">Office / Factory Images</h4>
+							<div class="form-group">
+								<label for="office_front_image" class="ty-control-group__title" style="width:40%;">{__("office_front_image")}</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="Front Image*" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="office_front_image" id="office_front_image">
+									  </span>
+								  </label>
+							  </div>
+							  <p class="fileallow"><small>Only <strong>JPG</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+								{if $customer_data.office_front_image}
+								<a class="fileallow" target="_blank"href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.office_front_image}">{__('check_uploaded')}</a>
+								{/if}
+							</p>
+							
+							  </div>
+
+
+							  <div class="form-group">
+								<label for="office_inside_image" class="ty-control-group__title" style="width:40%;">{__("office_inside_image")}</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="Inside Image*" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="office_inside_image" id="office_inside_image">
+									  </span>
+								  </label>
+							  </div>
+							  <p class="fileallow"><small>Only <strong>JPG</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+								{if $customer_data.office_inside_image}
+								<a class="fileallow" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.office_inside_image}">{__('check_uploaded')}</a>
+								{/if}
+							</p>
 							</div>
 
-							<h4 class="request-otp-header" style="margin-top:10px;">Basic Documents</h4>
+
+							<!--<h4 class="request-otp-header" style="margin-top:10px;">Basic Documents</h4>
 							<div class="file-upload file-upload-gstin-certificate">
 								<div class="file-select">
 									<label for="gstin_certificate_image" class="ty-control-group__title" style="width:40%;">{__("gstin_certificate_image")}</label>
@@ -117,9 +227,45 @@
 								{if $customer_data.owners_pancard_image}
 									<a style="font-weight: bold;color: #038603;font-size: 13px;" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.owners_pancard_image}">{__('check_uploaded')}</a>
 								{/if}
-							</div>
+							</div>-->
 
-							<h4 class="request-otp-header" style="margin-top:10px;">Terms & Conditions </h4>
+							<!--<div class="mb-4"><h3 class="sellerhub-form-title" style="margin-top:10px;">Basic documents</h3></div>-->
+							<h4 class="sellerhub-form-title margin-topnill">Basic documents</h4>
+							<div class="form-group">
+								<label for="gstin_certificate_image" class="cm-required ty-control-group__title" style="width:40%;">{__("gstin_certificate_image")}</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="GSTIN Certificate*" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="gstin_certificate_image" id="gstin_certificate_image" multiple>
+									  </span>
+								  </label>
+							  </div>
+							  <p class="fileallow"><small>Only <strong>PDF</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+								{if $customer_data.gstin_certificate_image}
+								<a class="fileallow" target="_blank"href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.gstin_certificate_image}">{__('check_uploaded')}</a>
+								{/if}
+							</p>
+							  </div>
+							  <div class="form-group">
+								<label for="owners_pancard_image" class="cm-required ty-control-group__title" style="width:40%;">{__("owners_pancard_image")}</label>
+								<div class="input-group">
+								  <input type="text" class="form-control" placeholder="PAN Card of Owner’s*" readonly>
+								  <label class="input-group-btn">
+									  <span class="choose-file">
+										  choose file <input type="file" style="display: none;" name="owners_pancard_image" id="owners_pancard_image">
+									  </span>
+								  </label>
+							  </div>
+							  <p class="fileallow"><small>Only <strong>PDF</strong> is allowed. File size not to exceed <strong>2 MB</strong></small>
+								{if $customer_data.owners_pancard_image}
+								<a class="fileallow" target="_blank" href="images/customer-additional-data/{$smarty.session.customer_register_form_id}/{$customer_data.owners_pancard_image}">{__('check_uploaded')}</a>
+								{/if}
+							</p>
+							  </div>
+
+
+							<!--<h4 class="request-otp-header" style="margin-top:10px;">Terms & Conditions </h4>
 							<ul>
 								<li>
 									<p>JM Jain LLP reserves the right to change Credit Limit, Credit Days, Interest Rate, etc. at any time.</p>
@@ -145,17 +291,25 @@
 									<p>Notwithstanding any standard/specific term or condition contained in Customer's Purchase Order, all
 									disputes shall be subject to Delhi Jurisdiction and terms of this agreement shall prevail</p>
 								</li>
-							</ul>
+							</ul>-->
+							
+							<div class="form-group mb-3 termcondition checkbox-group">
+								<div class="cust-checkbox">
+								  <input type="checkbox" name="" id="tandc" />
+								  <label for="tandc">I have read carefully and accpet <a data-toggle="modal" data-target="#termcondition" href="javascript:;"> Terms & Conditions.</a></label>
+								</div>
+							  </div>
 
-							<div class="tacbox">
+
+							<!--<div class="tacbox">
 								<input id="checkbox" name="accept_terms_and_contitions" type="checkbox" required/>
 								<label for="checkbox" class="cm-required">I have read carefully and accept terms and conditions.</label>
-							</div>
+							</div>-->
 
 							<div class="ty-profile-field__buttons" style="text-align:center;">
-								<a href="{fn_url('profiles.add&step=3')}" class="ty-btn__primary ty-btn" style="padding: 8px 7px;margin-right: 30px;">{__("back")}</a>
-								<button class="ty-btn__secondary ty-btn" type="submit" name="dispatch[profiles.add]">{__("finish")}</button>
-								<a href="{fn_url('profiles.add')}" class="ty-btn__primary ty-btn" style="padding: 8px 7px;margin-left: 30px;">{__("cancel")}</a>
+								<a href="{fn_url('profiles.add&step=3')}" class="btn sellerbtn mycustom-btn" style="margin-right: 30px;">{__("back")}</a>
+								<button  class="btn  sellerbtn mycustom-btn" type="submit" name="dispatch[profiles.add]">{__("finish")}</button>
+								<a href="{fn_url('profiles.add')}" class="btn  sellerbtn mycustom-btn" style="margin-left: 30px;">{__("cancel")}</a>
 							</div>
 							
 						</form>
@@ -167,7 +321,7 @@
     </div>
 </div>
 </div>
-<style>
+  <style>
 	p{
 		margin-top: 0;
 		margin-bottom: 0rem;
@@ -177,6 +331,7 @@
 		margin-bottom: 10px;
 	}
 </style>
+
 
 <script type="text/javascript">
 	var _URL = window.URL || window.webkitURL;
@@ -297,12 +452,44 @@
 		}
 
 		if (/^\s*$/.test(filename)) {
-			$(".file-upload-office-front").removeClass('active');
+			$(".file-upload-front-image").removeClass('active');
 		}else {
-			$(".file-upload-office-front").addClass('active');
+			$(".file-upload-front-image").addClass('active');
 			$("#noFile_office_front_image").text(filename.replace("C:\\fakepath\\", "")); 
 		}
 	});
 	
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script>
+$(function() {
+
+  // This code will attach `fileselect` event to all file inputs on the page
+  $(document).on('change', ':file', function() {
+    var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [numFiles, label]);
+  });
+
+
+  $(document).ready( function() {
+//below code executes on file input change and append name in text control
+      $(':file').on('fileselect', function(event, numFiles, label) {
+
+          var input = $(this).parents('.input-group').find(':text'),
+              log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+          if( input.length ) {
+              input.val(log);
+          } else {
+              if( log ) alert(log);
+          }
+
+      });
+  });
+
+});
 </script>
 

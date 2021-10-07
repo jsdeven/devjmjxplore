@@ -536,7 +536,7 @@
 
 {capture name="sidebar"}
     {hook name="orders:details_sidebar"}
-    {include file="views/order_management/components/profiles_info.tpl" user_data=$order_info location="I" form_id="order_info_form"}
+    {include file="addons/jmj_digital/overrides/views/orders/profiles_info.tpl" user_data=$order_info location="I" form_id="order_info_form"}
     {/hook}
 {/capture}
 

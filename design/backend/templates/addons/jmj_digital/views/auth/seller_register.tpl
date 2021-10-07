@@ -71,7 +71,7 @@ body {
             </div>
             <div class="sellerhub-div">
               <h4>How will this information be used?</h4>
-              <p>our email address or mobile number can be used as ‘Username’ to login to your Xplore Seller Account. </p>
+              <p>Your email address or mobile number can be used as ‘Username’ to login to your Xplore Seller Account. </p>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ body {
             </div>
             <div class="sellerhub-div">
               <h4>How will this information be used?</h4>
-              <p>our email address or mobile number can be used as ‘Username’ to login to your Xplore Seller Account. </p>
+              <p>Your email address or mobile number can be used as ‘Username’ to login to your Xplore Seller Account. </p>
             </div>
             </div>
         

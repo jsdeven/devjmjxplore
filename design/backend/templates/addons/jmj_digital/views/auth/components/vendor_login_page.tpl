@@ -23,7 +23,7 @@
   <!--<link rel="stylesheet" href="/design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/css/dsr_styles.less">-->
   
   <!--<link rel="stylesheet" href="/design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/css/aks.style.css?v15">-->
-  
+  <link rel="stylesheet" href="/design/backend/css/addons/jmj_digital/seller_page_assets/css/cons-new.css">
   <!-- ***** Header Area Start ***** -->
   <style>
 
@@ -377,7 +377,123 @@
       height: auto !important;
     }		#reasons .card-img-overlay {    position: static;    border: 2px solid #d0d0ce;    border-radius: 10px;    display: flex;}.my-box-item .card-body{	width:100%;	padding-left:100px;}.my-box-item .c-over{ 	    width: 100px;    position: absolute;	    top: -44px;		left:0;		background:#fff;}.my-box-item .c-over img{}.reasons .my-box-item .card .card-text{	padding-left:0;}	.reasons .my-box-item .card .card-title {    padding-left: 0;	margin-top:0;        background: #fff;}	.reasons .my-box-item .card .card-body{	    padding-left: 62px;    padding-top: 0;	padding-right: 0;    margin: -39px 0 0 0;    background: #fff;}		
 	
+	#howto .card-body:after{
+		    position: absolute;
+			content: '';
+			background: url(/design/backend/css/addons/jmj_digital/seller_page_assets/img/step-arrow.png) no-repeat top center;
+			top: 54px;
+			right: -21px;
+			width: 30px;
+			height: 49px;
+			background-size: 30px;
+	}
+	.howto .card .card-body p{
+		padding:0 20px;
+	}
 	
+	#howto .col-md-4.col-sm-6:nth-last-child(2) .card-body:after{
+		display:none;
+	}
+	
+	#reasons .card-img-overlay{
+		margin-bottom:20px;
+	}
+	.ui-widget-overlay{
+	    opacity: 1 !important;
+	}
+	
+	@media (max-width: 1280px) {
+		#howto .card-body:after{
+			right: -11px;
+		}
+	}
+	
+	 @media (max-width: 767px) {
+	 	.main-banner .left-content h2 {
+			font-size: 26px !important;
+			line-height: 34px !important;
+		}
+		.main-banner .left-content p {
+			font-size: 17px !important;
+			line-height: 30px !important;
+		}
+		.reasons .my-box-item .card .card-body {
+			padding-left: 90px;
+		}
+		.logo{
+		max-width: 200px;
+		}
+	 }
+	 
+	 @media (max-width: 750px) {
+			 #howto .col-md-4.col-sm-6 .card-body:after{
+				display:none !important;
+			}
+			#howto .step-line{
+				border:0;
+			}
+			.my-box-item .card.shadow-none.margin0{
+				margin-bottom:0 !important;
+			}
+			#howto .step-line.d-md-none{
+				display:none;
+			}
+			.main-button{
+				font-size: 18px !important;
+			}
+			.modal-dialog .vendor-login-form form span{
+			    font-size: 17px !important;
+			}
+			#howto .after-none .card-body:before{
+				display:none !important;
+				background:none !important;
+			}
+		
+		
+	 }
+	 
+	 
+	 @media (max-width:600px) {
+		.my-box-item .c-over {
+			width: 100px;
+			position: static;
+			top: 0;
+			left: 0;
+			background: #fff;
+		}
+		.reasons .my-box-item .card .card-body {
+			padding-left: 0;
+			padding-top: 0;
+			padding-right: 0;
+			margin: 0 0 0 0;
+			background: #fff;
+		}
+		#reasons .card-img-overlay{
+			justify-content: center;
+		}
+		#howto .card-body:before {
+			    position: absolute;
+				content: '';
+				background: url(/design/backend/css/addons/jmj_digital/seller_page_assets/img/step-arrow.png) no-repeat top center;
+				top: auto;
+				right: 0;
+				left: calc(50% - 24px);
+				bottom: -21px;
+				transform: rotate( 
+			90deg);
+				width: 15px;
+				height: 50px;
+				background-size: 16px;
+			}
+			
+		#howto .card-body:before:last-child{
+			display:none;
+		}	
+		
+		
+			
+			
+	 }
     
     
   </style>
@@ -416,11 +532,11 @@
   <!-- ***** Header Area End ***** -->
 
   <div class="ui-widget-overlay ui-front modal" id="modelWindow" role="dialog" >
-    <div class="modal-dialog ui-dialog">
+    <div class="modal-dialog ui-dialog modal-dialog-centered" style="background:none;">
       <div class="modal-content">
       <!-- ***** Login ***** -->
         <div class="book-cover-holder">
-          <div class="vendor-login-form">
+          <div class="vendor-login-form vender-custom-login-form">
             <h2>Seller Login</h2>
             <form action="{""|fn_url}" method="post">
                 <div class="input-cont">
@@ -447,7 +563,7 @@
 
   <div class="main-banner" id="top">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="col-md-6 align-self-center">
           <div class="left-content header-text">
             <h2>XPLORE enhanced <em>authentication</em></h2>
@@ -467,12 +583,13 @@
       <div class="row">
         <div class="section-heading mb-5">
           <h2 class="text-center"> why sell on <em>xplore</em></h2>
-          <p>As a simple, secure and single unified platform, Xplore not only helps businesses to maximize their potential <br> but also empowers them with industry data, insights, innovative technology and in-depth knowledge to <br> create a name for their brand and products.</p>
-        </div>						<div class="my-box-item"> <div class="row">
+          <p>As a simple, secure and single unified platform, Xplore not only helps businesses to maximize their potential  but also empowers them with industry data, insights, innovative technology and in-depth knowledge to  create a name for their brand and products.</p><br/><br/>
+        </div>						
+		<div class="my-box-item"> 
+		<div class="row justify-content-between">
         <div class="col-md-6">
           <div class="card shadow-none">
-           <!-- <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card1-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card1-mb-bg.jpg?8788787e" class="card-image d-md-none" alt="...">				-->
+     
             <div class="card-img-overlay">				<div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st1.png"></div>
               <div class="card-body">
                 <h5 class="card-title">NETWORK ADVANTAGE</h5>
@@ -483,8 +600,7 @@
         </div>
         <div class="col-md-6">
           <div class="card shadow-none">
-           <!-- <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card2-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card2-mb-bg.jpg?8788787de" class="card-image d-md-none" alt="...">-->
+      
             <div class="card-img-overlay">					<div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st2.png"></div>
               <div class="card-body">
                 <h5 class="card-title">HIGH PROFITABILITY</h5>
@@ -493,10 +609,12 @@
             </div>
           </div>
         </div>
+		</div>
+		
+		<div class="row justify-content-between">
         <div class="col-md-6">
-          <div class="card shadow-none"><!--
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card3-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card3-mb-bg.jpg?8788787de" class="card-image d-md-none" alt="...">-->
+          <div class="card shadow-none">
+		  
             <div class="card-img-overlay">					<div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st3.png"></div>
               <div class="card-body">
                 <h5 class="card-title">ZERO COST SET-UP</h5>
@@ -506,9 +624,8 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card shadow-none"><!--
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card4-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card4-mb-bg.jpg?8788787de" class="card-image d-md-none" alt="...">-->
+          <div class="card shadow-none">
+		  
             <div class="card-img-overlay">				<div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st4.png"></div>
               <div class="card-body">
                 <h5 class="card-title">CONVENIENCE & FLEXIBILITY</h5>
@@ -517,10 +634,11 @@
             </div>
           </div>
         </div>
+		</div>
+		<div class="row justify-content-between">
         <div class="col-md-6">
-          <div class="card shadow-none"><!--
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card5-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card5-mb-bg.jpg?8788787de" class="card-image d-md-none" alt="...">-->
+          <div class="card shadow-none">
+		  
             <div class="card-img-overlay">				<div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st5.png"></div>
               <div class="card-body">
                 <h5 class="card-title">POWERFUL PLATFORM</h5>
@@ -530,9 +648,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card shadow-none"><!--
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card6-bg.jpg" class="card-image d-none d-md-block" alt="...">
-            <img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/card6-mb-bg.jpg?8788787e" class="card-image d-md-none" alt="...">-->
+          <div class="card shadow-none margin0">
             <div class="card-img-overlay"><div class="c-over"><img src="design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/st6.png"></div>
               <div class="card-body">
                 <h5 class="card-title">SELLER SUPPORT</h5>
@@ -540,7 +656,9 @@
               </div>
             </div>
           </div>
-        </div>				</div></div>
+        </div>		
+		</div>
+		</div>
       </div>
     </div>
   </div>
@@ -578,14 +696,14 @@
                 <hr class="step-line d-md-none">
               </div>
           </div>
-        </div>				  <div class="col-md-2 d-sm-none d-md-block"></div>        <div class="col-md-4 col-sm-6">          <div class="card shadow-none">              <div class="card-body">                <h5 class="card-title">STEP 4</h5>                <p class="card-text"><b>Upload shop images</b> and necessary business documents</p>                <hr class="step-line d-md-none">              </div>          </div>        </div>        <div class="col-md-4 col-sm-6">          <div class="card shadow-none">              <div class="card-body">                <h5 class="card-title">STEP 5</h5>                <p class="card-text"><b>Our team will verify the details</b> & get back to you with confirmation</p>                <hr class="step-line d-md-none mb-5">              </div>          </div>        </div>        <div class="col-md-2 d-sm-none d-md-block"></div>		
+        </div>				  <div class="col-md-2 d-sm-none d-md-block"></div>        <div class="col-md-4 col-sm-6">          <div class="card shadow-none">              <div class="card-body">                <h5 class="card-title">STEP 4</h5>                <p class="card-text"><b>Upload shop images</b> and necessary business documents</p>                <hr class="step-line d-md-none">              </div>          </div>        </div>        <div class="col-md-4 col-sm-6 after-none">          <div class="card shadow-none">              <div class="card-body" id="my-after">                <h5 class="card-title">STEP 5</h5>                <p class="card-text"><b>Our team will verify the details</b> & get back to you with confirmation</p>                <hr class="step-line d-md-none mb-5">              </div>          </div>        </div>        <div class="col-md-2 d-sm-none d-md-block"></div>		
       </div>
    
-      <div class="row">
+      <!--div class="row">
         <div class="text-center mb-1">
           <p>After verification you can start taking orders on JMJ Xplore as a registered seller.</p>
         </div>
-      </div>
+      </div-->
     </div>
   </div>
 

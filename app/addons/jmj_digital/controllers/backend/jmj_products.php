@@ -101,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $product_data['product_features'] = $product_data['feature_data'];
             }
             
-            if($_REQUEST['product_id'] && $_REQUEST['current_step'] == 5){
+            if($_REQUEST['product_id']){
         
                 //Create product features for product variants creation
                 list($product_features, $features_search) = fn_get_paginated_product_features(
@@ -147,7 +147,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 fn_update_product($product_data, $product_id, DESCR_SL);
             }
           
-        
+            //update hsn 
+            db_query("UPDATE ?:products SET hsn_number = ?i WHERE product_id = ?i", $product_data['hsn_number'], $product_id);
 
             if ($product_id === false) {
                 // Some error occurred
@@ -166,18 +167,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         Tygh::$app['view']->assign('product_id', $product_id);
         //echo "<pre>";print_r($next_step);die;
-          //multi-colors feature functionality
-        foreach($_REQUEST['product_data']['product_features_new'] as $feature_key => $feature_value){
-            $multi_colors_filter = db_get_field("SELECT multi_colors_filter FROM ?:product_features WHERE feature_id = ?i", $feature_key);
-            
-            if($multi_colors_filter){
-                db_query("DELETE FROM ?:product_features_values WHERE feature_id = ?i AND product_id = ?i",$feature_key, $product_id);
-                foreach ($_REQUEST['product_data']['product_features_new'][$feature_key] as $color) {
-                    db_query("INSERT INTO ?:product_features_values SET feature_id = ?i, product_id = ?i, variant_id = ?i, lang_code = ?s", $feature_key, $product_id , $color, CART_LANGUAGE);
-                }
-            }  
-        }
-        //die;
+        
+        //multi-colors feature functionality
+        
+        if(isset($_REQUEST['product_data']['product_features_new']) && !empty($_REQUEST['product_data']['product_features_new'])){
+            foreach($_REQUEST['product_data']['product_features_new'] as $feature_key => $feature_value){
+                $multi_colors_filter = db_get_field("SELECT multi_colors_filter FROM ?:product_features WHERE feature_id = ?i", $feature_key);
+                
+                if($multi_colors_filter){
+                    db_query("DELETE FROM ?:product_features_values WHERE feature_id = ?i AND product_id = ?i",$feature_key, $product_id);
+                    foreach ($_REQUEST['product_data']['product_features_new'][$feature_key] as $color) {
+                        db_query("INSERT INTO ?:product_features_values SET feature_id = ?i, product_id = ?i, variant_id = ?i, lang_code = ?s", $feature_key, $product_id , $color, CART_LANGUAGE);
+                    }
+                }  
+            }
+        } 
+       
         if (!empty($product_id) && !$is_last_step) {
             $suffix = ".add?step=$next_step&product_id=$product_id";
             return array(CONTROLLER_STATUS_REDIRECT, 'jmj_products' . $suffix);
@@ -450,7 +455,7 @@ if ($mode == 'add') {
         ));
 
         list($product_features, $features_search) = fn_get_paginated_product_features(
-            array('product_id' => $product_data['product_id']),
+            array('product_id' => $product_data['product_id'],'skip_variants_threshould'=> true),
             $auth, $product_data,
             DESCR_SL
         );

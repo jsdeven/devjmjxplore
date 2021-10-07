@@ -79,7 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $customer_data['ship_to_another'] = $ship_to_another;
                 
                 if(!$ship_to_another){
-                   
                     $customer_data['s_name']    = $customer_data['b_name'];
                     $customer_data['s_address'] = $customer_data['b_address'];
                     $customer_data['s_address_2']   = $customer_data['b_address_2'];
@@ -121,11 +120,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $customer_data['bank_document'] = $bank_document_name;
                 }
                 
-                if(isset($customer_data['location']) && !empty($customer_data['location'])){
+                if(isset($customer_data['location']) && !empty($customer_data['location']))
+                {
                     $customer_data['location'] = implode(',', $customer_data['location']);
                 }
                 
                 db_query("UPDATE ?:customer_additional_data SET ?u WHERE id = ?i", $customer_data, $customer_register_form_id);
+                //echo "<pre>";print_r($customer_data);die;
+
                 fn_set_notification('N',__('successful'),__('brand_and_category_information_saved'));
                 return array(CONTROLLER_STATUS_OK, 'jmj_profiles.add&step=4');
 
@@ -181,11 +183,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $office_front = explode('.' , $office_front_image_name);
                     $office_front_image_name = base64_encode($office_front[0]).'.'.$office_front[1];
                     $office_front_image_temp_name = $_FILES["office_front_image"]['tmp_name'];
-                    move_uploaded_file($cancel_cheque_copy_image_temp_name,'images/customer-additional-data/'.$customer_register_form_id.'/'.$office_front_image_name);
+                    move_uploaded_file($office_front_image_temp_name,'images/customer-additional-data/'.$customer_register_form_id.'/'.$office_front_image_name);
                     
                     $customer_data['office_front_image'] = $office_front_image_name;
                 }
 
+        
                 if(!empty($_FILES["office_inside_image"]['name'])){
                     $office_inside_image_name = $_FILES["office_inside_image"]['name'];
                     $office_inside = explode('.' , $office_inside_image_name);
@@ -250,18 +253,21 @@ if($mode == 'add'){
 
     if(isset($_REQUEST['step']) && $_REQUEST['step'] == 2){
         
-        $gstn_verified = isset($_SESSION['gstn_verified']) ? $_SESSION['gstn_verified'] : false;
-        
+        $gstn_verified = !empty($customer_data['gstin_number']) ? true : false;
+        list($countries, )=fn_get_countries(array('only_avail'=>'A'));
         list($states, ) = fn_get_states(array('country_code' => 'IN'));
+       
         Tygh::$app['view']->assign('gst_types', GST_TYPES);
         Tygh::$app['view']->assign('india_zones', INDIA_ZONES);
         Tygh::$app['view']->assign('states', $states);
+        Tygh::$app['view']->assign('countries', $countries);
         Tygh::$app['view']->assign('gstn_verified', $gstn_verified);
     }
-    if(isset($_REQUEST['step']) && $_REQUEST['step'] == 3){
-
+    if(isset($_REQUEST['step']) && $_REQUEST['step'] == 3)
+    {
+        
         if($customer_register_form_id){
-
+           
             if(isset($customer_data['location']) && !empty($customer_data['location'])){
                 $customer_data['location'] = explode(',', $customer_data['location']);
             }
@@ -272,10 +278,28 @@ if($mode == 'add'){
         
 
     }
+    if(isset($_REQUEST['step']) && $_REQUEST['step'] == 4)
+    {
+        
+        Tygh::$app['view']->assign('bank_name_list', BANK_NAME_LIST);
+        
+
+    }
 
     if(isset($_REQUEST['step']) && $_REQUEST['step'] == 5){
 
         $user_id = isset($customer_data['user_id']) ? $customer_data['user_id'] : 0;
+        $customer_data['status'] = 'D';
+        $customer_data['b_firstname']    = $customer_data['b_name'];
+        $customer_data['s_firstname']    = $customer_data['s_name'];
+        $customer_data['user_type']      = 'C';
+        $customer_data['fields'] = array(
+            "54" => $customer_data['gstin_number']
+        );
+        $customer_data['fields'] = array(
+            "55" => $customer_data['gstin_number']
+        );
+
         $res = fn_update_user($user_id, $customer_data, $auth, !empty($customer_data['ship_to_another']), true);
 
         if ($res) {
@@ -297,6 +321,7 @@ if($mode == 'add'){
             
             unset($_SESSION['customer_register_form_id']);
             unset($_SESSION['phone_verified']);
+            $_SESSION['gstn_verified'] = false;
         }
     }
 
@@ -314,7 +339,7 @@ if ($mode == 'otp_for_customer_register') {
         }
         
         $phone_exist = db_get_field("SELECT user_id FROM ?:users WHERE phone = ?s AND user_type = ?s AND status NOT IN('D')", $phone, 'C');
-            
+
         if($phone_exist){
             fn_set_notification('W', __('error'), __('phone_aleady_exist'));
             $status = false;
@@ -379,6 +404,51 @@ if ($mode == 'verify_otp_for_customer_register') {
 
         $redirect_url_params = [
             'status'    => $status
+        ];
+
+        echo json_encode($redirect_url_params);
+        exit;
+    }    
+}
+
+if ($mode == 'verify_gstin') {
+    $res = array();
+    if (defined('AJAX_REQUEST')) {
+        $status = true;
+        $gstin = isset($_REQUEST['gstin']) ? trim($_REQUEST['gstin']) : null;
+        $customer_register_form_id = isset($_SESSION['customer_register_form_id']) ? $_SESSION['customer_register_form_id'] : 0;
+       
+        if (empty($gstin) || empty($customer_register_form_id)) {
+            $status = false;
+            fn_set_notification('E', __('error'), __('gstin_required'));
+        }
+    
+        if($status == true){
+            $data = fn_jmj_verify_gstin($gstin);
+            
+            if ($data->error) {
+                $status = false;
+                fn_set_notification('E', __('error'), __('gst_detail_not_found'));
+            } else{
+                
+                $update_data = array(
+                    'gstin_number' => $gstin,
+                    'pan_number'   => substr($gstin, 2, -3)
+                );
+                    
+                db_query("UPDATE ?:customer_additional_data SET ?u WHERE id = ?i", $update_data, $customer_register_form_id);
+                
+                $res = (array)$data->data->pradr->addr;
+                $res['b_name'] = $data->data->lgnm;
+                fn_set_notification('N', __('success'), __('verified_success'));
+            }
+
+        }      
+
+        $redirect_url_params = [
+            'status'    => $status,
+            'gstin'      => $gstin,
+            'data'      => $res
         ];
 
         echo json_encode($redirect_url_params);

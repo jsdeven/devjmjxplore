@@ -10,7 +10,7 @@ body {
     font-weight: 400;
 };
 
-.ty-stars__icon { 
+.ty-stars__icon {
     color: #24add4;
 };
 
@@ -215,7 +215,7 @@ min-height: 400px;
     color: #000;
     padding: 10px 20px;
     font-size: 16px !important;
-   
+
 };
 
 .edge-pic {
@@ -289,13 +289,13 @@ min-height: 400px;
     background-color: white;
 };
 .ty-footer-form-block {
-    background: #ffffff; 
+    background: #ffffff;
 };
 
 .ty-footer-form-block__input input[type="text"] {
     padding: 4px 15px;
     border-color: #737373;
-   
+
 };
 
 .ty-footer-form-block__title {
@@ -379,7 +379,7 @@ min-height: 400px;
     font-weight: bold !important;
 }
 
-.footer-no-wysiwyg  .ty-footer-form-block { 
+.footer-no-wysiwyg  .ty-footer-form-block {
     text-align: left !important;
     padding-top: 35px;
 }
@@ -531,3 +531,92 @@ margin-bottom: 20px;
 .top-quick-links .ty-text-links-wrapper {
     margin-right: 35px;
 };
+.content-features .ty-product-feature__multiple {
+    margin-left: -18px;
+};
+@media screen and (max-width:1024px) {
+  .reg-step {
+    padding: 100px 20px 0px 40px;
+  }
+}
+@media screen and (max-width:767px) {
+
+.ut2-banner.ut2-settings-desktop.banner-main-1 .ut2-a__bg-banner{
+        background-size: cover !important;
+height:500px;
+}
+
+  .header-grid.default-header .hidden-phone{
+    display: none !important;
+  }
+  .ty-owl-controls{
+    margin: 0;
+  }
+  .hidden-phone {
+    display: block !important;
+  }
+  .reg-content-grid{
+    background: none;
+  }
+  .reg-step{
+    padding: 0;
+    margin: 30px 0;
+  }
+  .reg-content-grid .reg-step.reg-step1 {
+    background-image: url('https://jmjxplore.com/images/page_image/reg-step1.png');
+  }
+  .reg-content-grid .reg-step.reg-step2 {
+    background-image: url('https://jmjxplore.com//images/page_image/reg-step2.png');
+  }
+  .reg-content-grid .reg-step.reg-step3 {
+    background-image: url('https://jmjxplore.com//images/page_image/reg-step3.png');
+  }
+  .edge-block-grid{
+    padding: 15px !important;
+  }
+  .mobapp-pic{
+    margin: 0 auto !important;
+  }
+  .homepage-banners .ut2-banner.ut2-settings-desktop .ut2-a__bg-banner .ut2-a__content{
+    align-items: center !important;
+  }
+  .edge-pic{
+    margin: 0 auto !important;
+  }
+  .mobapp-header h2{
+    font-size: 24px;
+  }
+  .ut2-social-link-block{
+    margin: 0;
+    min-height: initial;
+    padding-left: 0;
+  }
+  .ut2-social-links{
+    margin-left: 0;
+  }
+  .reg-action-grid .ty-wysiwyg-content .ty-btn__register{
+    margin-bottom: 40px;
+  }
+  .reg-action-grid{
+    padding-top: 15px;
+  }
+  .ab__deal_of_the_day .action-title{
+    font-size: 18px;
+  }
+}
+.seller-hub-account-left h1
+{
+text-transform:none;
+}
+.seller-hub-account-left h4
+{
+text-transform:none;
+}
+.seller-hub-account-left ul li{
+  width: 95%;
+}
+a.ty-password-forgot__a {
+    float: right;
+    padding: 0px 0;
+    color: darkgrey;
+}

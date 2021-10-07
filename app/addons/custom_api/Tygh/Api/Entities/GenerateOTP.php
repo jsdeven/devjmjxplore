@@ -43,7 +43,7 @@ class GenerateOTP extends AEntity
                 array()
             );
              
-            if ($user_data && fn_user_password_verify((int) $user_data['user_id'], $password, (string) $user_data['password'], (string) $salt)) {
+            if ($user_data && fn_user_password_verify((int) $user_data['user_id'], $password, (string) $user_data['password'], (string) $salt) && $user_data['user_type'] != 'V') {
                 $otp = fn_jmj_user_send_otp($user_data);
                 if($otp){
                     $status = Response::STATUS_OK;

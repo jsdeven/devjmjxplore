@@ -30,7 +30,10 @@ if ($mode == 'update' || $mode == 'add' ) {
     );
     list($cities, $search) = fn_get_all_cities($params, $auth);
 
-    $company_additional_data = db_get_row("SELECT * FROM ?:company_additional_data WHERE company_id = ?i", $_REQUEST['company_id']);
+    if(isset($_REQUEST['company_id']) && !empty($_REQUEST['company_id'])){
+        $company_additional_data = db_get_row("SELECT * FROM ?:company_additional_data WHERE company_id = ?i", $_REQUEST['company_id']);
+    }
+    
     if(isset($company_additional_data['categories']) && !empty($company_additional_data['categories'])){
         $company_additional_data['categories'] = unserialize($company_additional_data['categories']);
     }

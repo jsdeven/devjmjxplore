@@ -45,7 +45,7 @@ class SraProfile extends Users
     public function index($id = 0, $params = [])
     {
         $lang_code = $this->getLanguageCode($params);
-        $this->auth['user_id'] = $id;
+
         $id = $this->auth['user_id'];
 
         $result = parent::index($id, $params);

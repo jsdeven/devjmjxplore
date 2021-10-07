@@ -159,7 +159,7 @@ function fn_get_states($params = [], $items_per_page = 0, $lang_code = CART_LANG
 
     $params = array_merge($default_params, $params);
 
-    $fields = ['a.state_id', 'a.country_code', 'a.code', 'a.status', 'b.state', 'c.country' ,'b.indiazone'];
+    $fields = ['a.state_id', 'a.country_code', 'a.code', 'a.status', 'b.state', 'c.country','b.indiazone'];
     $joins = [
         'state_desc'   => db_quote('LEFT JOIN ?:state_descriptions as b ON b.state_id = a.state_id AND b.lang_code = ?s', $lang_code),
         'country_desc' => db_quote('LEFT JOIN ?:country_descriptions as c ON c.code = a.country_code AND c.lang_code = ?s', $lang_code),

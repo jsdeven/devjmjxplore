@@ -36,7 +36,7 @@
         <label for="companies_brands" class="control-label cm-required">{__("choose_vendor_brands")}:</label>
         <div class="controls">
             <select id="companies_brands" name="product_data[feature_data][{$companies_brands.0.feature_id}]">
-                <option value="0">{__('choose_brand')}</option>
+                <option value="">{__('choose_brand')}</option>
                 {foreach from=$companies_brands item=company_brand}
                     <option value="{$company_brand.variant_id}" {if $company_brand.variant_id == $product_data.brand_variant}selected="selected"{/if}>{$company_brand.variant}</option>
                 {/foreach}    
@@ -48,10 +48,10 @@
     {assign var="hsn_numbers" value=fn_get_hsn_numbers()}
     
     <div class="control-group">
-        <label for="hsn_numbers" class="control-label cm-required">{__("hsn_numbers")}:</label>
+        <label for="hsn_numbers" class="control-label cm-required" for="hsn_numbers">{__("hsn_numbers")}:</label>
         <div class="controls">
             <select id="hsn_numbers" name="product_data[hsn_number]">
-                <option value="0">{__('choose_hsn_number')}</option>
+                <option value="">{__('choose_hsn_number')}</option>
                 {foreach from=$hsn_numbers item=hsn_number}
                     <option value="{$hsn_number}" {if $hsn_number == $product_data.hsn_number}selected="selected"{/if}>{$hsn_number}</option>
                 {/foreach}    
@@ -63,7 +63,7 @@
         <label for="main_category" class="control-label cm-required">{__("main_category")}:</label>
         <div class="controls">
             <select id="main_category" name="product_data[main_category_id]" class="category_image">
-                <option value="0">{__('choose_category')}</option>
+                <option value="">{__('choose_category')}</option>
                 {foreach from=$main_categories item=main_category}
                     <option value="{$main_category.category_id}" {if $main_category.category_id == $main_category_id}selected="selected"{/if}>{$main_category.category}</option>
                 {/foreach}    
@@ -243,7 +243,7 @@
 
             $("#myModal").prepend('<div class="text-center three-quarters-loader">');
 
-            if(category_id){
+            if(category_id != '0'){
                 $.ajax({
                     url: url,
                     dataType: 'json',
@@ -258,7 +258,13 @@
                         }  
                     }
                 });
-            } 
+            }else{
+		    
+    		    var str =" <option value='0'>Select Sub-Category</option> <br>";
+    		    $('#sub_category').html(str);
+    		    var str_1 =" <option value='0'>Select Sub-Sub-Category</option> <br>";
+    		    $('#sub_sub_category').html(str_1);
+    		} 
         });
 
         $('#sub_category').on('change', function(){
@@ -268,7 +274,7 @@
 
             $("#myModal").prepend('<div class="text-center three-quarters-loader">');
 
-            if(category_id){
+            if(category_id != '0'){
                 $.ajax({
                     url: url,
                     dataType: 'json',
@@ -283,7 +289,10 @@
                         }  
                     }
                 });
-            } 
+            }else{
+    		    var str_1 =" <option value='0'>Select Sub-Sub-Category</option> <br>";
+    		    $('#sub_sub_category').html(str_1);
+    		} 
         });
 
         $('#sub_sub_category').on('change', function(){

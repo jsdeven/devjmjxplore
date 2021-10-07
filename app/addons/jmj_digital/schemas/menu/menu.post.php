@@ -86,4 +86,10 @@ $schema['central']['vendors']['items']['brand_product_class'] = array(
     'position' => 300,
 );
 
+ $schema['top']['administration']['items']['shippings_taxes']['subitems']['states'] = array(
+'href' => 'new_states.manage',
+'position' => 400,
+'description' => 'states with zone',
+ );
+ 
 return $schema;

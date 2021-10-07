@@ -87,7 +87,7 @@
 									
 									<td width="48%">
 										<div class="form-group">
-											<label >{__("categories")}</label>
+											<label>{__("categories")}</label>
 										<select id="main_category_{$_key}" name="company_data[categories][{$_key}][main_category_id]" class="main_category form-select" data-key="{$_key}">
 											<option value="0" >{__('choose_category')}</option>
 											{foreach from=$main_categories item=main_category}
@@ -203,6 +203,7 @@
 							</div>
        
 							<h4 class="request-otp-header sellerhub-form-title" style="margin-top:10px;">Main Market Coverage</h4>
+							<p id="market_covrage_error" style="color:red; {if count($company_data.main_market_coverage)>=2 || count($company_data.main_market_coverage)<=5}display:none{/if}">Minimum 2 and Maximum 5 Required</p>
 							
 							
 							<div class="form-group checkbox-group cs-responsive-check">
@@ -213,7 +214,7 @@
 								
 									<div class="col-md-6">
 											<div class="cust-checkbox" style="margin-left:10px;">
-											<input id="{$state.code}" name="company_data[states][]" type="checkbox" value="{$state.code}" {if in_array($state.code, $company_data.main_market_coverage)}checked{/if}>
+											<input class="market_coverage" id="{$state.code}" name="company_data[states][]" type="checkbox" value="{$state.code}" {if in_array($state.code, $company_data.main_market_coverage)}checked{/if}>
 											<label for="{$state.code}">{$state.state}</label>
 										</div>
 										</div>
@@ -222,7 +223,7 @@
 								
 									<div class="col-md-6">
 									<div class="cust-checkbox" style="margin-left:10px;">
-										<input id="{$state.code}" type="checkbox" value="{$state.code}" name="company_data[states][]" {if in_array($state.code, $company_data.main_market_coverage)}checked{/if}>
+										<input class="market_coverage" id="{$state.code}" type="checkbox" value="{$state.code}" name="company_data[states][]" {if in_array($state.code, $company_data.main_market_coverage)}checked{/if}>
 										<label for="{$state.code}">{$state.state}</label>
 									</div>
 								
@@ -239,9 +240,8 @@
 							<div class="row">
 									<div class="col-md-6">
 								<div class="form-group">
-									<label  class="cm-required">{__('total_emp')}</label>
-									<select id="total_emp" name="company_data[total_emp]" class="form-select" aria-label="Default select example" required>
-										<option value="">Select Total Employee</option>
+									<label>{__('total_emp')}</label>
+									<select id="total_emp" name="company_data[total_emp]" class="form-select" aria-label="Default select example">
 										{foreach from=$total_emp item=_emp}
 											<option value="{$_emp.value}" {if $company_data.total_emp == $_emp.value}selected{/if}>{$_emp.name}</option>
 										{/foreach}    
@@ -250,9 +250,8 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label  class="cm-required">{__('annual_turnover')}</label>
-										<select id="annual_turnover" name="company_data[annual_turnover]" class="form-select" aria-label="Default select example" required>
-											<option value="">Select Annual Turnover</option>
+										<label>{__('annual_turnover')}</label>
+										<select id="annual_turnover" name="company_data[annual_turnover]" class="form-select" aria-label="Default select example">
 											{foreach from=$annual_turn_over item=_turnover}
 												<option value="{$_turnover.value}" {if $company_data.annual_turnover == $_turnover.value}selected{/if}>{$_turnover.name}</option>
 											{/foreach}    
@@ -261,8 +260,8 @@
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<label class="cm-required">{__("average_monthly_production")}</label> 
-									<input type="number" id="average_monthly_production" name="company_data[average_monthly_production]" value="{$company_data.average_monthly_production}" class="form-control" required>
+									<label>{__("average_monthly_production")}</label> 
+									<input type="number" id="average_monthly_production" name="company_data[average_monthly_production]" value="{$company_data.average_monthly_production}" class="form-control">
 								</div>
 							</div>
 							</div>
@@ -273,7 +272,7 @@
 
 							<div class="ty-profile-field__buttons" style="text-align:center;">
 								<a href="{fn_url('auth.seller_register&step=2')}" class="btn sellerbtn mycustom-btn" style="margin-right: 30px;">{__("back")}</a>
-								<button class="btn  sellerbtn mycustom-btn" type=" submit" name="dispatch[auth.seller_register]">{__("next")}</button>
+								<button class="btn sellerbtn mycustom-btn" type=" submit" id="submit-button" name="dispatch[auth.seller_register]" {if count($company_data.main_market_coverage)<2 || count($company_data.main_market_coverage)>5}disabled{/if}>{__("next")}</button>
 								<a href="{fn_url('auth.login_form')}"  class="btn  sellerbtn mycustom-btn" style="margin-left: 30px;">{__("cancel")}</a>
 							</div>
 							
@@ -348,6 +347,22 @@
 		    var str =" <option value='0'>Select Sub-Sub-Category</option> <br>";
 		    $('#sub_sub_category_'+new_key).html(str);
 		}
+	});
+	
+	$('.market_coverage').on('click', function(){
+	     var count=0;
+	   $('.market_coverage').each(function(){
+	      if($(this).is(":checked")){
+	        count += 1;
+	      }
+	   });
+	   if(count>= 2 && count <= 5){
+	       $('#market_covrage_error').hide();
+	       $('#submit-button').prop('disabled', false);
+	   }else{
+	      $('#market_covrage_error').show(); 
+	      $('#submit-button').prop('disabled', true);
+	   }
 	});
 	
 </script>

@@ -11,6 +11,8 @@
 {assign var="c_icon" value="<i class=\"icon-`$search.sort_order_rev`\"></i>"}
 {assign var="c_dummy" value="<i class=\"icon-dummy\"></i>"}
 
+{assign var="return_url" value=$config.current_url|escape:"url"}
+
 {if $result}
 <div class="table-responsive-wrapper">
     <table width="100%" class="table table-middle table-responsive">

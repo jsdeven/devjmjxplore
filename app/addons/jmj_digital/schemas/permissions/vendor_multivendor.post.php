@@ -17,19 +17,15 @@ defined('BOOTSTRAP') or die('Access denied');
 $schema['controllers']['jmj_products'] = array(
     'permissions' => true,
 );
-
 $schema['controllers']['pages'] = array(
     'permissions' => false,
 );
-
 $schema['controllers']['brands'] = array(
     'permissions' => true,
 );
-
 $schema['controllers']['quotes'] = array(
     'permissions' => true,
 );
-
 $schema['controllers']['brands']['modes']['product_class'] = array(
     'permissions' => false,
 );

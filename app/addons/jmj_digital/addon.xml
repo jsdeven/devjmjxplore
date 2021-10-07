@@ -206,6 +206,7 @@
                 `office_inside_image` varchar(255) NOT NULL,
                 `owners_pancard_image` varchar(255) NOT NULL,
                 `gstin_certificate_image` varchar(255) NOT NULL,
+                `owners_logo_image` varchar(255) NOT NULL,
                 `register_last_step` mediumint(8) NOT NULL,
                 `ship_to_another` bit(1) default '1',
                 `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,

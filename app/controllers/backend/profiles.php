@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         fn_restore_processed_user_password($_REQUEST['user_data'], $_POST['user_data']);
-
+       
         $res = fn_update_user(
             $user_id,
             $_REQUEST['user_data'],

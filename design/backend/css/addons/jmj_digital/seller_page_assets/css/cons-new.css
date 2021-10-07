@@ -1,0 +1,271 @@
+
+.vender-custom-login-form{
+	height:auto !important;
+	padding:20px 0;
+}
+
+#modelWindow .modal-dialog.ui-dialog.modal-dialog-centered{
+	box-shadow:none !important;
+}
+body.modal-open{
+	padding-right:0 !important;
+}
+
+.vender-custom-login-form h2{
+	padding-bottom:20px;
+}
+
+.ui-widget-overlay{
+	opacity:1;
+}
+
+.accordion-button:not(.collapsed){
+	color:#FF0064;
+}
+.accordion-button:not(.collapsed):after{
+	background-image: url(design/backend/css/addons/jmj_digital/vendor_login_page_assets/assets/img/arrow-up1.png) !important;
+}
+
+.background-header .main-nav .nav li:hover a{
+	background:none;
+}
+.grey-bg{
+	box-sizing:border-box !important;
+	padding-left:0 !important;
+}
+
+
+
+@media(max-width:1200px) {
+    .header-area .container {
+        max-width: 100% !important;
+    }
+}
+
+@media(max-width:1070px) {
+    .header-area .main-nav .nav li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .main-banner .left-content.header-text br {
+        display: none;
+    }
+
+    .left-content form {
+        text-align: left;
+    }
+
+    .section-heading p br {
+        display: none;
+    }
+}
+
+
+@media(max-width:990px) {
+    .header-area .main-nav .btn-mob-login {
+        display: block !important;
+        right: 20px;
+    }
+
+    .header-area .main-nav .nav {
+        padding-right: 40px;
+    }
+	.main-banner .left-content form{
+		text-align:left;
+	}
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        margin-left: -15px !important;
+    }
+}
+
+@media(max-width:767px) {
+    .header-area .logo {
+        margin-left: 0 !important;
+    }
+
+    .resi-slider .owl-carousel .tes-name {
+        margin-top: 0 !important;
+    }
+
+    .resi-slider .tes-desg {
+        padding-bottom: 30px;
+    }
+
+    .my-box-item .card.shadow-none {
+        margin-bottom: 100px;
+    }
+
+    .reasons .my-box-item .card .card-body {
+        padding-left: 85px;
+    }
+
+    .main-banner .left-content h2 {
+        font-size: 24px !important;
+        line-height: 35px !important;
+        font-weight: 800;
+        text-align: left;
+    }
+
+    .main-banner .left-content p {
+        font-size: 1rem !important;
+        line-height: 1.7rem !important;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .main-button {
+        background-color: #FF0064;
+        padding: 20px 23px !important;
+    }
+
+    .main-banner .left-content {
+        width: 61%;
+		padding:0 0 0 10px;
+    }
+	
+	/*startsaller page*/
+	
+	.main-banner .left-content h2 {
+		font-size: 24px !important;
+		line-height: 31px !important;
+	}
+	.main-button:hover{
+		box-shadow:none !important;
+	}
+	
+	/*end saller page*/
+	
+
+	
+	
+}
+@media(max-width:750px) {
+	.header-area .main-nav .nav{
+		padding-right:0 !important;
+	}
+	#modelWindow .modal-dialog h2{
+		text-align:center;
+	}
+
+}
+@media(max-width:990px) {
+	
+	#modelWindow{
+		padding-right:0 !important;
+	}
+	#modelWindow .vendor-login-form{
+		width: 100% !important;
+		max-width:380px !important;
+		margin: 0 auto;
+		background:#fff !important;
+	}
+	#modelWindow .modal-content{
+		background-color:transparent !important;
+	}
+
+	.header-area .main-nav .btn-mob-login{
+		    z-index: 99999 !important;
+	}
+	.main-banner{
+		min-height:700px;
+	}
+	.main-button{
+		    box-shadow: none;
+	}
+}
+
+
+@media(max-width:650px) {
+	.main-banner .left-content h2 {
+		font-size: 26px !important;
+		line-height: 34px !important;
+	}
+	.main-banner .left-content p {
+		font-size: 17px !important;
+		line-height: 30px !important;
+	}
+	.background-header .logo{
+		    margin-top: -10px;
+	}
+	.logo {
+		display: block;
+		max-width: 204px;
+	}
+	#reasons .section-heading{
+		margin-bottom:0 !important;
+	}
+	.my-box-item .card.shadow-none {
+		margin-bottom: 0;
+	}
+	#howto .after-none .card-body:before{
+		display:none !important;
+		background:none !important;
+	}
+
+}
+
+
+@media(max-width:480px) {
+    .my-box-item .c-over {
+        position: static;
+        text-align: center;
+    }
+	.header-area .main-nav .nav{
+		padding-right:0 !important;
+	}
+	#modelWindow .vendor-login-form{
+		width: 100% !important;
+		max-width:90% !important;
+		margin: 0 auto;
+		background:#fff !important;
+	}
+
+
+
+    .my-box-item .card.shadow-none {
+        margin-bottom: 0;
+    }
+
+    .reasons .my-box-item .card .card-body {
+        padding-left: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .my-box-item .c-over img {
+        max-width: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card-img-overlay {
+        flex-wrap: wrap;
+    }
+
+    .my-box-item .c-over {
+        width: 100%;
+    }
+	.vendor-login-form .input-cont {
+		position: relative;
+		margin: 0 20px 35px;
+	}
+	.modal-dialog .vendor-login-form .forgot-link, .modal-dialog .vendor-login-form .register-link {
+		position:relative;
+		left: -30px !important;
+		font-size:15px;
+	}
+	.header-area .main-nav .nav {
+		padding-right: 0 !important;
+	}
+}

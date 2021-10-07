@@ -1,4 +1,3 @@
-
 <?php 
 use Tygh\Enum\YesNo;
 use Tygh\Registry;
@@ -28,8 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 if ($mode == 'preview') {
-
-    
 
     $_REQUEST['product_id'] = empty($_REQUEST['product_id']) ? 0 : $_REQUEST['product_id'];
 
@@ -154,7 +151,7 @@ if ($mode == 'preview') {
             $product_notification_enabled = 'N';
         }
     }
-    
+
     Tygh::$app['view']->assign('show_qty', true);
     Tygh::$app['view']->assign('product_notification_enabled', $product_notification_enabled);
     Tygh::$app['view']->assign('product_notification_email', (isset(Tygh::$app['session']['product_notifications']) ? Tygh::$app['session']['product_notifications']['email'] : ''));

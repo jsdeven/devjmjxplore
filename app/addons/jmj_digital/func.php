@@ -93,6 +93,7 @@ function fn_jmj_digital_get_product_features_post(&$data, $params, $has_ungroupp
                 $da['subfeatures'] = $subfeatures;
 
             }else{
+                
                 $col_data =  db_get_row("SELECT feature_variant_design, multi_colors_filter FROM ?:product_features WHERE feature_id = ?i", $da['feature_id']);
                 $da['feature_variant_design'] = $col_data['feature_variant_design'];
                 $da['multi_colors_filter'] = $col_data['multi_colors_filter'];
@@ -136,7 +137,9 @@ function fn_jmj_digital_update_user_pre($user_id, &$user_data, $auth, $ship_to_a
         if(!empty($user_data['location_marketing_users_data'])){
             $user_data['location_marketing_users_data'] = serialize($user_data['location_marketing_users_data']);
         }
-        $user_data['location'] = implode(',', $user_data['location']);
+        if(is_array($user_data['location'])){
+            $user_data['location'] = implode(',', $user_data['location']);
+        }    
     }
     
 }
@@ -455,6 +458,14 @@ function fn_get_all_cities($params = array(), &$auth, $items_per_page = 0, $lang
             $condition .= db_quote(" AND ?:cities.status IN (?a)", $params['status']);
         } else {
             $condition .= db_quote(" AND ?:cities.status = ?s", $params['status']);
+        }
+    }
+    
+    if (!empty($params['ids'])) {
+        if (is_array($params['ids'])) {
+            $condition .= db_quote(" AND ?:cities.id IN (?a)", $params['ids']);
+        } else {
+            $condition .= db_quote(" AND ?:cities.id = ?s", $params['ids']);
         }
     }
     
@@ -1291,7 +1302,13 @@ function fn_jmj_verify_gstin($gstin){
 }
 
 function fn_jmj_digital_pre_delete_user($user_id){
- 
+    
+    if(isset($_SESSION['vendor_register_form_id'])){
+        unset($_SESSION['vendor_register_form_id']);
+    }
+    if(isset($_SESSION['phone_verified'])){
+        unset($_SESSION['phone_verified']);
+    }
     $user_data = db_get_row("SELECT user_type, company_id FROM ?:users WHERE user_id = ?i", $user_id);
     
     if($user_data['user_type'] == 'C'){
@@ -1304,8 +1321,20 @@ function fn_jmj_digital_pre_delete_user($user_id){
 
 function fn_jmj_digital_delete_company_pre($company_id, $can_delete){
     
+    if($_SESSION['vendor_register_form_id']){
+        unset($_SESSION['vendor_register_form_id']);
+    }
+    if($_SESSION['phone_verified']){
+        unset($_SESSION['phone_verified']);
+    }
+    
     db_query("DELETE FROM ?:company_additional_data WHERE company_id = ?i", $company_id);
 }
+
+function fn_add_bulk_enquiry($data){
+    
+}
+
 // function fn_jmj_digital_get_company_data_post($company_id, $lang_code, $extra, &$company_data){
     
 //     $data = db_get_row("SELECT * FROM ?:company_additional_data WHERE company_id = ?i", $company_id);

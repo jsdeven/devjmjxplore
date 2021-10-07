@@ -53,7 +53,7 @@ class AuthTokens extends AEntity
             ));
         } else {
             $status = Response::STATUS_NOT_FOUND;
-
+echo "<pre>";print_r($params);die;
             list($user_exists, $user_data, $login, $password, $salt) = fn_auth_routines(
                 array(
                     'user_login' => $email,

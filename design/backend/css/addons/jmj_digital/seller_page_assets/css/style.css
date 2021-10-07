@@ -593,7 +593,19 @@ tr#box_add_qty_discount {
 	background:transparent !important;
 }
 
+.seller-hub-account-main + .modal {
+    margin-left: 0 !important;
+    background-color: #fff !important;
+    top: 0!important;
+    height: 100% !important;
+    padding: 20px !important;
+    border-radius: 0;
+}
 
+.seller-hub-account-main + .modal .modal-content{
+	border:none !important;
+}   
+   
    
 
 
