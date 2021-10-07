@@ -238,11 +238,14 @@
         <!--quick search-->
         <div class="search pull-right">
             {hook name="index:global_search"}
-                <form id="global_search" method="get" action="{""|fn_url}">
+                <form id="global_search" method="get" action="{""|fn_url}" class="search__form cm-processed-form">
                     <input type="hidden" name="dispatch" value="search.results" />
                     <input type="hidden" name="compact" value="Y" />
-                    <button class="icon-search cm-tooltip " type="submit" title="{__("search_tooltip")}" id="search_button"></button>
-                    <label for="gs_text"><input type="text" class="cm-autocomplete-off" id="gs_text" name="q" value="{$smarty.request.q}" /></label>
+                    <label for="gs_text" class="search__group">
+                        <input type="text" class="cm-autocomplete-off search__input" id="gs_text" name="q" value="{$smarty.request.q}" placeholder="Search" value="" autocomplete="off"/>
+                        <button class="btn search__button" type="submit" title="{__("search_tooltip")}" id="search_button"></button>
+                        </label>
+                        
                 </form>
             {/hook}
 
