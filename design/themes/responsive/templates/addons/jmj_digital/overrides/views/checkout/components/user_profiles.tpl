@@ -23,7 +23,7 @@
                    for="user_profile_{$profile.profile_id}"
             >
                 <span class="ty-tiles__title" style="color: #ff0064;">{$profile.s_firstname}</span>
-                <p class="ty-tiles__title">{$profile.s_address} {$profile.s_address_2}</p>
+                <p class="ty-tiles__title">{$profile.s_firstname} {$profile.s_address} {$profile.s_address_2}</p>
 
                 {if $profile.s_city || $profile.s_state_descr || $profile.s_zipcode}
                     <p class="ty-tiles__text">
