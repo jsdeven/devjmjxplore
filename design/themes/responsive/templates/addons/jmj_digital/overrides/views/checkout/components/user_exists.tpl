@@ -11,7 +11,7 @@
                 <input type="hidden" name="email" value="{$email}">
                 <input type="hidden" name="container_id" value="login_by_otp_container">
                 <input type="hidden" name="return_url" value="{"checkout.checkout"|fn_url}">
-            </form>
+            </form> <!--TEST-->
             {include file="buttons/button.tpl"
                 but_role="text"
                 but_text=__("checkout.email_exists.popup.sign_in_btn")
