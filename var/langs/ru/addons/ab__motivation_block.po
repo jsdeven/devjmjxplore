@@ -254,8 +254,8 @@ msgstr "Список тегов товара"
 
 msgctxt "Languages::ab__mb.template_path.templates.tags_list.tooltip"
 msgid "The template displays a list of all tags assigned to the product. Available when the \"Tags\" add-on is active. Be sure to create and assigned tags for products"
-msgstr "Шаблон выводит список всех тегов назначеных товару. Доступен, "
-"при активном модуле \"Теги\". Убедитесь что создали и назначили теги для товаров"
+msgstr "Шаблон выводит список всех тегов назначенных товару. Доступен, "
+"при активном модуле \"Теги\". Убедитесь, что создали и назначили теги для товаров"
 
 msgctxt "Languages::ab__mb.templates_settings.max_tags_count"
 msgid "Maximum tags count"
@@ -266,7 +266,7 @@ msgid "This setting only works if the \"Vertical tabs\" display option is select
 msgstr "Данная настройка работает, только если в настройках модуля выбран вариант отображения \"Вертикальные вкладки\""
 
 msgctxt "Languages::ab__mb.vendor.motivation_item.template_choosen"
-msgid "For this motivational element, the type of filling using the template is seted. <br>You can contact the store administrator to create another motivational element with the filling type \"Custom content (HTML/Smarty)\""
+msgid "For this motivational element, the type of filling using the template is set. <br>You can contact the store administrator to create another motivational element with the filling type \"Custom content (HTML/Smarty)\""
 msgstr "Для данного мотивационного элемента задан тип наполнения с использованием шаблона.<br>Вы можете обратиться к администратору магазина, чтобы он создал другой мотивационный элемент с типом наполнение \"Пользовательское содержимое (HTML/Smarty)\""
 
 msgctxt "Languages::ab__mb.template_path.search.ignore_this_field"
@@ -427,7 +427,7 @@ msgstr "Полный список доступных иконок может б�
 
 msgctxt "Languages::ab__mb.icons.yt_icons"
 msgid "List of icons added by AB: YoupiTheme"
-msgstr "Список иконок добавленых темой AB: YoupiTheme"
+msgstr "Список иконок добавленных темой AB: YoupiTheme"
 
 msgctxt "Languages::ab__mb.icons.refreshed_successfully"
 msgid "Icons have been updated successfully"
@@ -494,7 +494,7 @@ msgid "Regenerate demo-data"
 msgstr "Пересоздайте демо-данные"
 
 msgctxt "Languages::ab__mb.upgrade_notifications.2.1.0.regenerate_data.text"
-msgid "If you use old demo-data of the add-on (or your data is based on old demo-data), then you need to regenerate the demo-data"
-msgstr "Если у Вас используються старые демо-данные модуля (либо Ваши данные созданы на основе старых демо-данных), то Вам нужно пересоздать их"
+msgid "If you use old demo-data of the add-on (or your data is based on old demo-data), regenerate demo-data"
+msgstr "Если у Вас используются старые демо-данные модуля (либо Ваши данные созданы на основе старых демо-данных), пересоздайте их"
 
 #. Alexbranding. Do not modify this file manually!

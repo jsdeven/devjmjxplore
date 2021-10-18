@@ -25,7 +25,7 @@
     	                </a>
                     {/if}
 
-                    <a href="{$item1_url|default:"javascript:void(0)"}" class="ty-menu__item-link a-first-lvl">
+                    <a href="{$item1_url|default:"javascript:void(0)"}"{if $item1_url && $item1.new_window == "YesNo::YES"|enum} target="_blank"{/if} class="ty-menu__item-link a-first-lvl">
                         <span class="menu-lvl-ctn {if $item1.abt__ut2_mwi__status == 'Y' && $item1.abt__ut2_mwi__desc|strip_tags|trim}exp-wrap{/if}">
                             {if $item1.abt__ut2_mwi__status == 'Y' && $item1.abt__ut2_mwi__icon && $settings.abt__device != 'mobile'}
                                 {include file="common/image.tpl" images=$item1.abt__ut2_mwi__icon class="ut2-mwi-icon" width=$image_data.width height=$image_data.height no_ids=true lazy_load=false}

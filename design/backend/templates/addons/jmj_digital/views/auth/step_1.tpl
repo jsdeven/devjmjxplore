@@ -138,7 +138,7 @@ body {
 
 									<div class="form-group">
 										<label for="website" class="ty-control-group__title cm-required">{__("company")}</label>
-										<input type="text" id="company" name="company_data[company]" value="{$company_data.company}" size="32" maxlength="32"  class="form-control cm-autocomplete-off" autocomplete="off">
+										<input type="text" id="company" name="company_data[company]" value="{$company_data.company}" size="32" maxlength="32"  class="form-control cm-autocomplete-off" autocomplete="off" required>
 									</div>
 									<div class="form-group radio-group">
 										<p class="labelish">{__("company_type")}</p>

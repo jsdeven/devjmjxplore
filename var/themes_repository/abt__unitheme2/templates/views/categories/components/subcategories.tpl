@@ -13,7 +13,6 @@
                                     show_detailed_link=false
                                     images=$category.main_pair
                                     no_ids=true
-                                    lazy_load=$settings.abt__ut2.general.lazy_load == "YesNo::YES"|enum
                                     image_id="category_image"
                                     image_width=$settings.Thumbnails.category_lists_thumbnail_width
                                     image_height=$settings.Thumbnails.category_lists_thumbnail_height

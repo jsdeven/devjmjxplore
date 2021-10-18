@@ -37,31 +37,33 @@
 
 <div class="control-group">
     <label class="control-label cm-required" for="elm_city_name">Brand Name:</label>
-    <div class="controls">{if $id}{$brand_data.brand}{else}
-        <input type="text" class="input-large" name="brand_data[brand]" id="elm_brand_name" size="32" value="   " required="" />
+    <div class="controls">{if $brand_data.status == "A"}{$brand_data.brand}{else}
+        <input type="text" class="input-large" name="brand_data[brand]" id="elm_brand_name" size="32" value="{$brand_data.brand}" required="" />
     {/if}
     </div>
 </div>   
 <div class="control-group"> 
     <label class="control-label cm-required">Brand Logo:</label>
     <div class="controls">
-        {if $id}
-        <a href="images/brands/{$brand_data.logo}" target="_blank">View Logo</a>{else}
-        <input type="file" name="logo" required="" />
+        {if $brand_data.status != "A"}
+            <input type="file" name="logo" required="" />
         {/if}
+        {if $brand_data.logo}
+            <a href="images/brands/{$brand_data.logo}" target="_blank">View Logo</a>
+        {/if}    
     </div>
 </div>
 <div class="control-group">    
     <label class="control-label" for="elm_city_name">Brand Website Link:</label>
     <div class="controls">
-        {if $id}
+        {if $brand_data.status == "A"}
             {if $brand_data.link}
                 {$brand_data.link}
             {else}
                 {__('no_link_provided')}
             {/if}
         {else}
-            <input type="url" class="input-large" name="brand_data[link]" id="elm_brand_link" size="32" value="" />
+            <input type="url" class="input-large" name="brand_data[link]" id="elm_brand_link" size="32" value="{$brand_data.link}" />
         {/if}
     </div>
 </div>
@@ -82,28 +84,25 @@
 <div class="control-group">
     <label class="control-label cm-required" for="elm_city_name">Brand Document:</label>
     <div class="controls">
-        {if $id}
-            {if $brand_data.doc}
-                <a href="images/brands/{$brand_data.doc}" target="_blank">View Doc</a>
-            {else}
-                {__('no_document_uploaded')}
-            {/if}    
-        {else}
+        {if $brand_data.status != "A"}
             <input type="file" class="input-large" name="doc" id="elm_brand_logo" size="32" required="" />(Upload any of the following brand authenticity  document ( Trademark Certificate Brand Authorisation certificate))
+        {/if}
+        {if $brand_data.doc}
+            <a href="images/brands/{$brand_data.doc}" target="_blank">View Doc</a>
         {/if}
     </div>
 </div>
 <div class="control-group">
     <label class="control-label cm-required" for="elm_city_name">{__('brand_reg_class')}:</label>
     <div class="controls">
-        {if $id}
+        {if $brand_data.status == "A"}
             {if $brand_data.brand_reg_class} {$brand_data.brand_reg_class}{else}{__('no_class_selected')}{/if}
         {else}
 
             <select name="brand_data[brand_reg_class]" id="brand_reg_class">
                 <option value="">{__('choose_brand_class')}</option>
                 {foreach from=$brand_classes item=brand_class}
-                    <option value="{$brand_class}">{$brand_class}</option>
+                    <option value="{$brand_class}" {if $brand_data.brand_reg_class="$brand_class"}selected{/if}>{$brand_class}</option>
                 {/foreach}          
             </select>
         {/if}
@@ -112,11 +111,17 @@
 <div class="control-group">    
     <label class="control-label cm-required" for="elm_city_name">{__('brand_product_details')}:</label>
     <div class="controls">
-        {if $id}
-            {if $brand_data.product_details} {$brand_data.product_details}{else}{__('no_product_details_selected')}{/if}
+        {if $brand_data.product_detail}
+            {assign var="product_details" value=fn_get_product_details($brand_data.product_detail)}
+        {/if}
+        {if $brand_data.status == "A"}
+            {if $brand_data.product_detail} {$product_details}{else}{__('no_product_details_selected')}{/if}
         {else}
-            <select name="brand_data[product_details]" id="product_details">
+            <select name="brand_data[product_detail]" id="product_details">
                 <option value="">{__('choose_product_details')}</option>
+                {if $brand_data.product_detail}
+                    <option value="{$brand_data.product_detail}" selected>{$product_details}</option>
+                {/if}    
             </select>
         {/if}
     </div>
@@ -172,14 +177,14 @@
 
 {** Form submit section **}
 {capture name="buttons"}
-    {if $id}
-        
-    {else}
+    {if $brand_data.status != "A"}
         {if $is_companies_limit_reached}
             {include file="buttons/save_cancel.tpl" but_meta="btn cm-promo-popup"}
         {else}
             {include file="buttons/save_cancel.tpl" but_name="dispatch[brands.add]" but_target_form="brands_update_form" but_meta="cm-comet"}
         {/if}
+    {else}
+        
     {/if}
 {/capture}
 {** /Form submit section **}

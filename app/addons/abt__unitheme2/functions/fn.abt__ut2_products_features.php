@@ -192,7 +192,13 @@ return $products_features_list;
 function fn_abt__unitheme2_get_product_features(&$fields, &$join, $condition, &$params)
 {
 if (AREA === SiteArea::STOREFRONT && !empty($params['variants_selected_only'])) {
-if (Registry::get('settings.abt__ut2.products.view.brand_link_behavior') === 'to_category_with_filter' && Registry::get('settings.abt__ut2.products.view.show_brand_logo.' . Registry::get('settings.abt__device')) === YesNo::YES) {
+$device = Registry::get('settings.abt__device');
+$settings = Registry::get('settings.abt__ut2.products');
+if (
+($settings['view']['brand_link_behavior'] === 'to_category_with_filter' && $settings['view']['show_brand_logo'][$device] === YesNo::YES)
+||
+$settings['search_similar_in_category'][$device] === YesNo::YES
+) {
 $fields[] = 'abt_filters.filter_id';
 $join .= db_quote(' LEFT JOIN ?:product_filters AS abt_filters ON abt_filters.feature_id = pf.feature_id');
 $params['abt__ut2_filters_loaded'] = true;
@@ -210,5 +216,11 @@ if (!empty($feature['subfeatures'])) {
 fn_abt__unitheme2_get_product_features_post($feature['subfeatures'], $params, $has_ungroupped);
 }
 }
+}
+}
+
+function fn_abt__unitheme2_get_product_feature_variants(&$fields, $join, $condition, $group_by, $sorting, $lang_code, $limit, $params){
+if (AREA === SiteArea::STOREFRONT && isset($params['feature_id']) && is_array($params['feature_id'])) {
+$fields[] = '?:product_feature_variants.color';
 }
 }

@@ -265,7 +265,7 @@ msgid "This setting only works if the \"Vertical tabs\" display option is select
 msgstr "Це налаштування працює лише коли в налаштуваннях модулю обрано варіант відображення \"Вертикальні вкладки\""
 
 msgctxt "Languages::ab__mb.vendor.motivation_item.template_choosen"
-msgid "For this motivational element, the type of filling using the template is seted. <br>You can contact the store administrator to create another motivational element with the filling type \"Custom content (HTML/Smarty)\""
+msgid "For this motivational element, the type of filling using the template is set. <br>You can contact the store administrator to create another motivational element with the filling type \"Custom content (HTML/Smarty)\""
 msgstr "Для цього мотиваційного елементу задано тип наповнення з використанням шаблону. <br>Ви можете звернутись до адміністратора магазину, щоб він створив інший мотиваційний елемент з типом наповнення \"Вміст користувача (HTML/Smarty)»"
 
 msgctxt "Languages::ab__mb.template_path.search.ignore_this_field"
@@ -492,7 +492,7 @@ msgid "Regenerate demo-data"
 msgstr "Повторно створіть демо-дані"
 
 msgctxt "Languages::ab__mb.upgrade_notifications.2.1.0.regenerate_data.text"
-msgid "If you use old demo-data of the add-on (or your data is based on old demo-data), then you need to regenerate the demo-data"
-msgstr "Якщо у Вас використовуються старі демо-дані модулю (або Ваші дані створено на основі старих демо-даних), то Вам необхідно повторно створити їх"
+msgid "If you use old demo-data of the add-on (or your data is based on old demo-data), regenerate demo-data"
+msgstr "Якщо у Вас використовуються старі демо-дані модулю (або Ваші дані створено на основі старих демо-даних), повторно створіть їх"
 
 #. Alexbranding. Do not modify this file manually!

@@ -11,6 +11,8 @@
     {$but_target_id        = $compare_but_target_id|default:"comparison_list,account_info*"}
 	{$but_rel              = $compare_but_rel|default:      "nofollow"}
     {$c_url                = $redirect_url|default:$config.current_url}
+    {$but_label            = $compare_but_label|default:    $but_label}
+    
     {if $selected_layout}
         {$c_url = "`$c_url`&layout=`$selected_layout`"}
     {/if}
@@ -27,7 +29,7 @@
     {if $but_href} href="{$but_href|fn_url}"{/if}>
 
     {if $compare_button_type == "icon"}<i class="ut2-icon-baseline-equalizer"></i>{/if}
-    {if $details_page}{__("compare")}{/if}
+    {if $details_page || $but_label}{__("compare")}{/if}
     </a>
 {/if}
 {/ab__hide_content}

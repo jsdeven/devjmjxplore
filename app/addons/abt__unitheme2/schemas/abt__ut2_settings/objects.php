@@ -42,12 +42,6 @@ $schema = [
 'value' => YesNo::YES,
 'is_for_all_devices' => YesNo::YES,
 ],
-'lazy_load' => [
-'type' => 'checkbox',
-'position' => 20,
-'value' => YesNo::YES,
-'is_for_all_devices' => YesNo::YES,
-],
 'check_clone_theme' => [
 'type' => 'checkbox',
 'position' => 10000,
@@ -73,6 +67,19 @@ $schema = [
 'desktop' => YesNo::NO,
 'tablet' => YesNo::NO,
 'mobile' => YesNo::YES,
+],
+],
+'change_main_image_on_variation_hover' => [
+'type' => 'checkbox',
+'position' => 200,
+'value' => [
+'desktop' => YesNo::NO,
+'tablet' => YesNo::NO,
+'mobile' => YesNo::NO,
+],
+'disabled' => [
+'mobile' => YesNo::YES,
+'tablet' => YesNo::YES,
 ],
 ],
 ],
@@ -179,6 +186,12 @@ $schema = [
 'row',
 'mix',
 ],
+'is_for_all_devices' => YesNo::YES,
+],
+'price_position_top' => [
+'type' => 'checkbox',
+'position' => 75,
+'value' => YesNo::NO,
 'is_for_all_devices' => YesNo::YES,
 ],
 'show_rating' => [
@@ -465,11 +478,6 @@ $schema = [
 'tablet' => YesNo::YES,
 'mobile' => YesNo::NO,
 ],
-'disabled' => [
-'desktop' => YesNo::NO,
-'tablet' => YesNo::NO,
-'mobile' => YesNo::YES,
-],
 'is_addon_dependent' => YesNo::YES,
 ],
 'show_button_compare' => [
@@ -477,13 +485,8 @@ $schema = [
 'position' => 280,
 'value' => [
 'desktop' => YesNo::YES,
-'tablet' => YesNo::NO,
+'tablet' => YesNo::YES,
 'mobile' => YesNo::NO,
-],
-'disabled' => [
-'desktop' => YesNo::NO,
-'tablet' => YesNo::NO,
-'mobile' => YesNo::YES,
 ],
 ],
 ],
@@ -519,6 +522,15 @@ $schema = [
 'value' => '',
 'is_for_all_devices' => YesNo::YES,
 ],
+'search_similar_in_category' => [
+'type' => 'checkbox',
+'position' => 200,
+'value' => [
+'desktop' => YesNo::YES,
+'tablet' => YesNo::YES,
+'mobile' => YesNo::NO,
+],
+],
 'view' => [
 'is_group' => YesNo::YES,
 'position' => 40,
@@ -544,6 +556,15 @@ $schema = [
 'show_features' => [
 'type' => 'checkbox',
 'position' => 300,
+'value' => [
+'desktop' => YesNo::YES,
+'tablet' => YesNo::YES,
+'mobile' => YesNo::YES,
+],
+],
+'show_features_in_two_col' => [
+'type' => 'checkbox',
+'position' => 310,
 'value' => [
 'desktop' => YesNo::YES,
 'tablet' => YesNo::YES,
@@ -584,7 +605,7 @@ $schema = [
 ],
 'brand_link_behavior' => [
 'type' => 'selectbox',
-'postion' => 501,
+'position' => 501,
 'class' => 'input-large',
 'value' => 'to_category_with_filter',
 'variants' => [

@@ -31,7 +31,7 @@ if (!defined('CONSOLE')) {
  * Database connection options
  */
 $config['db_host'] = '65.1.164.126';
-$config['db_name'] = 'jmj_test';
+$config['db_name'] = 'jmj_live';
 $config['db_user'] = 'admin';
 $config['db_password'] = 'BnqMY6y3"5K2/&"8';
 
@@ -55,11 +55,11 @@ $config['table_prefix'] = 'jmj_';
  */
 
 // Host and directory where software is installed on no-secure server
-$config['http_host'] = 'dev.jmjxplore.com';
+$config['http_host'] = 'jmjxplore.com';
 $config['http_path'] = '';
 
 // Host and directory where software is installed on secure server
-$config['https_host'] = 'dev.jmjxplore.com';
+$config['https_host'] = 'jmjxplore.com';
 $config['https_path'] = '';
 
 /*

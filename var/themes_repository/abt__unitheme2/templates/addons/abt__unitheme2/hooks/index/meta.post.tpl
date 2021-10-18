@@ -16,3 +16,7 @@
         <meta property="og:image" content=" {$logos.theme.image.image_path}" />
     {/hook}
 {/if}
+
+{if $settings.abt__ut2_less.general.browser_interface_bg}
+    <meta name="theme-color" content="{$settings.abt__ut2_less.general.browser_interface_bg}">
+{/if}

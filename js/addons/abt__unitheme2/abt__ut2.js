@@ -28,7 +28,7 @@ fn_abt__ut2_calc_cell.timers[elem] = setTimeout(fn_abt__ut2_calc_cell_execute, 1
 function fn_abt__ut2_calc_cell_execute(context){
 var min_width = 215;
 var mid_width = 260;
-$('div.grid-list', context).each(function(){
+$('div.grid-list:visible', context).each(function(){
 var cell = $(this).find('div[class*="ut2-gl__item"]:first');
 if (cell.length && cell.outerWidth() < min_width){
 $(this).addClass('ut2-min-narrow');
@@ -91,7 +91,7 @@ element_to_add_class.removeClass(class_name);
 });
 if (_.abt__ut2.settings.general.enable_fixed_header_panel === 'Y') {
 
-$('body').data('ca-scroll-to-elm-offset', 50);
+$('body').data('ca-scroll-to-elm-offset', 70);
 }
 
 if (_.abt__ut2.settings.product_list.show_fixed_filters_button[_.abt__ut2.device] === 'Y') {
@@ -229,14 +229,17 @@ $(window).trigger('scroll');
 }
 })();
 });
-$('.ut2-h__menu .ty-menu__item').mouseenter(function() {
-var $item = $(this);
-var submenu = $item.find('.ty-menu__submenu-items');
-var t = 250;
-submenu.css('display', 'none');
-setTimeout(function() {
-submenu.css('display', '');
+document.querySelectorAll('.ut2-h__menu .ty-menu__item').forEach(item => {
+item.onmouseenter = function() {
+var submenu = item.getElementsByClassName('ty-menu__submenu-items')[0];
+if (submenu !== undefined) {
+var t = 300;
+submenu.style.display = 'none';
+setTimeout(function () {
+submenu.style.display = '';
 }, t);
+}
+}
 });
 (function() {
 var clicks_counter = 0;

@@ -52,6 +52,58 @@
                 </div>
             </div>
         {/for}
+        
+        <div class="control-group" id="product_main_image_data">
+            <label class="control-label">Optional-1:</label>
+            <div class="controls">
+                {include file="addons/jmj_digital/views/common/attach_images.tpl"
+                    image_name="product_additional"
+                    image_object_type="product"
+                    image_key=$ind+2
+                    image_type="A"
+                    image_pair=$image_pair
+                    image_object_id=$id
+                    no_detailed=false
+                    no_thumbnail=true
+                    hide_titles=true
+                }
+            </div>
+        </div>
+        
+        <div class="control-group" id="product_main_image_data">
+            <label class="control-label">Optional-2</label>
+            <div class="controls">
+                {include file="addons/jmj_digital/views/common/attach_images.tpl"
+                    image_name="product_additional"
+                    image_object_type="product"
+                    image_key=$ind+3
+                    image_type="A"
+                    image_pair=$image_pair
+                    image_object_id=$id
+                    no_detailed=false
+                    no_thumbnail=true
+                    hide_titles=true
+                }
+            </div>
+        </div>
+        
+        <div class="control-group" id="product_main_image_data">
+            <label class="control-label">Optional-3:</label>
+            <div class="controls">
+                {include file="addons/jmj_digital/views/common/attach_images.tpl"
+                    image_name="product_additional"
+                    image_object_type="product"
+                    image_key=$ind+4
+                    image_type="A"
+                    image_pair=$image_pair
+                    image_object_id=$id
+                    no_detailed=false
+                    no_thumbnail=true
+                    hide_titles=true
+                }
+            </div>
+        </div>
+        
     {/if}
     {if $product_data.image_pairs}
    
@@ -121,6 +173,33 @@
                             }
                         </div>
                     </div>
+                {/for}
+            {/if}
+        {/if}
+        {if $op}
+           
+            {assign var="left_optional_image_paires" value="{4-$op}"}
+            
+            {if $left_optional_image_paires}
+                {for $i=1 to $left_optional_image_paires}
+                    {assign var="image_key" value="{6+$i}"}
+                    <div class="control-group" id="product_main_image_data">
+                        <label class="control-label">Optional-{$op}</label>
+                        <div class="controls">
+                            {include file="addons/jmj_digital/views/common/attach_images.tpl"
+                                image_name="product_additional"
+                                image_object_type="product"
+                                image_key=$image_key
+                                image_type="A"
+                                image_pair=$empty_image_pair
+                                image_object_id=$id
+                                no_detailed=false
+                                no_thumbnail=true
+                                hide_titles=true
+                            }
+                        </div>
+                    </div>
+                    {$op= $op+1}
                 {/for}
             {/if}
         {/if}

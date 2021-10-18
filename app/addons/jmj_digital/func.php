@@ -17,6 +17,7 @@ defined('BOOTSTRAP') or die('Access denied');
 use Tygh\BlockManager\Block;
 use Tygh\BlockManager\ProductTabs;
 use Tygh\Enum\SiteArea;
+use Tygh\Enum\VendorStatuses;
 use Tygh\Enum\YesNo;
 use Tygh\Languages\Languages;
 use Tygh\Registry;
@@ -77,6 +78,7 @@ function fn_jmj_digital_get_product_feature_data_post(&$feature_data)
 
 function fn_jmj_digital_get_product_features_post(&$data, $params, $has_ungroupped)
 {
+  
     // get all variants hint image for all features
     if(!empty($data)){
         foreach($data as $da){
@@ -1035,9 +1037,15 @@ function fn_jmj_digital_update_brand_variants($feature_id, $_data)
     $feature_data = array();
     $feature_data = fn_get_product_feature_data($feature_id, false, false, DESCR_SL);
     $feature_data['original_var_ids'] = '';
-
+    $get_max_variant_position = db_get_field("SELECT MAX(position) FROM ?:product_feature_variants WHERE feature_id = ?i", $feature_id);
+    if($get_max_variant_position){
+        $position = $get_max_variant_position+1;
+    }else{
+        $position = 100;
+    }
     $new_variant = array(
         'color' => '#ffffff',
+        'position' => $position,
         'variant' => $_data['brand'],
         'seo_name' => str_replace(" ", "-", $_data['brand']),
         'company_id' => $_data['company_id'],
@@ -1117,6 +1125,10 @@ function fn_get_hsn_numbers()
 function fn_get_brand_classes(){
     $brand_classes = db_get_fields("SELECT brand_class FROM ?:brands_class_type group by brand_class");
     return $brand_classes;
+}
+
+function fn_get_product_details($id){
+    return db_get_field("SELECT product_details FROM ?:brands_class_type WHERE id =?i", $id);
 }
 
 function get_brand_class_product_details($brand_class){
@@ -1335,32 +1347,48 @@ function fn_add_bulk_enquiry($data){
     
 }
 
-// function fn_jmj_digital_get_company_data_post($company_id, $lang_code, $extra, &$company_data){
+function fn_jmj_digital_save_tax_number_vendor($tax_number, $user_id){
     
-//     $data = db_get_row("SELECT * FROM ?:company_additional_data WHERE company_id = ?i", $company_id);
-    
-//     if(!empty($data)){
-//         if(isset($company_data['s_firstname']) && empty($company_data['s_firstname'])){
-//             $company_data['s_firstname'] = $data['s_name'];
-//         }
-//          if(isset($company_data['s_address']) && empty($company_data['s_address'])){
-//             $company_data['s_address'] = $data['s_address'];
-//         }
-//          if(isset($company_data['s_address_2']) && empty($company_data['s_address_2'])){
-//             $company_data['s_address_2'] = $data['s_address_2'];
-//         }
-//          if(isset($company_data['s_city']) && empty($company_data['s_city'])){
-//             $company_data['s_city'] = $data['s_city'];
-//         }
-//          if(isset($company_data['s_zipcode']) && empty($company_data['s_zipcode'])){
-//             $company_data['s_zipcode'] = $data['s_pincode'];
-//         }
-//          if(isset($company_data['s_country']) && empty($company_data['s_country'])){
-//             $company_data['s_country'] = $data['s_country'];
-//         }
-//          if(isset($company_data['s_state']) && empty($company_data['s_state'])){
-//             $company_data['s_state'] = $data['s_state'];
-//         }
+        $check1 = db_get_field("SELECT object_id FROM ?:profile_fields_data WHERE object_id = ?i AND object_type =?s AND field_id=?i", $user_id, 'U', 54);
+        if($check1){
+            
+            $update_data_1 = array(
+                'value' => $tax_number
+            );
+            db_query("UPDATE ?:profile_fields_data SET ?u WHERE object_id = ?i AND object_type =?s AND field_id=?i", $update_data_1, $user_id, 'U', 54);
         
-//     }
-// }
+            
+        }else{
+            
+            $insert_data_1 = array(
+                'object_id'   => $user_id,
+                'object_type' => 'U',
+                'field_id'    => 54,
+                'value'       => $tax_number
+            );
+            
+            db_query("INSERT INTO ?:profile_fields_data ?e", $insert_data_1);
+        }
+        
+        $check2 = db_get_field("SELECT object_id FROM ?:profile_fields_data WHERE object_id = ?i AND object_type =?s AND field_id=?i", $user_id, 'U', 55);
+        if($check2){
+            
+            $update_data_2 = array(
+                'value' => $tax_number
+            );
+            db_query("UPDATE ?:profile_fields_data SET ?u WHERE object_id = ?i AND object_type =?s AND field_id=?i", $update_data_2, $user_id, 'U', 55);
+        
+            
+        }else{
+            
+            $insert_data_2 = array(
+                'object_id'   => $user_id,
+                'object_type' => 'U',
+                'field_id'    => 55,
+                'value'       => $tax_number
+            );
+            
+            db_query("INSERT INTO ?:profile_fields_data ?e", $insert_data_2);
+        }
+
+}

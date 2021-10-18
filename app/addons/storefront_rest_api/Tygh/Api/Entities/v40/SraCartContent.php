@@ -74,7 +74,9 @@ class SraCartContent extends ASraEntity
      */
     protected function calculate(array $cart, array $params = [], $lang_code = DEFAULT_LANGUAGE)
     {
-        $cart = $this->setUserInfo($cart, fn_get_user_info($this->auth['user_id']));
+        if(isset($params['profile_id']) && !empty($params['profile_id'])){
+            $cart = $this->setUserInfo($cart, fn_get_user_info($this->auth['user_id'], true, $params['profile_id']));
+        }
 
         $params = array_merge([
             'calculate_shipping' => 'S', // skip shipping calculation

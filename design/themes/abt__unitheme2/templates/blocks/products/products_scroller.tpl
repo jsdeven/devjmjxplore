@@ -66,7 +66,7 @@
 	        {hook name="products:product_scroller_list_item"}
             {$obj_id="scr_`$block.block_id`000`$product.product_id`"}
             <div class="ty-scroller-list__img-block">
-                {include file="common/image.tpl" assign="object_img" images=$product.main_pair image_width=$block.properties.thumbnail_width image_height=$block.properties.thumbnail_width no_ids=true lazy_load=true}
+                {include file="common/image.tpl" assign="object_img" images=$product.main_pair image_width=$block.properties.thumbnail_width image_height=$block.properties.thumbnail_width no_ids=true}
                 <a href="{"products.view?product_id=`$product.product_id`"|fn_url}">{$object_img nofilter}</a>
                 {if $settings.Appearance.enable_quick_view == "YesNo::YES"|enum && $block.properties.enable_quick_view == "YesNo::YES"|enum && $settings.abt__device != "mobile"}
                     {include file="views/products/components/quick_view_link.tpl" quick_nav_ids=$quick_nav_ids}

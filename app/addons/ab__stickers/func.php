@@ -246,11 +246,6 @@ $sticker_key = $sticker_data['sticker_id'] . '-' . $sticker_data['hash'] . '-' .
 return [$html, $sticker_key];
 }
 
-function fn_ab__stickers_get_templates_list()
-{
-return Tygh\BlockManager\SchemesManager::getBlockScheme('products', [], true)['templates'];
-}
-
 function fn_ab__stickers_change_stickers_status($sticker_ids = [], $status = ObjectStatuses::ACTIVE)
 {
 return db_query('UPDATE ?:ab__stickers SET status = ?s WHERE sticker_id IN (?n)', $status, $sticker_ids);
@@ -293,9 +288,12 @@ function fn_ab__stickers_get_prohibited_list_positions()
 {
 static $prohibited_list_positions = [];
 if (empty($prohibited_list_positions)) {
-$prohibited_list_positions = [
-'blocks/products/products_scroller.tpl' => [\Tygh\Enum\Addons\Ab_stickers\OutputPositions::BOTTOM],
-];
+$prohibited_list_positions = [];
+foreach (fn_get_schema('ab__stickers', 'display') as $tmpl_path => $product_template) {
+if (!empty($product_template['prohibited_list_positions'])) {
+$prohibited_list_positions[$tmpl_path] = $product_template['prohibited_list_positions'];
+}
+}
 
 fn_set_hook('ab__stickers_get_prohibited_list_positions', $prohibited_list_positions);
 }
@@ -322,4 +320,15 @@ $available_tags = [
 ];
 fn_set_hook('ab__stickers_get_available_tags', $available_tags);
 return $available_tags;
+}
+
+function fn_ab__stickers_get_templates_display_size($key = '', array $sticker_data = [])
+{
+$tmp = substr(substr($key, 1), 0, strlen($key) - 2);
+$tmp = explode('][', $tmp);
+$val = '';
+foreach ($tmp as $arr_key) {
+$sticker_data = $val = $sticker_data[$arr_key];
+}
+return $val;
 }

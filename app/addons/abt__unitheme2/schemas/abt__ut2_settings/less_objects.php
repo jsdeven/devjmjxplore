@@ -15,6 +15,7 @@
 * website: https://cs-cart.alexbranding.com                                                *
 *   email: info@alexbranding.com                                                           *
 *******************************************************************************************/
+use Tygh\Enum\YesNo;
 $schema = [
 'general' => [
 'position' => 100,
@@ -349,6 +350,34 @@ $schema = [
 ],
 ],
 ],
+'browser_interface_bg' => [
+'type' => 'colorpicker',
+'position' => 700,
+'value' => '',
+'value_styles' => [
+'Black.less' => '',
+'Blue.less' => '',
+'Brick.less' => '',
+'Cobalt.less' => '',
+'Dark_Blue.less' => '',
+'Dark_Navy.less' => '',
+'Default.less' => '',
+'Fiolent.less' => '',
+'Flame.less' => '',
+'Gray.less' => '',
+'Green.less' => '',
+'Indigo.less' => '',
+'Ink.less' => '',
+'Mint.less' => '',
+'Original.less' => '',
+'Powder.less' => '',
+'Purple.less' => '',
+'Skyfall.less' => '',
+'Velvet.less' => '',
+'White.less' => '',
+],
+'is_for_all_devices' => YesNo::YES,
+],
 ],
 ],
 'containers' => [
@@ -626,6 +655,11 @@ $schema = [
 'White.less' => '#2e2e2e',
 ],
 ],
+],
+],
+'addons' => [
+'position' => 500,
+'items' => [
 ],
 ],
 ];

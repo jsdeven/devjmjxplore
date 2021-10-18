@@ -1368,8 +1368,9 @@ function fn_change_company_status($company_id, $status_to, $reason = '', &$statu
 
                 $fields = isset($request_account_data['fields']) ? $request_account_data['fields'] : $_company_data['fields'];
                 $user_data = fn_create_company_admin($_company_data, $fields, false);
-
+                
                 if (!empty($user_data['user_id'])) {
+                  
                     $account = 'new';
                 }
             }
@@ -1567,7 +1568,7 @@ function fn_get_ult_company_condition($db_field = 'company_id', $and = true, $co
  * @return array
  */
 function fn_create_company_admin($company_data, $fields = '', $notify = false)
-{
+{ 
     /**
      * Actions before creating company admin
      *
@@ -1604,10 +1605,13 @@ function fn_create_company_admin($company_data, $fields = '', $notify = false)
 
     // Copy vendor admin billing and shipping addresses from the company's credentials
     $user['firstname'] = (!empty($company_data['admin_firstname'])) ? $company_data['admin_firstname'] : '';
-    $user['b_firstname'] = $user['s_firstname'] = $user['firstname'];
+    $user['b_firstname'] = $company_data['b_firstname'];
     $user['lastname'] = (!empty($company_data['admin_lastname'])) ? $company_data['admin_lastname'] : '';
-    $user['b_lastname'] = $user['s_lastname'] = $user['lastname'];
-
+    $user['b_lastname'] = $user['s_lastname'] = $company_data['s_lastname'];
+    //add s_name custom code
+    $user['s_firstname'] = $company_data['s_firstname'];
+    $user['s_lastname'] = $company_data['s_lastname'];
+   
     if (isset($company_data['phone'])) {
         $user['b_phone'] = $user['s_phone'] = $user['phone'] = $company_data['phone'];
     }
@@ -1643,6 +1647,10 @@ function fn_create_company_admin($company_data, $fields = '', $notify = false)
     // Create new user, avoiding switching to the vendor admin's session ($null as the 3rd argument)
     list($added_user_id) = fn_update_user(0, $user, $null, false, $notify);
     if ($added_user_id) {
+        
+        //add tax_number custom code
+        fn_jmj_digital_save_tax_number_vendor($company_data['tax_number'], $added_user_id);
+                    
         $msg = sprintf('%s<a href="%s">%s</a>',
             __('new_administrator_account_created'),
             fn_url('profiles.update?user_id=' . $added_user_id),

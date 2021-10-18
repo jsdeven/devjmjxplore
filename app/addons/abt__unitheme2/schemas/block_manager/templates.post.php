@@ -121,6 +121,7 @@ foreach ($tmpls as $tmpl) {
 $schema[$tmpl]['bulk_modifier']['fn_abt__ut2_add_products_features_list'] = ['products' => '#this'];
 }
 }
+
 $schema['blocks/products/products_scroller_advanced.tpl'] = [
 'settings' => [
 'show_price' => [
@@ -176,6 +177,8 @@ $schema['blocks/products/products_scroller_advanced.tpl'] = [
 ],
 ],
 ];
+
+
 $schema['addons/blog/blocks/abt_ut2_recent_posts.tpl']['params'] = [
 'limit' => 7,
 ];

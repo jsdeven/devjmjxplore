@@ -4,6 +4,7 @@
 {$but_title            = $wishlist_but_title|default:    __("abt__ut2.add_to_wishlist.tooltip")}
 {$but_meta             = $wishlist_but_meta|default:     "ut2-add-to-wish $ajax_class"}
 {$but_href             = $wishlist_but_href|default:     $but_href}
+{$but_label            = $wishlist_but_label|default:    $but_label}
 
 <a class="
 	{if $but_meta}{$but_meta}{/if}
@@ -16,5 +17,5 @@
     {if $but_name} data-ca-dispatch="{$but_name}"{/if}
     {if $but_href} href="{$but_href|fn_url}"{/if}>
     {if $wishlist_button_type == "icon"}<i class="ut2-icon-baseline-favorite"></i>{/if}
-    {if $details_page}{__("add_to_wishlist")}{/if}
+    {if $details_page || $but_label}{__("add_to_wishlist")}{/if}
 </a>

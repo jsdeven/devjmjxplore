@@ -26,5 +26,5 @@ if (!empty($_REQUEST['result_ids'])) {
 Tygh::$app['view']->assign('ab__mb_id', $_REQUEST['result_ids']);
 }
 Tygh::$app['view']->display('addons/ab__motivation_block/blocks/ab__motivation_block.tpl');
-exit;
+return [CONTROLLER_STATUS_NO_CONTENT];
 }

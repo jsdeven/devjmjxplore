@@ -111,3 +111,13 @@ function fn_settings_actions_addons_ab__video_gallery(&$new_status, $old_status)
 {
 $new_status == 'A' && !(new ABXmlScheme(substr(__FUNCTION__, 27)))->checkDependencies() && $new_status = 'D';
 }
+
+function fn_settings_variants_addons_ab__video_gallery_video_icon()
+{
+$icons = [
+'youtube' => __('ab__vg.settings.video_icon.variants.youtube'),
+'video' => __('ab__vg.settings.video_icon.variants.video'),
+];
+fn_set_hook('ab__video_gallery_video_icon_post', $icons);
+return $icons;
+}

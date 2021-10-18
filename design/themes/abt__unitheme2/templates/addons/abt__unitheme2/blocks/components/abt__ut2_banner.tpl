@@ -12,7 +12,7 @@
     <a {if $b.abt__ut2_object == 'video' && $b.abt__ut2_youtube_id}data-content="video"{/if}
        href="{$b.abt__ut2_url|fn_url}"{if $b.abt__ut2_how_to_open == 'in_new_window'} target="_blank"{/if}>
         {/if}
-        <div class="ut2-a__bg-banner{if $b.abt__ut2_background_color == '#ffffff' && $b.abt__ut2_background_color_use == "YesNo::YES"|enum} white-bg{/if} {$b.abt__ut2_color_scheme}"
+        <div class="ut2-a__bg-banner{if $b.abt__ut2_background_color == '#ffffff' && $b.abt__ut2_background_color_use == "YesNo::YES"|enum} white-bg{/if}{if $data_backgroud_url} lazyload{/if} {$b.abt__ut2_color_scheme}"
              {strip}
                 style="
                  {if $b.abt__ut2_background_color_use == 'Y'} background-color:{$b.abt__ut2_background_color};{/if}

@@ -21,7 +21,7 @@
 {assign var="product_labels" value="product_labels_`$obj_prefix``$obj_id`"}
 {$smarty.capture.$product_labels nofilter}
 <div class="ty-product-img cm-preview-wrapper" id="product_images_{$preview_id}">
-    {include file="common/image.tpl" obj_id="`$preview_id`_`$image_id`" images=$image_pair_var link_class="cm-image-previewer" image_width=$image_width image_height=$image_height image_id="preview[product_images_`$preview_id`]" lazy_load=$is_view}
+    {include file="common/image.tpl" obj_id="`$preview_id`_`$image_id`" images=$image_pair_var link_class="cm-image-previewer" image_width=$image_width image_height=$image_height image_id="preview[product_images_`$preview_id`]"}
 
     {foreach from=$product.image_pairs item="image_pair"}
         {if $image_pair}
@@ -30,12 +30,14 @@
             {else}
                 {assign var="img_id" value=$image_pair.detailed_id}
             {/if}
-            {include file="common/image.tpl" images=$image_pair link_class="cm-image-previewer hidden" obj_id="`$preview_id`_`$img_id`" image_width=$image_width image_height=$image_height image_id="preview[product_images_`$preview_id`]" lazy_load=$is_view}
+            {include file="common/image.tpl" images=$image_pair link_class="cm-image-previewer hidden" obj_id="`$preview_id`_`$img_id`" image_width=$image_width image_height=$image_height image_id="preview[product_images_`$preview_id`]"}
         {/if}
     {/foreach}
 </div>
 
-{if $product.image_pairs}
+{$show_counter = $settings.abt__ut2.products.view.thumbnails_gallery_format[$settings.abt__device] == "counter_only"}
+
+{if $product.image_pairs && !$show_counter}
     {if $settings.Appearance.thumbnails_gallery == "YesNo::YES"|enum || $show_thumbs_gally == true}
         {$image_counter = 0}
         <input type="hidden" name="no_cache" value="1" />
@@ -121,5 +123,8 @@
 
 {include file="common/previewer.tpl"}
 {script src="js/tygh/product_image_gallery.js"}
+{if $show_counter}
+    {script src="js/addons/abt__unitheme2/abt__ut2_gallery_counter.js"}
+{/if}
 
 {hook name="products:product_images"}{/hook}

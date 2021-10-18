@@ -20,7 +20,6 @@
     {$image_link_additional_attrs["title"] = $images.detailed.alt}
 {/if}
 
-{$lazy_load = $settings.abt__ut2.general.lazy_load === "Y" && $lazy_load|default:true}
 
 {hook name="common:image"}
 {if $show_detailed_link}
@@ -29,7 +28,7 @@
 {if $image_data.image_path}
     {** products:product_image_object is deprecated **}
     {hook name="products:product_image_object"}
-        <img class="ty-pict {$valign} {$class}{if $generate_image} ty-spinner{/if} cm-image" {if $obj_id && !$no_ids}id="det_img_{$obj_id}"{/if} {if $generate_image}data-ca-image-path="{$image_data.image_path}"{/if} {if $lazy_load}src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-{/if}src="{if $generate_image}{$images_dir}/icons/spacer.gif{else}{$image_data.image_path}{/if}" {if $image_onclick}onclick="{$image_onclick}"{/if} {$image_additional_attrs|render_tag_attrs nofilter} width="{$image_data.width}" height="{$image_data.height}" />
+        <img class="ty-pict {$valign} {$class} {if $lazy_load}lazyOwl{/if} {if $generate_image} ty-spinner{/if} cm-image" {if $obj_id && !$no_ids}id="det_img_{$obj_id}"{/if} {if $generate_image}data-ca-image-path="{$image_data.image_path}"{/if} {if $lazy_load}data-{/if}src="{if $generate_image}{$images_dir}/icons/spacer.gif{else}{$image_data.image_path}{/if}" {if $image_onclick}onclick="{$image_onclick}"{/if} {$image_additional_attrs|render_tag_attrs nofilter}{if !$image_additional_attrs.width} width="{$image_data.width}"{/if}{if !$image_additional_attrs.height} height="{$image_data.height}"{/if} />
 
     {if $show_detailed_link}
         <svg class="ty-pict__container" aria-hidden="true" width="{$image_data.width}" height="{$image_data.height}" viewBox="0 0 {$image_data.width} {$image_data.height}" style="max-height: 100%; max-width: 100%; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: -1;">

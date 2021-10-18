@@ -15,7 +15,7 @@
             images=$product.main_pair 
             image_width=$settings.abt__ut2.product_list.$tmpl.image_width[$settings.abt__device]|default:$settings.Thumbnails.product_lists_thumbnail_width 
             image_height=$settings.abt__ut2.product_list.$tmpl.image_height[$settings.abt__device]|default:$settings.Thumbnails.product_lists_thumbnail_height  
-            lazy_load=true}
+           }
     </a>
 {/capture}
 
@@ -35,7 +35,7 @@
                             images=$image_pair 
                             image_width=$settings.abt__ut2.product_list.$tmpl.image_width[$settings.abt__device]|default:$settings.Thumbnails.product_lists_thumbnail_width 
                             image_height=$settings.abt__ut2.product_list.$tmpl.image_height[$settings.abt__device]|default:$settings.Thumbnails.product_lists_thumbnail_height  
-                            lazy_load=true}
+                           }
                     </a>
                 </div>
             {/if}

@@ -38,11 +38,13 @@ if (!empty($schema['conditions'][$condition['condition']])) {
 $condition_schema = $schema['conditions'][$condition['condition']];
 list($_res, $_placeholders) = call_user_func_array($condition_schema['validate_function'][0], [$condition, &$product, $product_ids, $auth]);
 $placeholders = array_merge($placeholders, $_placeholders);
+} else {
+$_res = false;
+}
 if ($conditions['set'] == 'any') {
 $res = $res || $_res;
 } else {
 $res = $res && $_res;
-}
 }
 }
 return ['result' => $res, 'placeholders' => $placeholders];
@@ -137,10 +139,12 @@ function fn_ab__stickers_validate_rating($condition, $product, $product_ids, $au
 {
 $res = false;
 $placeholders = [];
-if (Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE) {
-if (!isset($product['average_rating']) && isset($product['discussion'])) {
+if (Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE || Registry::get('addons.product_reviews.status') == ObjectStatuses::ACTIVE) {
+if (empty($product['average_rating']) && is_callable('fn_get_discussion')) {
 $product['discussion'] = fn_get_discussion($product['product_id'], \Tygh\Enum\Addons\Discussion\DiscussionObjectTypes::PRODUCT, true, $_REQUEST);
+if (!empty($product['discussion'])) {
 $product['average_rating'] = $product['discussion']['average_rating'];
+}
 }
 if (!empty($product['average_rating'])) {
 $res = fn_compare_values_by_operator(sprintf('%.2f', $product['average_rating']), $condition['operator'], sprintf('%.2f', $condition['value']));

@@ -34,6 +34,14 @@
             border-radius: 13px;
             box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
         }
+        .ty-product-filters__color-filter-swatch-size {
+            padding: 8px;
+            width: 35px;
+            height: 35px;
+            border-radius: 20px;
+            box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
+            font-weight:500;
+        }
         
         .ty-product-filters__color-filter-checkbox {
             position: absolute;
@@ -47,7 +55,7 @@
         }
         .active-colors{
             border: 2px solid #607d8b;
-            border-radius: 20px;
+            border-radius: 25px;
         }
         
     </style>
@@ -105,14 +113,22 @@
                     {/foreach}
                 </span>
             {elseif $feature.multi_colors_filter == 1}
-                
-                <!--<input type="hidden" name="product_data[add_new_variant][{$feature_id}][variant]" id="product_feature_{$feature_id}_add_new_variant" value="" />-->
-                <span onclick="showPopup_color({$feature_id});" id="feature_select_button_{$feature_id}" class="feature-select-button">{__('choose_feature')}</span>
-                <span id="selected_color_variant_type_{$feature_id}" class="selected-feature">
-                    {foreach from=$feature.variants item="variant"}
-                        {if $variant.selected} {$variant.variant} &nbsp;<input type="hidden" class="ischeckSelected" name="ischeckSelected" value="{$variant.variant}_{$feature_id}"/>{/if}
-                    {/foreach}
-                </span>
+                {if $feature.feature_type == "ProductFeatures::MULTIPLE_CHECKBOX"|enum}
+                    <span onclick="showPopup_size({$feature_id});" id="feature_select_button_{$feature_id}" class="feature-select-button">{__('choose_feature')}</span>
+                    <span id="selected_size_variant_type_{$feature_id}" class="selected-feature">
+                        {foreach from=$feature.variants item="variant"}
+                            {if $variant.selected} {$variant.variant} &nbsp;<input type="hidden" class="ischeckSelected" name="ischeckSelected" value="{$variant.variant}_{$feature_id}"/>{/if}
+                        {/foreach}
+                    </span>
+                   
+                {else}
+                    <span onclick="showPopup_color({$feature_id});" id="feature_select_button_{$feature_id}" class="feature-select-button">{__('choose_feature')}</span>
+                    <span id="selected_color_variant_type_{$feature_id}" class="selected-feature">
+                        {foreach from=$feature.variants item="variant"}
+                            {if $variant.selected} {$variant.variant} &nbsp;<input type="hidden" class="ischeckSelected" name="ischeckSelected" value="{$variant.variant}_{$feature_id}"/>{/if}
+                        {/foreach}
+                    </span>
+                {/if}
                 
             {else}
                 {if $feature.feature_type == "ProductFeatures::TEXT_SELECTBOX"|enum
@@ -256,14 +272,19 @@
 {/if}
 {foreach from=$product_features item=feature key="feature_id"}
 <!-- The Modal -->
-<div id="myModal-variant{$feature_id}" class="jmj-modal modal-feature-popup">
-    <span id="close-modal{$feature_id}" class="jmj-close">&times;</span>
-    <div>
-        
-        <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%;z-index: 999;" id="close-popup{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
-    
-        <div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})</div>
+<div id="myModal-variant{$feature_id}" class="jmj-modal modal-feature-popup" style="z-index: 9999;">
+    <span id="close-modal{$feature_id}" class="jmj-close" style="right: 15%;">&times;</span>
+    <div style="background-color: #e2e2e2;">
+        <!--<div style="right: 12%;
+        position: fixed;
+        margin-right: 41px;
+        margin-bottom: 65px!important;
+        width: auto;
+        height: auto;
+        bottom: 40px;
+        z-index: 999;" id="close-popup{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>-->
+
+        <div class="selected-feature-popup-title" style="color:#023b5b;">{__('choose_feature_title')} ({$feature.description})</div>
     </div>
     
     <div>
@@ -282,7 +303,7 @@
                                         <div class="no-image " style="width: 105px; height: 125px;"><i class="glyph-image" title="No image"></i></div>
                                     {/if}
                                     <input type="radio" id="{$variant.variant_id}" name="product_data[product_features][{$feature_id}][]" value="{$variant.variant_id}" {if $variant.selected} checked {/if}/>
-                                    <label for="{$variant.variant_id}" onclick="select_feature_variant_type('{$variant.variant}',{$feature_id})">{$variant.variant}</label>
+                                    <label style="color:#fd105f" for="{$variant.variant_id}" onclick="select_feature_variant_type('{$variant.variant}',{$feature_id})">{$variant.variant}</label>
                                     {if $variant.selected}
                                         <input type="hidden" class="isSelected" name="isSelected"
                                         value="{$variant.variant}_{$feature_id}"/>
@@ -299,27 +320,71 @@
     </div>
    
 </div>
+
+
+
 <!-- model for multi colors-->
-<div id="myModal-variant-color{$feature_id}" class="jmj-modal modal-feature-popup">
-    <span id="close-modal-color{$feature_id}" class="jmj-close">&times;</span>
+<div id="myModal-variant-color{$feature_id}" class="jmj-modal modal-feature-popup" style="z-index: 9999;">
+    <span id="close-modal-color{$feature_id}" class="jmj-close" style="right: 15%;">&times;
+        <div  style="right: 12%;
+        position: fixed;
+        margin-right: 4%;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    z-index: 999;" id="close-popup-color{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
+    </span>
+
     <div>
-        
-        <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:7%;z-index: 999;" id="close-popup-color{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
-    
-        <div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})
+         <div class="selected-feature-popup-title" style="color:#023b5b;">{__('choose_feature_title')} ({$feature.description})
         </div>
     {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
     
         {if $feature.product_variation_group.id eq ''}
-            {if $feature.multi_colors_filter == 1}
+            {if $feature.multi_colors_filter == 1 && $feature.feature_type != "ProductFeatures::MULTIPLE_CHECKBOX"|enum}
                 <div style="font-size: 15px;font-weight: bold;margin: 35px;">
                     {foreach from=$feature.variants item="variant"}
                        <label class="ty-product-filters__color-filter-item {if $variant.selected} active-colors{/if}" data-cm-product-color-filter="true" title="{$variant.variant}">
                             <input onclick="GetSelectedColors('{$variant.variant}',{$feature_id})" class="cm-product-filters-checkbox ty-product-filters__color-filter-checkbox dialog-colors multi_color_checkbox" id="{$variant.variant_id}" type="checkbox" data-ca-filter-id="{$variant.variant_id}" name="product_data[product_features_new][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if}>
-                            <div class="ty-product-filters__color-filter-swatch " style="background-color:{$variant.variant}">
+                            <div class="ty-product-filters__color-filter-swatch" style="background-color:{$variant.variant}">
                             </div>
-                            <b style="display:none"id="multi_colors_title_{$variant.variant_id}"> {$variant.variant}</b>
+                            <b style="display:none" id="multi_colors_title_{$variant.variant_id}"> {$variant.variant}</b>
+                        </label>
+                    {/foreach}    
+                </div>
+            {/if}    
+        {/if}
+    {/if}            
+    </div>
+</div>
+
+<!-- model for multi size-->
+<div id="myModal-variant-size{$feature_id}" class="jmj-modal modal-feature-popup" style="z-index: 9999;">
+    <span id="close-modal-size{$feature_id}" class="jmj-close" style="right: 15%;">&times;
+        <div  style="right: 12%;
+        position: fixed;
+        margin-right: 4%;
+        width: auto;
+        height: auto;
+        font-size: 15px;
+    z-index: 999;" id="close-popup-size{$feature_id}" class="close-popup ty-btn__secondary ty-btn">Save</div>
+    </span>
+
+    <div>
+         <div class="selected-feature-popup-title" style="color:#023b5b;">{__('choose_feature_title')} ({$feature.description})
+        </div>
+    {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
+    
+        {if $feature.product_variation_group.id eq ''}
+            {if $feature.multi_colors_filter == 1 && $feature.feature_type == "ProductFeatures::MULTIPLE_CHECKBOX"|enum}
+                <div style="font-size: 15px;font-weight: bold;margin: 35px;">
+                    {foreach from=$feature.variants item="variant"}
+                       <label class="ty-product-filters__color-filter-item {if $variant.selected} active-colors{/if}" data-cm-product-color-filter="true" title="{$variant.variant}">
+                            <input onclick="GetSelectedSize('{$variant.variant}',{$feature_id})" class="cm-product-filters-checkbox ty-product-filters__color-filter-checkbox dialog-colors multi_size_checkbox" id="{$variant.variant_id}" type="checkbox" data-ca-filter-id="{$variant.variant_id}" name="product_data[product_features_new][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if}>
+                            <div class="ty-product-filters__color-filter-swatch-size" style="background-color:{$variant.variant}">
+                                {$variant.variant}
+                            </div>
+                            <b style="display:none" id="multi_size_title_{$variant.variant_id}"> {$variant.variant}</b>
                         </label>
                     {/foreach}    
                 </div>
@@ -330,14 +395,22 @@
 </div>
 
 <!-- The Modal febric -->
-<div id="myModal-variant-febric{$feature_id}" class="jmj-modal modal-feature-popup">
-    <span id="close-modal-febric{$feature_id}" class="jmj-close">&times;</span>
-         <div style="right: 14%;position: fixed;margin-right: 41px;
-    margin-bottom: 65px!important;width:auto;height:auto;bottom:-7%;z-index: 999;" class="close-popup ty-btn__secondary ty-btn" id="close-popup-febric{$feature_id}">Save</div>
-        <div><div class="selected-feature-popup-title">{__('choose_feature_title')} ({$feature.description})</div></div>
-       
+<div id="myModal-variant-febric{$feature_id}" class="jmj-modal modal-feature-popup" style="z-index: 9999;">
+        <span id="close-modal-febric{$feature_id}" class="jmj-close" style="right: 15%;">&times;
+            <div style="right: 12%;
+            position: fixed;
+            margin-right: 4%;
+            width: auto;
+            height: auto;
+            font-size: 15px;
+        z-index: 999;"  class="close-popup ty-btn__secondary ty-btn" id="close-popup-febric{$feature_id}">Save</div> 
+            
+        </span>
+        <div>   
+        <div class="selected-feature-popup-title" style="color:#023b5b; margin-bottom: 25px; padding: 0px;">{__('choose_feature_title')} ({$feature.description})</div></div>
         {if $feature.feature_type != "ProductFeatures::GROUP"|enum}
             {if $feature.feature_variant_design == 2}
+            
                 <div class="table-responsive-wrapper" id="profile_fields">
                     <table width="100%" class="table table-middle table--relative table-responsive profile-fields__section">
                         <input type="hidden" id="fabric_error" name="fabric_error" value="0">
@@ -352,10 +425,10 @@
                                         <input type="checkbox" name="product_old_data[product_features][{$feature_id}][]" value="{$variant.variant_id}" data="{$variant.variant}" {if $variant.selected} checked="checked"{/if} style="display: none;">
                                     </td>
                                     <td data-th="{__("variant_name")}">
-                                        <b id="fabric_title_{$variant.variant_id}"> {$variant.variant}</b>
+                                        <b style="color:#023b5b;" id="fabric_title_{$variant.variant_id}">{$variant.variant}</b>
                                     </td>
                                 
-                                    <td data-th="{__("variant_value")}">
+                                    <td data-th="{__("variant_value")}" >
                                         <input style="width:45px" type="text" name="fabric[{$feature_id}][{$variant.variant_id}]" id="fabric_{$variant.variant_id}" onkeyup="GetSelected('{$variant.variant}',{$feature_id})" value="{$fabric_value}" placeholder="0"><b>%</b>            
                                     </td>
                                 </tr>
@@ -365,10 +438,12 @@
                     </table>
                 </div>
             
-                <div class="selected-feature-popup-title" style="color:green;"><b>Hint</b> :Choose max 3 fabrics & {__('sum_should_be_100')} %</div>
+                <div class="selected-feature-popup-title" style="color:#023b5b;"><b>Hint</b> :Choose max 3 fabrics & {__('sum_should_be_100')} %</div>
             {/if}           
         {/if}
+     
 </div>
+
 {/foreach}
 
 <script type="text/javascript">
@@ -454,6 +529,21 @@
             modal.style.display = "none";
         });
         $('#close-modal-color'+popup_id).on('click', function(){
+            modal.style.display = "none";
+        });
+        return false;
+    }
+    
+    //show popup for feature variants size
+    function showPopup_size(popup_id){
+    
+        var modal = document.getElementById("myModal-variant-size"+popup_id);            
+        modal.style.display = "block";
+        
+        $('#close-popup-size'+popup_id).on('click', function(){
+            modal.style.display = "none";
+        });
+        $('#close-modal-size'+popup_id).on('click', function(){
             modal.style.display = "none";
         });
         return false;
@@ -600,20 +690,38 @@
     });
     
     function GetSelectedColors(name, feature_id) {
-        var selected_checkbox_new = new Array();
+        var selected_checkbox_new_color = new Array();
          
         $('.multi_color_checkbox').each(function() {
             if($(this).is(':checked')){
                 $(this).parent('label').addClass('active-colors');
-                selected_checkbox_new.push($("#multi_colors_title_"+this.id).text());
+                selected_checkbox_new_color.push($("#multi_colors_title_"+this.id).text());
             }else{
                 $(this).parent('label').removeClass('active-colors');
             }
         });
         
-        str = selected_checkbox_new.toString();
+        str = selected_checkbox_new_color.toString();
         document.getElementById("selected_color_variant_type_"+feature_id).innerHTML = str;
     }
+    
+    function GetSelectedSize(name, feature_id) {
+        var selected_checkbox_new_size = new Array();
+         
+        $('.multi_size_checkbox').each(function() {
+            console.log('size');
+            if($(this).is(':checked')){
+                $(this).parent('label').addClass('active-colors');
+                selected_checkbox_new_size.push($("#multi_size_title_"+this.id).text());
+            }else{
+                $(this).parent('label').removeClass('active-colors');
+            }
+        });
+        
+        str = selected_checkbox_new_size.toString();
+        document.getElementById("selected_size_variant_type_"+feature_id).innerHTML = str;
+    }
+    
     function show_ischeckSelected(){
         jQuery('.ischeckSelected').each(function() {
             var currentElement = $(this);

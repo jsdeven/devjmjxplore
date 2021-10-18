@@ -780,6 +780,7 @@ function fn_get_category_data($category_id = 0, $lang_code = CART_LANGUAGE, $fie
  */
 function fn_get_category_name($category_id = 0, $lang_code = CART_LANGUAGE, $as_array = false)
 {
+   
     /**
      * Changes parameters for getting category name
      *

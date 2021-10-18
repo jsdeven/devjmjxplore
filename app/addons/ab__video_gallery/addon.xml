@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <addon scheme="3.0">
 <id>ab__video_gallery</id>
-<version>2.5.0</version>
+<version>3.0.1</version>
 <priority>2017</priority>
 <position>0</position>
 <status>active</status>
-<default_language>en</default_language>
+<DEFAULT_language>en</DEFAULT_language>
 <authors>
 <author>
 <name>AlexBranding</name>
@@ -18,16 +18,17 @@
 <supplier_page>ab__am.addons</supplier_page>
 <compatibility>
 <dependencies>ab__addons_manager</dependencies>
-<core_version><min>4.11.4</min></core_version>
+<core_version><min>4.12.2</min></core_version>
 <core_edition>ULTIMATE,MULTIVENDOR</core_edition>
 </compatibility>
 <ab>
-<hash>8aee9fbfbe82fd82e353a55ba08f3afc8faf2461, 2021-05-06 10:43:03</hash>
+<hash>9566d682f7a0a9a8a57fff2d768f1acda9886007, 2021-10-13 16:51:51</hash>
 <compatibility>
 <dependencies>
-<ab__addons_manager><min>2.3.5</min></ab__addons_manager>
-<abt__unitheme2><min>4.11.3.c</min></abt__unitheme2>
+<ab__addons_manager><min>2.4.0</min></ab__addons_manager>
+<abt__unitheme2><min>4.13.2.b</min></abt__unitheme2>
 <abt__youpitheme><min>4.11.3.d</min></abt__youpitheme>
+<abt__stickers><min>1.5.0</min></abt__stickers>
 </dependencies>
 </compatibility>
 </ab>
@@ -39,8 +40,8 @@
 <type>selectbox</type>
 <default_value>post</default_value>
 <variants>
-<item id="pre"></item>
-<item id="post"></item>
+<item id="pre" />
+<item id="post" />
 </variants>
 </item>
 <item id="show_in_lists">
@@ -51,8 +52,8 @@
 <type>selectbox</type>
 <default_value>open_popup</default_value>
 <variants>
-<item id="image_replace"></item>
-<item id="open_popup"></item>
+<item id="image_replace" />
+<item id="open_popup" />
 </variants>
 </item>
 <item id="controls">
@@ -75,12 +76,16 @@
 <type>checkbox</type>
 <default_value>Y</default_value>
 </item>
+<item id="video_icon">
+<type>selectbox</type>
+<default_value>youtube</default_value>
+</item>
 <item id="enable_microdata">
 <type>checkbox</type>
 <default_value>Y</default_value>
 </item>
 <item id="code"><type>hidden</type><default_value>ABA-mmfYXyL9yYu4F8czt6YV4</default_value></item>
-<item id="build"><type>hidden</type><default_value>860</default_value></item>
+<item id="build"><type>hidden</type><default_value>956</default_value></item>
 </items>
 </section>
 </sections>
@@ -90,37 +95,39 @@
 </functions>
 <queries>
 <item for="install">
-CREATE TABLE IF NOT EXISTS `?:ab__video_gallery` (
-`video_id` mediumint(8) unsigned NOT NULL auto_increment,
-`product_id` mediumint(8) unsigned NOT NULL,
-`pos` smallint(5) unsigned NOT NULL default 0,
-`status` char(1) NOT NULL default 'A',
-`icon_type` varchar(16) NOT NULL default 'snapshot',
-PRIMARY KEY (`video_id`),
-KEY `status` (`status`),
-KEY `product_id` (`product_id`)
+CREATE TABLE IF NOT EXISTS ?:ab__video_gallery (
+video_id MEDIUMINT(8) UNSIGNED NOT NULL auto_increment,
+type CHAR(1) NOT NULL DEFAULT 'Y',
+product_id MEDIUMINT(8) UNSIGNED NOT NULL,
+pos SMALLINT(5) UNSIGNED NOT NULL DEFAULT 0,
+status CHAR(1) NOT NULL DEFAULT 'A',
+icon_type VARCHAR(16) NOT NULL DEFAULT 'snapshot',
+settings TEXT NOT NULL,
+PRIMARY KEY (video_id),
+KEY status (status),
+KEY product_id (product_id)
 ) DEFAULT CHARSET UTF8;
 </item>
 <item for="install">
-CREATE TABLE IF NOT EXISTS `?:ab__video_gallery_descriptions` (
-`video_id` mediumint(8) unsigned NOT NULL,
-`youtube_id` varchar(16) NOT NULL default '',
-`title` varchar(255) NOT NULL default '',
-`description` mediumtext NOT NULL default '',
-`lang_code` char(2) NOT NULL default '',
-PRIMARY KEY (`video_id`,`lang_code`)
+CREATE TABLE IF NOT EXISTS ?:ab__video_gallery_descriptions (
+video_id MEDIUMINT(8) UNSIGNED NOT NULL,
+video_path VARCHAR(255) NOT NULL DEFAULT '',
+title VARCHAR(255) NOT NULL DEFAULT '',
+description MEDIUMTEXT NOT NULL DEFAULT '',
+lang_code CHAR(2) NOT NULL DEFAULT '',
+PRIMARY KEY (video_id,lang_code)
 ) DEFAULT CHARSET UTF8;
 </item>
 <item for="install">
-CREATE TABLE IF NOT EXISTS `?:ab__video_gallery_settings` (
-`product_id` mediumint(8) unsigned NOT NULL,
-`var` varchar(32) NOT NULL default '',
-`value` varchar(255) NOT NULL default '',
-PRIMARY KEY (`product_id`, `var`)
+CREATE TABLE IF NOT EXISTS ?:ab__video_gallery_settings (
+product_id MEDIUMINT(8) UNSIGNED NOT NULL,
+var VARCHAR(32) NOT NULL DEFAULT '',
+value VARCHAR(255) NOT NULL DEFAULT '',
+PRIMARY KEY (product_id, var)
 ) DEFAULT CHARSET UTF8;
 </item>
-<item for="install">REPLACE INTO ?:privileges (privilege, is_default, section_id, group_id, is_view) VALUES ('ab__vg_manage_videos', 'Y', 'ab__addons', 'ab__video_gallery', 'N')</item>
-<item for="install">REPLACE INTO ?:privileges (privilege, is_default, section_id, group_id, is_view) VALUES ('ab__vg_view_videos', 'Y', 'ab__addons', 'ab__video_gallery', 'Y')</item>
+<item for="install">REPLACE INTO ?:privileges (privilege, is_DEFAULT, section_id, group_id, is_view) VALUES ('ab__vg_manage_videos', 'Y', 'ab__addons', 'ab__video_gallery', 'N')</item>
+<item for="install">REPLACE INTO ?:privileges (privilege, is_DEFAULT, section_id, group_id, is_view) VALUES ('ab__vg_view_videos', 'Y', 'ab__addons', 'ab__video_gallery', 'Y')</item>
 <item for="uninstall">DELETE FROM ?:privileges WHERE section_id = 'ab__video_gallery' OR group_id = 'ab__video_gallery'</item>
 </queries>
 </addon>

@@ -23,7 +23,51 @@
             position: absolute;
         }
        
+        .sellerbtn{
+        font-size: 14px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-align: center;
+        background-color: #ff0064;
+        border: 0px;
+        border-radius: 0;
+        color: #ffffff;
+        padding: 15px 46px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 54px;
+}
+    .sellerbtnback{
+            font-size: 14px;
+            line-height: 30px;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Montserrat";
+            text-align: center;
+            background-color:#023b5b;
+            border: 0px;
+            border-radius: 0;
+            color: #ffffff;
+            padding: 15px 46px;
+            text-transform: uppercase;
+            display: inline-block;
+            height: 54px;
+    }
+    .sellerbtn:hover {
+        background: #124062;
+        border: 1px solid #124062;
+        transition: all 0.7s;
+    }
+
+input[type="submit"].btn {
+    height: 54px;
+}
+
     </style>
+
+
 {/literal}
 
 {script src="js/tygh/backend/categories.js"}
@@ -136,12 +180,12 @@
             {** /Variants section **}
 
             {if $current_step != 1}
-                <a href="{"jmj_products.add?product_id=`$product_id`&step=`$previous_step`"|fn_url}" class="btn ty-btn float-left ty-btn__secondary">{__('previous_step')}</a>
+                <a href="{"jmj_products.add?product_id=`$product_id`&step=`$previous_step`"|fn_url}" class="btn ty-btn float-left ty-btn__secondary sellerbtnback">{__('previous_step')}</a>
             {/if}
             {if $is_last_step}
-                {include file="buttons/button.tpl" but_text=__("create_product") but_name="dispatch[jmj_products.m_update]" but_id="submit" but_meta="ty-btn float-right ty-btn__secondary" value = "submit"}
+                {include file="buttons/button.tpl" but_text=__("create_product") but_name="dispatch[jmj_products.m_update]" but_id="submit" but_meta="ty-btn float-right ty-btn__secondary sellerbtnback" value = "submit"}
             {else}
-                {include file="buttons/button.tpl" but_text=__("submit_and_continue") but_name="dispatch[jmj_products.update]" but_id="submit" but_meta="ty-btn float-right ty-btn__secondary {if $current_step == 5} hidden {/if}" value = "submit"}
+                {include file="buttons/button.tpl" but_text=__("submit_and_continue") but_name="dispatch[jmj_products.update]" but_id="submit" but_meta="ty-btn float-right ty-btn__primary sellerbtn {if $current_step == 5} hidden {/if}" value = "submit"}
             {/if}
             
             {capture name="buttons"}

@@ -67,8 +67,8 @@
 {else}
 {__('ab__mb.not_display_on')}:&nbsp;
 {/if}
-{/if}
 {count($motivation_item.{"`$_tmp_obj`_ids"})}
+{/if}
 </div>
 </td>
 <td class="mobile-hide">
@@ -126,5 +126,6 @@ content=$smarty.capture.mainbox
 buttons=$smarty.capture.buttons
 adv_buttons=$smarty.capture.adv_buttons
 select_languages=true
+select_storefront=true
 sidebar=$smarty.capture.sidebar}
 {/strip}

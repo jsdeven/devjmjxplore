@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <addon scheme="3.0">
 <id>abt__unitheme2</id>
-<version>4.13.2.a</version>
+<version>4.13.2.c</version>
 <priority>10000</priority>
 <position>0</position>
 <status>active</status>
 <default_language>en</default_language>
 <ab>
-<hash>dded22d610f036acc7977078ec7c438e17c5ebec, 2021-07-13 16:39:51</hash>
+<hash>9cefd1f90ec609eee7df4ed9f33b2782c0c80cbc, 2021-10-13 19:32:12</hash>
 <layout_version>ult4</layout_version>
 <compatibility>
 <dependencies>
 <ab__addons_manager><min>2.4.0</min></ab__addons_manager>
-<ab__deal_of_the_day><min>3.3.2</min></ab__deal_of_the_day>
+<ab__deal_of_the_day><min>3.5.1</min></ab__deal_of_the_day>
 <ab__motivation_block><min>2.9.0</min></ab__motivation_block>
 </dependencies>
 </compatibility>
@@ -38,7 +38,7 @@
 <section id="settings">
 <items>
 <item id="code"><type>hidden</type><default_value>ABA-nb915yv2cDNq23wNl2yiu</default_value></item>
-<item id="build"><type>hidden</type><default_value>908</default_value></item>
+<item id="build"><type>hidden</type><default_value>955</default_value></item>
 </items>
 </section>
 </sections>
@@ -66,6 +66,16 @@ name varchar(100) NOT NULL,
 value mediumtext,
 style varchar(100) NOT NULL DEFAULT '',
 PRIMARY KEY (section,name,style)
+) DEFAULT CHARSET=utf8;
+</item>
+<item>
+CREATE TABLE IF NOT EXISTS ?:abt__ut2_light_menu_content (
+item_id mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+type varchar(100) NOT NULL,
+storefront_id int(11) unsigned NOT NULL DEFAULT 0,
+position mediumint(8) unsigned NOT NULL DEFAULT 0,
+content mediumtext,
+PRIMARY KEY (item_id)
 ) DEFAULT CHARSET=utf8;
 </item>
 <item>

@@ -25,7 +25,7 @@
                             </a>
                         {/if}
 
-                        <a href="{$item1_url|default:"javascript:void(0)"}" class="ty-menu__item-link a-first-lvl{if $item1.$childs} childs{/if}">
+                        <a href="{$item1_url|default:"javascript:void(0)"}"{if $item1_url && $item1.new_window == "YesNo::YES"|enum} target="_blank"{/if} class="ty-menu__item-link a-first-lvl{if $item1.$childs} childs{/if}">
 	                        <span{if $item1.abt__ut2_mwi__status == "YesNo::YES"|enum && $item1.abt__ut2_mwi__icon} class="item-icon"{/if}>
 	                        {if $item1.abt__ut2_mwi__status == "YesNo::YES"|enum && $item1.abt__ut2_mwi__icon && $settings.abt__device != "mobile"}{include file="common/image.tpl" images=$item1.abt__ut2_mwi__icon class="ut2-mwi-icon" no_ids=true lazy_load=false}{/if}
 	                        {strip}<bdi{if $block.properties.abt_menu_long_names == "YesNo::YES"|enum} style="max-width: {$block.properties.abt_menu_long_names_max_width|intval|default:100}px"{/if}>{$item1.$name}{if $item1.abt__ut2_mwi__status == "YesNo::YES"|enum && $item1.abt__ut2_mwi__label}<span class="m-label" style="color: {$item1.abt__ut2_mwi__label_color}; background-color: {$item1.abt__ut2_mwi__label_background}; {if $item1.abt__ut2_mwi__label_background == "#ffffff"}border: 1px solid {$item2.abt__ut1_mwi__label_color}{else}border: 1px solid {$item1.abt__ut2_mwi__label_background};{/if}">{$item1.abt__ut2_mwi__label}<span class="arrow" style="border-color: {if $item1.abt__ut2_mwi__label_background == "#ffffff"}{$item1.abt__ut2_mwi__label_color}{else}{$item1.abt__ut2_mwi__label_background}{/if} transparent transparent transparent;"></span></span>{/if}</bdi>{/strip}

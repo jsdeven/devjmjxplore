@@ -20,33 +20,13 @@
 
 .ty-product-block.ut2-three-columns {
 
-    .ab__deal_of_the_day {
-        width: 100%;
-        margin: 0 0 @pd;
-        padding: @pdi;
-        border: none;
-
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .ut2_round(@round: 8px) when (@abt__ut2_general_use_rounding = little) {
-			border-radius: @round;
-		}
-		.ut2_round(@round: 16px) when (@abt__ut2_general_use_rounding = full) {
-			border-radius: @round;
-		}
-		.ut2_round();
-    }
-
     &.ut2-pb {
 
         .ty-breadcrumbs {
             margin-bottom: 10px;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
             .top-product-layer {
                 position: absolute;
                 left: 0;
@@ -64,7 +44,7 @@
                 margin-right: @pd;
             }
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 768px) {
             .top-product-layer {
                 margin: 0 -@pd @pd;
                 padding: @pdi;

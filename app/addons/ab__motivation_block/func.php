@@ -66,25 +66,26 @@ fn_ab__mb_migration_from_v220_to_v230();
 fn_ab__mb_migration_from_v230_to_v240();
 fn_ab__mb_migration_from_v240_to_v250();
 fn_ab__mb_migration_from_v271_to_v280();
+fn_ab__mb_migration_from_v290_to_v2100();
 fn_ab__mb_refresh_icons();
 }
 
-function fn_ab__mb_update_motivation_item($motivation_item_data, $motivation_item_id, $lang_code = DESCR_SL, $company_id = 0)
+function fn_ab__mb_update_motivation_item($motivation_item_data, $motivation_item_id, $lang_code = DESCR_SL, $storefront_id = 0)
 {
 $exists = db_get_field('SELECT motivation_item_id FROM ?:ab__mb_motivation_items WHERE motivation_item_id = ?i', $motivation_item_id);
 
-fn_set_hook('ab__mb_update_motivation_item_pre', $motivation_item_data, $motivation_item_id, $lang_code, $company_id, $exists);
+fn_set_hook('ab__mb_update_motivation_item_pre', $motivation_item_data, $motivation_item_id, $lang_code, $storefront_id, $exists);
 if (!empty($motivation_item_data['template_settings'])) {
 $motivation_item_data['template_settings'] = serialize($motivation_item_data['template_settings']);
 }
 if (empty($exists)) {
-$motivation_item_data['company_id'] = $company_id;
+$motivation_item_data['storefront_id'] = $storefront_id;
 $motivation_item_data['motivation_item_id'] = $motivation_item_id = db_query('INSERT INTO ?:ab__mb_motivation_items ?e', $motivation_item_data);
 foreach (Languages::getAll() as $motivation_item_data['lang_code'] => $v) {
 db_query('INSERT INTO ?:ab__mb_motivation_item_descriptions ?e', $motivation_item_data);
 }
 } else {
-db_query('UPDATE ?:ab__mb_motivation_items SET ?u WHERE motivation_item_id = ?i AND company_id = ?i', $motivation_item_data, $motivation_item_id, $company_id);
+db_query('UPDATE ?:ab__mb_motivation_items SET ?u WHERE motivation_item_id = ?i AND storefront_id = ?i', $motivation_item_data, $motivation_item_id, $storefront_id);
 db_query('UPDATE ?:ab__mb_motivation_item_descriptions SET ?u WHERE motivation_item_id = ?i AND lang_code = ?s', $motivation_item_data, $motivation_item_id, $lang_code);
 db_query('DELETE FROM ?:ab__mb_motivation_item_objects WHERE motivation_item_id = ?i', $motivation_item_id);
 }
@@ -92,7 +93,7 @@ $categories_arr = ab__mb_update_prepare_objects_array($motivation_item_id, $moti
 $destinations_arr = ab__mb_update_prepare_objects_array($motivation_item_id, $motivation_item_data, Ab_objectTypes::DESTINATION);
 $products_arr = ab__mb_update_prepare_objects_array($motivation_item_id, $motivation_item_data, Ab_objectTypes::PRODUCT);
 db_query('INSERT INTO ?:ab__mb_motivation_item_objects ?m', array_merge($categories_arr, $destinations_arr, $products_arr));
-if (fn_allowed_for('ULTIMATE') || $company_id == 0) {
+if (fn_allowed_for('ULTIMATE') || $storefront_id == 0) {
 fn_attach_image_pairs('ab__mb_img', 'motivation_item', $motivation_item_id);
 }
 return $motivation_item_id;
@@ -231,9 +232,12 @@ $condition .= 'OR ?:ab__mb_motivation_items.template_path IS NULL';
 if (isset($params['name']) && fn_string_not_empty($params['name'])) {
 $condition .= db_quote(' AND ?:ab__mb_motivation_item_descriptions.name LIKE ?l', '%' . trim($params['name']) . '%');
 }
-if (fn_allowed_for('ULTIMATE')) {
-$condition .= fn_get_company_condition('?:ab__mb_motivation_items.company_id');
-} elseif (!empty($params['company_id'])) {
+if (!empty($params['storefront_id'])) {
+$condition .= db_quote('AND ?:ab__mb_motivation_items.storefront_id = ?i', $params['storefront_id']);
+} elseif (fn_allowed_for('ULTIMATE')) {
+$condition .= db_quote('AND ?:ab__mb_motivation_items.storefront_id = ?i', Tygh::$app['storefront']->storefront_id);
+}
+if (!empty($params['company_id']) && fn_allowed_for('MULTIVENDOR')) {
 $fields[] = 'vd.description AS vendor_description';
 $fields[] = 'vd.status as vendor_status';
 $join .= db_quote(' LEFT JOIN ?:ab__mb_vendors_descriptions AS vd ON vd.motivation_item_id = ?:ab__mb_motivation_items.motivation_item_id AND vd.company_id = ?i AND vd.lang_code = ?s', $params['company_id'], $lang_code);
@@ -330,11 +334,6 @@ $join = db_quote('LEFT JOIN ?:ab__mb_motivation_item_descriptions
 ON ?:ab__mb_motivation_item_descriptions.motivation_item_id = ?:ab__mb_motivation_items.motivation_item_id
 AND ?:ab__mb_motivation_item_descriptions.lang_code = ?s', $lang_code);
 $condition = db_quote('?:ab__mb_motivation_items.motivation_item_id = ?i', $motivation_item_id);
-if (fn_allowed_for('ULTIMATE')) {
-$condition .= fn_get_company_condition('?:ab__mb_motivation_items.company_id');
-} else {
-$condition .= db_quote(' AND ?:ab__mb_motivation_items.company_id = ?i', 0);
-}
 
 fn_set_hook('ab__mb_get_motivation_item_data_before_select', $fields, $join, $condition, $motivation_item_id, $lang_code);
 $motivation_item = db_get_row('SELECT ?p FROM ?:ab__mb_motivation_items ?p WHERE ?p', implode(',', $fields), $join, $condition);
@@ -393,7 +392,6 @@ function fn_ab__motivation_block_install_blocks($status = ObjectStatuses::ACTIVE
 $path = AB__MB_DATA_PATH . 'blocks/';
 $storefront = Tygh::$app['storefront'];
 $theme_name = $storefront->theme_name;
-$company_id = fn_get_runtime_company_id();
 if (!is_file($path . $theme_name . '.json')) {
 $theme_name = 'responsive';
 }
@@ -411,9 +409,9 @@ $block['template_settings'] = [
 ];
 }
 }
-$block_id = fn_ab__mb_update_motivation_item($block, 0, CART_LANGUAGE, $company_id);
+$block_id = fn_ab__mb_update_motivation_item($block, 0, CART_LANGUAGE, $storefront->storefront_id);
 if ($is_ru) {
-fn_ab__mb_update_motivation_item($block['ru'], $block_id, 'ru', $company_id);
+fn_ab__mb_update_motivation_item($block['ru'], $block_id, 'ru', $storefront->storefront_id);
 }
 $notifications[] = '<a href="' . fn_url('ab__motivation_block.update&motivation_item_id=' . $block_id) . '">' . (CART_LANGUAGE == 'ru' ? $block['ru']['name'] : $block['name']) . '</a>';
 }
@@ -437,13 +435,13 @@ $old_data = fn_ab__mb_get_motivation_item_data($item_id);
 if (empty($old_data)) {
 return false;
 }
-$company_id = fn_get_runtime_company_id();
+$storefront_id = Tygh::$app['storefront']->storefront_id;
 $old_data = fn_ab__motivation_block_prepare_block_to_cloning($old_data);
-$new_id = fn_ab__mb_update_motivation_item($old_data, 0, CART_LANGUAGE, $company_id);
+$new_id = fn_ab__mb_update_motivation_item($old_data, 0, CART_LANGUAGE, $storefront_id);
 foreach (array_keys(Languages::getAll()) as $lang_code) {
 if ($lang_code != CART_LANGUAGE) {
 $temp = fn_ab__motivation_block_prepare_block_to_cloning(fn_ab__mb_get_motivation_item_data($item_id, $lang_code));
-fn_ab__mb_update_motivation_item($temp, $new_id, $lang_code, $company_id);
+fn_ab__mb_update_motivation_item($temp, $new_id, $lang_code, $storefront_id);
 }
 }
 return $new_id;

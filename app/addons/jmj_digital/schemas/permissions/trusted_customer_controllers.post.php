@@ -37,5 +37,9 @@ return [
     ],
     'products' => [
         'preview'         => true
+    ],
+    'index' => [
+        'index'         => true
     ]
+    
 ];

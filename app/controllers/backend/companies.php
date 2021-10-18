@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 if (!empty($company_data['fields'])) {
                                     $fields = fn_mve_profiles_match_company_and_user_fields($company_data['fields']) + $fields;
                                 }
-
+                                
                                 $user_data = fn_create_company_admin($company_data, $fields, true);
                             }
                         }

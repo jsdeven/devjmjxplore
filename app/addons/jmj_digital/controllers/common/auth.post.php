@@ -61,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
         }
-        if(isset($_REQUEST['step']) && $_REQUEST['step'] == '2'){
+        if(isset($_REQUEST['step']) && $_REQUEST['step'] == '2')
+        {
             $is_valid = true;
             $company_data = $_REQUEST['company_data'];
             $company_data['register_last_step'] = $_REQUEST['step'];
@@ -128,12 +129,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             
         }
-        if(isset($_REQUEST['step']) && $_REQUEST['step'] == '4'){ 
+        if(isset($_REQUEST['step']) && $_REQUEST['step'] == '4')
+        { 
 
             $company_data = $_REQUEST['company_data'];
             $company_data['register_last_step'] = 4;
             $vendor_register_form_id = isset($_REQUEST['vendor_register_form_id']) ? $_REQUEST['vendor_register_form_id'] : 0;
 
+            
             if(!empty($company_data)){
                
                 if (!file_exists('images/sellers-additional-data/'.$vendor_register_form_id)) {
@@ -401,6 +404,7 @@ if($mode == 'seller_register'){
         Tygh::$app['view']->assign('states', $states);
         Tygh::$app['view']->assign('countries', $countries);
         Tygh::$app['view']->assign('gstn_verified', $gstn_verified);
+       
     }
     if(isset($_REQUEST['step']) && $_REQUEST['step'] == 3 ){
         //Category Steps
@@ -461,8 +465,11 @@ if($mode == 'seller_register'){
         $company_data_create['state'] = $company_data['b_state'];
         $company_data_create['country'] = $company_data['b_country'];
         $company_data_create['zipcode'] = $company_data['b_pincode'];
-        $company_data_create['gstin_number'] = $company_data['gstin_number'];
-     
+        $company_data_create['tax_number'] = $company_data['gstin_number'];
+        $company_data_create['b_firstname'] = $company_data['b_name'];
+        $company_data_create['s_firstname'] = $company_data['s_name'];
+        $company_data_create['plan_id'] = 1;
+      
         $_REQUEST['logotypes_image_data'] = array(
             'theme' => array(
                 'type'      => 'M',
@@ -476,7 +483,7 @@ if($mode == 'seller_register'){
             ),
         );
         
-        $image_url = Registry::get('config.https_host').'/images/sellers-additional-data/'.$vendor_register_form_id.'/'.$company_data['owners_logo_image'];
+        $image_url = 'https://'.Registry::get('config.https_host').'/images/sellers-additional-data/'.$vendor_register_form_id.'/'.$company_data['owners_logo_image'];
         $_REQUEST['file_logotypes_image_icon'] = array(
             'theme' => $image_url,
             'mail'  => $image_url
@@ -489,7 +496,7 @@ if($mode == 'seller_register'){
             'theme' => 'N',
             'mail'  => 'N'
         );
-        //echo "<pre>";print_r($company_data_create);die;
+        //echo "<pre>";print_r($_REQUEST);die;
         $company_id = fn_update_company($company_data_create);
 
         //brand request

@@ -87,3 +87,31 @@ db_query('ALTER TABLE ?p ADD COLUMN ?p AFTER ?p', $table, 'exclude_products char
 db_query('CREATE INDEX exc_products ON ?p (exclude_products)', $table);
 }
 }
+
+function fn_ab__mb_migration_from_v290_to_v2100()
+{
+$table = '?:ab__mb_motivation_items';
+$exists = db_get_field('SHOW COLUMNS FROM ?p WHERE Field = ?s', $table, 'storefront_id');
+if (empty($exists)) {
+db_query('ALTER TABLE ?p MODIFY motivation_item_id mediumint(8) unsigned NOT NULL', $table);
+db_query('ALTER TABLE ?p DROP PRIMARY KEY', $table);
+db_query('ALTER TABLE ?p ADD COLUMN ?p AFTER ?p', $table, 'storefront_id int(11) unsigned NOT NULL default 0', 'motivation_item_id');
+db_query('ALTER TABLE ?p ADD PRIMARY KEY(motivation_item_id, storefront_id)', $table);
+db_query('ALTER TABLE ?p MODIFY motivation_item_id mediumint(8) unsigned NOT NULL auto_increment', $table);
+if (fn_allowed_for('MULTIVENDOR')) {
+$default_storefront = Tygh::$app['storefront.repository']->findDefault();
+$default_storefront_id = $default_storefront
+? $default_storefront->storefront_id
+: 0;
+db_query("INSERT INTO {$table} (motivation_item_id, storefront_id, company_id, position, expanded, vendor_edit, status, icon_type, icon_class, icon_color, exclude_categories, exclude_destinations, exclude_products, template_path, template_settings)
+SELECT motivation_item_id, {$default_storefront_id}, company_id, position, expanded, vendor_edit, status, icon_type, icon_class, icon_color, exclude_categories, exclude_destinations, exclude_products, template_path, template_settings FROM {$table} WHERE company_id = 0");
+} else {
+$company_ids = db_get_fields('SELECT company_id FROM ?:companies');
+foreach ($company_ids as $company_id) {
+$storefront_id = Tygh::$app['storefront.repository']->findByCompanyId($company_id, true)->storefront_id;
+db_query('UPDATE ?p SET storefront_id = ?i WHERE company_id = ?i', $table, $storefront_id, $company_id);
+}
+}
+db_query('ALTER TABLE ?p DROP company_id', $table);
+}
+}

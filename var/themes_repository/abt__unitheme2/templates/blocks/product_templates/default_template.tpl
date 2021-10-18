@@ -37,9 +37,6 @@
                         	{/if}
                     {/if}
                 {/hook}
-
-                {hook name="products:bottom_product_layer"}{/hook}
-
             </div>
             <div class="ut2-pb__right">
                 {assign var="form_open" value="form_open_`$obj_id`"}
@@ -62,7 +59,15 @@
                                     button=true
                                 }
                             {else}
-                                <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-full="0"></div>
+                                <section class="ty-product-review-product-rating-overview-short">
+                                    <div class="ty-product-review-reviews-stars ty-product-review-reviews-stars--large" data-ca-product-review-reviews-stars-full="0"></div>
+                                
+                                    {include file="addons/product_reviews/views/product_reviews/components/product_rating_overview_short.tpl"
+                                        average_rating=$product.average_rating
+                                        total_product_reviews=$product.product_reviews_rating_stats.total
+                                        button=true
+                                    }
+                                </section>
                             {/if}
                         {else}
                             {assign var="rating" value="rating_`$obj_id`"}
@@ -247,6 +252,8 @@
         {/hook}
     {/if}
     {/hook}
+    
+    {hook name="products:bottom_product_layer"}{/hook}
 </div>
 
 <div class="product-details">

@@ -85,7 +85,7 @@
 				<div class="ut2-pb__items">
 	                {hook name="products:quick_view_image_wrap"}
 	                    {if !$no_images}
-	                        <div class="ut2-pb__img-wrapper quick-view cm-reload-{$obj_prefix}{$obj_id}" id="product_images_{$obj_prefix}{$obj_id}_update">
+	                        <div class="ut2-pb__img-wrapper quick-view cm-reload-{$obj_prefix}{$obj_id}" id="product_images_{$obj_prefix}{$obj_id}_update" data-ca-previewer="true">
 	                            {include file="views/products/components/product_images.tpl" show_thumbs_gally=true lazy_load=false product=$product show_detailed_link=true image_width=$settings.Thumbnails.product_quick_view_thumbnail_width image_height=$settings.Thumbnails.product_quick_view_thumbnail_height}
 	                        <!--product_images_{$obj_prefix}{$obj_id}_update--></div>
 	                    {/if}

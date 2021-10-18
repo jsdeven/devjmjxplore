@@ -15,16 +15,6 @@
 *   email: info@alexbranding.com                                                           *
 *******************************************************************************************/
 (function(_, $) {
-$(_.doc).on('change', '[name="abt__unitheme2_data[product_list][show_gallery]"]', function(e) {
-if ($(this).prop('checked')){
-$('[name="abt__unitheme2_data[general][lazy_load]"]').prop('checked', false);
-}
-});
-$(_.doc).on('change', '[name="abt__unitheme2_data[general][lazy_load]"]', function(e) {
-if ($(this).prop('checked')){
-$('[name="abt__unitheme2_data[product_list][show_gallery]"]').prop('checked', false);
-}
-});
 $(_.doc).on('change', '.abt-ut2-banner-use-own-value > input[id^=elm_banner_][id$=_use_own]', function(e) {
 let elm = $('#overlay_' + $(this).data('field'));
 if ($(this).prop('checked')){

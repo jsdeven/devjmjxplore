@@ -33,17 +33,17 @@
     {** Detecting grid item height **}
 
 	    {* Grid padding X2 *}
-	    {assign var="pd" value=42}
+	    {assign var="pd" value=50}
 
 	    {* Thumb *}
 	    {assign var="t1" value=$settings.abt__ut2.product_list.$tmpl.image_height[$settings.abt__device]|default:$settings.Thumbnails.product_lists_thumbnail_height|intval + 10}
 
 		{* Show rating *}
-        {assign var="t2" value=22}
+        {assign var="t2" value=20}
 
 		{* Show sku *}
 	    {if $settings.abt__ut2.product_list.$tmpl.show_sku[$settings.abt__device] == "YesNo::YES"|enum}
-	    	{assign var="t3" value=16}
+	    	{assign var="t3" value=17}
 	    {/if}
 
 	    {* Show name *}
@@ -64,21 +64,18 @@
 
 	    {* Show your save *}
 	    {if $settings.abt__ut2.product_list.$tmpl.show_you_save[$settings.abt__device] == "YesNo::YES"|enum}
-	    	{assign var="t8" value=14}
+	    	{assign var="t8" value=16}
 	    {/if}
 
 	    {* Show clean price *}
 	    {if $settings.Appearance.show_prices_taxed_clean == "YesNo::YES"|enum}
-	    	{assign var="t9" value=11}
+	    	{assign var="t9" value=12}
 	    {/if}
 
 	{if $settings.abt__device == "mobile"}
 
 		{* Thumb *}
 	    {assign var="t1" value=150}
-
-	    {* Show name *}
-	    {assign var="t4" value=37}
 
 	    {* Show buttons *}
 	    {if $show_add_to_cart && $settings.abt__ut2.product_list.$tmpl.show_buttons[$settings.abt__device] != "YesNo::YES"|enum}
@@ -92,6 +89,9 @@
 	{** Price block height **}
 	{$pth = $t6|default:0 + $t8|default:0 + $t9|default:0}
 	{capture name="abt__ut2_pr_block_height"}{$pth}{/capture}
+	
+	{** Content block height **}
+	{$cth = $pth|default:0 + $t2|default:0 + $t3|default:0 + $t4|default:0 + $t5|default:0 + 10}
 
     {** end **}
 
@@ -108,7 +108,7 @@
     {/if}
 
     <div class="grid-list {$show_custom_class}">
-	    {if $ut2_load_more}{include file="common/abt__ut2_pagination.tpl" type="{"`$runtime.controller`_`$runtime.mode`"}" position="top" object="products"}{/if}
+	    {if $ut2_load_more}{include file="common/abt__ut2_pagination.tpl" type="`$runtime.controller`_`$runtime.mode`" position="top" object="products"}{/if}
         {strip}
             {foreach from=$splitted_products item="sproducts" name="sprod"}
                 {foreach from=$sproducts item="product" name="sproducts"}
@@ -130,8 +130,7 @@
 									    image_width=$settings.Thumbnails.product_details_thumbnail_width
 										image_height=$settings.Thumbnails.product_details_thumbnail_height
 										thumbnails_size=$thumbnails_size
-									    show_gallery=$settings.abt__ut2.product_list.show_gallery == "YesNo::YES"|enum
-									    lazy_load=$settings.abt__ut2.general.lazy_load == "YesNo::YES"|enum}
+									    show_gallery=$settings.abt__ut2.product_list.show_gallery == "YesNo::YES"|enum}
 
                                         {assign var="product_labels" value="product_labels_`$obj_prefix``$obj_id`"}
                                         {$smarty.capture.$product_labels nofilter}
@@ -158,12 +157,14 @@
 		                                {/if}
                                     </div>
 
+                                    <div class="ut2-gl__content{if $settings.abt__ut2.product_list.price_position_top|default:{"YesNo::YES"|enum} == "YesNo::YES"|enum} price-position-top{/if}" {if $settings.abt__ut2.product_list.price_position_top|default:{"YesNo::YES"|enum} == "YesNo::YES"|enum} style="min-height: {$cth}px"{/if}>
+
         							{hook name="products:product_rating"}
                                     	<div class="ut2-gl__rating ut2-rating-stars {if $settings.abt__ut2.product_list.show_rating == "YesNo::YES"|enum && $addons.product_reviews.status == "ObjectStatuses::ACTIVE"|enum}r-block{/if}">
 
                                             {hook name="products:dotd_product_label"}{/hook}
                                             {hook name="products:video_gallery"}{/hook}
-        
+
                                             {if $settings.abt__ut2.product_list.show_rating == "YesNo::YES"|enum && $addons.product_reviews.status == "ObjectStatuses::ACTIVE"|enum}
                                                 {if $product.product_reviews_count}<div class="cn-reviews">({$product.product_reviews_count})</div>{/if}
                                                 {if $product.average_rating}
@@ -175,7 +176,7 @@
                                                 {else}
                                                     <div class="ty-product-review-reviews-stars" data-ca-product-review-reviews-stars-full="0"></div>
                                                 {/if}
-                                            {else}
+                                            {elseif $settings.abt__ut2.product_list.show_rating|default:{"YesNo::YES"|enum} == "YesNo::YES"|enum}
                                                 {assign var="rating" value="rating_$obj_id"}
                                                 {if $smarty.capture.$rating|strlen > 40 && $product.discussion_type && $product.discussion_type != "D"}
                                                     {$smarty.capture.$rating nofilter}
@@ -185,7 +186,7 @@
                                             {/if}
                                         </div>
         							{/hook}
-        
+
                                     {if $product.product_code}
                                         {assign var="sku" value="sku_$obj_id"}
                                         {$smarty.capture.$sku nofilter}
@@ -226,6 +227,8 @@
 	                                        {$smarty.capture.$clean_price nofilter}
 										</div>
                                     </div>
+
+                                    </div>{* End "ut2-gl__content" conteiner *}
 
                                     {capture name="product_multicolumns_list_control_data_wrapper"}
                                         {if $show_add_to_cart && $settings.abt__ut2.product_list.$tmpl.show_buttons[$settings.abt__device] == "YesNo::YES"|enum}

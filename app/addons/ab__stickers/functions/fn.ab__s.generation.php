@@ -114,22 +114,22 @@ $join = [];
 $condition_value_required = [
 'categories',
 ];
-$having = '1';
 if (!empty($conditions['set']) && $conditions['set'] == 'all') {
-$where = '1';
+$where = $having = '1';
 $and_or = 'AND';
 } else {
-$where = '0';
+$where = $having = '0';
 $and_or = 'OR';
 }
 if (!empty($conditions['conditions'])) {
 foreach ($conditions['conditions'] as $condition) {
 if (isset($condition['set']) && isset($condition['conditions'])) {
-list($sub_where, $sub_join) = fn_ab__stickers_build_sticker_conditions_query($condition);
+list($sub_where, $sub_join, $sub_having) = fn_ab__stickers_build_sticker_conditions_query($condition);
 $where .= db_quote(' ?p (?p)', $and_or, $sub_where);
+$having .= db_quote(' ?p (?p)', $and_or, $sub_having);
 $join = array_merge($join, $sub_join);
 } elseif (in_array($condition['condition'], $condition_value_required) && empty($condition['value'])) {
-$where = 0;
+$where = $having = 0;
 $join = [];
 break;
 } elseif ($condition['condition'] == 'price') {
@@ -173,11 +173,16 @@ $join['product_sales'] = 'LEFT JOIN ?:product_sales as ab__product_sales ON ab__
 } elseif ($condition['condition'] == 'popularity') {
 $where .= db_quote(' ?p ab__product_popularity.total ?p ?i', $and_or, $operators[$conditions['set_value']][$condition['operator']], $condition['value']);
 $join['popularity'] = 'LEFT JOIN ?:product_popularity as ab__product_popularity ON ab__product_popularity.product_id = products.product_id';
-} elseif ($condition['condition'] == 'comments' && Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE) {
+} elseif ($condition['condition'] == 'comments') {
 $where .= db_quote(' ?p 1', $and_or);
-$having .= db_quote(' ?p COUNT(ab__discussion_posts.post_id) ?p ?i', $and_or, $operators[$conditions['set_value']][$condition['operator']], $condition['value']);
+if (Registry::get('addons.product_reviews.status') == ObjectStatuses::ACTIVE) {
+$where .= db_quote(' ?p ab__product_reviews.reviews_count ?p ?i', $and_or, $operators[$conditions['set_value']][$condition['operator']], $condition['value']);
+$join['product_reviews_count'] = 'LEFT JOIN ?:product_review_prepared_data as ab__product_reviews ON ab__product_reviews.product_id = products.product_id';
+} elseif (Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE) {
+$having .= db_quote(' ?p COUNT(DISTINCT(ab__discussion_posts.post_id)) ?p ?i', $and_or, $operators[$conditions['set_value']][$condition['operator']], $condition['value']);
 $join['comments_count'] = 'LEFT JOIN ?:discussion as ab__discussion ON ab__discussion.object_id = products.product_id AND ab__discussion.object_type = "' . \Tygh\Enum\Addons\Discussion\DiscussionObjectTypes::PRODUCT
 . '" LEFT JOIN ?:discussion_posts as ab__discussion_posts ON ab__discussion_posts.thread_id = ab__discussion.thread_id AND ab__discussion_posts.status = "A"';
+}
 } elseif ($condition['condition'] == 'weight') {
 $where .= db_quote(' ?p products.weight ?p ?d', $and_or, $operators[$conditions['set_value']][$condition['operator']], fn_convert_weight($condition['value']));
 } elseif ($condition['condition'] == 'creating_date') {

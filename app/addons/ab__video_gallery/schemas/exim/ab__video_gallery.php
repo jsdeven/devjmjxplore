@@ -15,6 +15,7 @@
 * website: https://cs-cart.alexbranding.com                                                *
 *   email: info@alexbranding.com                                                           *
 *******************************************************************************************/
+use Tygh\Enum\ImagePairTypes;
 $schema = [
 'section' => 'products',
 'name' => __('ab__video_gallery'),
@@ -32,7 +33,7 @@ $schema = [
 'join_type' => 'LEFT',
 ],
 'images_links' => [
-'reference_fields' => ['object_id' => '#key', 'object_type' => 'ab__vg_video', 'type' => 'M'],
+'reference_fields' => ['object_id' => '#key', 'object_type' => 'ab__vg_video', 'type' => ImagePairTypes::MAIN],
 'join_type' => 'LEFT',
 'import_skip_db_processing' => true,
 ],
@@ -85,10 +86,10 @@ $schema = [
 'required' => true,
 'multilang' => true,
 ],
-'Youtube ID' => [
+'Video path' => [
 'required' => true,
 'table' => 'ab__video_gallery_descriptions',
-'db_field' => 'youtube_id',
+'db_field' => 'video_path',
 'multilang' => true,
 ],
 'Title' => [
@@ -114,7 +115,7 @@ $schema = [
 'db_field' => 'image_id',
 'table' => 'images_links',
 'process_get' => ['fn_exim_export_image', '#this', 'ab__vg_video', '@images_path'],
-'process_put' => ['fn_exim_import_images', '@images_path', '%Thumbnail%', '#this', '0', 'M', '#ab__video_gallery.video_id', 'ab__vg_video'],
+'process_put' => ['fn_exim_import_images', '@images_path', '%Thumbnail%', '#this', '0', ImagePairTypes::MAIN, '#ab__video_gallery.video_id', 'ab__vg_video'],
 ],
 ],
 ];

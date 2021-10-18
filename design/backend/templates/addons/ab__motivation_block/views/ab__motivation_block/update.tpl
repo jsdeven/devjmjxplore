@@ -9,7 +9,7 @@
 <form action="{""|fn_url}" method="post" class="form-horizontal form-edit{if $hide_inputs} cm-hide-inputs{/if}" name="ab__mb_motivation_item_data_form" enctype="multipart/form-data">
 <input type="hidden" name="fake" value="1" />
 <input type="hidden" name="motivation_item_id" value="{$id}" />
-<input type="hidden" name="company_id" value="{$runtime.company_id}" />
+<input type="hidden" name="storefront_id" value="{$app["storefront"]->storefront_id}" />
 <input type="hidden" name="selected_section" id="selected_section" value="{$selected_section}" />
 {capture name="tabsbox"}
 <div id="content_general">
@@ -148,18 +148,22 @@ Tygh.$("#ab__mb_template_path").change();
 {if $motivation_item_data.categories_ids}
 {$categories_ids = ","|explode:$motivation_item_data.categories_ids}
 {/if}
+{$company_ids = $app["storefront"]->getCompanyIds()}
+{if !$company_ids}
+{$company_ids = [0]}
+{/if}
 {include
 file="pickers/categories/picker.tpl"
-company_ids=$motivation_item_data.company_id
+company_ids=implode(",", $company_ids)
 multiple=true
 input_name="motivation_item_data[categories_ids]"
 item_ids=$categories_ids
 data_id="category_ids_`$id`"
 no_item_text=$no_items_text
 use_keys="YesNo::NO"|enum
-owner_company_id=$motivation_item_data.company_id
 but_meta="pull-right"
 }
+{*owner_company_id=$motivation_item_data.company_id*}
 {/if}
 <!--content_categories--></div>
 <div id="content_destinations">

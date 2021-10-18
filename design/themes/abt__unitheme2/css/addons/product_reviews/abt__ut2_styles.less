@@ -17,7 +17,6 @@
 @lighten-font: lighten(@font, 45%);
 @reviews-bar-height: 190px;
 
-
 .ty-product-review-reviews-stars, .ty-product-review-rate__stars-label {
     font-family: 'uni2-icons';
 }
@@ -342,7 +341,6 @@
     margin-right: 10px;
     
     > *:not([class*="ty-product-review-reviews-stars"]) {
-    	.ajx-link();
     	color: @links;
 		line-height: 110%;
 		height: auto;
@@ -350,6 +348,7 @@
 		
 		> span {
     		height: inherit;
+    		.ajx-link();
 		}
 
 		&:hover {

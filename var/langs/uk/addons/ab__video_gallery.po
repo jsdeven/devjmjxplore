@@ -57,8 +57,12 @@ msgid "On the image's place"
 msgstr "На місці зображення"
 
 msgctxt "SettingsOptions::ab__video_gallery::controls"
-msgid "Show the YouTube video control panel"
-msgstr "Показувати YouTube панель керування відео"
+msgid "Show control panel for YouTube video"
+msgstr "Показувати панель керування в YouTube відео"
+
+msgctxt "SettingsTooltips::ab__video_gallery::cycle"
+msgid "Do not work for video with type \"Link\""
+msgstr "Не працює для відео з типом \"Посилання\""
 
 msgctxt "SettingsOptions::ab__video_gallery::repeat"
 msgid "Enable repeated replay"
@@ -89,8 +93,16 @@ msgid "Enable microdata"
 msgstr "Включити мікророзмітку"
 
 msgctxt "SettingsTooltips::ab__video_gallery::enable_microdata"
-msgid "Add information about video to the product's JSON-LD microdata"
-msgstr "Додати інформацію про відео в JSON-LD мікророзмітку товару"
+msgid "Add information about video to the product's JSON-LD microdata. Field \"Video title\" is mandatory. Otherwise, it will cause an error of microdata of your video"
+msgstr "Додати інформацію про відео в JSON-LD мікророзмітку товару. Поле \"Заголовок відео\" обов'язкове до заповнення. У противному разі це призведе до помилки мікророзмітки відео"
+
+msgctxt "SettingsOptions::ab__video_gallery::video_icon"
+msgid "Icon view of video"
+msgstr "Вид іконки відео"
+
+msgctxt "Languages::ab__vg.json_ld.warning"
+msgid "Field \"Video title\" is mandatory. Otherwise, it will cause an error of microdata of your video"
+msgstr "Поле \"Заголовок відео\" обов'язкове до заповнення. У противному разі це призведе до помилки мікророзмітки відео"
 
 msgctxt "Languages::ab__vg.form.pos"
 msgid "Pos."
@@ -100,17 +112,85 @@ msgctxt "Languages::ab__vg.form.title"
 msgid "Video title"
 msgstr "Заголовок відео"
 
+msgctxt "Languages::ab__vg.form.type"
+msgid "Video type"
+msgstr "Тип відео"
+
+msgctxt "Languages::ab__vg.form.type.descr"
+msgid "When this video type is chosen"
+msgstr "При виборі цього типу відео"
+
+msgctxt "Languages::ab__vg.form.type.y"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "Languages::ab__vg.form.type.v"
+msgid "Vimeo"
+msgstr "Vimeo"
+
+msgctxt "Languages::ab__vg.form.type.h"
+msgid "Link"
+msgstr "Посилання"
+
+msgctxt "Languages::ab__vg.form.type.h.descr"
+msgid "When this video type is chosen You shall load icon manually"
+msgstr "При виборі цього типу відео Вам необхідно завантажити іконку вручну"
+
 msgctxt "Languages::ab__vg.form.status"
 msgid "Status"
 msgstr "Статус"
 
-msgctxt "Languages::ab__vg.form.youtube_id"
-msgid "YouTube video ID"
-msgstr "ID відео на YouTube"
+msgctxt "Languages::ab__vg.form.video_path"
+msgid "URL-address of video ID"
+msgstr "ID відео URL-адреси"
 
-msgctxt "Languages::ab__vg.form.youtube_id.tooltip"
-msgid "For example, for video \"https://www.youtube.com/watch?v=-boKk8uhmcY\", video ID is <code>-boKk8uhmcY</code>"
-msgstr "Наприклад, для відео \"https://www.youtube.com/watch?v=-boKk8uhmcY\", ID відео є <code>-boKk8uhmcY</code>"
+msgctxt "Languages::ab__vg.form.video_path.tooltip"
+msgid "For example, for YouTube video \"https://www.youtube.com/watch?v=-boKk8uhmcY\" video ID is <code>-boKk8uhmcY</code> <br/> For example, for Vimeo video \"https://vimeo.com/560908404\" video ID is <code>560908404</code>"
+msgstr "Например, для видео YouTube \"https://www.youtube.com/watch?v=-boKk8uhmcY\" ID видео является <code>-boKk8uhmcY</code>"
+"<br/>"
+"Например, для видео Vimeo \"https://vimeo.com/560908404\" ID видео является <code>560908404</code>"
+"<br/>"
+"При выборе типа \"Ссылка\", ID видео будет весь URL-адрес"
+
+msgctxt "Languages::ab__vg.video_settings.additional"
+msgid "Adittional video settings"
+msgstr "Додаткові налаштування відео"
+
+msgctxt "Languages::ab__vg.iframe_attributes"
+msgid "Tag attributes <code>iframe</code>"
+msgstr "Атрибути тега <code>iframe</code>"
+
+msgctxt "Languages::ab__vg.iframe_attributes.tooltip"
+msgid ""
+msgstr ""
+
+msgctxt "Languages::ab__vg.iframe_attributes.description"
+msgid "<span style=\"color:red\">Attention!</span> Value of the setting will be implemented directly into the code. Use caution when filling its value"
+msgstr "<span style=\"color:red\">Увага!</span> Значення цього налаштування буде напряму вмонтовано в код. Будьте уважні при заповненні цього значення"
+
+msgctxt "Languages::ab__vg.vimeo.add_portrait"
+msgid "Add portrait"
+msgstr "Додати портрет"
+
+msgctxt "Languages::ab__vg.vimeo.add_portrait.description"
+msgid "Portrait of the account which possess a video"
+msgstr "Портрет акаунту, якому належить відео"
+
+msgctxt "Languages::ab__vg.vimeo.add_title"
+msgid "Add title"
+msgstr "Додати заголовок"
+
+msgctxt "Languages::ab__vg.vimeo.add_title.description"
+msgid "Video title, specified on the service"
+msgstr "Заголовок відео вказаний на сервісі"
+
+msgctxt "Languages::ab__vg.vimeo.add_byline"
+msgid "Add line \"from...\""
+msgstr "Додати рядок \"від...\""
+
+msgctxt "Languages::ab__vg.vimeo.add_byline.description"
+msgid "Line with account name which possess a video"
+msgstr "Рядок з іменем акаунту, якому належить відео"
 
 msgctxt "Languages::ab__vg.form.icon_type"
 msgid "Icon type"
@@ -175,6 +255,98 @@ msgstr "Установити відео як зображення товару �
 msgctxt "Languages::ab__vg.added_by_addon"
 msgid "Functionality is added by AB: Video gallery of the product"
 msgstr "Функціонал додано модулем AB: Відео галерея товару"
+
+msgctxt "Languages::block_ab__vg_videos"
+msgid "AB: Video of products"
+msgstr "АВ: Відео товарів"
+
+msgctxt "Languages::block_ab__vg_videos_description"
+msgid "Displays video list that are attached to products of selected page"
+msgstr "Відображає список відео закріплених за товарами обраної сторінки"
+
+msgctxt "Languages::ab__vg_videos"
+msgid "AB: Video of products"
+msgstr "АВ: Відео товарів"
+
+msgctxt "Languages::ab__vg_max_videos"
+msgid "Number of videos"
+msgstr "Кількість відео"
+
+msgctxt "Languages::ab__vg.view_videos_product"
+msgid "More detalis on product"
+msgstr "Детальніше про товар"
+
+msgctxt "Languages::ab__vg_show_product_link"
+msgid "Display link to product"
+msgstr "Відобразити посилання на товар"
+
+msgctxt "Languages::ab__vg_show_video_title"
+msgid "Display video title"
+msgstr "Відобразити заголовок відео"
+
+msgctxt "Languages::ab__vg_show_video_description"
+msgid "Display video description"
+msgstr "Відобразити опис відео"
+
+msgctxt "Languages::ab__vg_image_width"
+msgid "Icon width"
+msgstr "Ширина іконки"
+
+msgctxt "Languages::ab__vg_image_height"
+msgid "Icon height"
+msgstr "Висота іконки"
+
+msgctxt "Languages::ab__vg.settings.video_icon.variants.youtube"
+msgid "YouTube icon"
+msgstr "YouTube іконка"
+
+msgctxt "Languages::ab__vg.settings.video_icon.variants.video"
+msgid "Video icon"
+msgstr "Відео іконка"
+
+msgctxt "Languages::ab__vg.label_product_videos"
+msgid "Video"
+msgstr "Відео"
+
+msgctxt "Languages::abt__ut2.less_settings.addons.ab__video_gallery_group"
+msgid "AB: Video gallery of the product"
+msgstr "AB: Відео галерея товару"
+
+msgctxt "Languages::abt__ut2.less_settings.addons.ab__video_gallery_group_description"
+msgid "Settings for elements that were added with \"AB: Video gallery of the product\""
+msgstr "Налаштування для елементів, які додані \"AB: Відео галерея товару\""
+
+msgctxt "Languages::abt__ut2.less_settings.addons.ab__video_gallery.block_bg"
+msgid "Block background with video selections"
+msgstr "Фон блоку з відео підборками"
+
+msgctxt "Languages::ab__vg.3"
+msgid "3"
+msgstr "3"
+
+msgctxt "Languages::ab__vg.4"
+msgid "4"
+msgstr "4"
+
+msgctxt "Languages::ab__vg.5"
+msgid "5"
+msgstr "5"
+
+msgctxt "Languages::ab__vg.6"
+msgid "6"
+msgstr "6"
+
+msgctxt "Languages::ab__vg.7"
+msgid "7"
+msgstr "7"
+
+msgctxt "Languages::ab__vg.8"
+msgid "8"
+msgstr "8"
+
+msgctxt "Languages::ab__vg.9"
+msgid "9"
+msgstr "9"
 
 msgctxt "Languages::ab__video_gallery.help"
 msgid "Help"

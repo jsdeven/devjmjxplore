@@ -67,10 +67,29 @@
                         {capture name="variant_images"}
                             {foreach $feature.variants as $variant}
                                 {if $variant.product_id}
-                                <a href="{$product_url|fn_link_attach:"product_id={$variant.product.product_id}"|fn_url}"
+
+                                    {* Change main product image on variation image hover *}
+                                    {if $settings.abt__ut2.general.change_main_image_on_variation_hover.{$settings.abt__device} == "YesNo::YES"|enum}
+                                        {if $quick_view}
+                                            {$image_width=$settings.Thumbnails.product_quick_view_thumbnail_width}
+                                            {$image_height=$settings.Thumbnails.product_quick_view_thumbnail_height}
+                                        {elseif $product.details_layout !='bigpicture_template'}
+                                            {$image_width=$settings.Thumbnails.product_details_thumbnail_width}
+                                            {$image_height=$settings.Thumbnails.product_details_thumbnail_height}
+                                        {/if}
+                                        {include file="common/image.tpl"
+                                            images=$variant.product.main_pair
+                                            capture_image=true
+                                        }
+                                    {/if}
+
+                                    <a href="{$product_url|fn_link_attach:"product_id={$variant.product.product_id}"|fn_url}"
                                    class="ty-product-options__image--wrapper cm-tooltip {if $variant.variant_id == $feature.variant_id}ty-product-options__image--wrapper--active{/if} {if $feature.purpose === $purpose_create_variations || $quick_view}cm-ajax cm-ajax-cache{/if}" title="{$feature.prefix} {$variant.variant} {$feature.suffix}"
                                    {if $feature.purpose === $purpose_create_variations || $quick_view}data-ca-target-id="{$container}"{/if}
-                                >
+                                        {if $variant.variant_id != $feature.variant_id}
+                                        {if $smarty.capture.icon_image_path|trim} data-ca-variation-image="{$smarty.capture.icon_image_path}"{/if}
+                                        {if $smarty.capture.icon_image_path_hidpi|trim} data-ca-variation-image-hidpi="{$smarty.capture.icon_image_path_hidpi}"{/if}
+                                        {/if}>
                                     {include file="common/image.tpl"
                                         obj_id="image_feature_variant_{$feature.feature_id}_{$variant.variant_id}_{$obj_prefix}{$obj_id}"
                                         class="ty-product-options__image"

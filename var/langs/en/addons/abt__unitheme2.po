@@ -360,6 +360,10 @@ msgctxt "Languages::abt__ut2_columns_count.6"
 msgid "6"
 msgstr "6"
 
+msgctxt "Languages::abt__ut2__native_scroller_advanced"
+msgid ""
+msgstr ""
+
 msgctxt "Languages::banner_type.abt__ut2"
 msgid "AB: UniTheme2: Advanced banner"
 msgstr "AB: UniTheme2: Advanced banner"
@@ -642,6 +646,18 @@ msgctxt "Languages::abt__ut2.banner.params.youtube_hide_controls.tooltip"
 msgid "Don't ever assume a video will play, and don't show a pause button when the video is not actually playing"
 msgstr "Don't ever assume a video will play, and don't show a pause button when the video is not actually playing"
 
+msgctxt "Languages::abt__ut2.banner.params.background_type"
+msgid "Background type"
+msgstr "Background type"
+
+msgctxt "Languages::ab__ut2.banners.background_type.image"
+msgid "Background image"
+msgstr "Background image"
+
+msgctxt "Languages::ab__ut2.banners.background_type.mp4_video"
+msgid "Background video (MP4)"
+msgstr "Background video (MP4)"
+
 msgctxt "Languages::abt__ut2.banner.params.background_image"
 msgid "Background image"
 msgstr "Background image"
@@ -801,6 +817,10 @@ msgstr "Available till"
 msgctxt "Languages::abt__ut2.banner.params.class"
 msgid "User CSS-class"
 msgstr "User CSS-class"
+
+msgctxt "Languages::abt__ut2.banner.params.background_mp4_video"
+msgid ""
+msgstr ""
 
 msgctxt "Languages::abt__ut2.sort_by_null_asc"
 msgid "Without sorting"
@@ -1086,6 +1106,30 @@ msgctxt "Languages::abt__ut2.settings.general.push_history_on_popups.tooltip"
 msgid "When a pop-up window is opened, clicking \"Back\" button in the browser will close the window instead of transfering back"
 msgstr "When a pop-up window is opened, clicking \"Back\" button in the browser will close the window instead of transfering back"
 
+msgctxt "Languages::abt__ut2.settings.general.change_main_image_on_variation_hover"
+msgid "Change product main image when hovering mouse pointer over variation icon"
+msgstr "Change product main image when hovering mouse pointer over variation icon"
+
+msgctxt "Languages::abt__ut2.settings.general.change_main_image_on_variation_hover.tooltip"
+msgid "On the product page and in quick viewing window product main image will be changed on variation image when hovering mouse pointer over it. After termination of hovering, product image will return to common state"
+msgstr "On the product page and in quick viewing window product main image will be changed on variation image when hovering mouse pointer over it. After termination of hovering, product image will return to common state"
+
+msgctxt "Languages::abt__ut2.settings.products.view.thumbnails_gallery_format"
+msgid "Appearance of image gallery"
+msgstr "Appearance of image gallery"
+
+msgctxt "Languages::abt__ut2.settings.products.view.thumbnails_gallery_format.variants.default"
+msgid "Default"
+msgstr "Default"
+
+msgctxt "Languages::abt__ut2.settings.products.view.thumbnails_gallery_format.variants.counter_only"
+msgid "Counter only"
+msgstr "Counter only"
+
+msgctxt "Languages::abt__ut2.settings.products.view.thumbnails_gallery_format.tooltip"
+msgid "Gallery is displayed in a list view or as image scroller by default."
+msgstr "Gallery is displayed in a list view or as image scroller by default."
+
 msgctxt "Languages::abt__ut2.settings.category"
 msgid "Category"
 msgstr "Category"
@@ -1225,6 +1269,14 @@ msgstr "Option 2"
 msgctxt "Languages::abt__ut2.settings.product_list.price_display_format.variants.mix"
 msgid "Option 3"
 msgstr "Option 3"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_position_top"
+msgid "Show price at the top"
+msgstr "Show price at the top"
+
+msgctxt "Languages::abt__ut2.settings.product_list.price_position_top.tooltip"
+msgid "Allows you to display the price at the top of the content, immediately after the product image (the product rating is shifted below the name)"
+msgstr "Allows you to display the price at the top of the content, immediately after the product image (the product rating is shifted below the name)"
 
 msgctxt "Languages::abt__ut2.settings.product_list.show_rating"
 msgid "Display product rating"
@@ -1578,6 +1630,14 @@ msgctxt "Languages::abt__ut2.settings.products.view.show_sticky_add_to_cart.tool
 msgid "Allow output of a fixed block with the Add to cart button at the bottom of the mobile device screen. Also depending on the state of the option \"Show quantity changer\" in the block, the changer of products quantity for the order can be shown"
 msgstr "Allow output of a fixed block with the Add to cart button at the bottom of the mobile device screen. Also depending on the state of the option \"Show quantity changer\" in the block, the changer of products quantity for the order can be shown"
 
+msgctxt "Languages::abt__ut2.settings.products.search_similar_in_category"
+msgid "Enable search of similar products in the category"
+msgstr "Enable search of similar products in the category"
+
+msgctxt "Languages::abt__ut2.settings.products.search_similar_in_category.tooltip"
+msgid "In the feature tab, checkbox will be added for each feature variant with created filter. Button, that opens window with a basic product category and filter corresponding to selected checkboxes, will be added as well."
+msgstr "In the feature tab, checkbox will be added for each feature variant with created filter. Button, that opens window with a basic product category and filter corresponding to selected checkboxes, will be added as well."
+
 msgctxt "Languages::abt__ut2.settings.products.view.show_qty"
 msgid "Show quantity changer"
 msgstr "Show quantity changer"
@@ -1593,6 +1653,14 @@ msgstr "Show product features"
 msgctxt "Languages::abt__ut2.settings.products.view.show_features.tooltip"
 msgid "Allow displaying of selected product features (for displaying on the product page (but not in Features tab), the feature must have an active setting \"Show in header on the product details page\")"
 msgstr "Allow displaying of selected product features (for displaying on the product page (but not in Features tab), the feature must have an active setting \"Show in header on the product details page\")"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_features_in_two_col"
+msgid "Show features in two columns"
+msgstr "Show features in two columns"
+
+msgctxt "Languages::abt__ut2.settings.products.view.show_features_in_two_col.tooltip"
+msgid "Changes view of the list of features (in two columns)"
+msgstr "Changes view of the list of features (in two columns)"
 
 msgctxt "Languages::abt__ut2.settings.products.view.show_short_description"
 msgid "Show short description"
@@ -1837,6 +1905,10 @@ msgctxt "Languages::abt__ut2.settings.addons.discussion.verified_buyer.tooltip"
 msgid "Adds a special style for comments written by users that bought this product."
 msgstr "Adds a special style for comments written by users that bought this product."
 
+msgctxt "Languages::ab__ut2.search_similar"
+msgid "Find similar"
+msgstr "Find similar"
+
 msgctxt "Languages::abt__ut2.less_settings"
 msgid "Color scheme settings"
 msgstr "Color scheme settings"
@@ -1993,6 +2065,14 @@ msgctxt "Languages::abt__ut2.less_settings.general.labels.use_text_shadow.toolti
 msgid "Adds shadow for text"
 msgstr "Adds shadow for text"
 
+msgctxt "Languages::abt__ut2.less_settings.general.browser_interface_bg"
+msgid "Color of surrounding user interface of user agent"
+msgstr "Color of surrounding user interface of user agent"
+
+msgctxt "Languages::abt__ut2.less_settings.general.browser_interface_bg.tooltip"
+msgid "Color of surrounding user interface of user agent"
+msgstr "Color of surrounding user interface of user agent"
+
 msgctxt "Languages::abt__ut2.less_settings.containers"
 msgid "Containers"
 msgstr "Containers"
@@ -2106,8 +2186,8 @@ msgid "Product"
 msgstr "Product"
 
 msgctxt "Languages::abt__ut2.less_settings.products_description"
-msgid "Below are the settings that affect the styles for product detail page"
-msgstr "Below are the settings that affect the styles for product detail page"
+msgid "There are settings that affect styles for product detail page"
+msgstr "There are settings that affect styles for product detail page"
 
 msgctxt "Languages::abt__ut2.less_settings.products.use_color_buttons_add_to_cart"
 msgid "Set individual color for <br> \"Add to cart\" button"
@@ -2116,6 +2196,14 @@ msgstr "Set individual color for <br> \"Add to cart\" button"
 msgctxt "Languages::abt__ut2.less_settings.products.use_color_buttons_add_to_cart.tooltip"
 msgid "Allows you to assign an individual color to the \"Add to cart\" button on the product detail page and in the \"Quick view\" window"
 msgstr "Allows you to assign an individual color to the \"Add to cart\" button on the product detail page and in the \"Quick view\" window"
+
+msgctxt "Languages::abt__ut2.less_settings.addons"
+msgid "Add-ons"
+msgstr "Add-ons"
+
+msgctxt "Languages::abt__ut2.less_settings.addons_description"
+msgid "There are settings that affect elements which are added by different add-ons"
+msgstr "There are settings that affect elements which are added by different add-ons"
 
 msgctxt "Languages::abt__ut2.demodata"
 msgid "Demo data"
@@ -2389,6 +2477,10 @@ msgstr "Hide elements and show the menu name"
 msgctxt "Languages::abt__ut2.menus.pickers.states.show_items"
 msgid "Show elements"
 msgstr "Show elements"
+
+msgctxt "Languages::abt__ut2.light_menu_settings_link"
+msgid "Content settings of the block are located on <a target=\"_blank\" href=\"[link]\">this page</a>"
+msgstr "Content settings of the block are located on <a target=\"_blank\" href=\"[link]\">this page</a>"
 
 msgctxt "Languages::abt__ut2.icons"
 msgid "Available icons"

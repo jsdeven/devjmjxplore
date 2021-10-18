@@ -18,6 +18,7 @@
 if (!defined('BOOTSTRAP')) {
 die('Access denied');
 }
+Tygh::$app->register(new \Tygh\Addons\Abt_unitheme2\ServiceProvider());
 fn_register_hooks(// define settings
 'dispatch_assign_template'
 , 'render_block_pre'
@@ -33,7 +34,7 @@ fn_register_hooks(// define settings
 , 'get_products_pre'
 , 'get_products_post'
 , 'description_tables_post'
-, 'get_product_features', 'get_product_features_post'
+, 'get_product_features', 'get_product_features_post', 'get_product_feature_variants'
 , 'seo_get_schema_org_markup_items_post'
 , 'get_products_layout_pre'
 , 'get_discussion_posts', 'get_discussion_posts_post'

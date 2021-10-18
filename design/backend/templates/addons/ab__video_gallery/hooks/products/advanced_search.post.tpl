@@ -1,6 +1,6 @@
 <div class="row-fluid">
 <div class="group span6 ">
-<a id="sw_ab__vg_products_search" class="search-link cm-combination cm-save-state">
+<a href="javascript:void(0)" id="sw_ab__vg_products_search" class="search-link cm-combination cm-save-state">
 <span id="on_ab__vg_products_search" class="icon-caret-right{if $smarty.cookies.ab__vg_products_search} hidden{/if}"></span>
 <span id="off_ab__vg_products_search" class="icon-caret-down{if !$smarty.cookies.ab__vg_products_search} hidden{/if}"></span>
 {__('ab__video_gallery')}

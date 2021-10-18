@@ -42,7 +42,7 @@ $schema['central']['ab__addons']['items']['abt__unitheme2'] = [
 ],
 'abt__ut2.demodata' => [
 'href' => 'abt__ut2.demodata',
-'position' => 500,
+'position' => 600,
 ],
 'abt__ut2.help' => [
 'href' => 'abt__ut2.help',

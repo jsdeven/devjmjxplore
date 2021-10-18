@@ -28,7 +28,9 @@
                                                     {hook name="checkout:minicart_product_info"}
                                                     {if $block.properties.products_links_type == "thumb"}
                                                         <div class="ty-cart-items__list-item-image">
+                                                            <a href="{"products.view?product_id=`$product.product_id`"|fn_url}">
                                                             {include file="common/image.tpl" image_width="40" image_height="40" images=$product.main_pair no_ids=true lazy_load=false}
+                                                            </a>
                                                         </div>
                                                     {/if}
                                                     <div class="ty-cart-items__list-item-desc">
@@ -65,13 +67,9 @@
 
                     {if $block.properties.display_bottom_buttons == "YesNo::YES"|enum}
                         <div class="cm-cart-buttons ty-cart-content__buttons buttons-container{if $smarty.session.cart.amount} full-cart{else} hidden{/if}">
-                            <div class="ty-float-left">
-                                <a href="{"checkout.cart"|fn_url}" rel="nofollow" class="ty-btn ty-btn__secondary">{__("view_cart")}</a>
-                            </div>
+                            <a href="{"checkout.cart"|fn_url}" rel="nofollow" class="ty-btn ty-btn__secondary">{__("view_cart")}</a>
                             {if $settings.Checkout.checkout_redirect != "YesNo::YES"|enum}
-                                <div class="ty-float-right">
-                                    {include file="buttons/proceed_to_checkout.tpl" but_text=__("checkout")}
-                                </div>
+                                {include file="buttons/proceed_to_checkout.tpl" but_text=__("checkout")}
                             {/if}
                         </div>
                     {/if}

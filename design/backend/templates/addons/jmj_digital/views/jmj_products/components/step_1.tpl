@@ -31,7 +31,6 @@
 
     {/hook}
 
-   
     <div class="control-group">
         <label for="companies_brands" class="control-label cm-required">{__("choose_vendor_brands")}:</label>
         <div class="controls">
@@ -171,7 +170,7 @@
         <input type="text" name="product_data[list_qty_count]" id="elm_list_qty_count" size="10" value="{$product_data.list_qty_count}" class="input-small" />
     </div>
 </div>
-<div class="control-group">
+<div class="control-group" style="display:none;">
     <label class="control-label cm-required">{__("taxes")}:</label>
     <div class="controls">
         <input type="hidden" name="product_data[tax_ids]" value="" />
@@ -184,6 +183,8 @@
         {/foreach}
     </div>
 </div>
+
+
 
 <script type="text/javascript">
     $(document).ready(function(){

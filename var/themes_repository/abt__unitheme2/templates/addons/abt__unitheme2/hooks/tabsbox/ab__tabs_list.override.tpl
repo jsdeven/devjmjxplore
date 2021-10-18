@@ -30,7 +30,10 @@
             {/if}
             {assign var="_tabs" value=true}
             <li id="{$key}" class="ty-tabs__item{if $tab.js} cm-js{elseif $tab.ajax} cm-js cm-ajax{/if}{if $key == $active_tab} active{/if}">
-                <a class="ty-tabs__a" {if $tab.href} href="{$tab.href|fn_url}"{/if}>{$tab.title}{if $tab@key == 'discussion' && $product.discussion.search.total_items > 0} <bdi class="ut2-ti-{$tab@key}">{$product.discussion.search.total_items}</bdi>{/if}</a>
+                <a class="ty-tabs__a" {if $tab.href} href="{$tab.href|fn_url}"{/if}>{$tab.title}
+                    {if $tab@key == "discussion" && $product.discussion.search.total_items > 0} <bdi class="ut2-ti-discussion">{$product.discussion.search.total_items}</bdi>{/if}
+                    {if $tab@key == "product_reviews" && $product.product_reviews_count} <bdi class="ut2-ti-discussion">{$product.product_reviews_count}</bdi>{/if}
+                </a>
             </li>
             {/if}
         {/foreach}

@@ -1,4 +1,22 @@
 {style src="addons/jmj_digital/collapse.css"}
+<style>
+    .change-button{
+        font-size: 14px;
+        line-height: 5px;
+        font-weight: 500;
+        font-family: "Montserrat";
+        text-align: center;
+        background: #139d17;
+        border: 0px;
+        margin-top: -35px;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 15px 15px;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: all 0.7s;
+    }
+</style>
 <div >	
 	<div class="ty-mainbox-container clearfix">
 		<div class="ty-mainbox-body"><!-- Inline script moved to the bottom of the page -->
@@ -48,6 +66,7 @@
 										<label for="gstin_number" class="ty-control-group__title cm-required cm-name cm-trim">{__("gstin_number")}</label> 
 										<input type="text" id="gstin_number" name="customer_data[gstin_number]" value="{$customer_data.gstin_number}" size="32" maxlength="128"  class="form-control  cm-required" placeholder="GSTIN Number" required disabled>
 									</div>
+									<a id="change_gstin" class="btn change-button">{__("change")}</a>
 									<div class="form-group">
 										<label for="pan_number" class="ty-control-group__title cm-required">{__("pan_number")}</label>
 										<input type="text" id="pan_number" name="customer_data[pan_number]" value="{$customer_data.pan_number}" size="32" maxlength="32"  class="form-control cm-autocomplete-off" autocomplete="off">
@@ -231,7 +250,7 @@
 {literal}
 	<script>
 
-			$("#b_state").change(function(){ 
+		$("#b_state").change(function(){ 
             var element = $(this).find('option:selected'); 
             var indiazone = element.attr("indiazone"); 
             
@@ -239,6 +258,11 @@
             $('#india_zone').html(option);
             
         }); 
+        
+        $('#change_gstin').on('click', function(){
+            $('#step_2_content').hide();
+             $('#gstn_verification').show();
+        });
 
 		$('.request-verify-gstin').on('click',function(){
 		

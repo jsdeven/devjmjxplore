@@ -17,5 +17,9 @@
 {/if}
 
 {if $image_data2x.image_path}
-    {$image_additional_attrs[$attr_name] = "{$image_data2x.image_path} 2x" scope=parent}
+    {if $capture_image}
+        {capture name="icon_image_path_hidpi"}{$image_data2x.image_path} 2x{/capture}
+    {else}
+        {$image_additional_attrs[$attr_name] = "{$image_data2x.image_path} 2x" scope=parent}
+    {/if}
 {/if}

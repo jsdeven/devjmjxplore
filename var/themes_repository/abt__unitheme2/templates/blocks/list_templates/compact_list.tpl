@@ -33,7 +33,7 @@
                             {hook name="products:product_compact_list_image"}
                             <div class="ty-compact-list__image" {if !$product.main_pair}style="height: auto"{/if}>
                                 <a href="{"products.view?product_id=`$product.product_id`"|fn_url}">
-                                    {include file="common/image.tpl" lazy_load=!'AJAX_REQEST'|defined image_width=$image_width image_height=$image_height images=$product.main_pair obj_id=$obj_id_prefix}
+                                    {include file="common/image.tpl" image_width=$image_width image_height=$image_height images=$product.main_pair obj_id=$obj_id_prefix}
                                 </a>
                                 {assign var="product_labels" value="product_labels_`$obj_prefix``$obj_id`"}
                                 {$smarty.capture.$product_labels nofilter}
@@ -43,7 +43,24 @@
                             <div class="ty-compact-list__title">
 
                                 {assign var="name" value="name_$obj_id"}
-                                <bdi>{$smarty.capture.$name nofilter}</bdi>
+                                <bdi>
+                                {$smarty.capture.$name nofilter}
+
+                                {if $settings.abt__device == "mobile" && $settings.abt__ut2.product_list.$tmpl.show_button_wishlist[$settings.abt__device] == "YesNo::YES"|enum || $settings.abt__device == "mobile" && $settings.abt__ut2.product_list.$tmpl.show_button_compare[$settings.abt__device] == "YesNo::YES"|enum}
+                                    
+                                    <div class="ty-dropdown-box">
+                                        <div id="sw_box_w_c_{$obj_id}" class="cm-combination"><i class="ut2-icon-more_vert"></i></div>
+                                        <div id="box_w_c_{$obj_id}" class="cm-popup-box ty-dropdown-box__content hidden">
+                                        {if $addons.wishlist.status == "ObjectStatuses::ACTIVE"|enum && !$hide_wishlist_button && $settings.abt__ut2.product_list.$tmpl.show_button_wishlist[$settings.abt__device] == "YesNo::YES"|enum}
+                                            {include file="addons/wishlist/views/wishlist/components/add_to_wishlist.tpl" but_id="button_wishlist_`$obj_prefix``$product.product_id`" but_name="dispatch[wishlist.add..`$product.product_id`]" but_role="text" but_label=true}
+                                        {/if}
+                                        {if $settings.General.enable_compare_products == "YesNo::YES"|enum && !$hide_compare_list_button && $settings.abt__ut2.product_list.$tmpl.show_button_compare[$settings.abt__device] == "YesNo::YES"|enum}
+                                            {include file="buttons/add_to_compare_list.tpl" product_id=$product.product_id but_label=true}
+                                        {/if}
+                                        </div>
+                                    </div>
+                                {/if}
+                                </bdi>
 
 							    {hook name="products:product_rating"}
 							        {strip}
@@ -114,10 +131,10 @@
                                         {if !$quick_view && $settings.Appearance.enable_quick_view == "YesNo::YES"|enum && $settings.abt__ut2.product_list.$tmpl.show_button_quick_view[$settings.abt__device] == "YesNo::YES"|enum && $settings.abt__device != "mobile"}
                                             {include file="views/products/components/quick_view_link.tpl" quick_nav_ids=$quick_nav_ids}
                                         {/if}
-                                        {if $addons.wishlist.status == "ObjectStatuses::ACTIVE"|enum && !$hide_wishlist_button && $settings.abt__ut2.product_list.$tmpl.show_button_wishlist[$settings.abt__device] == "YesNo::YES"|enum}
+                                        {if $addons.wishlist.status == "ObjectStatuses::ACTIVE"|enum && !$hide_wishlist_button && $settings.abt__ut2.product_list.$tmpl.show_button_wishlist[$settings.abt__device] == "YesNo::YES"|enum && $settings.abt__device != "mobile"}
                                             {include file="addons/wishlist/views/wishlist/components/add_to_wishlist.tpl" but_id="button_wishlist_`$obj_prefix``$product.product_id`" but_name="dispatch[wishlist.add..`$product.product_id`]" but_role="text"}
                                         {/if}
-                                        {if $settings.General.enable_compare_products == "YesNo::YES"|enum && !$hide_compare_list_button &&$settings.abt__ut2.product_list.$tmpl.show_button_compare[$settings.abt__device] == "YesNo::YES"|enum}
+                                        {if $settings.General.enable_compare_products == "YesNo::YES"|enum && !$hide_compare_list_button && $settings.abt__ut2.product_list.$tmpl.show_button_compare[$settings.abt__device] == "YesNo::YES"|enum && $settings.abt__device != "mobile"}
                                             {include file="buttons/add_to_compare_list.tpl" product_id=$product.product_id}
                                         {/if}
                                     <!--{$smarty.capture.abt__service_buttons_id}--></div>

@@ -94,6 +94,18 @@ $schema['banners']['templates']['addons/abt__unitheme2/blocks/abt__ut2_banner_co
 $schema['banners']['cache']['callable_handlers']['date'] = ['date', ['Y-m-d']];
 }
 $schema['abt__ut2_light_menu'] = [
+'content' => array(
+'items' => [
+'type' => 'function',
+'function' => ['fn_abt__ut2_get_light_menu_content'],
+],
+'settings_link' => [
+'type' => 'template',
+'template' => 'addons/abt__unitheme2/views/abt__ut2/components/light_menu_settings_link.tpl',
+'remove_indent' => true,
+'hide_label' => true,
+],
+),
 'templates' => [
 'addons/abt__unitheme2/blocks/abt__ut2_light_menu.tpl' => [
 'settings' => [
@@ -119,28 +131,9 @@ $schema['abt__ut2_light_menu'] = [
 ],
 ],
 ],
-'content' => [
-'menu' => [
-'type' => 'enum',
-'hide_label' => true,
-'remove_indent' => true,
-'object' => 'items',
-'items_function' => 'fn_abt__ut2_get_light_menu',
-'fillings' => [
-'manually' => [
-'picker' => 'addons/abt__unitheme2/pickers/menus/picker.tpl',
-'picker_params' => [
-'multiple' => true,
-'status' => ObjectStatuses::ACTIVE,
-'positions' => true,
-],
-],
-],
-],
-],
 'cache' => [
 'update_handlers' => ['menus', 'menu_descriptions', 'static_data', 'static_data_descriptions'],
 ],
-'multilanguage' => true,
+'multilanguage' => false,
 ];
 return $schema;

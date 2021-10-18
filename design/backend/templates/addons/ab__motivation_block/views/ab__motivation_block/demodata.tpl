@@ -29,4 +29,5 @@ title_end = __("ab__motivation_block.demodata")
 adv_buttons=$smarty.capture.adv_buttons
 content=$smarty.capture.mainbox
 buttons=$smarty.capture.buttons
+select_storefront=true
 content_id="ab__mb_demo_data_form"}

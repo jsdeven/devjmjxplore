@@ -71,7 +71,7 @@ local_storage_assign.html = Object.assign(local_storage_assign.html, stickers_st
 try {
 localStorage.setItem(cache_key, JSON.stringify(local_storage_assign));
 } catch (e) {
-localStorage.removeItem(cache_key);
+localStorage.clear();
 localStorage.setItem(cache_key, JSON.stringify(local_storage_assign));
 }
 }

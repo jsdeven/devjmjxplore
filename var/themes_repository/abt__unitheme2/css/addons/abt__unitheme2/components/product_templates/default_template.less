@@ -50,6 +50,7 @@
 			.ty-previewer {
     			img {
         			max-height: 70vh;
+        			width: auto;
     			}
 			}
 		}
@@ -66,12 +67,18 @@
 	    }
 	}
 	
-	&__img-wrapper:not(.quick-view) {
-		@media screen and (min-width: 1200px) {
-			.ty-product-labels__item {
-				zoom: 1.2;
-			}		
-		}		
+	&__img-wrapper {
+    	
+    	.ty-image-zoom__wrapper:hover .ty-previewer__icon {
+        	visibility: visible;
+    	}
+	    &:not(.quick-view) {
+    		@media screen and (min-width: 1200px) {
+    			.ty-product-labels__item {
+    				zoom: 1.2;
+    			}		
+    		}
+		}	
 	}
 	
 	&__wrapper {
@@ -94,7 +101,8 @@
 		
 		@media screen and (min-width: 768px) {
 			max-width: 50%;
-			padding-bottom: @padding-form-block;
+			margin-bottom: @padding-form-block;
+			padding-bottom: 0;
 			padding-right: @padding-form-block;
 		}
 		@media screen and (max-width: 768px) {
@@ -133,10 +141,6 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		max-width: 100%;
-		
-		&:not(.ab-vertical-thumbnails) {
-    		min-width: 100%;
-		}
 
 	    &__item {
 		    border: 0 none;
@@ -159,15 +163,23 @@
 	    }
 	}
 	.ty-product-variant-image {
-		margin-left: 0;
-		padding: 5px 0 0;
-		
+		margin: 5px 0 0;
+
 		img {
-			padding: 2px;
-			border: 1px solid @base;
-			min-height: 35px;
-			max-height: 35px;
-			
+    		padding: 2px;
+    		border: 2px solid transparent;
+    
+    		.ut2_round(@round: 4px) when (@abt__ut2_general_use_rounding = little) {
+    			border-radius: @round;
+    		}
+    		.ut2_round(@round: 8px) when (@abt__ut2_general_use_rounding = full) {
+    			border-radius: @round;
+    		}
+    		.ut2_round();
+
+            &:hover {
+        	    border-color: fade(@in_stock, 50%);
+    	    }
 			&[class*="-selected"] {
 				border-color: @links;
 			}
@@ -329,6 +341,15 @@
 		    &.ty-cr-product-button span {
 			    color: @font;
 		    }
+		}
+		
+		label {
+    		display: inline-flex;
+    		text-align: left;
+    		
+    		input {
+        	    margin-top: 0;	
+    		}
 		}
 		a.label {
 			display: inline-flex;

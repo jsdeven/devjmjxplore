@@ -33,9 +33,8 @@ $params['category_ids'] = [$product['main_category']];
 }
 if (fn_allowed_for('MULTIVENDOR') && !empty($product['company_id'])) {
 $params['company_id'] = $product['company_id'];
-} else {
-$params['company_id'] = fn_get_runtime_company_id();
 }
+$params['storefront_id'] = \Tygh::$app['storefront']->storefront_id;
 unset($params['sort_by']);
 list($motivation_items) = fn_ab__mb_get_motivation_items($params);
 Tygh::$app['view']->assign('ab__motivation_items', $motivation_items);

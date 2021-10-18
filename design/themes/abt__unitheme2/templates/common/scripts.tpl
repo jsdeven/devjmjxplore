@@ -68,7 +68,9 @@
 
         text_editing_raw: '{__("text_editing", ['skip_live_editor' => true])|escape:"javascript"}',
         save_raw: '{__("save", ['skip_live_editor' => true])|escape:"javascript"}',
-        cancel_raw: '{__("cancel", ['skip_live_editor' => true])|escape:"javascript"}'
+        cancel_raw: '{__("cancel", ['skip_live_editor' => true])|escape:"javascript"}',
+
+        abt__ut2_of: '{__("of")}'
     });
 
     $.extend(_, {

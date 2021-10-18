@@ -104,8 +104,8 @@ class Orders extends AEntity
             $valid_params = false;
         }
 
-        if (!empty($params['user_id']) && is_numeric($params['user_id'])) {
-            $cart['user_data'] = fn_get_user_info($params['user_id']);
+        if (!empty($params['user_id']) && is_numeric($params['user_id']) && !empty($params['profile_id']) && is_numeric($params['profile_id'])) {
+            $cart['user_data'] = fn_get_user_info($params['user_id'], true, $params['profile_id']);
             if (empty($cart['user_data'])) {
                 $status = Response::STATUS_BAD_REQUEST;
                 $data['message'] = __('object_not_found', array('[object]' => __('user')));

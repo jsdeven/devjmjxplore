@@ -286,7 +286,8 @@ if($mode == 'add'){
 
     }
 
-    if(isset($_REQUEST['step']) && $_REQUEST['step'] == 5){
+    if(isset($_REQUEST['step']) && $_REQUEST['step'] == 5)
+    {
 
         $user_id = isset($customer_data['user_id']) ? $customer_data['user_id'] : 0;
         $customer_data['status'] = 'D';

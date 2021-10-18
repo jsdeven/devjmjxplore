@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $doc = time().$_FILES['doc']['name'];
         $_REQUEST['brand_data']['logo'] = $logo;
         $_REQUEST['brand_data']['doc'] = $doc;
-
+         
         if (!file_exists('images/brands/')) {
             mkdir('images/brands/', 0777, true);
         }
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
 
             $brand_data = $_REQUEST['brand_data'];
-            $brand_id = fn_update_brands($brand_data);
+            $brand_id = fn_update_brands($brand_data, $_REQUEST['id']);
 
             if($brand_id){
                 fn_set_notification('N', __('notice'), __('brand_created'));

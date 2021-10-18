@@ -73,6 +73,7 @@ init : function() {
 window.onpopstate = app.onPopState;
 app.originalPushState = history.pushState;
 history.pushState = app.pushState;
+history.scrollRestoration = 'manual';
 }
 };
 app.init();
@@ -125,7 +126,7 @@ var last_state = app.getLastOfType('abt__popup_opened');
 setTimeout(function(){
 if (last_state === 'abt__popup_opened_' + dialog.attr('id')) {
 app.ignore_dialog_close = true;
-history.go(-1);
+history.back();
 }
 }, 1000)
 });

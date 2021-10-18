@@ -1,4 +1,23 @@
 {style src="addons/jmj_digital/collapse.css"}
+<style>
+    .change-button{
+        font-size: 14px;
+        line-height: 5px;
+        font-weight: 500;
+        font-family: "Montserrat";
+        text-align: center;
+        background: #139d17;
+        border: 0px;
+        margin-top: -35px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 15px 15px;
+        text-transform: uppercase;
+        display: inline-block;
+        transition: all 0.7s;
+    }
+</style>
 <head>
 	<title>Seller JMJ Xplore</title>
 	<meta charset="utf-8">
@@ -43,7 +62,6 @@
 				<div class="open apply-reg" id="apply">
 					<div>
 						<div id="gstn_verification" {if $gstn_verified} style="display:none;"{/if}>
-							
 							<h5 id="request-otp-success">{__('gstn_successfully_verified')}</h5>
 							<h5 id="gstin_found_error">{__('gstn_not_found')}</h5>
 							<div class="container new-login-area">
@@ -58,16 +76,19 @@
 								</div>
 							</div>
 						</div>	
+
 						<div id="step_2_content" {if $gstn_verified} style="display:b_block;"{else}  style="display:none;"{/if}>
 							<form  method="POST" class="cm-processed-form">	
 								<input type="hidden" name="step" value="2" />
 								<input type="hidden" name="vendor_register_form_id" value="{$smarty.session.vendor_register_form_id}" />
-
 								<div id="b_address_fields">
-									<div class="form-group">
+									<div class="form-group" style="margin-bottom: 5px;">
 										<label for="gstin_number" class="ty-control-group__title cm-required cm-name cm-trim">{__("gstin_number")}</label> 
 										<input type="text" id="gstin_number" name="company_data[gstin_number]" value="{$company_data.gstin_number}" size="32" maxlength="128"  class="form-control  cm-required" placeholder="GSTIN Number" required disabled>
 									</div>
+									<br>
+									<a id="change_gstin" class="btn btn-default btn-primary sellerbtn mycustom-btn change-button">{__("change")}</a>
+									
 									<div class="form-group">
 										<label for="pan_number" class="ty-control-group__title cm-required">{__("pan_number")}</label>
 										<input type="text" id="pan_number" name="company_data[pan_number]" value="{$company_data.pan_number}" size="32" maxlength="32"  class="form-control cm-autocomplete-off" autocomplete="off">
@@ -84,7 +105,6 @@
 										<label for="b_address_2" class="ty-control-group__title  cm-trim" style="display: none;">{__("b_address_2")}</label> 
 										<input type="text" id="b_address_2" name="company_data[b_address_2]" value="{$company_data.b_address_2}" size="32" class="form-control cm-focus"  autocomplete="off" >
 									</div>
-
 
 									<div class="row">
 										<div class="col-md-6">
@@ -277,6 +297,11 @@
             $('#india_zone').html(option);
             
         }); 
+        
+        $('#change_gstin').on('click', function(){
+            $('#step_2_content').hide();
+            $('#gstn_verification').show();
+        });
         
 		$('.request-verify-gstin').on('click',function(){
 		

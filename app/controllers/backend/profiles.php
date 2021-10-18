@@ -60,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Create/Update user
     //
     if ($mode === 'update' || $mode === 'add') {
+        
         $profile_id = !empty($_REQUEST['profile_id']) ? $_REQUEST['profile_id'] : 0;
         $_uid = !empty($profile_id) ? db_get_field("SELECT user_id FROM ?:user_profiles WHERE profile_id = ?i", $profile_id) : $auth['user_id'];
         if (empty($_REQUEST['user_id'])) {

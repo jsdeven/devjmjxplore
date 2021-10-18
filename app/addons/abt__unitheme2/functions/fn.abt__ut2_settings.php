@@ -22,6 +22,7 @@ die('Access denied');
 function fn_abt__unitheme2_dispatch_assign_template()
 {
 Registry::set('settings.abt__ut2', fn_get_abt__ut2_settings());
+Registry::set('settings.abt__ut2_less', fn_get_abt__ut2_settings('less', false, Registry::get('runtime.layout.style_id') . '.less'));
 Registry::set('settings.abt__device', fn_abt__ut2_get_device_type());
 }
 function fn_abt__ut2_get_device_type()
@@ -256,7 +257,6 @@ $d = [
 if ($type == 'less') {
 $d['style'] = $style;
 db_query('REPLACE INTO ?:abt__ut2_less_settings ?e', $d);
-if ($section != 'addons') {
 $less_file = Registry::get('config.dir.design_frontend') . 'abt__unitheme2/styles/data/' . $style;
 if (file_exists($less_file)) {
 $less = fn_get_contents($less_file);
@@ -268,28 +268,6 @@ $v = ($v == 'Y') ? 'true' : 'false';
 $v .= (!empty($item['suffix'])) ? $item['suffix'] : '';
 $name = str_replace('.', '_', $name);
 $less_var = '@abt__ut2_' . $section . '_' . $name . ': ' . $v . ";\n";
-if (preg_match('/@abt__ut2_' . $section . '_' . $name . ':.*?;/m', $less)) {
-$less = preg_replace('/(*ANYCRLF)@abt__ut2_' . $section . '_' . $name . ':.*?;$/m', str_replace("\n", '', $less_var), $less);
-} else {
-$less .= $less_var;
-}
-fn_put_contents($less_file, $less);
-}
-}
-} else {
-list($addon) = explode('.', $name);
-$less_file = Registry::get('config.dir.root') . "/design/themes/abt__unitheme2/css/addons/{$addon}/styles/data/{$style}";
-$v = unserialize($v);
-if ($item['type'] == 'checkbox') {
-$v = ($v == 'Y') ? 'true' : 'false';
-}
-$v .= (!empty($item['suffix'])) ? $item['suffix'] : '';
-$name = str_replace('.', '_', $name);
-$less_var = '@abt__ut2_' . $section . '_' . $name . ': ' . $v . ";\n";
-if (!file_exists($less_file)) {
-fn_put_contents($less_file, $less_var);
-} else {
-$less = fn_get_contents($less_file);
 if (preg_match('/@abt__ut2_' . $section . '_' . $name . ':.*?;/m', $less)) {
 $less = preg_replace('/(*ANYCRLF)@abt__ut2_' . $section . '_' . $name . ':.*?;$/m', str_replace("\n", '', $less_var), $less);
 } else {

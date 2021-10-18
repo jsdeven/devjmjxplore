@@ -13,7 +13,7 @@
         {assign var="form_open" value="form_open_`$obj_id`"}
         {$smarty.capture.$form_open nofilter}
             <div class="ty-template-small__item-img">
-                <a href="{"products.view?product_id=`$product.product_id`"|fn_url}">{include file="common/image.tpl" image_width="50" image_height="50" images=$product.main_pair obj_id=$obj_id_prefix no_ids=true lazy_load=true}</a>
+                <a href="{"products.view?product_id=`$product.product_id`"|fn_url}">{include file="common/image.tpl" image_width="50" image_height="50" images=$product.main_pair obj_id=$obj_id_prefix no_ids=true}</a>
             </div>
             <div class="ty-template-small__item-description">
                 {if $block.properties.item_number == "YesNo::YES"|enum}<span class="ut2-hit">{$smarty.foreach.products.iteration}</span>{/if}

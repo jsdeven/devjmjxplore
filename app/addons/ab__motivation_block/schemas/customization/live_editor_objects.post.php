@@ -16,7 +16,6 @@
 *   email: info@alexbranding.com                                                           *
 *******************************************************************************************/
 use Tygh\Registry;
-$company_id = fn_get_runtime_company_id();
 $schema['ab__motivation_block'] = [
 'function' => 'fn_ab__mb_update_motivation_item',
 'args' => [
@@ -26,7 +25,7 @@ $schema['ab__motivation_block'] = [
 ],
 '$id',
 '$lang_code',
-$company_id,
+Tygh::$app['storefront']->storefront_id,
 ],
 'input_type' => 'input',
 'input_type_fields' => [

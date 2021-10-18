@@ -29,7 +29,7 @@ $schema['central']['ab__addons']['items']['ab__video_gallery'] = [
 'attrs' => [
 'class' => 'is-addon',
 ],
-'href' => 'addons.update&addon=ab__video_gallery',
+'href' => 'addons.update&addon=ab__video_gallery&selected_section=settings',
 'position' => 0,
 ],
 'ab__video_gallery.help' => [

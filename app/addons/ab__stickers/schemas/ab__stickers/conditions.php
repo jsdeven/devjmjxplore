@@ -218,7 +218,8 @@ $schema['constant']['conditions']['sales_amount'] = [
 'additional_classes' => 'cm-value-integer',
 ];
 }
-if (Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE) {
+if (Registry::get('addons.discussion.status') == ObjectStatuses::ACTIVE
+|| Registry::get('addons.product_reviews.status') == ObjectStatuses::ACTIVE) {
 $schema['constant']['conditions']['comments'] = [
 'operators' => ['eq', 'neq', 'lte', 'gte', 'lt', 'gt'],
 'type' => 'input',

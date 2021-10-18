@@ -1,37 +1,116 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="design/backend/css/addons/jmj_digital/seller_page_assets/images/fevicon.png" sizes="64x64" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design/backend/css/addons/jmj_digital/seller_page_assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="design/backend/css/addons/jmj_digital/seller_page_assets/css/style.css">
+  <link rel="stylesheet" href="design/backend/css/addons/jmj_digital/seller_page_assets/css/responsive.css">
+</head>
+
 {literal}
     <style>
         .signin-modal .modal-footer a {
             height: 32px;
         }
+
+        #main_column_login {
+    height: 0%;
+}
+body {
+  background-image: url('https://jmjxplore.com/design/backend/css/addons/jmj_digital/seller_page_assets/img/background.jpg');
+  background-repeat: no-repeat;
+}
+
+.sellerbtn{
+        font-size: 14px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-align: center;
+        background-color: #ff0064;
+        border: 0px;
+        border-radius: 0;
+        color: #ffffff;
+        padding: 15px 46px;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 54px;
+}
+span
+     {
+        color: #ff0064;
+     }
+    .sellerbtn:hover {
+        background: #124062;
+        border: 1px solid #124062;
+        transition: all 0.7s;
+    }
+    input[type="submit"].btn {
+    height: 54px;
+}
+.forget-password a
+{
+    text-decoration:none;
+    font-size: 15px;
+}
+
     </style>
 {/literal}
-
+<body>
 {if $basename == 'admin.php'}
     {hook name="auth:login_form"}
-    <div class="modal signin-modal">
-        <form action="{""|fn_url}" method="post" name="main_login_form" class=" cm-skip-check-items cm-check-changes">
-            <input type="hidden" name="return_url" value="{$smarty.request.return_url|fn_url:"A":"rel"|fn_query_remove:"return_url"}">
-            <div class="modal-header">
-                <h4>{__("administration_panel")}</h4>
-            </div>
-            <div class="modal-body">
-                <div class="control-group">
-                    <label for="username" class="cm-trim cm-required cm-email">{__("email")}:</label>
-                    <input id="username" type="text" name="user_login" size="20" value="{if $stored_user_login}{$stored_user_login}{else}{$config.demo_username}{/if}" class="cm-focus" tabindex="1">
+    <section class="seller-hub-account-main">
+        <div class="container-fluid">
+          <div class="container-jain">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="seller-hub-account-left">
+                  <h1>Login to <br />your Admin<br />panel</h1>
+                  <div class="sellerhub-div">
+                    <p>You’re just a step away to <span><b>Xplore</b></span> a  world of limitless possibilites!</p>
+                  </div>
                 </div>
-            
-                <div class="control-group">
-                    <label for="form_password" class="cm-required">{__("password")}:</label>
-                    <input type="password" id="form_password" name="password" size="20" value="{$config.demo_password}" tabindex="2" maxlength="32">
+              </div>
+              <div class="col-md-7">
+                <div class="seller-hub-account-right">
+                  <div class="sellerhub-forms">
+                      <form action="{""|fn_url}" method="post" name="main_login_form" >
+                          <input type="hidden" name="return_url" value="{$smarty.request.return_url|fn_url:"A":"rel"|fn_query_remove:"return_url"}">
+                          <!--<div class="modal-header">
+                              <h4>{__("administration_panel")}</h4>
+                          </div>-->
+                    
+                              <div class="form-group">
+                                 <!--<label for="username" class="cm-trim cm-required cm-email">{__("email")}:</label>-->
+                                 <label for="username" class="cm-trim cm-required cm-email">Login ID</label>
+                                  <input id="username"  class="form-control" type="text" name="user_login" size="20" value="{if $stored_user_login}{$stored_user_login}{else}{$config.demo_username}{/if}" class="cm-focus" tabindex="1" placeholder="Login ID">
+                              </div>
+                          
+                              <div class="form-group">
+                                  <label for="form_password" class="cm-required">{__("password")}:</label>
+                                  <input type="password" class="form-control" id="form_password" name="password" size="20" value="{$config.demo_password}" tabindex="2" maxlength="32" placeholder="Password">
+                              </div>
+                        
+                          <div class="form-group mb-0">
+                              <div class="input-group align-items-center">
+                                {include file="buttons/sign_in.tpl" but_name="dispatch[auth.login]" but_meta="ty-btn float-right ty-btn__secondary sellerbtn" but_role="button_main" tabindex="3"}
+                                <div class="forget-password"><a href="{"auth.recover_password"|fn_url}" class="pull-right">{__("forgot_password_question")}</a>
+                                </div>
+                              </div>
+                          </div>
+                      </form>
                 </div>
+              </div>
             </div>
-            <div class="modal-footer">
-                
-                {include file="buttons/sign_in.tpl" but_name="dispatch[auth.login]" but_role="button_main" tabindex="3"}
-                <a href="{"auth.recover_password"|fn_url}" class="pull-right">{__("forgot_password_question")}</a>
-            </div>
-        </form>
-    </div>
+          </div>
+          </div>
+        </div>
+      </section>
     {/hook}
 {else}
     {include file="addons/jmj_digital/views/auth/components/vendor_login_page.tpl"}
@@ -70,7 +149,7 @@
         </div>  
     </div>
 </div>
-
+</body>
 <!-- Login by OTP code start here -->
 <script>
     $(".request_otp").on('click', function(){

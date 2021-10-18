@@ -18,4 +18,11 @@
 if (!defined('BOOTSTRAP')) {
 die('Access denied');
 }
-fn_register_hooks('get_products', 'get_products_post', 'delete_product_post', 'update_product_post', 'clone_product', 'seo_get_schema_org_markup_items_post');
+fn_register_hooks('get_products'
+, 'get_products_post'
+, 'delete_product_post'
+, 'update_product_post'
+, 'clone_product'
+, 'seo_get_schema_org_markup_items_post'
+, 'init_templater_post'
+);

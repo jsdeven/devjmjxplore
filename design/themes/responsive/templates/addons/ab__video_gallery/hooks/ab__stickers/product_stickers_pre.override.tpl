@@ -3,7 +3,7 @@
     {$total_count = ($product.image_pairs|count + $ab__vg_videos|count + 1)}
     {$is_vertical = (($runtime.mode != "quick_view") && ($addons.ab__video_gallery.vertical == "YesNo::YES"|enum))}
 
-    {assign var="th_size" value=$addons.ab__video_gallery.th_size|default:35}
+    {assign var="th_size" value=min($addons.ab__video_gallery.th_size|default:35, 100)}
     {if $is_vertical}
         {if $total_count == 0 || $total_count == 1}
             {$gal_width = 0}

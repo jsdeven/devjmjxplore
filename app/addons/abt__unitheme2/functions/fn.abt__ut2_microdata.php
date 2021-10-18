@@ -97,15 +97,15 @@ $microdata = [
 '@type' => 'BreadcrumbList',
 ];
 foreach ($breadcrumbs as $k => $breadcrumb) {
-if (empty($breadcrumb['link'])) {
-continue;
-}
-$microdata['itemListElement'][] = [
+$item = [
 '@type' => 'ListItem',
 'position' => $k + 1,
 'name' => $breadcrumb['title'],
-'item' => fn_url($breadcrumb['link']),
 ];
+if (!empty($breadcrumb['link'])) {
+$item['item'] = fn_url($breadcrumb['link']);
+}
+$microdata['itemListElement'][] = $item;
 }
 return json_encode($microdata);
 }

@@ -7,7 +7,7 @@
     "favicon": "media/images/logos/Black/favicon.png",
     "parent_theme": "responsive",
     "ab": {
-        "version": "4.13.2.a"
+        "version": "4.13.2.c"
     },
     "settings_overrides": {
         "General": {
